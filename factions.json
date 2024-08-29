@@ -1,0 +1,22 @@
+{
+    "United Systems of Man": {
+        "Starting Credits": 1000,
+        "Description": "An empire in ruins. They are scattered to the stars and hope one day to rise again in glory."
+    },
+    "People of the River": {
+        "Starting Credits": 100,
+        "Description": "A loose band of systems bound by a natural philosophy that is taking the galaxy by storm."
+    },
+    "Shogunate 3072": {
+        "Starting Credits": 0,
+        "Description": "A militant empire on the galactic edge, preparing for something that terrifies them."
+    },
+    "Mandate of God": {
+        "Starting Credits": 2000,
+        "Description": "A golden spire of finance, technology and religion. Two of those things are just for show."
+    },
+    "The Noringian Hive": {
+        "Starting Credits": 500,
+        "Description": "An alien collective that exists only on the most dangerous of worlds. And they are on the march."
+    }
+}

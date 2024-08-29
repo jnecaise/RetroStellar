@@ -1,0 +1,12 @@
+
+# RetroStellar notes
+
+https://github.com/papajaguar504/RetroStellar
+
+cd /path/to/your/project
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/papajaguar504/RetroStellar
+git push -u origin main
+
