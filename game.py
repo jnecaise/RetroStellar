@@ -50,7 +50,6 @@ def display_faction_options():
     factions = load_json('factions.json')
     print(f"{CYAN}Available Factions:{RESET}")
     for idx, faction in enumerate(factions.keys(), start=1):
-        # Combine the faction name and description into one line
         print(f"{BOLD}{idx}. {faction} - {GREEN}{factions[faction]['Description']}{RESET}")
 
 def handle_user_input(allow_game_menu=False):
@@ -59,15 +58,15 @@ def handle_user_input(allow_game_menu=False):
         choice = input(f"{BOLD}Your choice: {RESET}").strip().upper()
         if choice == 'Q':
             print("Quitting the game. Goodbye!")
-            sys.exit()  # Exit the program entirely
+            sys.exit()
         elif choice == 'C':
-            reload_character_menu()  # Call the reload function
+            reload_character_menu()
         elif choice == 'H':
             print("THIS IS HELP SECTION")
         elif choice == 'S' and not allow_game_menu:
-            return True  # Signal to start the game
+            return True
         elif choice == 'M' and allow_game_menu:
-            return 'M'  # Signal to return to game menu
+            return 'M'
         else:
             print(f"{RED}Invalid option. Please choose {choices}.{RESET}")
 
@@ -91,7 +90,7 @@ def handle_character_menu_input():
     while True:
         choice = input(f"{BOLD}Your choice: {RESET}").strip().upper()
         if choice == 'M':
-            return  # Return to the game
+            return
         elif choice == 'Q':
             print("Quitting the game. Goodbye!")
             sys.exit()
@@ -108,10 +107,14 @@ def display_system_menu(current_system, connections):
     
     print(f"\n{CYAN}System: {current_system}{RESET}")
     print(f"{system_info['description']}")
-    print(f"{MAGENTA}Planets: {planets}{RESET}")
-    print(f"{YELLOW}Stargates: {stargates}{RESET}")
     print(f"{BLUE}Star Type: {star_type}{RESET}")  # Display the star type
+    print(f"{MAGENTA}Planets: {planets}{RESET}")
+    # Display asteroid fields names on the same line
+    if 'asteroid_fields' in system_info:
+        asteroid_fields = ', '.join(field['id'] for field in system_info['asteroid_fields'])
+    print(f"{CYAN}Asteroid Fields: {asteroid_fields}{RESET}")
     print(f"{RED}Hazard Level: {hazard_level}{RESET}")
+    print(f"{YELLOW}Stargates: {stargates}{RESET}")
 
 def get_user_command(valid_systems):
     while True:
@@ -138,13 +141,13 @@ Game Menu:
 def start_game():
     connections = load_json('systems.json')
     current_system = "1"
-    while current_system != "8":  # Change the objective to System 8
+    while current_system != "8":
         display_system_menu(current_system, connections)
         if connections[current_system]['connections']:
             command = get_user_command(connections[current_system]['connections'])
             if command == 'M':
-                display_game_menu()  # Show the game menu
-                handle_user_input(allow_game_menu=True)  # Handle menu options
+                display_game_menu()
+                handle_user_input(allow_game_menu=True)
             else:
                 current_system = command
         else:
@@ -154,10 +157,9 @@ def start_game():
             print(f"{GREEN}You have reached your destination!{RESET}")
 
 def navigate_systems():
-    display_header()  # Display the header at the start
-    display_welcome_message()  # Display the welcome message
+    display_header()
+    display_welcome_message()
     
-    # Character setup
     character_data = {}
     print(f"{CYAN}Please enter your character information!{RESET}")
     print()
@@ -165,7 +167,6 @@ def navigate_systems():
     character_data['Ship Name'] = input(f"{BOLD}Enter your Ship Name: {RESET}").strip()
     print()
 
-    # Faction selection
     display_faction_options()
     factions = load_json('factions.json')
     while True:
@@ -184,13 +185,12 @@ def navigate_systems():
         except ValueError:
             print(f"{RED}Please enter a valid number.{RESET}")
     
-    # Save character data
     save_json('character_data.json', character_data)
 
     while True:
-        display_user_menu()  # Show the user menu
-        if handle_user_input():  # Check if the user chose to start the game
-            start_game()  # Start the game loop
+        display_user_menu()
+        if handle_user_input():
+            start_game()
 
 if __name__ == "__main__":
     navigate_systems()

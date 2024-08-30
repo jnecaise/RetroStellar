@@ -8,5 +8,16 @@ git init
 git add .
 git commit -m "Initial commit"
 git remote add origin https://github.com/papajaguar504/RetroStellar
-git push -u origin main
+git push -u origin master
 
+git branch
+
+# to push changes
+
+git add .
+git commit -m "Added new functionality to game.py and updated character data"
+git push
+
+# to start program
+
+python game.py

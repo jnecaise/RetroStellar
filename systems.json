@@ -4,7 +4,7 @@
         "planets": [
             {
                 "name": "Planet A",
-                "type": "Terrestrial"
+                "type": "Oceanic"
             },
             {
                 "name": "Planet B",
@@ -15,55 +15,6 @@
             "2",
             "3"
         ],
-        "star_type": "G-type",
-        "hazard_level": "Low",
-        "asteroid_field": {
-            "density": "Sparse",
-            "resource_types": "Metallic"
-        },
-        "asteroid_fields": [
-            {
-                "id": "1A",
-                "density": "Dense",
-                "resource_type": "Metallic",
-                "hazard_level": "Low"
-            },
-            {
-                "id": "1B",
-                "density": "Dense",
-                "resource_type": "Silicate",
-                "hazard_level": "Low"
-            },
-            {
-                "id": "1C",
-                "density": "Dense",
-                "resource_type": "Carbonaceous",
-                "hazard_level": "Low"
-            },
-            {
-                "id": "1D",
-                "density": "Dense",
-                "resource_type": "Silicate",
-                "hazard_level": "Low"
-            }
-        ]
-    },
-    "2": {
-        "description": "A serene system with a beautiful nebula.",
-        "planets": [
-            {
-                "name": "Planet C",
-                "type": "Oceanic"
-            },
-            {
-                "name": "Planet D",
-                "type": "Terrestrial"
-            }
-        ],
-        "connections": [
-            "1",
-            "4"
-        ],
         "star_type": "F-type",
         "hazard_level": "Mild",
         "asteroid_field": {
@@ -72,129 +23,40 @@
         },
         "asteroid_fields": [
             {
-                "id": "2A",
+                "id": "1A",
                 "density": "Moderate to Dense",
-                "resource_type": "Silicate",
+                "resource_type": "Metallic",
                 "hazard_level": "Mild"
             },
             {
-                "id": "2B",
+                "id": "1B",
                 "density": "Moderate to Dense",
-                "resource_type": "Silicate",
+                "resource_type": "Carbonaceous",
                 "hazard_level": "Mild"
             },
             {
-                "id": "2C",
+                "id": "1C",
                 "density": "Moderate to Dense",
-                "resource_type": "Silicate",
+                "resource_type": "Metallic",
                 "hazard_level": "Mild"
             }
         ]
     },
-    "3": {
-        "description": "A system known for its mining operations.",
+    "2": {
+        "description": "A serene system with a beautiful nebula.",
         "planets": [
             {
-                "name": "Planet E",
-                "type": "Ice"
+                "name": "Planet C",
+                "type": "Gas Giant"
+            },
+            {
+                "name": "Planet D",
+                "type": "Lava"
             }
         ],
         "connections": [
             "1",
-            "5"
-        ],
-        "star_type": "A-type",
-        "hazard_level": "Moderate",
-        "asteroid_field": {
-            "density": "Moderate to Dense",
-            "resource_types": "Silicate"
-        },
-        "asteroid_fields": [
-            {
-                "id": "3A",
-                "density": "Moderate",
-                "resource_type": "Carbonaceous",
-                "hazard_level": "Moderate"
-            }
-        ]
-    },
-    "4": {
-        "description": "A trade center with many opportunities.",
-        "planets": [
-            {
-                "name": "Planet F",
-                "type": "Oceanic"
-            }
-        ],
-        "connections": [
-            "2",
-            "6"
-        ],
-        "star_type": "K-type",
-        "hazard_level": "Very Low",
-        "asteroid_field": {
-            "density": "Dense",
-            "resource_types": "Silicate"
-        },
-        "asteroid_fields": [
-            {
-                "id": "4A",
-                "density": "Dense",
-                "resource_type": "Carbonaceous",
-                "hazard_level": "Very Low"
-            },
-            {
-                "id": "4B",
-                "density": "Dense",
-                "resource_type": "Silicate",
-                "hazard_level": "Very Low"
-            },
-            {
-                "id": "4C",
-                "density": "Dense",
-                "resource_type": "Silicate",
-                "hazard_level": "Very Low"
-            }
-        ]
-    },
-    "5": {
-        "description": "A system with a notorious space pirate base.",
-        "planets": [
-            {
-                "name": "Planet G",
-                "type": "Gas Giant"
-            }
-        ],
-        "connections": [
-            "3",
-            "7"
-        ],
-        "star_type": "A-type",
-        "hazard_level": "Moderate",
-        "asteroid_field": {
-            "density": "Moderate",
-            "resource_types": "Carbonaceous"
-        },
-        "asteroid_fields": [
-            {
-                "id": "5A",
-                "density": "Moderate",
-                "resource_type": "Carbonaceous",
-                "hazard_level": "Moderate"
-            }
-        ]
-    },
-    "6": {
-        "description": "A remote outpost with few visitors.",
-        "planets": [
-            {
-                "name": "Planet H",
-                "type": "Ice"
-            }
-        ],
-        "connections": [
-            "4",
-            "8"
+            "4"
         ],
         "star_type": "A-type",
         "hazard_level": "Moderate",
@@ -204,22 +66,184 @@
         },
         "asteroid_fields": [
             {
-                "id": "6A",
+                "id": "2A",
                 "density": "Moderate",
                 "resource_type": "Carbonaceous",
                 "hazard_level": "Moderate"
+            },
+            {
+                "id": "2B",
+                "density": "Moderate",
+                "resource_type": "Silicate",
+                "hazard_level": "Moderate"
+            },
+            {
+                "id": "2C",
+                "density": "Moderate",
+                "resource_type": "Carbonaceous",
+                "hazard_level": "Moderate"
+            },
+            {
+                "id": "2D",
+                "density": "Moderate",
+                "resource_type": "Silicate",
+                "hazard_level": "Moderate"
+            }
+        ]
+    },
+    "3": {
+        "description": "A system known for its mining operations.",
+        "planets": [
+            {
+                "name": "Planet E",
+                "type": "Gas Giant"
+            }
+        ],
+        "connections": [
+            "1",
+            "5"
+        ],
+        "star_type": "B-type",
+        "hazard_level": "High",
+        "asteroid_field": {
+            "density": "Moderate to Dense",
+            "resource_types": "Silicate"
+        },
+        "asteroid_fields": [
+            {
+                "id": "3A",
+                "density": "Sparse",
+                "resource_type": "Metallic",
+                "hazard_level": "High"
+            },
+            {
+                "id": "3B",
+                "density": "Sparse",
+                "resource_type": "Silicate",
+                "hazard_level": "High"
+            },
+            {
+                "id": "3C",
+                "density": "Sparse",
+                "resource_type": "Silicate",
+                "hazard_level": "High"
+            }
+        ]
+    },
+    "4": {
+        "description": "A trade center with many opportunities.",
+        "planets": [
+            {
+                "name": "Planet F",
+                "type": "Lava"
+            }
+        ],
+        "connections": [
+            "2",
+            "6"
+        ],
+        "star_type": "A-type",
+        "hazard_level": "Moderate",
+        "asteroid_field": {
+            "density": "Dense",
+            "resource_types": "Silicate"
+        },
+        "asteroid_fields": [
+            {
+                "id": "4A",
+                "density": "Moderate",
+                "resource_type": "Carbonaceous",
+                "hazard_level": "Moderate"
+            },
+            {
+                "id": "4B",
+                "density": "Moderate",
+                "resource_type": "Silicate",
+                "hazard_level": "Moderate"
+            },
+            {
+                "id": "4C",
+                "density": "Moderate",
+                "resource_type": "Silicate",
+                "hazard_level": "Moderate"
+            }
+        ]
+    },
+    "5": {
+        "description": "A system with a notorious space pirate base.",
+        "planets": [
+            {
+                "name": "Planet G",
+                "type": "Oceanic"
+            }
+        ],
+        "connections": [
+            "3",
+            "7"
+        ],
+        "star_type": "G-type",
+        "hazard_level": "Low",
+        "asteroid_field": {
+            "density": "Moderate",
+            "resource_types": "Carbonaceous"
+        },
+        "asteroid_fields": [
+            {
+                "id": "5A",
+                "density": "Dense",
+                "resource_type": "Metallic",
+                "hazard_level": "Low"
+            },
+            {
+                "id": "5B",
+                "density": "Dense",
+                "resource_type": "Silicate",
+                "hazard_level": "Low"
+            },
+            {
+                "id": "5C",
+                "density": "Dense",
+                "resource_type": "Carbonaceous",
+                "hazard_level": "Low"
+            }
+        ]
+    },
+    "6": {
+        "description": "A remote outpost with few visitors.",
+        "planets": [
+            {
+                "name": "Planet H",
+                "type": "Barren"
+            }
+        ],
+        "connections": [
+            "4",
+            "8"
+        ],
+        "star_type": "M-type",
+        "hazard_level": "Minimal",
+        "asteroid_field": {
+            "density": "Sparse",
+            "resource_types": "Metallic"
+        },
+        "asteroid_fields": [
+            {
+                "id": "6A",
+                "density": "Moderate to Dense",
+                "resource_type": "Silicate",
+                "hazard_level": "Minimal"
             },
             {
                 "id": "6B",
-                "density": "Moderate",
-                "resource_type": "Carbonaceous",
-                "hazard_level": "Moderate"
+                "density": "Moderate to Dense",
+                "resource_type": "Metallic",
+                "hazard_level": "Minimal"
             },
             {
                 "id": "6C",
-                "density": "Moderate",
-                "resource_type": "Carbonaceous",
-                "hazard_level": "Moderate"
+                "density": "Moderate to Dense",
+                "resource_type": "Metallic",
+                "hazard_level": "Minimal"
             }
         ]
     },
@@ -228,15 +252,15 @@
         "planets": [
             {
                 "name": "Planet I",
-                "type": "Lava"
+                "type": "Gas Giant"
             }
         ],
         "connections": [
             "5",
             "8"
         ],
-        "star_type": "A-type",
-        "hazard_level": "Moderate",
+        "star_type": "O-type",
+        "hazard_level": "Very High",
         "asteroid_field": {
             "density": "Moderate to Dense",
             "resource_types": "Silicate"
@@ -244,15 +268,15 @@
         "asteroid_fields": [
             {
                 "id": "7A",
-                "density": "Moderate",
-                "resource_type": "Carbonaceous",
-                "hazard_level": "Moderate"
+                "density": "Sparse",
+                "resource_type": "Metallic",
+                "hazard_level": "Very High"
             },
             {
                 "id": "7B",
-                "density": "Moderate",
-                "resource_type": "Silicate",
-                "hazard_level": "Moderate"
+                "density": "Sparse",
+                "resource_type": "Metallic",
+                "hazard_level": "Very High"
             }
         ]
     },
@@ -261,15 +285,15 @@
         "planets": [
             {
                 "name": "Planet J",
-                "type": "Barren"
+                "type": "Gas Giant"
             }
         ],
         "connections": [
             "6",
             "7"
         ],
-        "star_type": "M-type",
-        "hazard_level": "Minimal",
+        "star_type": "B-type",
+        "hazard_level": "High",
         "asteroid_field": {
             "density": "Moderate to Dense",
             "resource_types": "Carbonaceous"
@@ -277,9 +301,27 @@
         "asteroid_fields": [
             {
                 "id": "8A",
-                "density": "Moderate to Dense",
+                "density": "Sparse",
+                "resource_type": "Metallic",
+                "hazard_level": "High"
+            },
+            {
+                "id": "8B",
+                "density": "Sparse",
+                "resource_type": "Metallic",
+                "hazard_level": "High"
+            },
+            {
+                "id": "8C",
+                "density": "Sparse",
+                "resource_type": "Metallic",
+                "hazard_level": "High"
+            },
+            {
+                "id": "8D",
+                "density": "Sparse",
                 "resource_type": "Silicate",
-                "hazard_level": "Minimal"
+                "hazard_level": "High"
             }
         ]
     }
