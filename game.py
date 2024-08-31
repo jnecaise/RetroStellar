@@ -1,7 +1,8 @@
 import json
 import sys
 import importlib
-import character_menu  # type: ignore # Ensure this module is correctly set up
+import help  # type: ignore
+import character_menu  # type: ignore
 
 # ANSI color codes
 RESET = "\033[0m"
@@ -41,7 +42,7 @@ def display_user_menu():
 Press:
   S to Start the Game
   Q to Quit
-  C to Display Character Menu
+  I to Display Character Menu
   H for Help
 \033[0m"""
     print(menu)
@@ -52,21 +53,21 @@ def display_faction_options():
     for idx, faction in enumerate(factions.keys(), start=1):
         print(f"{BOLD}{idx}. {faction} - {GREEN}{factions[faction]['Description']}{RESET}")
 
-def handle_user_input(allow_game_menu=False):
+def handle_user_input(systems_data, current_system, allow_game_menu=False):
     while True:
-        choices = "S" if not allow_game_menu else "SMQCH"
+        choices = "S" if not allow_game_menu else "SMQHI"
         choice = input(f"{BOLD}Your choice: {RESET}").strip().upper()
         if choice == 'Q':
             print("Quitting the game. Goodbye!")
-            sys.exit()
-        elif choice == 'C':
-            reload_character_menu()
+            sys.exit()  # Exit the program entirely
+        elif choice == 'I':
+            reload_character_menu()  # Call the reload function for the character menu
         elif choice == 'H':
-            print("THIS IS HELP SECTION")
+            help.display_help()  # Display the help screen from help.py
         elif choice == 'S' and not allow_game_menu:
-            return True
+            return True  # Signal to start the game
         elif choice == 'M' and allow_game_menu:
-            return 'M'
+            return 'M'  # Signal to return to game menu
         else:
             print(f"{RED}Invalid option. Please choose {choices}.{RESET}")
 
@@ -97,34 +98,61 @@ def handle_character_menu_input():
         else:
             print(f"{MAGENTA}Invalid option. Please choose 'M' to return to the game or 'Q' to quit.{RESET}")
 
-def display_system_menu(current_system, connections):
-    system_info = connections[current_system]
+def display_system_menu(current_system, systems_data):
+    system_info = systems_data[current_system]
     
+    # Display planets without showing letters A, B, C, D
     planets = ', '.join(planet['name'] for planet in system_info['planets'])
+
     stargates = ', '.join(system_info['connections'])
     star_type = system_info.get('star_type', 'Unknown')  # Default to 'Unknown' if not present
     hazard_level = system_info.get('hazard_level', 'Unknown')  # Default to 'Unknown' if not present
+    ownership = system_info.get('owned_by', 'Unoccupied')  # Default to 'Unoccupied' if not present
+    current_name = system_info.get('current_name', current_system)  # Use the current name of the system
     
-    print(f"\n{CYAN}System: {current_system}{RESET}")
+    print(f"\n{CYAN}System: {current_name}{RESET}")
     print(f"{system_info['description']}")
-    print(f"{BLUE}Star Type: {star_type}{RESET}")  # Display the star type
+    print(f"{GREEN}Owned by: {ownership}{RESET}")  # Display ownership
+    print(f"{CYAN}Star Type: {star_type}{RESET}")  # Display the star type
     print(f"{MAGENTA}Planets: {planets}{RESET}")
+    
     # Display asteroid fields names on the same line
     if 'asteroid_fields' in system_info:
         asteroid_fields = ', '.join(field['id'] for field in system_info['asteroid_fields'])
-    print(f"{CYAN}Asteroid Fields: {asteroid_fields}{RESET}")
+        print(f"{CYAN}Asteroid Fields: {asteroid_fields}{RESET}")
+    
     print(f"{RED}Hazard Level: {hazard_level}{RESET}")
     print(f"{YELLOW}Stargates: {stargates}{RESET}")
 
-def get_user_command(valid_systems):
+def display_planet_menu(system_info, planet_index):
+    """ Displays detailed information about the selected planet """
+    try:
+        planet = system_info['planets'][planet_index]
+        print(f"\n{CYAN}Planet: {planet['name']}{RESET}")
+        print(f"{MAGENTA}Type: {planet['type']}{RESET}")
+        print(f"{YELLOW}Colonizable: {planet['colonizable']}{RESET}")
+        resources = ', '.join(planet['resources'])
+        print(f"{CYAN}Resources: {resources if resources else 'None'}{RESET}")
+    except IndexError:
+        print(f"{RED}Invalid planet selection. Please try again.{RESET}")
+
+def get_user_command(valid_systems, systems_data, current_system):
     while True:
-        command = input(f"{BOLD}Your command: {RESET}").strip()
+        command = input(f"{BOLD}Your command: {RESET}").strip().upper()
+        # Check for valid system navigation
         if command in valid_systems:
             return command
+        # Check for planet selection (A, B, C, D) using their index
+        elif command in ['A', 'B', 'C', 'D']:
+            planet_index = ord(command) - ord('A')  # Convert letter to index (A=0, B=1, ...)
+            if planet_index < len(systems_data[current_system]['planets']):
+                display_planet_menu(systems_data[current_system], planet_index)
+            else:
+                print(f"{RED}Invalid planet selection. Please try again.{RESET}")
         elif command.upper() == 'M':
             return 'M'
         else:
-            print(f"{RED}Invalid system. Please enter a valid system or 'M' to access the menu.{RESET}")
+            print(f"{RED}Invalid input. Please enter a valid system number, planet letter (A-D), or 'M' for the menu.{RESET}")
 
 def display_game_menu():
     menu = """
@@ -132,29 +160,31 @@ def display_game_menu():
 Game Menu:
   M to Return to the Game
   Q to Quit
-  C to Display Character Menu
+  I to Display Character Menu
   H for Help
 \033[0m
     """
     print(menu)
 
-def start_game():
-    connections = load_json('systems.json')
-    current_system = "1"
-    while current_system != "8":
-        display_system_menu(current_system, connections)
-        if connections[current_system]['connections']:
-            command = get_user_command(connections[current_system]['connections'])
+def start_game(systems_data, current_system):
+    while current_system != "8":  # Change the objective to System 8
+        display_system_menu(current_system, systems_data)
+        
+        # Player selects valid options: system numbers, or planet letters A-D
+        while True:
+            command = get_user_command(systems_data[current_system]['connections'], systems_data, current_system)
             if command == 'M':
                 display_game_menu()
-                handle_user_input(allow_game_menu=True)
-            else:
+                handle_user_input(systems_data, current_system, allow_game_menu=True)
+                break  # Exit loop to handle the menu
+            elif command in systems_data[current_system]['connections']:
                 current_system = command
-        else:
-            print(f"{RED}No available connections. Game Over.{RESET}")
-            break
+                break  # Exit loop and navigate to the selected system
+        
+        # Check if player has reached the final destination
         if current_system == "8":
             print(f"{GREEN}You have reached your destination!{RESET}")
+            break
 
 def navigate_systems():
     display_header()
@@ -187,10 +217,14 @@ def navigate_systems():
     
     save_json('character_data.json', character_data)
 
+    systems_data = load_json('systems.json')  # Load systems data correctly
+    current_system = "1"  # Set the starting system
+
     while True:
         display_user_menu()
-        if handle_user_input():
-            start_game()
+        if handle_user_input(systems_data, current_system):  # Correctly pass systems_data and current_system
+            start_game(systems_data, current_system)  # Ensure correct arguments
 
 if __name__ == "__main__":
+    print("Initializing RetroStellar...")  # Debugging print
     navigate_systems()

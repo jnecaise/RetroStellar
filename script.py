@@ -35,6 +35,27 @@ ASTEROID_FIELDS_BY_STAR = {
     "M-type": {"density": "Moderate to Dense", "types": ["Silicate", "Metallic"]}
 }
 
+# Define colonization potential and resources based on planet type
+PLANET_COLONIZATION = {
+    "Oceanic": True,
+    "Barren": True,
+    "Terrestrial": True,
+    "Ice": True,
+    "Gas Giant": False,
+    "Lava": False,
+    "Toxic": False
+}
+
+PLANET_RESOURCES = {
+    "Oceanic": ["Ore", "Water", "Food", "Metals", "Fuel"],
+    "Barren": ["Ore", "Metals", "Electronics", "Fuel"],
+    "Terrestrial": ["Ore", "Water", "Food", "Metals", "Electronics", "Fuel"],
+    "Ice": ["Ore", "Water", "Metals"],
+    "Gas Giant": ["Metals", "Fuel"],
+    "Lava": ["Ore", "Metals", "Fuel"],
+    "Toxic": ["Ore", "Metals", "Fuel"]
+}
+
 def assign_star_type_hazard_planets_and_asteroids(system_data):
     for system_id, system in system_data.items():
         # Randomly select a star type
@@ -47,9 +68,12 @@ def assign_star_type_hazard_planets_and_asteroids(system_data):
         # Determine possible planet types based on star type
         possible_planet_types = PLANET_TYPES_BY_STAR[star_type]
 
-        # Assign a type to each planet in the system
+        # Assign a type, colonization status, and resources to each planet in the system
         for planet in system["planets"]:
-            planet["type"] = random.choice(possible_planet_types)
+            planet_type = random.choice(possible_planet_types)
+            planet["type"] = planet_type
+            planet["colonizable"] = "Yes" if PLANET_COLONIZATION[planet_type] else "No"
+            planet["resources"] = PLANET_RESOURCES[planet_type]
 
         # Generate asteroid fields for the system
         asteroid_field_info = ASTEROID_FIELDS_BY_STAR.get(star_type)
@@ -68,16 +92,19 @@ def assign_star_type_hazard_planets_and_asteroids(system_data):
 
             # Consolidate all asteroid fields under one key
             system["asteroid_fields"] = asteroid_fields
+        
+        # Assign ownership status
+        system["owned_by"] = "Unoccupied"
 
 # Load existing systems data from systems.json
 with open('systems.json', 'r') as file:
     systems_data = json.load(file)
 
-# Update each system with star type, hazard level, planet types, and asteroid fields
+# Update each system with star type, hazard level, planet types, colonization status, resources, asteroid fields, and ownership
 assign_star_type_hazard_planets_and_asteroids(systems_data)
 
 # Save the updated data back to systems.json
 with open('systems.json', 'w') as file:
     json.dump(systems_data, file, indent=4)
 
-print("Updated systems.json with star types, hazard levels, planet types, and consolidated asteroid fields.")
+print("Updated systems.json with star types, hazard levels, planet types, colonization status, resources, asteroid fields, and ownership.")
