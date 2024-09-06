@@ -1,0 +1,244 @@
+{
+    "ranks": [
+        {
+            "name": "Civilian",
+            "experience_points": 0,
+            "perks": [],
+            "abilities": [],
+            "access": [],
+            "narrative_integration": "Basic introduction to the universe, no special interactions."
+        },
+        {
+            "name": "Civilian Affiliate",
+            "experience_points": 500,
+            "perks": ["Discounts at marketplaces"],
+            "abilities": ["Basic trade negotiation"],
+            "access": ["Limited access to civilian ships"],
+            "narrative_integration": "Starts to receive small faction missions."
+        },
+        {
+            "name": "Contractor",
+            "experience_points": 1000,
+            "perks": ["Better resource prices"],
+            "abilities": ["Enhanced mining speed"],
+            "access": ["Access to basic mining ships"],
+            "narrative_integration": "Trusted by factions for minor jobs."
+        },
+        {
+            "name": "Senior Contractor",
+            "experience_points": 2000,
+            "perks": ["Increased cargo hold capacity"],
+            "abilities": ["Advanced resource extraction"],
+            "access": ["Advanced mining ships"],
+            "narrative_integration": "Eligible for more dangerous missions."
+        },
+        {
+            "name": "Engineer",
+            "experience_points": 3500,
+            "perks": ["Ship repair discount"],
+            "abilities": ["Improved ship maintenance"],
+            "access": ["Engineering tools and upgrades"],
+            "narrative_integration": "Factions rely on your expertise for critical tasks."
+        },
+        {
+            "name": "Senior Engineer",
+            "experience_points": 5000,
+            "perks": ["Access to rare ship parts"],
+            "abilities": ["Enhanced ship modifications"],
+            "access": ["High-end engineering ships"],
+            "narrative_integration": "Involved in high-stakes faction engineering projects."
+        },
+        {
+            "name": "Spaceman Recruit",
+            "experience_points": 7500,
+            "perks": ["Basic combat training"],
+            "abilities": ["Increased combat efficiency"],
+            "access": ["Entry-level combat ships"],
+            "narrative_integration": "Starting to gain a reputation as a capable pilot."
+        },
+        {
+            "name": "Spaceman Apprentice",
+            "experience_points": 10000,
+            "perks": ["Minor faction respect"],
+            "abilities": ["Combat maneuver training"],
+            "access": ["Intermediate combat ships"],
+            "narrative_integration": "Involved in defensive missions for factions."
+        },
+        {
+            "name": "Spaceman",
+            "experience_points": 13000,
+            "perks": ["Enhanced ship defenses"],
+            "abilities": ["Advanced combat tactics"],
+            "access": ["Advanced combat ships"],
+            "narrative_integration": "Becomes a key player in faction skirmishes."
+        },
+        {
+            "name": "Petty Officer",
+            "experience_points": 16000,
+            "perks": ["Small fleet command"],
+            "abilities": ["Coordinate minor fleets"],
+            "access": ["Access to fleet command ships"],
+            "narrative_integration": "Factions trust you with leading small missions."
+        },
+        {
+            "name": "Petty Officer Second Class",
+            "experience_points": 20000,
+            "perks": ["Better fleet organization"],
+            "abilities": ["Improved fleet management"],
+            "access": ["Special fleet operations ships"],
+            "narrative_integration": "Handling larger missions with greater risks."
+        },
+        {
+            "name": "Petty Officer First Class",
+            "experience_points": 24000,
+            "perks": ["Advanced fleet command"],
+            "abilities": ["Expert fleet coordination"],
+            "access": ["Elite fleet command ships"],
+            "narrative_integration": "Takes on crucial roles in faction strategies."
+        },
+        {
+            "name": "Chief Petty Officer",
+            "experience_points": 28000,
+            "perks": ["Respect from all factions"],
+            "abilities": ["Mastery of fleet tactics"],
+            "access": ["Access to all fleet ships"],
+            "narrative_integration": "Seen as a key figure in space operations."
+        },
+        {
+            "name": "Senior Chief",
+            "experience_points": 33000,
+            "perks": ["Command over special ops"],
+            "abilities": ["Special operations training"],
+            "access": ["Special operations ships"],
+            "narrative_integration": "Leads top-secret faction missions."
+        },
+        {
+            "name": "Master Chief",
+            "experience_points": 38000,
+            "perks": ["Elite status among factions"],
+            "abilities": ["Advanced battle strategies"],
+            "access": ["Master-class ships"],
+            "narrative_integration": "Factions look up to you as a strategic leader."
+        },
+        {
+            "name": "Fleet Master Chief",
+            "experience_points": 44000,
+            "perks": ["Direct faction command"],
+            "abilities": ["Fleet-wide tactical control"],
+            "access": ["Flagships and carrier ships"],
+            "narrative_integration": "Commands fleets in major faction wars."
+        },
+        {
+            "name": "Force Master Chief",
+            "experience_points": 50000,
+            "perks": ["Control over faction assets"],
+            "abilities": ["Strategic asset management"],
+            "access": ["All faction ships and facilities"],
+            "narrative_integration": "Plays a crucial role in faction's strategic decisions."
+        },
+        {
+            "name": "Fleet Command Master Chief",
+            "experience_points": 57000,
+            "perks": ["Ultimate command of fleets"],
+            "abilities": ["Master fleet coordination"],
+            "access": ["Supreme fleet command ships"],
+            "narrative_integration": "Your command decisions shape the galaxy."
+        },
+        {
+            "name": "Ensign",
+            "experience_points": 65000,
+            "perks": ["Early command experience"],
+            "abilities": ["Leading small units"],
+            "access": ["Small command ships"],
+            "narrative_integration": "Begin to shape your own command style."
+        },
+        {
+            "name": "Lieutenant Junior Grade",
+            "experience_points": 73000,
+            "perks": ["Respect from crew"],
+            "abilities": ["Leading larger units"],
+            "access": ["Mid-tier command ships"],
+            "narrative_integration": "Crews start to recognize your leadership."
+        },
+        {
+            "name": "Lieutenant",
+            "experience_points": 82000,
+            "perks": ["Access to elite missions"],
+            "abilities": ["Managing complex operations"],
+            "access": ["Advanced command ships"],
+            "narrative_integration": "Leading key missions for your faction."
+        },
+        {
+            "name": "Lieutenant Commander",
+            "experience_points": 91000,
+            "perks": ["Broad command capabilities"],
+            "abilities": ["Coordinating multiple fleets"],
+            "access": ["Top-tier command ships"],
+            "narrative_integration": "Known for decisive leadership in battle."
+        },
+        {
+            "name": "Commander",
+            "experience_points": 100000,
+            "perks": ["Prestige and authority"],
+            "abilities": ["High-level strategic planning"],
+            "access": ["Access to command facilities"],
+            "narrative_integration": "One of the top strategists in the galaxy."
+        },
+        {
+            "name": "Captain",
+            "experience_points": 120000,
+            "perks": ["Command over entire fleets"],
+            "abilities": ["Master fleet operations"],
+            "access": ["Flagships and battle cruisers"],
+            "narrative_integration": "Leading entire fleets into battle."
+        },
+        {
+            "name": "Rear Admiral Lower Half",
+            "experience_points": 140000,
+            "perks": ["Access to high command"],
+            "abilities": ["Coordinating large-scale battles"],
+            "access": ["Rear Admiral ships"],
+            "narrative_integration": "Begins shaping the future of space operations."
+        },
+        {
+            "name": "Rear Admiral Upper Half",
+            "experience_points": 160000,
+            "perks": ["Influence in top decisions"],
+            "abilities": ["Fleet and faction coordination"],
+            "access": ["High command vessels"],
+            "narrative_integration": "A key advisor in major faction decisions."
+        },
+        {
+            "name": "Vice Admiral",
+            "experience_points": 180000,
+            "perks": ["High strategic influence"],
+            "abilities": ["Leading faction-wide initiatives"],
+            "access": ["Vice Admiral ships"],
+            "narrative_integration": "A leading force in faction politics and strategy."
+        },
+        {
+            "name": "Admiral",
+            "experience_points": 200000,
+            "perks": ["Ultimate command"],
+            "abilities": ["Overall strategic leadership"],
+            "access": ["Top-tier command ships"],
+            "narrative_integration": "Your commands determine the fate of factions."
+        },
+        {
+            "name": "Fleet Admiral",
+            "experience_points": 250000,
+            "perks": ["Supreme authority in fleets"],
+            "abilities": ["Overseeing all space operations"],
+            "access": ["All ships and resources"],
+            "narrative_integration": "Legendary status among all factions."
+        },
+        {
+            "name": "Grand Admiral",
+            "experience_points": 300000,
+            "perks": ["Galactic renown"],
+            "abilities": ["Galaxy-wide influence"],
+            "access": ["Ultimate fleet command"],
+            "narrative_integration": "A name that will go down in history as a galactic leader."
+        }
+    ]
+}

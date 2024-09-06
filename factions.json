@@ -1,22 +1,152 @@
 {
     "United Systems of Man": {
         "Starting Credits": 1000,
-        "Description": "An empire in ruins. They are scattered to the stars and hope one day to rise again in glory."
+        "Description": "An empire in ruins. They are scattered to the stars and hope one day to rise again in glory.",
+        "Bonuses": {
+            "Combat": 3,
+            "Mission Chance": 3
+        },
+        "Penalties": {
+            "Reputation": -3,
+            "Resource Management": -3
+        },
+        "Sectors": {
+            "Conquest": {
+                "Combat": 3,
+                "Fleet Control": 1,
+                "System Defense": 1
+            },
+            "Explore": {
+                "Find Resources": 3,
+                "Mission Chance": 2,
+                "Anomaly Chance": -2
+            },
+            "Trade": {
+                "Reputation": -3,
+                "Negotiation": 2,
+                "Resource Management": -3
+            },
+            "Research": 0
+        }
     },
     "People of the River": {
         "Starting Credits": 100,
-        "Description": "A loose band of systems bound by a natural philosophy that is taking the galaxy by storm."
+        "Description": "A loose band of systems bound by a natural philosophy that is taking the galaxy by storm.",
+        "Bonuses": {
+            "Find Resources": 3,
+            "Negotiation": 3
+        },
+        "Penalties": {
+            "Combat": -3,
+            "Fleet Control": -3
+        },
+        "Sectors": {
+            "Conquest": {
+                "Combat": -3,
+                "Fleet Control": -3,
+                "System Defense": -2
+            },
+            "Explore": {
+                "Find Resources": 3,
+                "Mission Chance": 2,
+                "Anomaly Chance": 2
+            },
+            "Trade": {
+                "Reputation": 0,
+                "Negotiation": 3,
+                "Resource Management": 1
+            },
+            "Research": 0
+        }
     },
     "Shogunate 3072": {
         "Starting Credits": 0,
-        "Description": "A militant empire on the galactic edge, preparing for something that terrifies them."
+        "Description": "A militant empire on the galactic edge, preparing for something that terrifies them.",
+        "Bonuses": {
+            "Combat": 3,
+            "System Defense": 3
+        },
+        "Penalties": {
+            "Negotiation": -3,
+            "Reputation": -3
+        },
+        "Sectors": {
+            "Conquest": {
+                "Combat": 3,
+                "Fleet Control": 2,
+                "System Defense": 3
+            },
+            "Explore": {
+                "Find Resources": 1,
+                "Mission Chance": 2,
+                "Anomaly Chance": 1
+            },
+            "Trade": {
+                "Reputation": -3,
+                "Negotiation": -3,
+                "Resource Management": -2
+            },
+            "Research": 0
+        }
     },
     "Mandate of God": {
         "Starting Credits": 2000,
-        "Description": "A golden spire of finance, technology and religion. Two of those things are just for show."
+        "Description": "A golden spire of finance, technology and religion. Two of those things are just for show.",
+        "Bonuses": {
+            "Fleet Control": 3,
+            "Reputation": 3
+        },
+        "Penalties": {
+            "Combat": -3,
+            "System Defense": -3
+        },
+        "Sectors": {
+            "Conquest": {
+                "Combat": -3,
+                "Fleet Control": -2,
+                "System Defense": -3
+            },
+            "Explore": {
+                "Find Resources": 0,
+                "Mission Chance": -1,
+                "Anomaly Chance": -1
+            },
+            "Trade": {
+                "Reputation": 3,
+                "Negotiation": 2,
+                "Resource Management": 1
+            },
+            "Research": 0
+        }
     },
     "The Noringian Hive": {
         "Starting Credits": 500,
-        "Description": "An alien collective that exists only on the most dangerous of worlds. And they are on the march."
+        "Description": "An alien collective that exists only on the most dangerous of worlds. And they are on the march.",
+        "Bonuses": {
+            "Find Resources": 3,
+            "Mission Chance": 3
+        },
+        "Penalties": {
+            "Negotiation": -3,
+            "Resource Management": -3
+        },
+        "Sectors": {
+            "Conquest": {
+                "Combat": 2,
+                "Fleet Control": 1,
+                "System Defense": 1
+            },
+            "Explore": {
+                "Find Resources": 3,
+                "Mission Chance": 3,
+                "Anomaly Chance": 2
+            },
+            "Trade": {
+                "Reputation": -3,
+                "Negotiation": -2,
+                "Resource Management": -3
+            },
+            "Research": 0
+        }
     }
 }

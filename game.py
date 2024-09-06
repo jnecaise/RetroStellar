@@ -1,18 +1,22 @@
-import json
 import sys
+import json
+import help  
 import importlib
-import help  # type: ignore
+import ship_menus  # type: ignore
 import character_menu  # type: ignore
+from header_display import display_header  # type: ignore
+from planet_menu import display_planet_menu  # type: ignore
+from system_menu import display_system_menu  # type: ignore
 
 # ANSI color codes
-RESET = "\033[0m"
-BOLD = "\033[1m"
 RED = "\033[31m"
+BOLD = "\033[1m"
+BLUE = "\033[34m"
+CYAN = "\033[36m"
+RESET = "\033[0m"
 GREEN = "\033[32m"
 YELLOW = "\033[33m"
-BLUE = "\033[34m"
 MAGENTA = "\033[35m"
-CYAN = "\033[36m"
 
 def load_json(filename):
     with open(filename, 'r') as file:
@@ -21,16 +25,6 @@ def load_json(filename):
 def save_json(filename, data):
     with open(filename, 'w') as file:
         json.dump(data, file, indent=4)
-
-def display_header():
-    header = """\033[34m
-██████  ███████ ████████ ██████   ██████  ███████ ████████ ███████ ██      ██       █████  ██████      
-██   ██ ██         ██    ██   ██ ██    ██ ██         ██    ██      ██      ██      ██   ██ ██   ██     
-██████  █████      ██    ██████  ██    ██ ███████    ██    █████   ██      ██      ███████ ██████      
-██   ██ ██         ██    ██   ██ ██    ██      ██    ██    ██      ██      ██      ██   ██ ██   ██     
-██   ██ ███████    ██    ██   ██  ██████  ███████    ██    ███████ ███████ ███████ ██   ██ ██   ██ 
-\033[0m"""
-    print(header)
 
 def display_welcome_message():
     message = f"{GREEN}Welcome to RetroStellar! This game is an attempt to capture the retro feel of the early online games.{RESET}"
@@ -98,44 +92,6 @@ def handle_character_menu_input():
         else:
             print(f"{MAGENTA}Invalid option. Please choose 'M' to return to the game or 'Q' to quit.{RESET}")
 
-def display_system_menu(current_system, systems_data):
-    system_info = systems_data[current_system]
-    
-    # Display planets without showing letters A, B, C, D
-    planets = ', '.join(planet['name'] for planet in system_info['planets'])
-
-    stargates = ', '.join(system_info['connections'])
-    star_type = system_info.get('star_type', 'Unknown')  # Default to 'Unknown' if not present
-    hazard_level = system_info.get('hazard_level', 'Unknown')  # Default to 'Unknown' if not present
-    ownership = system_info.get('owned_by', 'Unoccupied')  # Default to 'Unoccupied' if not present
-    current_name = system_info.get('current_name', current_system)  # Use the current name of the system
-    
-    print(f"\n{CYAN}System: {current_name}{RESET}")
-    print(f"{system_info['description']}")
-    print(f"{GREEN}Owned by: {ownership}{RESET}")  # Display ownership
-    print(f"{CYAN}Star Type: {star_type}{RESET}")  # Display the star type
-    print(f"{MAGENTA}Planets: {planets}{RESET}")
-    
-    # Display asteroid fields names on the same line
-    if 'asteroid_fields' in system_info:
-        asteroid_fields = ', '.join(field['id'] for field in system_info['asteroid_fields'])
-        print(f"{CYAN}Asteroid Fields: {asteroid_fields}{RESET}")
-    
-    print(f"{RED}Hazard Level: {hazard_level}{RESET}")
-    print(f"{YELLOW}Stargates: {stargates}{RESET}")
-
-def display_planet_menu(system_info, planet_index):
-    """ Displays detailed information about the selected planet """
-    try:
-        planet = system_info['planets'][planet_index]
-        print(f"\n{CYAN}Planet: {planet['name']}{RESET}")
-        print(f"{MAGENTA}Type: {planet['type']}{RESET}")
-        print(f"{YELLOW}Colonizable: {planet['colonizable']}{RESET}")
-        resources = ', '.join(planet['resources'])
-        print(f"{CYAN}Resources: {resources if resources else 'None'}{RESET}")
-    except IndexError:
-        print(f"{RED}Invalid planet selection. Please try again.{RESET}")
-
 def get_user_command(valid_systems, systems_data, current_system):
     while True:
         command = input(f"{BOLD}Your command: {RESET}").strip().upper()
@@ -146,7 +102,9 @@ def get_user_command(valid_systems, systems_data, current_system):
         elif command in ['A', 'B', 'C', 'D']:
             planet_index = ord(command) - ord('A')  # Convert letter to index (A=0, B=1, ...)
             if planet_index < len(systems_data[current_system]['planets']):
-                display_planet_menu(systems_data[current_system], planet_index)
+                display_planet_menu(systems_data[current_system], planet_index)  # Use the imported function
+                # After returning from Planet Menu, display the System Menu again
+                display_system_menu(current_system, systems_data)
             else:
                 print(f"{RED}Invalid planet selection. Please try again.{RESET}")
         elif command.upper() == 'M':
@@ -158,7 +116,7 @@ def display_game_menu():
     menu = """
 \033[33m
 Game Menu:
-  M to Return to the Game
+  S to Start the Game
   Q to Quit
   I to Display Character Menu
   H for Help
@@ -186,15 +144,12 @@ def start_game(systems_data, current_system):
             print(f"{GREEN}You have reached your destination!{RESET}")
             break
 
-def navigate_systems():
-    display_header()
-    display_welcome_message()
-    
+def setup_character():
+    """Handles the setup of character data and ship selection"""
     character_data = {}
     print(f"{CYAN}Please enter your character information!{RESET}")
     print()
     character_data['Character Name'] = input(f"{BOLD}Enter your Character Name: {RESET}").strip()
-    character_data['Ship Name'] = input(f"{BOLD}Enter your Ship Name: {RESET}").strip()
     print()
 
     display_faction_options()
@@ -214,16 +169,30 @@ def navigate_systems():
                 print(f"{RED}Invalid faction choice. Try again.{RESET}")
         except ValueError:
             print(f"{RED}Please enter a valid number.{RESET}")
-    
-    save_json('character_data.json', character_data)
 
-    systems_data = load_json('systems.json')  # Load systems data correctly
-    current_system = "1"  # Set the starting system
+    # Use functions from ship_menus.py
+    ships = ship_menus.load_ships(character_data['Faction'])
+    ship_menus.display_ship_menu(ships)
+    selected_ship, ship_name = ship_menus.choose_ship(ships)
+    character_data['Ship Name'] = ship_name
+    character_data['Ship Type'] = selected_ship
 
+def navigate_systems():
+    display_header()  # Correctly call display_header without module prefix
     while True:
-        display_user_menu()
-        if handle_user_input(systems_data, current_system):  # Correctly pass systems_data and current_system
-            start_game(systems_data, current_system)  # Ensure correct arguments
+        display_user_menu()  # Show the game menu at the start
+        
+        # Handle the initial user input from the game menu
+        if handle_user_input(systems_data={}, current_system="1"):  # Correctly pass initial parameters
+            # Proceed with game setup if 'S' is chosen
+            display_welcome_message()  # Display the welcome message only after choosing to start
+            setup_character()  # Function to handle character setup
+
+            systems_data = load_json('systems.json')  # Load systems data correctly
+            current_system = "1"  # Set the starting system
+
+            # Start the game loop with the correct arguments
+            start_game(systems_data, current_system)
 
 if __name__ == "__main__":
     print("Initializing RetroStellar...")  # Debugging print
