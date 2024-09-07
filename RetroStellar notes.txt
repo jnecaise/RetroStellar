@@ -1,5 +1,5 @@
 
-# RetroStellar notes
+# GIT process
 
 https://github.com/papajaguar504/RetroStellar
 
@@ -21,3 +21,106 @@ git push
 # to start program
 
 python game.py
+
+
+
+# ISSUE BACKLOG
+
+Expand Systems	
+	Increase the total number of systems and diversify their attributes to provide space for all empires to grow.
+
+Assign Random Starting Systems
+	Assign a unique starting system for each faction, complete with space stations for missions.
+
+Space Station Menu
+	Develop a space station menu that includes ship docks, markets, mission hubs, and other player services essential for gameplay.
+
+Economy System
+	Implement an economy system where players can buy and sell ship equipment, ships, resources from planets and asteroids, and other items.
+
+Create Equipment System
+	Design and create a variety of equipment for ships, such as weapons, shields, engines, and scanners. Modify ship data handling to support modular equipment.
+
+Basic Combat Processes
+	Implement combat mechanics, incorporating equipment effects, ship stats, and basic AI for enemy ships.
+
+Experience and Rank Progression System
+	Implement an experience system for earning XP through various actions like missions, combat, and resource gathering. Integrate with the existing rank structure.
+
+Skill Training and Research System
+	Develop a skill progression and research system that impacts gameplay, such as reducing real-time task durations or improving ship performance.
+
+Real-Time Execution of Activities
+	Establish real-time mechanics for activities like mining, repairs, and research, with time reductions through skills.
+
+Missions at Space Stations
+	Create a mission generation system that provides faction-specific missions, including combat-related tasks available at space stations.
+	Dynamic Mission Generation: Implement a runtime script to dynamically generate missions for space stations, based on predefined templates and randomized elements.
+
+Save and Continue Game Functionality
+	Implement the ability to save and load the game state to allow players to continue their progress.
+
+Hazard System
+	Implement a hazard system where each system has a hazard level based on its star type (e.g., M-Type stars have low hazards, O-Type stars have high hazards).
+	Ship Damage: Ships take damage based on the hazard level of the system, which can be mitigated through specific skills and equipment.
+
+Quest System
+	Implement a quest system distinct from station missions that generate reputation, experience points, and drive narrative elements.
+
+Enhance System Connections
+	Increase the complexity of system connections with loops and branches for more strategic navigation.
+
+Random Anomalies in Systems
+	Introduce anomalies in systems that can impact gameplay, such as resource boosts or hazards.
+
+Basic Storyline or Campaign Mode
+	Develop a basic storyline or campaign mode for each faction, adding narrative depth and specific objectives for each faction to accomplish.
+
+Star Menu
+	Develop a Star Menu to display information about the star types in each system, detailing their influence on the types of planets and asteroid fields that can be found.
+
+Colonies on Planets
+	Implement colonies on planets, allowing players to establish and manage colonies that generate resources over time, including the rare resource of people.
+	Resource Generation: Define resource types that colonies can generate, such as minerals, food, and people, with growth over time.
+	Colony Management: Include mechanics for managing colony growth, defense, and productivity.
+	Narrative Integration: Add narrative elements, quests, and missions related to colonies, including colony establishment, defense, and expansion.
+
+Achievement System
+	Implement an achievement system separate from experience and rank progression.
+	Track Player Actions: Track actions such as the total number of systems visited, total resources mined, or planets visited.
+	Achievement Rewards: Grant special bonuses, additional experience, or other rewards upon reaching milestones.
+
+Event Logging System
+	Create an event logging system to track critical game events like anomalies, resource gathering, and mission outcomes for player feedback and debugging.
+
+NPC AI Development
+	Develop AI for NPCs to create dynamic and interactive game elements, including faction behaviors, responses to player actions, and autonomous decision-making.
+
+Graphical User Interface Enhancements
+	Explore graphical UI improvements using ASCII art and enhanced text formatting to enrich the player's visual experience while maintaining a text-based interface.
+
+Advanced Graphical User Interface Development
+	Develop a more advanced graphical user interface to replace the text-based system, incorporating elements like menus, status bars, and interactive text displays.
+
+Settings Menu
+    Implement a settings menu to allow players to customize various aspects of the game. Potential options could include:
+    Difficulty Levels: Adjust game difficulty to suit player preferences.
+    Sound and Music Settings: Enable or disable sound effects and music.
+    Display and UI Options: Customize the appearance of the game, including font size, color schemes, or toggle visual effects.
+    Control Settings: Remap keyboard controls or adjust sensitivity.
+    Gameplay Tweaks: Adjust aspects like resource generation rates, hazard severity, or mission frequency.
+
+System Balancing
+	Continuously adjust and balance the game to ensure no faction has an unfair advantage and gameplay remains engaging.
+
+User Interface Adjustments
+	Update the UI to accommodate new features, ensuring a smooth and intuitive player experience.
+
+Testing and Debugging
+	Regularly test and debug new features to maintain game stability and performance, ensuring a high-quality player experience.
+
+Pygame Integration
+	Integrate Pygame to enhance the visual and interactive elements of the game.
+	Graphical Elements: Introduce graphical UI components, animations, and visual effects.
+	Enhanced Input Handling: Use Pygame for improved input handling with mouse and keyboard interactions.
+	Audio Integration: Add sound effects and background music to enrich the gameplay experience.

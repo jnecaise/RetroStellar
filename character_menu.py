@@ -1,14 +1,22 @@
+# character_menu.py
+
 import json
 import sys
 
 def load_character_data():
+    """Loads character data from the character_data.json file."""
     with open('character_data.json', 'r') as file:
         return json.load(file)
 
+def save_character_data(data):
+    """Saves character data to the character_data.json file."""
+    with open('character_data.json', 'w') as file:
+        json.dump(data, file, indent=4)
+
 def display_character_menu():
+    """Displays the character menu with the current character details."""
     character_data = load_character_data()
-    print(f"\n------======CHARACTER MENU======------")
-    print()
+    print(f"\n------======CHARACTER MENU======------\n")
     print(f"Character Name: {character_data.get('Character Name', 'N/A')}")
     print(f"Ship Name: {character_data.get('Ship Name', 'N/A')}")
     print(f"Faction: {character_data.get('Faction', 'N/A')}")
@@ -17,11 +25,13 @@ def display_character_menu():
     print("\nPress M to return to the game or Q to quit.")
 
 def handle_character_menu_input():
-    choice = input("Your choice: ").strip().upper()
-    if choice == 'M':
-        return  # Return to game
-    elif choice == 'Q':
-        print("Quitting the game. Goodbye!")
-        sys.exit()
-    else:
-        print("Invalid choice. Press M to return or Q to quit.")
+    """Handles user input within the character menu."""
+    while True:
+        choice = input("Your choice: ").strip().upper()
+        if choice == 'M':
+            return  # Return to the game
+        elif choice == 'Q':
+            print("Quitting the game. Goodbye!")
+            sys.exit()
+        else:
+            print("Invalid choice. Press M to return or Q to quit.")

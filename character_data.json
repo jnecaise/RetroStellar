@@ -1,7 +1,30 @@
 {
-    "Character Name": "ss",
-    "Faction": "United Systems of Man",
-    "Starting Credits": 1000,
-    "Ship Name": "a",
-    "Ship Type": "Mission Runner"
+    "Character Name": "ttt",
+    "Faction": "Mandate of God",
+    "Starting Credits": 2000,
+    "Ship Name": "rrr",
+    "Ship Type": {
+        "name": "Holy Avenger",
+        "class": "Light",
+        "faction_of_origin": "Mandate of God",
+        "description": "Equipped for divine intervention missions.",
+        "required_rank_to_pilot": "Civilian",
+        "size": "Small",
+        "ship_cost": 700,
+        "min_cargo": 14,
+        "max_cargo": 34,
+        "max_shields": 65,
+        "max_armor": 30,
+        "max_hull": 40,
+        "system_scanner_type": "Gamma",
+        "system_scanner_level": 4,
+        "planet_scanner": "Yes",
+        "planet_scanner_level": 3,
+        "resource_scanner": "Yes",
+        "resource_scanner_level": 3,
+        "weapon_type": "Enhanced Laser",
+        "combat_bonus": 1.0,
+        "mining_attachment": "No",
+        "mining_attachment_level": 0
+    }
 }

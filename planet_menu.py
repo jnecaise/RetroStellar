@@ -7,19 +7,24 @@ RED = "\033[31m"
 CYAN = "\033[36m"
 
 def display_planet_menu(system_info, planet_index):
-    """ Displays detailed information about the selected planet and allows returning to the System Menu """
+    """Displays detailed information about the selected planet and allows returning to the System Menu."""
     try:
         planet = system_info['planets'][planet_index]
-        # Fixed menu width for consistency
         menu_width = 30
 
-        # Function to create a border line
         def border_line():
             return "+" + "-" * (menu_width - 2) + "+"
 
-        # Function to format and center text within the menu
         def format_line(text):
             return f"| {text:<{menu_width - 4}} |"
+
+        def display_resources(resources):
+            """Displays resources neatly within the menu."""
+            print(format_line(" Resources ".center(menu_width - 4)))
+            print(border_line())
+            for resource, amount in resources.items():
+                resource_line = f"{resource}: {amount}"
+                print(format_line(resource_line))
 
         while True:
             # Print the Planet Menu with hardcoded borders and proper formatting
@@ -30,15 +35,7 @@ def display_planet_menu(system_info, planet_index):
             print(format_line(f"Type: {planet['type']}"))
             print(format_line(f"Colonizable: {planet['colonizable']}"))
             print(border_line())
-            print(format_line(" Resources ".center(menu_width - 4)))
-            print(border_line())
-
-            # Define resources without using symbols for a classic look
-            for resource, amount in planet['resources'].items():
-                # Adjust spacing dynamically for neat alignment
-                resource_line = f"{resource}: {amount}"
-                print(format_line(resource_line))
-
+            display_resources(planet['resources'])
             print(border_line())
             print(format_line(" [R] Return ".center(menu_width - 4)))
             print(border_line())
