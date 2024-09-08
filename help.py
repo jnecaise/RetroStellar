@@ -8,5 +8,4 @@ def display_help():
     print("\033[33mQ - Quit the Game\033[0m")
     print("\033[33mN - Start a New Game\033[0m")
     print("\033[33mR - Back to the System/Asteroid Menu\033[0m")
-    print("\033[33mS - Start the Game\033[0m")
     # Add more commands as your game develops
