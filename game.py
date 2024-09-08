@@ -7,12 +7,12 @@ import help
 import importlib
 import ship_menus  # type: ignore
 import character_menu
+from settings import default_settings, display_settings_menu, save_settings, load_settings  # Import the settings functions
 from character_menu import display_character_menu, save_character_data, load_character_data, handle_character_menu_input
 from header_display import display_header  # type: ignore
 from planet_menu import display_planet_menu  # type: ignore
 from system_menu import display_system_menu  # type: ignore
 from asteroid_menu import display_asteroid_menu  # type: ignore
-from settings import default_settings, display_settings_menu  # type: ignore
 
 # ANSI color codes
 RED = "\033[31m"
@@ -23,6 +23,9 @@ RESET = "\033[0m"
 GREEN = "\033[32m"
 YELLOW = "\033[33m"
 MAGENTA = "\033[35m"
+
+# Load settings at the start
+current_settings = load_settings()
 
 def load_json(filename):
     """Loads JSON data from a file."""
@@ -71,7 +74,7 @@ def display_faction_options():
         colored_description = f"{color}{description}{RESET}"
         print(f"{BOLD}{idx}. {faction_name} - {colored_description}")
 
-def handle_user_input(systems_data, current_system, allow_game_menu=False, settings=default_settings):
+def handle_user_input(systems_data, current_system, allow_game_menu=False, settings=current_settings):
     """Handles user input from the main menu or in-game menu."""
     while True:
         # Set valid choices based on context
@@ -92,8 +95,12 @@ def handle_user_input(systems_data, current_system, allow_game_menu=False, setti
                 return True
             else:
                 print(f"{RED}No saved game found. Please start a new game first.{RESET}")
-        elif choice == 'T' and not allow_game_menu:
-            display_settings_menu(settings)
+        elif choice == 'T':  # Display Settings Menu
+            start_new = display_settings_menu(settings)
+            save_settings(settings)  # Save settings after changes
+            if start_new == 'NEW_GAME':
+                create_new_game()  # Start a new game immediately
+                return True
         elif choice == 'H':
             help.display_help()
         elif allow_game_menu and choice == 'I':  # Display Character Menu
@@ -272,28 +279,25 @@ Game Menu:
   Q to Quit
   I to Display Character Menu
   H for Help
+  T for Settings Menu
 \033[0m
     """
     print(menu)
 
-
 def start_game(systems_data, current_system):
     """Starts the game loop and handles system navigation."""
-    while current_system != "8":  # Assuming "8" is a special destination
-        display_system_menu(current_system, systems_data)
+    while True:
+        display_system_menu(current_system, systems_data)  # Display the current system menu
         while True:
             command = get_user_command(systems_data[current_system]['connections'], systems_data, current_system).upper()  # Convert to uppercase
             if command == 'M':
                 display_game_menu()
                 menu_choice = handle_user_input(systems_data, current_system, allow_game_menu=True)
                 if menu_choice == 'R':  # Return to system menu
-                    break  # Correctly exit back to the game loop
+                    break  # Exit to the main game loop
             elif command in systems_data[current_system]['connections']:
                 current_system = command  # Update current system based on navigation
                 break
-        if current_system == "8":
-            print(f"{GREEN}You have reached your destination!{RESET}")
-            break
 
 def setup_character():
     """Handles the setup of character data."""

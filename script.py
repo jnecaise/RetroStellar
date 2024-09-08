@@ -55,6 +55,17 @@ RESOURCES_BY_ASTEROID_TYPE = {
     "Carbonaceous": ["Ore", "Fuel"]
 }
 
+def load_settings():
+    """Loads settings from settings.json file."""
+    try:
+        with open('settings.json', 'r') as file:
+            return json.load(file)
+    except FileNotFoundError:
+        print("Settings file not found. Using default settings.")
+        return {
+            "Universe Size": 16
+        }
+
 def generate_random_resources(resources):
     """Generates a dictionary of resources with random values between 1000 to 3000."""
     return {resource: random.randint(1000, 3000) for resource in resources}
@@ -97,6 +108,15 @@ def assign_star_type_and_hazards(system):
     system["hazard_level"] = STAR_TYPES[star_type]
     return star_type
 
+def generate_connections(systems_data):
+    """Generates random connections between systems to ensure navigability."""
+    system_ids = list(systems_data.keys())
+    for system_id in system_ids:
+        # Randomly connect each system to 1-3 other systems
+        possible_connections = [s for s in system_ids if s != system_id]  # Exclude self-connection
+        connections = random.sample(possible_connections, random.randint(1, min(3, len(possible_connections))))
+        systems_data[system_id]["connections"] = connections
+
 def update_system_with_details(system_id, system):
     """Updates a system with star type, planets, and asteroid fields."""
     star_type = assign_star_type_and_hazards(system)
@@ -105,10 +125,20 @@ def update_system_with_details(system_id, system):
     system["asteroid_fields"] = generate_asteroid_fields(system_id, star_type)
     system["owned_by"] = "Unoccupied"
 
-def update_systems_data(systems_data):
-    """Updates each system with star type, hazard level, planet types, asteroid fields, and ownership."""
-    for system_id, system in systems_data.items():
-        update_system_with_details(system_id, system)
+def create_systems(universe_size):
+    """Creates systems based on the universe size setting."""
+    systems_data = {}
+    for i in range(1, universe_size + 1):
+        system_id = str(i)
+        systems_data[system_id] = {
+            "description": f"System {system_id} with unique features.",
+            "planets": [{"name": f"Planet {letter}"} for letter in string.ascii_uppercase[:random.randint(2, 4)]],
+            "connections": [],  # To be populated later
+            "asteroid_fields": []
+        }
+        update_system_with_details(system_id, systems_data[system_id])
+    generate_connections(systems_data)
+    return systems_data
 
 def load_systems_data(filename):
     """Loads the systems data from a JSON file."""
@@ -122,10 +152,11 @@ def save_systems_data(filename, systems_data):
 
 def main():
     """Main function to update systems.json with new data."""
-    systems_data = load_systems_data('systems.json')
-    update_systems_data(systems_data)
+    settings = load_settings()
+    universe_size = settings.get("Universe Size", 16)  # Default to 16 if not found
+    systems_data = create_systems(universe_size)  # Create systems based on universe size
     save_systems_data('systems.json', systems_data)
-    # print("Created planets...asteroids...stars...")
+    print(f"Universe with {universe_size} systems created and updated.")
 
 if __name__ == "__main__":
     main()
