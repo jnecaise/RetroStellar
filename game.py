@@ -82,8 +82,8 @@ def handle_user_input(systems_data, current_system, allow_game_menu=False, setti
             print("Quitting the game. Goodbye!")
             sys.exit()
         elif choice == 'R' and allow_game_menu:  # Return to game from in-game menu
-            display_system_menu(current_system, systems_data)
-            return  # Exit the function to resume the main game loop
+            display_system_menu(current_system, systems_data)  # Explicitly display the system menu
+            return  # Correctly exit and resume the main game loop
         elif choice == 'N' and not allow_game_menu:  # New Game
             create_new_game()
             return True  # Signal to start the game
@@ -100,8 +100,8 @@ def handle_user_input(systems_data, current_system, allow_game_menu=False, setti
             display_character_menu()  # Show the character menu
             character_menu_choice = handle_character_menu_input()  # Handle character menu input and return
             if character_menu_choice == 'R':
-                display_system_menu(current_system, systems_data)  # Return to the system menu
-                continue  # Continue the game loop
+                display_system_menu(current_system, systems_data)  # Re-display the system menu
+                return  # Correctly return to the game loop
         else:
             print(f"{RED}Invalid option. Please choose {choices}.{RESET}")
 
@@ -287,8 +287,7 @@ def start_game(systems_data, current_system):
                 display_game_menu()
                 menu_choice = handle_user_input(systems_data, current_system, allow_game_menu=True)
                 if menu_choice == 'R':  # Return to system menu
-                    display_system_menu(current_system, systems_data)  # Explicitly show the system menu
-                continue  # Continue to accept commands for system navigation
+                    break  # Correctly exit back to the game loop
             elif command in systems_data[current_system]['connections']:
                 current_system = command  # Update current system based on navigation
                 break
