@@ -4,40 +4,39 @@
         "planets": [
             {
                 "name": "Planet A",
-                "type": "Oceanic",
+                "type": "Terrestrial",
                 "colonizable": "Yes",
                 "resources": {
-                    "Ore": 2647,
-                    "Water": 2537,
-                    "Food": 2498,
-                    "Metals": 1757,
-                    "Fuel": 1728
+                    "Ore": 1529,
+                    "Water": 2566,
+                    "Food": 2978,
+                    "Metals": 2725,
+                    "Electronics": 2875,
+                    "Fuel": 1603
                 }
             },
             {
                 "name": "Planet B",
-                "type": "Terrestrial",
+                "type": "Oceanic",
                 "colonizable": "Yes",
                 "resources": {
-                    "Ore": 2376,
-                    "Water": 1107,
-                    "Food": 2039,
-                    "Metals": 2230,
-                    "Electronics": 2385,
-                    "Fuel": 1227
+                    "Ore": 2040,
+                    "Water": 1715,
+                    "Food": 2182,
+                    "Metals": 1376,
+                    "Fuel": 1426
                 }
             },
             {
                 "name": "Planet C",
-                "type": "Terrestrial",
+                "type": "Oceanic",
                 "colonizable": "Yes",
                 "resources": {
-                    "Ore": 2582,
-                    "Water": 2121,
-                    "Food": 2132,
-                    "Metals": 2841,
-                    "Electronics": 2837,
-                    "Fuel": 1839
+                    "Ore": 1076,
+                    "Water": 2986,
+                    "Food": 2435,
+                    "Metals": 1267,
+                    "Fuel": 2951
                 }
             }
         ],
@@ -45,17 +44,47 @@
             "2",
             "3"
         ],
-        "star_type": "G-type",
-        "hazard_level": "Low",
+        "star_type": "K-type",
+        "hazard_level": "Very Low",
         "asteroid_fields": [
             {
                 "id": "1A",
                 "density": "Dense",
-                "resource_type": "Metallic",
-                "hazard_level": "Low",
+                "resource_type": "Carbonaceous",
+                "hazard_level": "Very Low",
                 "resources": {
-                    "Metals": 1791,
-                    "Ore": 2210
+                    "Ore": 2334,
+                    "Fuel": 2847
+                }
+            },
+            {
+                "id": "1B",
+                "density": "Dense",
+                "resource_type": "Silicate",
+                "hazard_level": "Very Low",
+                "resources": {
+                    "Ore": 1738,
+                    "Electronics": 2213
+                }
+            },
+            {
+                "id": "1C",
+                "density": "Dense",
+                "resource_type": "Silicate",
+                "hazard_level": "Very Low",
+                "resources": {
+                    "Ore": 1910,
+                    "Electronics": 1334
+                }
+            },
+            {
+                "id": "1D",
+                "density": "Dense",
+                "resource_type": "Silicate",
+                "hazard_level": "Very Low",
+                "resources": {
+                    "Ore": 2356,
+                    "Electronics": 2041
                 }
             }
         ],
@@ -66,22 +95,22 @@
         "planets": [
             {
                 "name": "Planet A",
-                "type": "Toxic",
+                "type": "Lava",
                 "colonizable": "No",
                 "resources": {
-                    "Ore": 2628,
-                    "Metals": 2913,
-                    "Fuel": 2280
+                    "Ore": 2301,
+                    "Metals": 1795,
+                    "Fuel": 2635
                 }
             },
             {
                 "name": "Planet B",
-                "type": "Toxic",
+                "type": "Gas Giant",
                 "colonizable": "No",
                 "resources": {
-                    "Ore": 2899,
-                    "Metals": 2361,
-                    "Fuel": 2583
+                    "Ore": 2949,
+                    "Metals": 2665,
+                    "Fuel": 2372
                 }
             }
         ],
@@ -89,27 +118,47 @@
             "1",
             "4"
         ],
-        "star_type": "G-type",
-        "hazard_level": "Low",
+        "star_type": "B-type",
+        "hazard_level": "High",
         "asteroid_fields": [
             {
                 "id": "2A",
-                "density": "Dense",
-                "resource_type": "Carbonaceous",
-                "hazard_level": "Low",
+                "density": "Sparse",
+                "resource_type": "Silicate",
+                "hazard_level": "High",
                 "resources": {
-                    "Ore": 1173,
-                    "Fuel": 1383
+                    "Ore": 1122,
+                    "Electronics": 1328
                 }
             },
             {
                 "id": "2B",
-                "density": "Dense",
-                "resource_type": "Silicate",
-                "hazard_level": "Low",
+                "density": "Sparse",
+                "resource_type": "Metallic",
+                "hazard_level": "High",
                 "resources": {
-                    "Ore": 1948,
-                    "Electronics": 2947
+                    "Metals": 2045,
+                    "Ore": 1464
+                }
+            },
+            {
+                "id": "2C",
+                "density": "Sparse",
+                "resource_type": "Silicate",
+                "hazard_level": "High",
+                "resources": {
+                    "Ore": 1165,
+                    "Electronics": 1040
+                }
+            },
+            {
+                "id": "2D",
+                "density": "Sparse",
+                "resource_type": "Silicate",
+                "hazard_level": "High",
+                "resources": {
+                    "Ore": 1742,
+                    "Electronics": 1830
                 }
             }
         ],
@@ -120,27 +169,24 @@
         "planets": [
             {
                 "name": "Planet A",
-                "type": "Terrestrial",
+                "type": "Barren",
                 "colonizable": "Yes",
                 "resources": {
-                    "Ore": 2549,
-                    "Water": 2953,
-                    "Food": 2109,
-                    "Metals": 1625,
-                    "Electronics": 2179,
-                    "Fuel": 2455
+                    "Ore": 2393,
+                    "Metals": 1968,
+                    "Electronics": 2913,
+                    "Fuel": 1383
                 }
             },
             {
                 "name": "Planet B",
-                "type": "Oceanic",
+                "type": "Barren",
                 "colonizable": "Yes",
                 "resources": {
-                    "Ore": 1657,
-                    "Water": 2914,
-                    "Food": 1102,
-                    "Metals": 2345,
-                    "Fuel": 2225
+                    "Ore": 2711,
+                    "Metals": 2100,
+                    "Electronics": 1403,
+                    "Fuel": 2972
                 }
             }
         ],
@@ -148,17 +194,17 @@
             "1",
             "5"
         ],
-        "star_type": "G-type",
-        "hazard_level": "Low",
+        "star_type": "O-type",
+        "hazard_level": "Very High",
         "asteroid_fields": [
             {
                 "id": "3A",
-                "density": "Dense",
+                "density": "Sparse",
                 "resource_type": "Metallic",
-                "hazard_level": "Low",
+                "hazard_level": "Very High",
                 "resources": {
-                    "Metals": 2987,
-                    "Ore": 1750
+                    "Metals": 2536,
+                    "Ore": 1958
                 }
             }
         ],
@@ -169,13 +215,12 @@
         "planets": [
             {
                 "name": "Planet A",
-                "type": "Barren",
+                "type": "Ice",
                 "colonizable": "Yes",
                 "resources": {
-                    "Ore": 2112,
-                    "Metals": 2358,
-                    "Electronics": 2407,
-                    "Fuel": 1483
+                    "Ore": 2928,
+                    "Water": 2938,
+                    "Metals": 1453
                 }
             }
         ],
@@ -192,8 +237,8 @@
                 "resource_type": "Silicate",
                 "hazard_level": "Minimal",
                 "resources": {
-                    "Ore": 2061,
-                    "Electronics": 1801
+                    "Ore": 1260,
+                    "Electronics": 2484
                 }
             }
         ],
@@ -204,23 +249,23 @@
         "planets": [
             {
                 "name": "Planet A",
-                "type": "Barren",
-                "colonizable": "Yes",
+                "type": "Gas Giant",
+                "colonizable": "No",
                 "resources": {
-                    "Ore": 1942,
-                    "Metals": 1810,
-                    "Electronics": 1192,
-                    "Fuel": 1182
+                    "Ore": 2076,
+                    "Metals": 2956,
+                    "Fuel": 2959
                 }
             },
             {
                 "name": "Planet B",
-                "type": "Ice",
+                "type": "Barren",
                 "colonizable": "Yes",
                 "resources": {
-                    "Ore": 2105,
-                    "Water": 1746,
-                    "Metals": 1132
+                    "Ore": 2718,
+                    "Metals": 1111,
+                    "Electronics": 1561,
+                    "Fuel": 2861
                 }
             }
         ],
@@ -228,17 +273,27 @@
             "3",
             "7"
         ],
-        "star_type": "M-type",
-        "hazard_level": "Minimal",
+        "star_type": "O-type",
+        "hazard_level": "Very High",
         "asteroid_fields": [
             {
                 "id": "5A",
-                "density": "Moderate to Dense",
+                "density": "Sparse",
                 "resource_type": "Metallic",
-                "hazard_level": "Minimal",
+                "hazard_level": "Very High",
                 "resources": {
-                    "Metals": 2787,
-                    "Ore": 2417
+                    "Metals": 2685,
+                    "Ore": 2810
+                }
+            },
+            {
+                "id": "5B",
+                "density": "Sparse",
+                "resource_type": "Metallic",
+                "hazard_level": "Very High",
+                "resources": {
+                    "Metals": 2431,
+                    "Ore": 1840
                 }
             }
         ],
@@ -249,37 +304,32 @@
         "planets": [
             {
                 "name": "Planet A",
-                "type": "Oceanic",
-                "colonizable": "Yes",
+                "type": "Gas Giant",
+                "colonizable": "No",
                 "resources": {
-                    "Ore": 2122,
-                    "Water": 1640,
-                    "Food": 1868,
-                    "Metals": 1944,
-                    "Fuel": 2654
+                    "Ore": 1315,
+                    "Metals": 2337,
+                    "Fuel": 1813
                 }
             },
             {
                 "name": "Planet B",
-                "type": "Toxic",
-                "colonizable": "No",
+                "type": "Ice",
+                "colonizable": "Yes",
                 "resources": {
-                    "Ore": 2102,
-                    "Metals": 2861,
-                    "Fuel": 2141
+                    "Ore": 2969,
+                    "Water": 1967,
+                    "Metals": 1094
                 }
             },
             {
                 "name": "Planet C",
-                "type": "Terrestrial",
-                "colonizable": "Yes",
+                "type": "Gas Giant",
+                "colonizable": "No",
                 "resources": {
-                    "Ore": 1699,
-                    "Water": 2742,
-                    "Food": 1005,
-                    "Metals": 1553,
-                    "Electronics": 2481,
-                    "Fuel": 1941
+                    "Ore": 2739,
+                    "Metals": 1230,
+                    "Fuel": 1507
                 }
             }
         ],
@@ -287,37 +337,37 @@
             "4",
             "8"
         ],
-        "star_type": "G-type",
-        "hazard_level": "Low",
+        "star_type": "A-type",
+        "hazard_level": "Moderate",
         "asteroid_fields": [
             {
                 "id": "6A",
-                "density": "Dense",
-                "resource_type": "Carbonaceous",
-                "hazard_level": "Low",
+                "density": "Moderate",
+                "resource_type": "Silicate",
+                "hazard_level": "Moderate",
                 "resources": {
-                    "Ore": 1231,
-                    "Fuel": 1418
+                    "Ore": 2825,
+                    "Electronics": 1511
                 }
             },
             {
                 "id": "6B",
-                "density": "Dense",
+                "density": "Moderate",
                 "resource_type": "Silicate",
-                "hazard_level": "Low",
+                "hazard_level": "Moderate",
                 "resources": {
-                    "Ore": 1750,
-                    "Electronics": 2919
+                    "Ore": 2844,
+                    "Electronics": 2956
                 }
             },
             {
                 "id": "6C",
-                "density": "Dense",
-                "resource_type": "Carbonaceous",
-                "hazard_level": "Low",
+                "density": "Moderate",
+                "resource_type": "Silicate",
+                "hazard_level": "Moderate",
                 "resources": {
-                    "Ore": 1906,
-                    "Fuel": 2750
+                    "Ore": 2635,
+                    "Electronics": 1771
                 }
             }
         ],
@@ -331,9 +381,9 @@
                 "type": "Toxic",
                 "colonizable": "No",
                 "resources": {
-                    "Ore": 2163,
-                    "Metals": 2304,
-                    "Fuel": 1054
+                    "Ore": 1443,
+                    "Metals": 1689,
+                    "Fuel": 1986
                 }
             },
             {
@@ -341,9 +391,9 @@
                 "type": "Toxic",
                 "colonizable": "No",
                 "resources": {
-                    "Ore": 2153,
-                    "Metals": 2013,
-                    "Fuel": 1397
+                    "Ore": 2351,
+                    "Metals": 1048,
+                    "Fuel": 1235
                 }
             },
             {
@@ -351,11 +401,11 @@
                 "type": "Oceanic",
                 "colonizable": "Yes",
                 "resources": {
-                    "Ore": 1651,
-                    "Water": 1738,
-                    "Food": 1315,
-                    "Metals": 2671,
-                    "Fuel": 2361
+                    "Ore": 2809,
+                    "Water": 1290,
+                    "Food": 1577,
+                    "Metals": 2316,
+                    "Fuel": 2021
                 }
             }
         ],
@@ -372,8 +422,38 @@
                 "resource_type": "Silicate",
                 "hazard_level": "Low",
                 "resources": {
-                    "Ore": 1660,
-                    "Electronics": 2587
+                    "Ore": 2582,
+                    "Electronics": 1228
+                }
+            },
+            {
+                "id": "7B",
+                "density": "Dense",
+                "resource_type": "Carbonaceous",
+                "hazard_level": "Low",
+                "resources": {
+                    "Ore": 2930,
+                    "Fuel": 2245
+                }
+            },
+            {
+                "id": "7C",
+                "density": "Dense",
+                "resource_type": "Metallic",
+                "hazard_level": "Low",
+                "resources": {
+                    "Metals": 2111,
+                    "Ore": 2526
+                }
+            },
+            {
+                "id": "7D",
+                "density": "Dense",
+                "resource_type": "Silicate",
+                "hazard_level": "Low",
+                "resources": {
+                    "Ore": 2509,
+                    "Electronics": 1478
                 }
             }
         ],
@@ -384,14 +464,13 @@
         "planets": [
             {
                 "name": "Planet A",
-                "type": "Oceanic",
+                "type": "Barren",
                 "colonizable": "Yes",
                 "resources": {
-                    "Ore": 1352,
-                    "Water": 1938,
-                    "Food": 1704,
-                    "Metals": 2543,
-                    "Fuel": 2951
+                    "Ore": 1523,
+                    "Metals": 1389,
+                    "Electronics": 1412,
+                    "Fuel": 1073
                 }
             }
         ],
@@ -399,37 +478,47 @@
             "6",
             "7"
         ],
-        "star_type": "K-type",
-        "hazard_level": "Very Low",
+        "star_type": "O-type",
+        "hazard_level": "Very High",
         "asteroid_fields": [
             {
                 "id": "8A",
-                "density": "Dense",
-                "resource_type": "Silicate",
-                "hazard_level": "Very Low",
+                "density": "Sparse",
+                "resource_type": "Metallic",
+                "hazard_level": "Very High",
                 "resources": {
-                    "Ore": 2692,
-                    "Electronics": 1058
+                    "Metals": 2436,
+                    "Ore": 2368
                 }
             },
             {
                 "id": "8B",
-                "density": "Dense",
-                "resource_type": "Silicate",
-                "hazard_level": "Very Low",
+                "density": "Sparse",
+                "resource_type": "Metallic",
+                "hazard_level": "Very High",
                 "resources": {
-                    "Ore": 2521,
-                    "Electronics": 1620
+                    "Metals": 1818,
+                    "Ore": 1442
                 }
             },
             {
                 "id": "8C",
-                "density": "Dense",
-                "resource_type": "Carbonaceous",
-                "hazard_level": "Very Low",
+                "density": "Sparse",
+                "resource_type": "Metallic",
+                "hazard_level": "Very High",
                 "resources": {
-                    "Ore": 1332,
-                    "Fuel": 1020
+                    "Metals": 2365,
+                    "Ore": 2959
+                }
+            },
+            {
+                "id": "8D",
+                "density": "Sparse",
+                "resource_type": "Metallic",
+                "hazard_level": "Very High",
+                "resources": {
+                    "Metals": 1550,
+                    "Ore": 2936
                 }
             }
         ],
