@@ -1,6 +1,7 @@
 # factions.py
 
-from utils import load_json, CYAN, RESET, BOLD, RED
+from json_utils import load_json
+from ansi_colors import CYAN, RESET, BOLD, RED # type: ignore
 
 def display_faction_options():
     """Displays available factions for the player to choose from, with each description in a specific color."""
