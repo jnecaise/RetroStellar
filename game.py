@@ -2,6 +2,7 @@
 
 import json
 import subprocess
+import random
 from json_utils import load_json
 from settings import load_settings
 from header_display import display_header
@@ -14,6 +15,7 @@ from ship_management import setup_ship, setup_player_ship
 from ansi_colors import RED, BOLD, CYAN, RESET, GREEN, YELLOW
 from character_menu import save_character_data, load_character_data
 from menus import (display_user_menu, handle_user_input, display_game_menu)
+from game_logger import game_logger  # Import the modularized logger
 
 # Load settings at the start
 current_settings = load_settings()
@@ -45,8 +47,15 @@ def create_new_game():
         character_data = setup_ship(character_data)
         save_character_data(character_data)
 
+    # Randomly select a starting system
+    starting_system = random.choice(list(systems_data.keys()))
+
+    # Log the new game start
+    log_game_start("New Game", character_data, current_settings.get("Universe Size", 16))
+    game_logger.info(f"Player starting in system: {starting_system}")
+
     print(f"{GREEN}New game setup complete. Starting game...{RESET}")
-    navigate_systems(systems_data, "1", character_data)  # Pass the necessary data to navigate_systems
+    navigate_systems(systems_data, starting_system, character_data)  # Pass the randomly chosen starting system
 
 def load_existing_game():
     """Loads the existing universe and player data if available."""
@@ -61,6 +70,9 @@ def load_existing_game():
             character_data = setup_ship(character_data)
             save_character_data(character_data)
 
+        # Log the game continuation
+        log_game_start("Continue Game", character_data, current_settings.get("Universe Size", 16))
+
         print(f"{GREEN}Loaded saved game. Continuing...{RESET}")
 
         # Resume the game using the saved data
@@ -72,6 +84,15 @@ def load_existing_game():
     except json.JSONDecodeError:
         print(f"{RED}Error loading save files. The data may be corrupted.{RESET}")
         return False
+
+def log_game_start(game_type, character_data, universe_size):
+    """Logs the details of the game start."""
+    game_logger.info(f"Game Start: {game_type} Selected")
+    game_logger.info(f"Universe Size: {universe_size} systems")
+    game_logger.info(f"Character Name: {character_data.get('Character Name', 'Unknown')}")
+    game_logger.info(f"Faction: {character_data.get('Faction', 'None')}")
+    game_logger.info(f"Ship Type: {character_data.get('Ship Type', 'Unknown')}")
+    game_logger.info(f"Ship Name: {character_data.get('Ship Name', 'Unnamed')}")
 
 def setup_character():
     """Handles the setup of character data."""
@@ -109,7 +130,6 @@ def navigate_systems(systems_data, current_system, character_data):
         ship_data = character_data.get('Ship Type', {})
 
     player_ship = setup_player_ship(ship_data)  # Set up the ship after character creation
-    current_system = "1"  # Set the starting system
     start_game(systems_data, current_system)  # Start the game loop
 
 def start_game(systems_data, current_system):

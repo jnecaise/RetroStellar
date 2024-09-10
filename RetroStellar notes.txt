@@ -26,8 +26,8 @@ python game.py
 
 # ISSUE BACKLOG
 
-Expand Systems	
-	Increase the total number of systems and diversify their attributes to provide space for all empires to grow.
+(COMPLETE)Expand Systems	
+(COMPLETE)Increase the total number of systems and diversify their attributes to provide space for all empires to grow.
 
 Assign Random Starting Systems
 	Assign a unique starting system for each faction, complete with space stations for missions.
