@@ -2,6 +2,7 @@ import json
 import random
 import string
 from multiprocessing import Pool, Manager
+from game_logger import game_logger  # Import the modularized logger
 
 # Define star types and their associated hazard levels
 STAR_TYPES = {
@@ -52,6 +53,15 @@ RESOURCES_BY_ASTEROID_TYPE = {
     "Metallic": ["Metals", "Ore"],
     "Silicate": ["Ore", "Electronics"],
     "Carbonaceous": ["Ore", "Fuel"]
+}
+
+# Faction placement rules
+FACTION_RULES = {
+    "Noringian Hive": {"star_types": ["O-type", "B-type", "A-type"], "planet_types": None},
+    "Mandate of God": {"star_types": ["A-type", "F-type", "G-type"], "planet_types": ["Terrestrial"]},
+    "Shogunate 3072": {"star_types": ["G-type", "K-type", "M-type"], "planet_types": ["Terrestrial"]},
+    "United Systems of Man": {"star_types": ["A-type", "F-type", "G-type"], "planet_types": ["Terrestrial"]},
+    "People of the River": {"star_types": ["F-type", "G-type", "K-type"], "planet_types": ["Terrestrial"]}
 }
 
 def load_settings():
@@ -106,6 +116,27 @@ def assign_star_type_and_hazards(system):
     system["star_type"] = star_type
     system["hazard_level"] = STAR_TYPES[star_type]
     return star_type
+
+def assign_faction_systems(systems_data, factions):
+    """Assigns starting systems to each faction based on their rules."""
+    assigned_systems = {}
+    
+    for faction, rules in factions.items():
+        eligible_systems = [
+            sys_id for sys_id, sys_info in systems_data.items()
+            if sys_info["star_type"] in rules["star_types"] and 
+            (rules["planet_types"] is None or any(
+                planet["type"] in rules["planet_types"] for planet in sys_info["planets"]
+            ))
+        ]
+
+        if eligible_systems:
+            selected_system = random.choice(eligible_systems)
+            systems_data[selected_system]["owned_by"] = faction
+            assigned_systems[faction] = selected_system
+            game_logger.info(f"{faction} assigned to system: {selected_system}")
+
+    return assigned_systems
 
 def generate_connections_with_dynamic_scaling(system_data, max_connections=6, cluster_bias=0.3):
     """Generates connections with a strict limit of 6 connections per system using scalable techniques based on universe size."""
@@ -298,7 +329,11 @@ def create_systems(universe_size):
         }
         update_system_with_details(system_id, systems_data[system_id])
     generate_connections_with_dynamic_scaling(systems_data)  # Use the scalable connection generation
-    return systems_data
+    
+    # Assign faction systems and log results
+    assigned_systems = assign_faction_systems(systems_data, FACTION_RULES)
+    
+    return systems_data, assigned_systems
 
 def load_systems_data(filename):
     """Loads the systems data from a JSON file."""
@@ -314,7 +349,8 @@ def main():
     """Main function to update systems.json with new data."""
     settings = load_settings()
     universe_size = settings.get("Universe Size", 16)  # Default to 16 if not found
-    systems_data = create_systems(universe_size)  # Create systems based on universe size
+    systems_data, assigned_systems = create_systems(universe_size)  # Create systems based on universe size
+    
     save_systems_data('systems.json', systems_data)
     print(f"Universe with {universe_size} systems created and updated.")
 

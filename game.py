@@ -1,10 +1,12 @@
 # game.py
 
 import json
-import subprocess
 import random
+import subprocess
 from json_utils import load_json
 from settings import load_settings
+from game_logger import game_logger
+from script import save_systems_data
 from header_display import display_header
 from planet_menu import display_planet_menu  
 from system_menu import display_system_menu
@@ -15,7 +17,6 @@ from ship_management import setup_ship, setup_player_ship
 from ansi_colors import RED, BOLD, CYAN, RESET, GREEN, YELLOW
 from character_menu import save_character_data, load_character_data
 from menus import (display_user_menu, handle_user_input, display_game_menu)
-from game_logger import game_logger  # Import the modularized logger
 
 # Load settings at the start
 current_settings = load_settings()
@@ -47,15 +48,47 @@ def create_new_game():
         character_data = setup_ship(character_data)
         save_character_data(character_data)
 
-    # Randomly select a starting system
-    starting_system = random.choice(list(systems_data.keys()))
+    # Retrieve player's chosen faction and select eligible starting systems
+    player_faction = character_data.get('Faction', 'Unaligned')
+    factions_rules = {
+        "The Noringian Hive": {"star_types": ["O-type", "B-type", "A-type"], "planet_types": None},
+        "Mandate of God": {"star_types": ["A-type", "F-type", "G-type"], "planet_types": ["Terrestrial"]},
+        "Shogunate 3072": {"star_types": ["G-type", "K-type", "M-type"], "planet_types": ["Terrestrial"]},
+        "United Systems of Man": {"star_types": ["A-type", "F-type", "G-type"], "planet_types": ["Terrestrial"]},
+        "People of the River": {"star_types": ["F-type", "G-type", "K-type"], "planet_types": ["Terrestrial"]},
+    }
+
+    # Get faction-specific rules
+    rules = factions_rules.get(player_faction, {})
+
+    # Find eligible systems based on the player's faction
+    eligible_systems = [
+        sys_id for sys_id, sys_info in systems_data.items()
+        if sys_info["star_type"] in rules["star_types"] and 
+        (rules["planet_types"] is None or any(
+            planet["type"] in rules["planet_types"] for planet in sys_info["planets"]
+        ))
+    ]
+
+    # Select a random eligible system for the player to start in
+    if eligible_systems:
+        starting_system = random.choice(eligible_systems)
+        systems_data[starting_system]["owned_by"] = player_faction
+        game_logger.info(f"Player's faction {player_faction} starts in system: {starting_system} with star type {systems_data[starting_system]['star_type']}")
+    else:
+        # Fallback in case no eligible system is found
+        starting_system = random.choice(list(systems_data.keys()))
+        game_logger.warning(f"No eligible systems found for faction {player_faction}. Starting in random system: {starting_system}")
+
+    # Save updated systems data to ensure the player's starting system is marked correctly
+    save_systems_data('systems.json', systems_data)
 
     # Log the new game start
     log_game_start("New Game", character_data, current_settings.get("Universe Size", 16))
     game_logger.info(f"Player starting in system: {starting_system}")
 
     print(f"{GREEN}New game setup complete. Starting game...{RESET}")
-    navigate_systems(systems_data, starting_system, character_data)  # Pass the randomly chosen starting system
+    navigate_systems(systems_data, starting_system, character_data)  # Start from the randomly selected system
 
 def load_existing_game():
     """Loads the existing universe and player data if available."""
@@ -191,7 +224,7 @@ def get_user_command(valid_systems, systems_data, current_system):
             print(f"{RED}Invalid input. Please enter a valid system number, planet letter (A-D), asteroid field ID, or 'M' for the menu.{RESET}")
 
 if __name__ == "__main__":
-    print("Initializing RetroStellar...")
+    print("Initializing RetroStellar.........")
     display_header()  # Display the welcome header once at the start
     display_welcome_message()  # Show the introductory text
     display_user_menu()  # Show the main user menu immediately

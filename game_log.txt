@@ -1,7 +1,8 @@
-2024-09-09 22:29:37,410 - INFO - Game Start: New Game Selected
-2024-09-09 22:29:37,411 - INFO - Universe Size: 100 systems
-2024-09-09 22:29:37,411 - INFO - Character Name: 1
-2024-09-09 22:29:37,411 - INFO - Faction: United Systems of Man
-2024-09-09 22:29:37,411 - INFO - Ship Type: {'name': 'Light Mission Runner', 'class': 'Light', 'faction_of_origin': 'United Systems of Man', 'description': 'Balanced for exploration and basic defense.', 'required_rank_to_pilot': 'Civilian', 'size': 'Small', 'ship_cost': 550, 'min_cargo': 10, 'max_cargo': 30, 'max_shields': 50, 'max_armor': 20, 'max_hull': 30, 'system_scanner_type': 'Beta', 'system_scanner_level': 2, 'planet_scanner': 'Yes', 'planet_scanner_level': 1, 'resource_scanner': 'Yes', 'resource_scanner_level': 1, 'weapon_type': 'Light Laser', 'combat_bonus': 1.0, 'mining_attachment': 'No', 'mining_attachment_level': 0}
-2024-09-09 22:29:37,411 - INFO - Ship Name: 1
-2024-09-09 22:29:37,411 - INFO - Player starting in system: 56
+2024-09-10 08:26:33,054 - INFO - Player's faction People of the River starts in system: 36 with star type F-type
+2024-09-10 08:26:33,073 - INFO - Game Start: New Game Selected
+2024-09-10 08:26:33,073 - INFO - Universe Size: 100 systems
+2024-09-10 08:26:33,073 - INFO - Character Name: 1
+2024-09-10 08:26:33,073 - INFO - Faction: People of the River
+2024-09-10 08:26:33,073 - INFO - Ship Type: {'name': 'Oxygen', 'class': 'Light', 'faction_of_origin': 'People of the River', 'description': 'Specialized in resource gathering.', 'required_rank_to_pilot': 'Civilian', 'size': 'Small', 'ship_cost': 550, 'min_cargo': 15, 'max_cargo': 35, 'max_shields': 55, 'max_armor': 25, 'max_hull': 35, 'system_scanner_type': 'Alpha', 'system_scanner_level': 3, 'planet_scanner': 'Yes', 'planet_scanner_level': 2, 'resource_scanner': 'Yes', 'resource_scanner_level': 2, 'weapon_type': 'Light Laser', 'combat_bonus': 1.0, 'mining_attachment': 'Yes', 'mining_attachment_level': 1}
+2024-09-10 08:26:33,073 - INFO - Ship Name: 2
+2024-09-10 08:26:33,073 - INFO - Player starting in system: 36

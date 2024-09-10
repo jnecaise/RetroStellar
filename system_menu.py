@@ -1,6 +1,7 @@
 # system_menu.py
 
 from game_logger import game_logger  # Import the modularized logger
+from factions import faction_colors  # Import faction colors from factions.py
 
 # ANSI color codes
 RESET = "\033[0m"
@@ -28,10 +29,14 @@ def display_system_menu(current_system, systems_data):
     ownership = system_info.get('owned_by', 'Unoccupied')
     current_name = system_info.get('current_name', current_system)
 
+    # Get the color for the faction from faction_colors, defaulting to RESET if not found
+    faction_color = faction_colors.get(ownership, RESET)
+    colored_ownership = f"{faction_color}{ownership}{RESET}"
+
     # Format and display stargates with adjusted colors based on visited status
     formatted_stargates = format_stargates(system_info, systems_data)
 
-    print_system_details(current_name, system_info, ownership, star_type, planets, hazard_level, formatted_stargates)
+    print_system_details(current_name, system_info, colored_ownership, star_type, planets, hazard_level, formatted_stargates)
     display_asteroid_fields(system_info)
 
 def get_planet_names(system_info):
