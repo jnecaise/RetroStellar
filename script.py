@@ -1,8 +1,7 @@
-# script.py
-
 import json
 import random
 import string
+from multiprocessing import Pool, Manager
 
 # Define star types and their associated hazard levels
 STAR_TYPES = {
@@ -108,21 +107,182 @@ def assign_star_type_and_hazards(system):
     system["hazard_level"] = STAR_TYPES[star_type]
     return star_type
 
-def generate_connections(systems_data):
-    """Generates random connections between systems to ensure navigability."""
-    system_ids = list(systems_data.keys())
+def generate_connections_with_dynamic_scaling(system_data, max_connections=6, cluster_bias=0.3):
+    """Generates connections with a strict limit of 6 connections per system using scalable techniques based on universe size."""
+    system_ids = list(system_data.keys())
+    num_systems = len(system_ids)
+
+    # Choose between simple or parallel processing based on the number of systems
+    if num_systems > 1000:
+        # For large universes, use parallel processing
+        connections = generate_connections_parallel(system_ids, system_data, max_connections, cluster_bias)
+    else:
+        # For smaller universes, use a simpler sequential approach
+        connections = generate_connections_sequential(system_ids, system_data, max_connections, cluster_bias)
+
+    # Apply connections back to the systems data
+    for system_id, conn in connections.items():
+        system_data[system_id]['connections'] = list(conn)
+
+    ensure_full_navigability(system_data, max_connections)
+
+def generate_connections_sequential(system_ids, system_data, max_connections, cluster_bias):
+    """Sequential connection generation for smaller universes."""
+    connections = {system_id: set() for system_id in system_ids}
+
     for system_id in system_ids:
-        # Randomly connect each system to 1-3 other systems
-        possible_connections = [s for s in system_ids if s != system_id]  # Exclude self-connection
-        connections = random.sample(possible_connections, random.randint(1, min(3, len(possible_connections))))
-        systems_data[system_id]["connections"] = connections
+        if len(connections[system_id]) >= max_connections:
+            continue
+
+        # Find potential connections without exceeding the max limit
+        possible_connections = [
+            s for s in system_ids
+            if s != system_id and
+            len(connections[s]) < max_connections and
+            s not in connections[system_id]
+        ]
+
+        if not possible_connections:
+            continue
+
+        # Ensure at least one connection
+        if not connections[system_id]:
+            connection = random.choice(possible_connections)
+            connections[system_id].add(connection)
+            connections[connection].add(system_id)
+
+        # Add additional connections with clustering influence
+        additional_connections = random.randint(1, 2)
+        weighted_connections = [
+            s for s in possible_connections
+            if has_similar_resources(system_data[system_id], system_data[s])
+        ]
+
+        if random.random() < cluster_bias and weighted_connections:
+            new_connections = random.sample(weighted_connections, min(additional_connections, len(weighted_connections)))
+        else:
+            new_connections = random.sample(possible_connections, min(additional_connections, len(possible_connections)))
+
+        for new_connection in new_connections:
+            if len(connections[system_id]) < max_connections and len(connections[new_connection]) < max_connections:
+                connections[system_id].add(new_connection)
+                connections[new_connection].add(system_id)
+
+    return connections
+
+def generate_connections_parallel(system_ids, system_data, max_connections, cluster_bias):
+    """Parallel connection generation for large universes using multiprocessing."""
+    with Manager() as manager:
+        connections = manager.dict({system_id: set() for system_id in system_ids})
+
+        # Split systems into chunks for parallel processing
+        chunk_size = max(1, len(system_ids) // 10)
+        system_chunks = [system_ids[i:i + chunk_size] for i in range(0, len(system_ids), chunk_size)]
+
+        # Use multiprocessing to parallelize the connection generation
+        with Pool() as pool:
+            results = pool.starmap(process_connections, [(chunk, system_ids, system_data, connections, max_connections, cluster_bias) for chunk in system_chunks])
+
+        # Merge results from all processes
+        for result in results:
+            for system_id, conn in result.items():
+                connections[system_id].update(conn)
+
+        return dict(connections)
+
+def process_connections(subset, system_ids, system_data, connections, max_connections, cluster_bias):
+    """Processes a subset of systems to generate connections."""
+    local_connections = {system_id: set(connections[system_id]) for system_id in subset}
+    for system_id in subset:
+        if len(local_connections[system_id]) >= max_connections:
+            continue
+
+        # Find potential connections without exceeding the max limit
+        possible_connections = [
+            s for s in system_ids
+            if s != system_id and
+            s in local_connections and  # Check that the connection exists in the local dict
+            len(local_connections[s]) < max_connections and
+            s not in local_connections[system_id]
+        ]
+
+        if not possible_connections:
+            continue
+
+        # Ensure at least one connection
+        if not local_connections[system_id]:
+            connection = random.choice(possible_connections)
+            local_connections[system_id].add(connection)
+            local_connections[connection].add(system_id)
+
+        # Add additional connections with clustering influence
+        additional_connections = random.randint(1, 2)
+        weighted_connections = [
+            s for s in possible_connections
+            if has_similar_resources(system_data[system_id], system_data[s])
+        ]
+
+        if random.random() < cluster_bias and weighted_connections:
+            new_connections = random.sample(weighted_connections, min(additional_connections, len(weighted_connections)))
+        else:
+            new_connections = random.sample(possible_connections, min(additional_connections, len(possible_connections)))
+
+        for new_connection in new_connections:
+            if len(local_connections[system_id]) < max_connections and len(local_connections[new_connection]) < max_connections:
+                local_connections[system_id].add(new_connection)
+                local_connections[new_connection].add(system_id)
+
+    return local_connections
+
+def has_similar_resources(system_a, system_b):
+    """Checks if two systems have similar resources."""
+    resources_a = set(system_a.get("resources", []))
+    resources_b = set(system_b.get("resources", []))
+    return len(resources_a & resources_b) > 0
+
+def ensure_full_navigability(system_data, max_connections):
+    """Ensures all systems are reachable by connecting isolated clusters, respecting the connection limit."""
+    system_ids = list(system_data.keys())
+    visited = set()
+
+    def dfs(system_id):
+        if system_id in visited:
+            return
+        visited.add(system_id)
+        for connection in system_data[system_id]["connections"]:
+            dfs(connection)
+
+    # Check connectivity from the first system
+    dfs(system_ids[0])
+
+    # Handle isolated systems
+    isolated_systems = [sys for sys in system_ids if sys not in visited]
+    while isolated_systems:
+        isolated_system = isolated_systems.pop()
+        potential_connectors = [s for s in visited if len(system_data[s]["connections"]) < max_connections]
+        if potential_connectors:
+            connect_to = random.choice(potential_connectors)
+            system_data[isolated_system]["connections"].append(connect_to)
+            system_data[connect_to]["connections"].append(isolated_system)
+            visited.add(isolated_system)
+            dfs(isolated_system)
 
 def update_system_with_details(system_id, system):
     """Updates a system with star type, planets, and asteroid fields."""
     star_type = assign_star_type_and_hazards(system)
+    system['resources'] = []  # Initialize resources as an empty list
+    
     for planet in system["planets"]:
         assign_planet_details(planet, star_type)
+        # Add resources from planets to the system-level resource list
+        system['resources'].extend(list(planet["resources"].keys()))
+
     system["asteroid_fields"] = generate_asteroid_fields(system_id, star_type)
+    # Add resources from asteroid fields to the system-level resource list
+    for asteroid in system["asteroid_fields"]:
+        system['resources'].extend(list(asteroid["resources"].keys()))
+
+    system["resources"] = list(set(system["resources"]))  # Ensure resources are unique
     system["owned_by"] = "Unoccupied"
 
 def create_systems(universe_size):
@@ -137,7 +297,7 @@ def create_systems(universe_size):
             "asteroid_fields": []
         }
         update_system_with_details(system_id, systems_data[system_id])
-    generate_connections(systems_data)
+    generate_connections_with_dynamic_scaling(systems_data)  # Use the scalable connection generation
     return systems_data
 
 def load_systems_data(filename):
