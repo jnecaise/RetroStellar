@@ -38,6 +38,7 @@ def display_system_menu(current_system, systems_data):
 
     print_system_details(current_name, system_info, colored_ownership, star_type, planets, hazard_level, formatted_stargates)
     display_asteroid_fields(system_info)
+    display_space_station(system_info)  # Display the space station if present
 
 def get_planet_names(system_info):
     """Returns a string of planet names in the system."""
@@ -83,3 +84,11 @@ def display_asteroid_fields(system_info):
     if 'asteroid_fields' in system_info:
         asteroid_fields = ', '.join(field['id'] for field in system_info['asteroid_fields'])
         print(f"{CYAN}Asteroid Fields: {asteroid_fields}{RESET}")
+
+def display_space_station(system_info):
+    """Displays the space station present in the system if it exists."""
+    if 'space_station' in system_info:
+        station = system_info['space_station']
+        print(f"\n{BOLD}{CYAN}STATION: {station['name'].upper()}, {station['type'].upper()} {RESET}")
+        print()
+

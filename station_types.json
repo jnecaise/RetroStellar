@@ -1,0 +1,16 @@
+{
+    "station_types": {
+        "Commercial": {
+            "description": "A bustling hub for trade and commerce. Provides access to markets and trading opportunities.",
+            "services": ["Market Access", "Mission Hub", "Trading NPCs"]
+        },
+        "Dry Dock": {
+            "description": "A station dedicated to ship maintenance and upgrades. Offers repairs, upgrades, and customization options.",
+            "services": ["Repairs", "Upgrades", "Customization"]
+        },
+        "Research": {
+            "description": "A center for technological advancement and research. Unlocks new technologies and special items.",
+            "services": ["Technology Upgrades", "Research Projects", "Artifact Analysis"]
+        }
+    }
+}

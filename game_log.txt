@@ -1,73 +1,3 @@
-2024-09-10 18:28:10,296 - INFO - Logger setup successfully - initial test log.
-2024-09-10 18:28:42,079 - INFO - Player's faction Mandate of God starts in system: 25 with star type F-type
-2024-09-10 18:28:42,111 - INFO - Game Start: New Game Selected
-2024-09-10 18:28:42,111 - INFO - Universe Size: 100 systems
-2024-09-10 18:28:42,111 - INFO - Character Name: 333
-2024-09-10 18:28:42,111 - INFO - Faction: Mandate of God
-2024-09-10 18:28:42,111 - INFO - Ship Type: {'name': 'Holy Avenger', 'class': 'Light', 'faction_of_origin': 'Mandate of God', 'description': 'Equipped for divine intervention missions.', 'required_rank_to_pilot': 'Civilian', 'size': 'Small', 'ship_cost': 700, 'min_cargo': 14, 'max_cargo': 34, 'max_shields': 65, 'max_armor': 30, 'max_hull': 40, 'system_scanner_type': 'Gamma', 'system_scanner_level': 4, 'planet_scanner': 'Yes', 'planet_scanner_level': 3, 'resource_scanner': 'Yes', 'resource_scanner_level': 3, 'weapon_type': 'Enhanced Laser', 'combat_bonus': 1.0, 'mining_attachment': 'No', 'mining_attachment_level': 0}
-2024-09-10 18:28:42,111 - INFO - Ship Name: 333
-2024-09-10 18:28:42,111 - INFO - Player starting in system: 25
-2024-09-10 18:31:19,016 - INFO - Logger setup successfully - initial test log.
-2024-09-10 18:31:20,530 - INFO - Logger setup successfully - initial test log.
-2024-09-10 18:31:20,530 - INFO - Starting the main function.
-2024-09-10 18:31:20,559 - INFO - Universe with 100 systems created and updated successfully.
-2024-09-10 18:31:20,562 - INFO - Logging owned systems:
-2024-09-10 18:31:20,562 - INFO - System ID 25 is owned by Mandate of God
-2024-09-10 18:31:20,562 - INFO - System ID 28 is owned by Shogunate 3072
-2024-09-10 18:31:20,562 - INFO - System ID 65 is owned by Noringian Hive
-2024-09-10 18:31:20,562 - INFO - System ID 72 is owned by People of the River
-2024-09-10 18:31:20,562 - INFO - System ID 73 is owned by United Systems of Man
-2024-09-10 18:31:34,623 - INFO - Player's faction People of the River starts in system: 22 with star type G-type
-2024-09-10 18:31:34,643 - INFO - Game Start: New Game Selected
-2024-09-10 18:31:34,643 - INFO - Universe Size: 100 systems
-2024-09-10 18:31:34,643 - INFO - Character Name: aaa
-2024-09-10 18:31:34,643 - INFO - Faction: People of the River
-2024-09-10 18:31:34,643 - INFO - Ship Type: {'name': 'Nitrogen', 'class': 'Light', 'faction_of_origin': 'People of the River', 'description': 'Optimized for environmental adaptability.', 'required_rank_to_pilot': 'Civilian', 'size': 'Small', 'ship_cost': 600, 'min_cargo': 20, 'max_cargo': 40, 'max_shields': 60, 'max_armor': 30, 'max_hull': 40, 'system_scanner_type': 'Gamma', 'system_scanner_level': 4, 'planet_scanner': 'Yes', 'planet_scanner_level': 3, 'resource_scanner': 'Yes', 'resource_scanner_level': 3, 'weapon_type': 'Enhanced Laser', 'combat_bonus': 1.1, 'mining_attachment': 'Yes', 'mining_attachment_level': 2}
-2024-09-10 18:31:34,643 - INFO - Ship Name: weqrtytre
-2024-09-10 18:31:34,643 - INFO - Player starting in system: 22
-2024-09-10 18:40:15,057 - INFO - Logger setup successfully - initial test log.
-2024-09-10 18:40:16,686 - INFO - Logger setup successfully - initial test log.
-2024-09-10 18:40:16,686 - INFO - Starting the main function.
-2024-09-10 18:40:16,715 - INFO - Universe with 100 systems created and updated successfully.
-2024-09-10 18:40:16,717 - INFO - Logging owned systems:
-2024-09-10 18:40:16,717 - INFO - System ID 18 is owned by People of the River
-2024-09-10 18:40:16,717 - INFO - System ID 21 is owned by United Systems of Man
-2024-09-10 18:40:16,717 - INFO - System ID 27 is owned by Mandate of God
-2024-09-10 18:40:16,717 - INFO - System ID 32 is owned by Shogunate 3072
-2024-09-10 18:40:16,717 - INFO - System ID 84 is owned by Noringian Hive
-2024-09-10 18:40:29,244 - INFO - Player's faction Mandate of God starts in system: 61 with star type G-type
-2024-09-10 18:40:29,265 - INFO - Game Start: New Game Selected
-2024-09-10 18:40:29,265 - INFO - Universe Size: 100 systems
-2024-09-10 18:40:29,265 - INFO - Character Name: 12
-2024-09-10 18:40:29,265 - INFO - Faction: Mandate of God
-2024-09-10 18:40:29,266 - INFO - Ship Type: {'name': 'Holy Avenger', 'class': 'Light', 'faction_of_origin': 'Mandate of God', 'description': 'Equipped for divine intervention missions.', 'required_rank_to_pilot': 'Civilian', 'size': 'Small', 'ship_cost': 700, 'min_cargo': 14, 'max_cargo': 34, 'max_shields': 65, 'max_armor': 30, 'max_hull': 40, 'system_scanner_type': 'Gamma', 'system_scanner_level': 4, 'planet_scanner': 'Yes', 'planet_scanner_level': 3, 'resource_scanner': 'Yes', 'resource_scanner_level': 3, 'weapon_type': 'Enhanced Laser', 'combat_bonus': 1.0, 'mining_attachment': 'No', 'mining_attachment_level': 0}
-2024-09-10 18:40:29,266 - INFO - Ship Name: 321
-2024-09-10 18:40:29,266 - INFO - Player starting in system: 61
-2024-09-10 18:40:34,903 - DEBUG - System 61 visited status: True
-2024-09-10 18:40:37,707 - DEBUG - System 6 visited status: True
-2024-09-10 18:40:42,227 - DEBUG - System 73 visited status: True
-2024-09-10 18:40:44,402 - DEBUG - System 86 visited status: True
-2024-09-10 18:40:46,146 - DEBUG - System 79 visited status: True
-2024-09-10 18:40:48,074 - DEBUG - System 50 visited status: True
-2024-09-10 18:40:49,622 - DEBUG - System 47 visited status: True
-2024-09-10 18:40:51,630 - DEBUG - System 4 visited status: True
-2024-09-10 18:40:53,747 - DEBUG - System 90 visited status: True
-2024-09-10 18:40:59,422 - DEBUG - System 21 visited status: True
-2024-09-10 18:41:01,858 - DEBUG - System 3 visited status: True
-2024-09-10 18:41:04,034 - DEBUG - System 94 visited status: True
-2024-09-10 18:41:06,406 - DEBUG - System 14 visited status: True
-2024-09-10 18:41:08,158 - DEBUG - System 96 visited status: True
-2024-09-10 18:41:10,259 - DEBUG - System 53 visited status: True
-2024-09-10 18:41:12,222 - DEBUG - System 74 visited status: True
-2024-09-10 18:41:14,094 - DEBUG - System 30 visited status: True
-2024-09-10 18:41:17,786 - DEBUG - System 18 visited status: True
-2024-09-10 18:41:20,659 - DEBUG - System 41 visited status: True
-2024-09-10 18:41:23,758 - DEBUG - System 22 visited status: True
-2024-09-10 18:41:25,736 - DEBUG - System 13 visited status: True
-2024-09-10 18:41:29,527 - DEBUG - System 1 visited status: True
-2024-09-10 18:41:31,275 - DEBUG - System 78 visited status: True
-2024-09-10 18:41:33,147 - DEBUG - System 55 visited status: True
-2024-09-10 18:41:35,170 - DEBUG - System 31 visited status: True
 2024-09-10 18:41:36,987 - DEBUG - System 71 visited status: True
 2024-09-10 18:41:40,095 - DEBUG - System 77 visited status: True
 2024-09-10 18:41:41,899 - DEBUG - System 59 visited status: True
@@ -187,3 +117,1503 @@
 2024-09-10 18:58:42,290 - INFO - Admin shortcut: Moved to system 78.
 2024-09-10 18:58:49,875 - INFO - Admin shortcut: Moved to system 80.
 2024-09-10 18:58:56,704 - INFO - Admin shortcut: Moved to system 83.
+2024-09-10 19:29:59,554 - INFO - ==============================================
+2024-09-10 19:30:02,140 - INFO - ==============================================
+2024-09-10 19:30:02,141 - INFO - Starting the main function.
+2024-09-10 19:30:02,168 - INFO - Universe with 100 systems created and updated successfully.
+2024-09-10 19:30:02,171 - INFO - Logging owned systems:
+2024-09-10 19:30:02,171 - INFO - System ID 9 is owned by Mandate of God
+2024-09-10 19:30:02,171 - INFO - System ID 14 is owned by Shogunate 3072
+2024-09-10 19:30:02,171 - INFO - System ID 26 is owned by United Systems of Man
+2024-09-10 19:30:02,171 - INFO - System ID 93 is owned by Noringian Hive
+2024-09-10 19:30:02,171 - INFO - System ID 95 is owned by People of the River
+2024-09-10 19:30:05,440 - INFO - Player's faction United Systems of Man starts in system: 26 with star type F-type
+2024-09-10 19:30:05,459 - INFO - Game Start: New Game Selected
+2024-09-10 19:30:05,459 - INFO - Universe Size: 100 systems
+2024-09-10 19:30:05,459 - INFO - Character Name: 1
+2024-09-10 19:30:05,459 - INFO - Faction: United Systems of Man
+2024-09-10 19:30:05,460 - INFO - Ship Type: {'name': 'Light Mission Runner', 'class': 'Light', 'faction_of_origin': 'United Systems of Man', 'description': 'Balanced for exploration and basic defense.', 'required_rank_to_pilot': 'Civilian', 'size': 'Small', 'ship_cost': 550, 'min_cargo': 10, 'max_cargo': 30, 'max_shields': 50, 'max_armor': 20, 'max_hull': 30, 'system_scanner_type': 'Beta', 'system_scanner_level': 2, 'planet_scanner': 'Yes', 'planet_scanner_level': 1, 'resource_scanner': 'Yes', 'resource_scanner_level': 1, 'weapon_type': 'Light Laser', 'combat_bonus': 1.0, 'mining_attachment': 'No', 'mining_attachment_level': 0}
+2024-09-10 19:30:05,460 - INFO - Ship Name: 1
+2024-09-10 19:30:05,460 - INFO - Player starting in system: 26
+2024-09-10 19:30:49,997 - INFO - ==============================================
+2024-09-10 19:30:49,997 - INFO - Starting the main function.
+2024-09-10 19:30:50,471 - INFO - ==============================================
+2024-09-10 19:30:50,681 - INFO - ==============================================
+2024-09-10 19:30:50,731 - INFO - ==============================================
+2024-09-10 19:30:50,793 - INFO - ==============================================
+2024-09-10 19:30:50,843 - INFO - ==============================================
+2024-09-10 19:30:50,895 - INFO - ==============================================
+2024-09-10 19:30:50,957 - INFO - ==============================================
+2024-09-10 19:30:50,972 - INFO - ==============================================
+2024-09-10 19:30:51,033 - INFO - ==============================================
+2024-09-10 19:30:52,880 - INFO - Universe with 3072 systems created and updated successfully.
+2024-09-10 19:30:52,948 - INFO - Logging owned systems:
+2024-09-10 19:30:52,948 - INFO - System ID 1029 is owned by People of the River
+2024-09-10 19:30:52,948 - INFO - System ID 2606 is owned by Shogunate 3072
+2024-09-10 19:30:52,948 - INFO - System ID 2654 is owned by United Systems of Man
+2024-09-10 19:30:52,948 - INFO - System ID 2746 is owned by Mandate of God
+2024-09-10 19:30:52,948 - INFO - System ID 2784 is owned by Noringian Hive
+2024-09-10 19:30:57,452 - INFO - Player's faction United Systems of Man starts in system: 1539 with star type F-type
+2024-09-10 19:30:58,016 - INFO - Game Start: New Game Selected
+2024-09-10 19:30:58,016 - INFO - Universe Size: 3072 systems
+2024-09-10 19:30:58,016 - INFO - Character Name: 123
+2024-09-10 19:30:58,016 - INFO - Faction: United Systems of Man
+2024-09-10 19:30:58,016 - INFO - Ship Type: {'name': 'Light Mission Runner', 'class': 'Light', 'faction_of_origin': 'United Systems of Man', 'description': 'Balanced for exploration and basic defense.', 'required_rank_to_pilot': 'Civilian', 'size': 'Small', 'ship_cost': 550, 'min_cargo': 10, 'max_cargo': 30, 'max_shields': 50, 'max_armor': 20, 'max_hull': 30, 'system_scanner_type': 'Beta', 'system_scanner_level': 2, 'planet_scanner': 'Yes', 'planet_scanner_level': 1, 'resource_scanner': 'Yes', 'resource_scanner_level': 1, 'weapon_type': 'Light Laser', 'combat_bonus': 1.0, 'mining_attachment': 'No', 'mining_attachment_level': 0}
+2024-09-10 19:30:58,016 - INFO - Ship Name: 1
+2024-09-10 19:30:58,016 - INFO - Player starting in system: 1539
+2024-09-10 19:33:22,648 - INFO - ==============================================
+2024-09-10 19:33:24,012 - INFO - ==============================================
+2024-09-10 19:33:24,012 - INFO - Starting the main function.
+2024-09-10 19:33:24,250 - INFO - ==============================================
+2024-09-10 19:33:24,504 - INFO - ==============================================
+2024-09-10 19:33:24,511 - INFO - ==============================================
+2024-09-10 19:33:24,565 - INFO - ==============================================
+2024-09-10 19:33:24,610 - INFO - ==============================================
+2024-09-10 19:33:24,720 - INFO - ==============================================
+2024-09-10 19:33:24,725 - INFO - ==============================================
+2024-09-10 19:33:24,729 - INFO - ==============================================
+2024-09-10 19:33:24,799 - INFO - ==============================================
+2024-09-10 19:33:26,801 - INFO - Universe with 3072 systems created and updated successfully.
+2024-09-10 19:33:26,866 - INFO - Logging owned systems:
+2024-09-10 19:33:26,866 - INFO - System ID 228 is owned by United Systems of Man
+2024-09-10 19:33:26,866 - INFO - System ID 965 is owned by Shogunate 3072
+2024-09-10 19:33:26,866 - INFO - System ID 1732 is owned by Noringian Hive
+2024-09-10 19:33:26,866 - INFO - System ID 1902 is owned by Mandate of God
+2024-09-10 19:33:26,866 - INFO - System ID 2760 is owned by People of the River
+2024-09-10 19:33:29,054 - INFO - Player's faction United Systems of Man starts in system: 2262 with star type F-type
+2024-09-10 19:33:29,636 - INFO - Game Start: New Game Selected
+2024-09-10 19:33:29,636 - INFO - Universe Size: 3072 systems
+2024-09-10 19:33:29,636 - INFO - Character Name: 1
+2024-09-10 19:33:29,636 - INFO - Faction: United Systems of Man
+2024-09-10 19:33:29,636 - INFO - Ship Type: {'name': 'Light Mission Runner', 'class': 'Light', 'faction_of_origin': 'United Systems of Man', 'description': 'Balanced for exploration and basic defense.', 'required_rank_to_pilot': 'Civilian', 'size': 'Small', 'ship_cost': 550, 'min_cargo': 10, 'max_cargo': 30, 'max_shields': 50, 'max_armor': 20, 'max_hull': 30, 'system_scanner_type': 'Beta', 'system_scanner_level': 2, 'planet_scanner': 'Yes', 'planet_scanner_level': 1, 'resource_scanner': 'Yes', 'resource_scanner_level': 1, 'weapon_type': 'Light Laser', 'combat_bonus': 1.0, 'mining_attachment': 'No', 'mining_attachment_level': 0}
+2024-09-10 19:33:29,636 - INFO - Ship Name: 1
+2024-09-10 19:33:29,636 - INFO - Player starting in system: 2262
+2024-09-10 19:33:59,887 - INFO - Admin shortcut: Moved to system 2760.
+2024-09-10 19:34:06,310 - INFO - Admin shortcut: Moved to system 1902.
+2024-09-10 19:34:13,563 - INFO - Admin shortcut: Moved to system 1732.
+2024-09-10 19:34:18,967 - INFO - Admin shortcut: Moved to system 965.
+2024-09-10 19:34:26,286 - INFO - Admin shortcut: Moved to system 228.
+2024-09-10 20:48:52,337 - INFO - ==============================================
+2024-09-10 20:48:53,612 - INFO - ==============================================
+2024-09-10 20:48:53,613 - INFO - Starting the main function.
+2024-09-10 20:48:53,852 - INFO - ==============================================
+2024-09-10 20:48:54,058 - INFO - ==============================================
+2024-09-10 20:48:54,154 - INFO - ==============================================
+2024-09-10 20:48:54,155 - INFO - ==============================================
+2024-09-10 20:48:54,208 - INFO - ==============================================
+2024-09-10 20:48:54,320 - INFO - ==============================================
+2024-09-10 20:48:54,327 - INFO - ==============================================
+2024-09-10 20:48:54,329 - INFO - ==============================================
+2024-09-10 20:48:54,387 - INFO - ==============================================
+2024-09-10 20:48:55,719 - INFO - Assigned Alpha Station (Research) to system 2575.
+2024-09-10 20:48:55,719 - INFO - Assigned Beta Outpost (Dry Dock) to system 1592.
+2024-09-10 20:48:55,719 - INFO - Assigned Gamma Hub (Research) to system 2232.
+2024-09-10 20:48:55,719 - INFO - Assigned Delta Base (Commercial) to system 2230.
+2024-09-10 20:48:55,719 - INFO - Assigned Epsilon Market (Dry Dock) to system 2195.
+2024-09-10 20:48:55,719 - INFO - Assigned Zeta Dock (Dry Dock) to system 2847.
+2024-09-10 20:48:55,719 - INFO - Assigned Eta Complex (Dry Dock) to system 1728.
+2024-09-10 20:48:55,719 - INFO - Assigned Theta Terminal (Dry Dock) to system 2785.
+2024-09-10 20:48:55,719 - INFO - Assigned Iota Post (Commercial) to system 214.
+2024-09-10 20:48:55,719 - INFO - Assigned Kappa Point (Commercial) to system 2147.
+2024-09-10 20:48:55,719 - INFO - Assigned Lambda Port (Commercial) to system 444.
+2024-09-10 20:48:55,719 - INFO - Assigned Mu Station (Dry Dock) to system 1375.
+2024-09-10 20:48:55,719 - INFO - Assigned Nu Outpost (Commercial) to system 1458.
+2024-09-10 20:48:55,719 - INFO - Assigned Xi Hub (Commercial) to system 1946.
+2024-09-10 20:48:55,719 - INFO - Assigned Omicron Base (Research) to system 1296.
+2024-09-10 20:48:55,719 - INFO - Assigned Pi Market (Commercial) to system 2298.
+2024-09-10 20:48:55,719 - INFO - Assigned Rho Dock (Dry Dock) to system 1107.
+2024-09-10 20:48:55,719 - INFO - Assigned Sigma Complex (Research) to system 2664.
+2024-09-10 20:48:55,719 - INFO - Assigned Tau Terminal (Dry Dock) to system 637.
+2024-09-10 20:48:55,719 - INFO - Assigned Upsilon Post (Commercial) to system 1355.
+2024-09-10 20:48:55,719 - INFO - Assigned Phi Point (Commercial) to system 2482.
+2024-09-10 20:48:55,719 - INFO - Assigned Chi Port (Commercial) to system 658.
+2024-09-10 20:48:55,719 - INFO - Assigned Psi Station (Dry Dock) to system 2312.
+2024-09-10 20:48:55,719 - INFO - Assigned Omega Outpost (Commercial) to system 1532.
+2024-09-10 20:48:55,719 - INFO - Assigned Nova Station (Commercial) to system 3070.
+2024-09-10 20:48:55,719 - INFO - Assigned Orion Terminal (Research) to system 1446.
+2024-09-10 20:48:55,719 - INFO - Assigned Vega Hub (Commercial) to system 1754.
+2024-09-10 20:48:55,719 - INFO - Assigned Sirius Dock (Dry Dock) to system 1487.
+2024-09-10 20:48:55,719 - INFO - Assigned Antares Post (Dry Dock) to system 30.
+2024-09-10 20:48:55,720 - INFO - Assigned Polaris Base (Commercial) to system 1114.
+2024-09-10 20:48:55,720 - INFO - Assigned Centauri Market (Commercial) to system 2936.
+2024-09-10 20:48:55,720 - INFO - Assigned Rigel Station (Research) to system 2402.
+2024-09-10 20:48:55,720 - INFO - Assigned Arcturus Port (Dry Dock) to system 143.
+2024-09-10 20:48:55,720 - INFO - Assigned Proxima Outpost (Dry Dock) to system 1852.
+2024-09-10 20:48:55,720 - INFO - Assigned Altair Complex (Dry Dock) to system 1776.
+2024-09-10 20:48:55,720 - INFO - Assigned Deneb Hub (Commercial) to system 537.
+2024-09-10 20:48:55,720 - INFO - Assigned Betelgeuse Station (Dry Dock) to system 288.
+2024-09-10 20:48:55,720 - INFO - Assigned Mira Terminal (Research) to system 1586.
+2024-09-10 20:48:55,720 - INFO - Assigned Aldebaran Dock (Commercial) to system 834.
+2024-09-10 20:48:55,720 - INFO - Assigned Alcyone Point (Dry Dock) to system 803.
+2024-09-10 20:48:55,720 - INFO - Assigned Capella Base (Research) to system 149.
+2024-09-10 20:48:55,720 - INFO - Assigned Bellatrix Port (Commercial) to system 2053.
+2024-09-10 20:48:55,720 - INFO - Assigned Canopus Station (Research) to system 2455.
+2024-09-10 20:48:55,720 - INFO - Assigned Castor Terminal (Commercial) to system 2876.
+2024-09-10 20:48:55,720 - INFO - Assigned Electra Market (Commercial) to system 1734.
+2024-09-10 20:48:55,720 - INFO - Assigned Gacrux Complex (Research) to system 921.
+2024-09-10 20:48:55,720 - INFO - Assigned Achernar Hub (Research) to system 1073.
+2024-09-10 20:48:55,720 - INFO - Assigned Fomalhaut Post (Research) to system 1715.
+2024-09-10 20:48:55,720 - INFO - Assigned Alnair Station (Research) to system 347.
+2024-09-10 20:48:55,720 - INFO - Assigned Spica Base (Commercial) to system 469.
+2024-09-10 20:48:55,720 - INFO - Assigned Saiph Dock (Research) to system 1082.
+2024-09-10 20:48:55,720 - INFO - Assigned Merak Complex (Commercial) to system 2883.
+2024-09-10 20:48:55,720 - INFO - Assigned Menkalinan Hub (Dry Dock) to system 2684.
+2024-09-10 20:48:55,720 - INFO - Assigned Algol Terminal (Commercial) to system 1560.
+2024-09-10 20:48:55,720 - INFO - Assigned Diphda Station (Dry Dock) to system 340.
+2024-09-10 20:48:55,720 - INFO - Assigned Gienah Market (Commercial) to system 640.
+2024-09-10 20:48:55,720 - INFO - Assigned Caph Dock (Commercial) to system 2920.
+2024-09-10 20:48:55,720 - INFO - Assigned Kochab Complex (Dry Dock) to system 2200.
+2024-09-10 20:48:55,720 - INFO - Assigned Regulus Base (Dry Dock) to system 2942.
+2024-09-10 20:48:55,720 - INFO - Assigned Izar Hub (Commercial) to system 2734.
+2024-09-10 20:48:55,720 - INFO - Assigned Dubhe Terminal (Dry Dock) to system 70.
+2024-09-10 20:48:55,720 - INFO - Assigned Rasalhague Station (Commercial) to system 369.
+2024-09-10 20:48:55,720 - INFO - Assigned Alhena Outpost (Research) to system 1647.
+2024-09-10 20:48:55,720 - INFO - Assigned Markab Dock (Research) to system 3065.
+2024-09-10 20:48:55,720 - INFO - Assigned Alpheratz Complex (Research) to system 1008.
+2024-09-10 20:48:55,720 - INFO - Assigned Schedar Hub (Research) to system 2188.
+2024-09-10 20:48:55,721 - INFO - Assigned Castula Terminal (Dry Dock) to system 874.
+2024-09-10 20:48:55,721 - INFO - Assigned Alnitak Station (Dry Dock) to system 1126.
+2024-09-10 20:48:55,721 - INFO - Assigned Bellona Base (Dry Dock) to system 2663.
+2024-09-10 20:48:55,721 - INFO - Assigned Cassiopeia Outpost (Dry Dock) to system 2269.
+2024-09-10 20:48:55,721 - INFO - Assigned Aurora Hub (Commercial) to system 2555.
+2024-09-10 20:48:55,721 - INFO - Assigned Hercules Terminal (Research) to system 882.
+2024-09-10 20:48:55,721 - INFO - Assigned Cepheus Dock (Research) to system 1631.
+2024-09-10 20:48:55,721 - INFO - Assigned Perseus Complex (Commercial) to system 688.
+2024-09-10 20:48:55,721 - INFO - Assigned Hades Hub (Commercial) to system 2471.
+2024-09-10 20:48:55,721 - INFO - Assigned Zephyr Station (Dry Dock) to system 1047.
+2024-09-10 20:48:55,721 - INFO - Assigned Poseidon Base (Dry Dock) to system 1958.
+2024-09-10 20:48:55,721 - INFO - Assigned Demeter Dock (Research) to system 1548.
+2024-09-10 20:48:55,721 - INFO - Assigned Apollo Complex (Dry Dock) to system 1409.
+2024-09-10 20:48:55,721 - INFO - Assigned Athena Hub (Commercial) to system 2678.
+2024-09-10 20:48:55,721 - INFO - Assigned Vulcan Terminal (Commercial) to system 2765.
+2024-09-10 20:48:55,721 - INFO - Assigned Juno Station (Research) to system 840.
+2024-09-10 20:48:55,721 - INFO - Assigned Minerva Base (Dry Dock) to system 2954.
+2024-09-10 20:48:55,721 - INFO - Assigned Mercury Dock (Commercial) to system 1465.
+2024-09-10 20:48:55,721 - INFO - Assigned Ceres Complex (Dry Dock) to system 596.
+2024-09-10 20:48:55,721 - INFO - Assigned Neptune Hub (Research) to system 129.
+2024-09-10 20:48:55,721 - INFO - Assigned Uranus Terminal (Dry Dock) to system 946.
+2024-09-10 20:48:55,721 - INFO - Assigned Titania Station (Research) to system 657.
+2024-09-10 20:48:55,721 - INFO - Assigned Ganymede Outpost (Commercial) to system 1787.
+2024-09-10 20:48:55,721 - INFO - Assigned Callisto Hub (Research) to system 2058.
+2024-09-10 20:48:55,721 - INFO - Assigned Europa Dock (Commercial) to system 2408.
+2024-09-10 20:48:55,721 - INFO - Assigned Io Complex (Research) to system 1276.
+2024-09-10 20:48:55,721 - INFO - Assigned Atlas Terminal (Dry Dock) to system 1924.
+2024-09-10 20:48:55,721 - INFO - Assigned Prometheus Station (Dry Dock) to system 2850.
+2024-09-10 20:48:55,721 - INFO - Assigned Pandora Base (Research) to system 914.
+2024-09-10 20:48:55,721 - INFO - Assigned Helios Dock (Commercial) to system 2382.
+2024-09-10 20:48:55,721 - INFO - Assigned Selene Complex (Commercial) to system 40.
+2024-09-10 20:48:55,721 - INFO - Assigned Nyx Hub (Commercial) to system 2353.
+2024-09-10 20:48:55,721 - INFO - Assigned Chronos Terminal (Dry Dock) to system 1788.
+2024-09-10 20:48:55,721 - INFO - Assigned Erebus Station (Research) to system 2436.
+2024-09-10 20:48:55,721 - INFO - Assigned Thanatos Outpost (Research) to system 336.
+2024-09-10 20:48:55,721 - INFO - Assigned Nemesis Hub (Dry Dock) to system 1666.
+2024-09-10 20:48:55,721 - INFO - Assigned Hyperion Dock (Research) to system 720.
+2024-09-10 20:48:55,721 - INFO - Assigned Themis Complex (Dry Dock) to system 2897.
+2024-09-10 20:48:55,722 - INFO - Assigned Eos Hub (Research) to system 1791.
+2024-09-10 20:48:55,722 - INFO - Assigned Iris Terminal (Research) to system 2205.
+2024-09-10 20:48:55,722 - INFO - Assigned Pallas Station (Dry Dock) to system 2473.
+2024-09-10 20:48:55,722 - INFO - Assigned Hestia Base (Research) to system 1143.
+2024-09-10 20:48:55,722 - INFO - Assigned Vesta Dock (Dry Dock) to system 1991.
+2024-09-10 20:48:55,722 - INFO - Assigned Fortuna Complex (Dry Dock) to system 1820.
+2024-09-10 20:48:55,722 - INFO - Assigned Elara Terminal (Research) to system 1797.
+2024-09-10 20:48:55,722 - INFO - Assigned Hygiea Station (Commercial) to system 1418.
+2024-09-10 20:48:55,722 - INFO - Assigned Psyche Outpost (Research) to system 3038.
+2024-09-10 20:48:55,722 - INFO - Assigned Cybele Hub (Research) to system 1377.
+2024-09-10 20:48:55,722 - INFO - Assigned Hermes Dock (Dry Dock) to system 1452.
+2024-09-10 20:48:55,722 - INFO - Assigned Mars Base (Commercial) to system 334.
+2024-09-10 20:48:55,722 - INFO - Assigned Jupiter Complex (Commercial) to system 1627.
+2024-09-10 20:48:55,722 - INFO - Assigned Saturn Hub (Dry Dock) to system 2905.
+2024-09-10 20:48:55,722 - INFO - Assigned Gaia Terminal (Dry Dock) to system 601.
+2024-09-10 20:48:55,722 - INFO - Assigned Oberon Station (Commercial) to system 135.
+2024-09-10 20:48:55,722 - INFO - Assigned Rhea Outpost (Dry Dock) to system 1597.
+2024-09-10 20:48:55,722 - INFO - Assigned Enceladus Hub (Research) to system 1433.
+2024-09-10 20:48:56,228 - INFO - Universe with 3072 systems created and updated successfully.
+2024-09-10 20:48:56,293 - INFO - Logging owned systems:
+2024-09-10 20:48:56,293 - INFO - System ID 436 is owned by People of the River
+2024-09-10 20:48:56,293 - INFO - System ID 1458 is owned by Mandate of God
+2024-09-10 20:48:56,293 - INFO - System ID 1625 is owned by United Systems of Man
+2024-09-10 20:48:56,293 - INFO - System ID 2223 is owned by Noringian Hive
+2024-09-10 20:48:56,293 - INFO - System ID 2496 is owned by Shogunate 3072
+2024-09-10 20:49:04,641 - INFO - Player's faction Mandate of God starts in system: 267 with star type G-type
+2024-09-10 20:49:05,167 - INFO - Game Start: New Game Selected
+2024-09-10 20:49:05,168 - INFO - Universe Size: 3072 systems
+2024-09-10 20:49:05,168 - INFO - Character Name: qwe
+2024-09-10 20:49:05,168 - INFO - Faction: Mandate of God
+2024-09-10 20:49:05,168 - INFO - Ship Type: {'name': 'Holy Avenger', 'class': 'Light', 'faction_of_origin': 'Mandate of God', 'description': 'Equipped for divine intervention missions.', 'required_rank_to_pilot': 'Civilian', 'size': 'Small', 'ship_cost': 700, 'min_cargo': 14, 'max_cargo': 34, 'max_shields': 65, 'max_armor': 30, 'max_hull': 40, 'system_scanner_type': 'Gamma', 'system_scanner_level': 4, 'planet_scanner': 'Yes', 'planet_scanner_level': 3, 'resource_scanner': 'Yes', 'resource_scanner_level': 3, 'weapon_type': 'Enhanced Laser', 'combat_bonus': 1.0, 'mining_attachment': 'No', 'mining_attachment_level': 0}
+2024-09-10 20:49:05,168 - INFO - Ship Name: eee
+2024-09-10 20:49:05,168 - INFO - Player starting in system: 267
+2024-09-10 20:49:10,729 - DEBUG - System 267 visited status: True
+2024-09-10 20:49:16,812 - DEBUG - System 2581 visited status: True
+2024-09-10 20:49:21,312 - DEBUG - System 619 visited status: True
+2024-09-10 20:49:28,076 - DEBUG - System 1032 visited status: True
+2024-09-10 20:49:33,407 - DEBUG - System 999 visited status: True
+2024-09-10 20:49:38,456 - DEBUG - System 767 visited status: True
+2024-09-10 20:49:40,660 - DEBUG - System 676 visited status: True
+2024-09-10 20:49:55,548 - DEBUG - System 2676 visited status: True
+2024-09-10 20:52:30,120 - INFO - Admin shortcut: Moved to system 1418.
+2024-09-10 20:58:27,819 - INFO - ==============================================
+2024-09-10 20:58:29,122 - INFO - ==============================================
+2024-09-10 20:58:29,122 - INFO - Starting the main function.
+2024-09-10 20:58:29,346 - INFO - ==============================================
+2024-09-10 20:58:29,594 - INFO - ==============================================
+2024-09-10 20:58:29,595 - INFO - ==============================================
+2024-09-10 20:58:29,698 - INFO - ==============================================
+2024-09-10 20:58:29,753 - INFO - ==============================================
+2024-09-10 20:58:29,755 - INFO - ==============================================
+2024-09-10 20:58:29,809 - INFO - ==============================================
+2024-09-10 20:58:29,825 - INFO - ==============================================
+2024-09-10 20:58:29,887 - INFO - ==============================================
+2024-09-10 20:58:31,291 - INFO - Assigned Alpha Station (Research) to system 1175.
+2024-09-10 20:58:31,291 - INFO - Assigned Beta Outpost (Commercial) to system 1072.
+2024-09-10 20:58:31,291 - INFO - Assigned Gamma Hub (Dry Dock) to system 610.
+2024-09-10 20:58:31,291 - INFO - Assigned Delta Base (Commercial) to system 1549.
+2024-09-10 20:58:31,291 - INFO - Assigned Epsilon Market (Dry Dock) to system 2700.
+2024-09-10 20:58:31,291 - INFO - Assigned Zeta Dock (Commercial) to system 2925.
+2024-09-10 20:58:31,291 - INFO - Assigned Eta Complex (Research) to system 973.
+2024-09-10 20:58:31,291 - INFO - Assigned Theta Terminal (Research) to system 370.
+2024-09-10 20:58:31,291 - INFO - Assigned Iota Post (Research) to system 2284.
+2024-09-10 20:58:31,291 - INFO - Assigned Kappa Point (Research) to system 1320.
+2024-09-10 20:58:31,291 - INFO - Assigned Lambda Port (Research) to system 1417.
+2024-09-10 20:58:31,291 - INFO - Assigned Mu Station (Dry Dock) to system 1912.
+2024-09-10 20:58:31,291 - INFO - Assigned Nu Outpost (Commercial) to system 2587.
+2024-09-10 20:58:31,291 - INFO - Assigned Xi Hub (Research) to system 2829.
+2024-09-10 20:58:31,292 - INFO - Assigned Omicron Base (Dry Dock) to system 1636.
+2024-09-10 20:58:31,292 - INFO - Assigned Pi Market (Dry Dock) to system 1348.
+2024-09-10 20:58:31,292 - INFO - Assigned Rho Dock (Research) to system 987.
+2024-09-10 20:58:31,292 - INFO - Assigned Sigma Complex (Research) to system 2979.
+2024-09-10 20:58:31,292 - INFO - Assigned Tau Terminal (Research) to system 881.
+2024-09-10 20:58:31,292 - INFO - Assigned Upsilon Post (Commercial) to system 2360.
+2024-09-10 20:58:31,292 - INFO - Assigned Phi Point (Research) to system 323.
+2024-09-10 20:58:31,292 - INFO - Assigned Chi Port (Commercial) to system 199.
+2024-09-10 20:58:31,292 - INFO - Assigned Psi Station (Research) to system 2478.
+2024-09-10 20:58:31,292 - INFO - Assigned Omega Outpost (Commercial) to system 2956.
+2024-09-10 20:58:31,292 - INFO - Assigned Nova Station (Research) to system 2288.
+2024-09-10 20:58:31,292 - INFO - Assigned Orion Terminal (Dry Dock) to system 838.
+2024-09-10 20:58:31,292 - INFO - Assigned Vega Hub (Dry Dock) to system 2320.
+2024-09-10 20:58:31,292 - INFO - Assigned Sirius Dock (Research) to system 359.
+2024-09-10 20:58:31,292 - INFO - Assigned Antares Post (Commercial) to system 1200.
+2024-09-10 20:58:31,292 - INFO - Assigned Polaris Base (Dry Dock) to system 984.
+2024-09-10 20:58:31,292 - INFO - Assigned Centauri Market (Research) to system 2665.
+2024-09-10 20:58:31,292 - INFO - Assigned Rigel Station (Research) to system 1419.
+2024-09-10 20:58:31,292 - INFO - Assigned Arcturus Port (Research) to system 1854.
+2024-09-10 20:58:31,292 - INFO - Assigned Proxima Outpost (Research) to system 1090.
+2024-09-10 20:58:31,292 - INFO - Assigned Altair Complex (Commercial) to system 2723.
+2024-09-10 20:58:31,292 - INFO - Assigned Deneb Hub (Commercial) to system 765.
+2024-09-10 20:58:31,292 - INFO - Assigned Betelgeuse Station (Dry Dock) to system 2334.
+2024-09-10 20:58:31,292 - INFO - Assigned Mira Terminal (Research) to system 1150.
+2024-09-10 20:58:31,292 - INFO - Assigned Aldebaran Dock (Commercial) to system 2767.
+2024-09-10 20:58:31,292 - INFO - Assigned Alcyone Point (Dry Dock) to system 1241.
+2024-09-10 20:58:31,292 - INFO - Assigned Capella Base (Dry Dock) to system 1883.
+2024-09-10 20:58:31,292 - INFO - Assigned Bellatrix Port (Research) to system 1376.
+2024-09-10 20:58:31,292 - INFO - Assigned Canopus Station (Commercial) to system 1584.
+2024-09-10 20:58:31,292 - INFO - Assigned Castor Terminal (Commercial) to system 212.
+2024-09-10 20:58:31,292 - INFO - Assigned Electra Market (Dry Dock) to system 1074.
+2024-09-10 20:58:31,292 - INFO - Assigned Gacrux Complex (Commercial) to system 1714.
+2024-09-10 20:58:31,293 - INFO - Assigned Achernar Hub (Dry Dock) to system 2662.
+2024-09-10 20:58:31,293 - INFO - Assigned Fomalhaut Post (Commercial) to system 311.
+2024-09-10 20:58:31,293 - INFO - Assigned Alnair Station (Dry Dock) to system 1748.
+2024-09-10 20:58:31,293 - INFO - Assigned Spica Base (Dry Dock) to system 1453.
+2024-09-10 20:58:31,293 - INFO - Assigned Saiph Dock (Commercial) to system 2456.
+2024-09-10 20:58:31,293 - INFO - Assigned Merak Complex (Dry Dock) to system 1443.
+2024-09-10 20:58:31,293 - INFO - Assigned Menkalinan Hub (Dry Dock) to system 1863.
+2024-09-10 20:58:31,293 - INFO - Assigned Algol Terminal (Commercial) to system 1431.
+2024-09-10 20:58:31,293 - INFO - Assigned Diphda Station (Dry Dock) to system 2363.
+2024-09-10 20:58:31,293 - INFO - Assigned Gienah Market (Commercial) to system 1327.
+2024-09-10 20:58:31,293 - INFO - Assigned Caph Dock (Dry Dock) to system 604.
+2024-09-10 20:58:31,293 - INFO - Assigned Kochab Complex (Research) to system 1694.
+2024-09-10 20:58:31,293 - INFO - Assigned Regulus Base (Research) to system 1634.
+2024-09-10 20:58:31,293 - INFO - Assigned Izar Hub (Commercial) to system 526.
+2024-09-10 20:58:31,293 - INFO - Assigned Dubhe Terminal (Research) to system 925.
+2024-09-10 20:58:31,293 - INFO - Assigned Rasalhague Station (Dry Dock) to system 886.
+2024-09-10 20:58:31,293 - INFO - Assigned Alhena Outpost (Commercial) to system 2077.
+2024-09-10 20:58:31,293 - INFO - Assigned Markab Dock (Commercial) to system 122.
+2024-09-10 20:58:31,293 - INFO - Assigned Alpheratz Complex (Dry Dock) to system 2230.
+2024-09-10 20:58:31,293 - INFO - Assigned Schedar Hub (Research) to system 2036.
+2024-09-10 20:58:31,293 - INFO - Assigned Castula Terminal (Commercial) to system 2630.
+2024-09-10 20:58:31,293 - INFO - Assigned Alnitak Station (Research) to system 306.
+2024-09-10 20:58:31,293 - INFO - Assigned Bellona Base (Research) to system 1149.
+2024-09-10 20:58:31,293 - INFO - Assigned Cassiopeia Outpost (Research) to system 578.
+2024-09-10 20:58:31,293 - INFO - Assigned Aurora Hub (Dry Dock) to system 484.
+2024-09-10 20:58:31,293 - INFO - Assigned Hercules Terminal (Dry Dock) to system 2546.
+2024-09-10 20:58:31,293 - INFO - Assigned Cepheus Dock (Commercial) to system 74.
+2024-09-10 20:58:31,293 - INFO - Assigned Perseus Complex (Commercial) to system 1397.
+2024-09-10 20:58:31,293 - INFO - Assigned Hades Hub (Commercial) to system 2471.
+2024-09-10 20:58:31,293 - INFO - Assigned Zephyr Station (Dry Dock) to system 1164.
+2024-09-10 20:58:31,293 - INFO - Assigned Poseidon Base (Dry Dock) to system 1113.
+2024-09-10 20:58:31,293 - INFO - Assigned Demeter Dock (Commercial) to system 726.
+2024-09-10 20:58:31,293 - INFO - Assigned Apollo Complex (Commercial) to system 874.
+2024-09-10 20:58:31,294 - INFO - Assigned Athena Hub (Commercial) to system 2107.
+2024-09-10 20:58:31,294 - INFO - Assigned Vulcan Terminal (Research) to system 1804.
+2024-09-10 20:58:31,294 - INFO - Assigned Juno Station (Research) to system 2292.
+2024-09-10 20:58:31,294 - INFO - Assigned Minerva Base (Research) to system 88.
+2024-09-10 20:58:31,294 - INFO - Assigned Mercury Dock (Research) to system 226.
+2024-09-10 20:58:31,294 - INFO - Assigned Ceres Complex (Research) to system 966.
+2024-09-10 20:58:31,294 - INFO - Assigned Neptune Hub (Commercial) to system 471.
+2024-09-10 20:58:31,294 - INFO - Assigned Uranus Terminal (Research) to system 1601.
+2024-09-10 20:58:31,294 - INFO - Assigned Titania Station (Research) to system 2923.
+2024-09-10 20:58:31,294 - INFO - Assigned Ganymede Outpost (Dry Dock) to system 1039.
+2024-09-10 20:58:31,294 - INFO - Assigned Callisto Hub (Dry Dock) to system 843.
+2024-09-10 20:58:31,294 - INFO - Assigned Europa Dock (Commercial) to system 2191.
+2024-09-10 20:58:31,294 - INFO - Assigned Io Complex (Research) to system 2388.
+2024-09-10 20:58:31,294 - INFO - Assigned Atlas Terminal (Dry Dock) to system 565.
+2024-09-10 20:58:31,294 - INFO - Assigned Prometheus Station (Research) to system 757.
+2024-09-10 20:58:31,294 - INFO - Assigned Pandora Base (Dry Dock) to system 3034.
+2024-09-10 20:58:31,294 - INFO - Assigned Helios Dock (Commercial) to system 169.
+2024-09-10 20:58:31,294 - INFO - Assigned Selene Complex (Commercial) to system 2083.
+2024-09-10 20:58:31,294 - INFO - Assigned Nyx Hub (Research) to system 1407.
+2024-09-10 20:58:31,294 - INFO - Assigned Chronos Terminal (Research) to system 1226.
+2024-09-10 20:58:31,294 - INFO - Assigned Erebus Station (Research) to system 1971.
+2024-09-10 20:58:31,294 - INFO - Assigned Thanatos Outpost (Dry Dock) to system 1630.
+2024-09-10 20:58:31,294 - INFO - Assigned Nemesis Hub (Dry Dock) to system 2242.
+2024-09-10 20:58:31,294 - INFO - Assigned Hyperion Dock (Commercial) to system 2496.
+2024-09-10 20:58:31,294 - INFO - Assigned Themis Complex (Research) to system 1450.
+2024-09-10 20:58:31,294 - INFO - Assigned Eos Hub (Commercial) to system 1635.
+2024-09-10 20:58:31,294 - INFO - Assigned Iris Terminal (Commercial) to system 1728.
+2024-09-10 20:58:31,294 - INFO - Assigned Pallas Station (Commercial) to system 1060.
+2024-09-10 20:58:31,294 - INFO - Assigned Hestia Base (Dry Dock) to system 2185.
+2024-09-10 20:58:31,294 - INFO - Assigned Vesta Dock (Dry Dock) to system 1142.
+2024-09-10 20:58:31,294 - INFO - Assigned Fortuna Complex (Dry Dock) to system 1890.
+2024-09-10 20:58:31,294 - INFO - Assigned Elara Terminal (Dry Dock) to system 254.
+2024-09-10 20:58:31,294 - INFO - Assigned Hygiea Station (Research) to system 388.
+2024-09-10 20:58:31,295 - INFO - Assigned Psyche Outpost (Commercial) to system 1799.
+2024-09-10 20:58:31,295 - INFO - Assigned Cybele Hub (Commercial) to system 1457.
+2024-09-10 20:58:31,295 - INFO - Assigned Hermes Dock (Commercial) to system 2819.
+2024-09-10 20:58:31,295 - INFO - Assigned Mars Base (Research) to system 1328.
+2024-09-10 20:58:31,295 - INFO - Assigned Jupiter Complex (Dry Dock) to system 704.
+2024-09-10 20:58:31,295 - INFO - Assigned Saturn Hub (Research) to system 1471.
+2024-09-10 20:58:31,295 - INFO - Assigned Gaia Terminal (Dry Dock) to system 2668.
+2024-09-10 20:58:31,295 - INFO - Assigned Oberon Station (Dry Dock) to system 2361.
+2024-09-10 20:58:31,295 - INFO - Assigned Rhea Outpost (Commercial) to system 1731.
+2024-09-10 20:58:31,295 - INFO - Assigned Enceladus Hub (Research) to system 1504.
+2024-09-10 20:58:31,901 - INFO - Universe with 3072 systems created and updated successfully.
+2024-09-10 20:58:31,969 - INFO - Logging owned systems:
+2024-09-10 20:58:31,969 - INFO - System ID 276 is owned by Mandate of God
+2024-09-10 20:58:31,969 - INFO - System ID 1073 is owned by People of the River
+2024-09-10 20:58:31,969 - INFO - System ID 1094 is owned by United Systems of Man
+2024-09-10 20:58:31,969 - INFO - System ID 2169 is owned by Noringian Hive
+2024-09-10 20:58:31,969 - INFO - System ID 2644 is owned by Shogunate 3072
+2024-09-10 20:58:38,723 - INFO - Player's faction United Systems of Man starts in system: 2339 with star type F-type
+2024-09-10 20:58:39,216 - INFO - Game Start: New Game Selected
+2024-09-10 20:58:39,216 - INFO - Universe Size: 3072 systems
+2024-09-10 20:58:39,216 - INFO - Character Name: qwer
+2024-09-10 20:58:39,216 - INFO - Faction: United Systems of Man
+2024-09-10 20:58:39,216 - INFO - Ship Type: {'name': 'Light Mission Runner', 'class': 'Light', 'faction_of_origin': 'United Systems of Man', 'description': 'Balanced for exploration and basic defense.', 'required_rank_to_pilot': 'Civilian', 'size': 'Small', 'ship_cost': 550, 'min_cargo': 10, 'max_cargo': 30, 'max_shields': 50, 'max_armor': 20, 'max_hull': 30, 'system_scanner_type': 'Beta', 'system_scanner_level': 2, 'planet_scanner': 'Yes', 'planet_scanner_level': 1, 'resource_scanner': 'Yes', 'resource_scanner_level': 1, 'weapon_type': 'Light Laser', 'combat_bonus': 1.0, 'mining_attachment': 'No', 'mining_attachment_level': 0}
+2024-09-10 20:58:39,216 - INFO - Ship Name: 1
+2024-09-10 20:58:39,217 - INFO - Player starting in system: 2339
+2024-09-10 20:59:08,656 - INFO - Admin shortcut: Moved to system 2388.
+2024-09-10 21:01:06,198 - INFO - ==============================================
+2024-09-10 21:01:07,783 - INFO - ==============================================
+2024-09-10 21:01:07,783 - INFO - Starting the main function.
+2024-09-10 21:01:08,011 - INFO - ==============================================
+2024-09-10 21:01:08,236 - INFO - ==============================================
+2024-09-10 21:01:08,293 - INFO - ==============================================
+2024-09-10 21:01:08,336 - INFO - ==============================================
+2024-09-10 21:01:08,441 - INFO - ==============================================
+2024-09-10 21:01:08,444 - INFO - ==============================================
+2024-09-10 21:01:08,506 - INFO - ==============================================
+2024-09-10 21:01:08,519 - INFO - ==============================================
+2024-09-10 21:01:08,569 - INFO - ==============================================
+2024-09-10 21:01:09,939 - INFO - Assigned Alpha Station (Dry Dock) to system 1681.
+2024-09-10 21:01:09,939 - INFO - Assigned Beta Outpost (Research) to system 2542.
+2024-09-10 21:01:09,939 - INFO - Assigned Gamma Hub (Commercial) to system 335.
+2024-09-10 21:01:09,939 - INFO - Assigned Delta Base (Research) to system 267.
+2024-09-10 21:01:09,939 - INFO - Assigned Epsilon Market (Commercial) to system 2937.
+2024-09-10 21:01:09,939 - INFO - Assigned Zeta Dock (Research) to system 2897.
+2024-09-10 21:01:09,939 - INFO - Assigned Eta Complex (Research) to system 524.
+2024-09-10 21:01:09,939 - INFO - Assigned Theta Terminal (Dry Dock) to system 2575.
+2024-09-10 21:01:09,939 - INFO - Assigned Iota Post (Research) to system 354.
+2024-09-10 21:01:09,939 - INFO - Assigned Kappa Point (Commercial) to system 602.
+2024-09-10 21:01:09,939 - INFO - Assigned Lambda Port (Commercial) to system 2511.
+2024-09-10 21:01:09,939 - INFO - Assigned Mu Station (Research) to system 1047.
+2024-09-10 21:01:09,939 - INFO - Assigned Nu Outpost (Commercial) to system 2668.
+2024-09-10 21:01:09,939 - INFO - Assigned Xi Hub (Dry Dock) to system 1434.
+2024-09-10 21:01:09,939 - INFO - Assigned Omicron Base (Dry Dock) to system 2041.
+2024-09-10 21:01:09,939 - INFO - Assigned Pi Market (Commercial) to system 1317.
+2024-09-10 21:01:09,939 - INFO - Assigned Rho Dock (Commercial) to system 2023.
+2024-09-10 21:01:09,939 - INFO - Assigned Sigma Complex (Dry Dock) to system 2171.
+2024-09-10 21:01:09,939 - INFO - Assigned Tau Terminal (Research) to system 1923.
+2024-09-10 21:01:09,939 - INFO - Assigned Upsilon Post (Research) to system 239.
+2024-09-10 21:01:09,939 - INFO - Assigned Phi Point (Commercial) to system 2566.
+2024-09-10 21:01:09,940 - INFO - Assigned Chi Port (Research) to system 662.
+2024-09-10 21:01:09,940 - INFO - Assigned Psi Station (Research) to system 1632.
+2024-09-10 21:01:09,940 - INFO - Assigned Omega Outpost (Research) to system 878.
+2024-09-10 21:01:09,940 - INFO - Assigned Nova Station (Dry Dock) to system 299.
+2024-09-10 21:01:09,940 - INFO - Assigned Orion Terminal (Dry Dock) to system 180.
+2024-09-10 21:01:09,940 - INFO - Assigned Vega Hub (Research) to system 2409.
+2024-09-10 21:01:09,940 - INFO - Assigned Sirius Dock (Dry Dock) to system 161.
+2024-09-10 21:01:09,940 - INFO - Assigned Antares Post (Research) to system 455.
+2024-09-10 21:01:09,940 - INFO - Assigned Polaris Base (Dry Dock) to system 2880.
+2024-09-10 21:01:09,940 - INFO - Assigned Centauri Market (Dry Dock) to system 1683.
+2024-09-10 21:01:09,940 - INFO - Assigned Rigel Station (Dry Dock) to system 912.
+2024-09-10 21:01:09,940 - INFO - Assigned Arcturus Port (Commercial) to system 2235.
+2024-09-10 21:01:09,940 - INFO - Assigned Proxima Outpost (Research) to system 1312.
+2024-09-10 21:01:09,940 - INFO - Assigned Altair Complex (Dry Dock) to system 1485.
+2024-09-10 21:01:09,940 - INFO - Assigned Deneb Hub (Commercial) to system 1561.
+2024-09-10 21:01:09,940 - INFO - Assigned Betelgeuse Station (Dry Dock) to system 605.
+2024-09-10 21:01:09,940 - INFO - Assigned Mira Terminal (Dry Dock) to system 2916.
+2024-09-10 21:01:09,940 - INFO - Assigned Aldebaran Dock (Commercial) to system 993.
+2024-09-10 21:01:09,940 - INFO - Assigned Alcyone Point (Research) to system 283.
+2024-09-10 21:01:09,940 - INFO - Assigned Capella Base (Dry Dock) to system 823.
+2024-09-10 21:01:09,940 - INFO - Assigned Bellatrix Port (Commercial) to system 1172.
+2024-09-10 21:01:09,940 - INFO - Assigned Canopus Station (Commercial) to system 1661.
+2024-09-10 21:01:09,940 - INFO - Assigned Castor Terminal (Research) to system 209.
+2024-09-10 21:01:09,940 - INFO - Assigned Electra Market (Dry Dock) to system 1294.
+2024-09-10 21:01:09,940 - INFO - Assigned Gacrux Complex (Commercial) to system 1589.
+2024-09-10 21:01:09,940 - INFO - Assigned Achernar Hub (Research) to system 172.
+2024-09-10 21:01:09,940 - INFO - Assigned Fomalhaut Post (Commercial) to system 438.
+2024-09-10 21:01:09,941 - INFO - Assigned Alnair Station (Dry Dock) to system 277.
+2024-09-10 21:01:09,941 - INFO - Assigned Spica Base (Research) to system 1658.
+2024-09-10 21:01:09,941 - INFO - Assigned Saiph Dock (Research) to system 853.
+2024-09-10 21:01:09,941 - INFO - Assigned Merak Complex (Research) to system 3043.
+2024-09-10 21:01:09,941 - INFO - Assigned Menkalinan Hub (Research) to system 2523.
+2024-09-10 21:01:09,941 - INFO - Assigned Algol Terminal (Research) to system 442.
+2024-09-10 21:01:09,941 - INFO - Assigned Diphda Station (Commercial) to system 3015.
+2024-09-10 21:01:09,941 - INFO - Assigned Gienah Market (Research) to system 1676.
+2024-09-10 21:01:09,941 - INFO - Assigned Caph Dock (Commercial) to system 2529.
+2024-09-10 21:01:09,941 - INFO - Assigned Kochab Complex (Dry Dock) to system 2357.
+2024-09-10 21:01:09,941 - INFO - Assigned Regulus Base (Dry Dock) to system 375.
+2024-09-10 21:01:09,941 - INFO - Assigned Izar Hub (Research) to system 999.
+2024-09-10 21:01:09,941 - INFO - Assigned Dubhe Terminal (Commercial) to system 1518.
+2024-09-10 21:01:09,941 - INFO - Assigned Rasalhague Station (Research) to system 307.
+2024-09-10 21:01:09,941 - INFO - Assigned Alhena Outpost (Dry Dock) to system 135.
+2024-09-10 21:01:09,941 - INFO - Assigned Markab Dock (Dry Dock) to system 2648.
+2024-09-10 21:01:09,941 - INFO - Assigned Alpheratz Complex (Commercial) to system 1297.
+2024-09-10 21:01:09,941 - INFO - Assigned Schedar Hub (Dry Dock) to system 3047.
+2024-09-10 21:01:09,941 - INFO - Assigned Castula Terminal (Research) to system 557.
+2024-09-10 21:01:09,941 - INFO - Assigned Alnitak Station (Dry Dock) to system 1477.
+2024-09-10 21:01:09,941 - INFO - Assigned Bellona Base (Research) to system 433.
+2024-09-10 21:01:09,941 - INFO - Assigned Cassiopeia Outpost (Dry Dock) to system 2610.
+2024-09-10 21:01:09,941 - INFO - Assigned Aurora Hub (Commercial) to system 2108.
+2024-09-10 21:01:09,941 - INFO - Assigned Hercules Terminal (Research) to system 2568.
+2024-09-10 21:01:09,941 - INFO - Assigned Cepheus Dock (Dry Dock) to system 1252.
+2024-09-10 21:01:09,941 - INFO - Assigned Perseus Complex (Research) to system 2848.
+2024-09-10 21:01:09,941 - INFO - Assigned Hades Hub (Dry Dock) to system 2918.
+2024-09-10 21:01:09,941 - INFO - Assigned Zephyr Station (Commercial) to system 2473.
+2024-09-10 21:01:09,942 - INFO - Assigned Poseidon Base (Commercial) to system 219.
+2024-09-10 21:01:09,942 - INFO - Assigned Demeter Dock (Research) to system 2384.
+2024-09-10 21:01:09,942 - INFO - Assigned Apollo Complex (Research) to system 1253.
+2024-09-10 21:01:09,942 - INFO - Assigned Athena Hub (Commercial) to system 2364.
+2024-09-10 21:01:09,942 - INFO - Assigned Vulcan Terminal (Dry Dock) to system 2906.
+2024-09-10 21:01:09,942 - INFO - Assigned Juno Station (Commercial) to system 1522.
+2024-09-10 21:01:09,942 - INFO - Assigned Minerva Base (Research) to system 284.
+2024-09-10 21:01:09,942 - INFO - Assigned Mercury Dock (Dry Dock) to system 1689.
+2024-09-10 21:01:09,942 - INFO - Assigned Ceres Complex (Dry Dock) to system 2168.
+2024-09-10 21:01:09,942 - INFO - Assigned Neptune Hub (Commercial) to system 216.
+2024-09-10 21:01:09,942 - INFO - Assigned Uranus Terminal (Dry Dock) to system 31.
+2024-09-10 21:01:09,942 - INFO - Assigned Titania Station (Dry Dock) to system 222.
+2024-09-10 21:01:09,942 - INFO - Assigned Ganymede Outpost (Research) to system 1830.
+2024-09-10 21:01:09,942 - INFO - Assigned Callisto Hub (Dry Dock) to system 2387.
+2024-09-10 21:01:09,942 - INFO - Assigned Europa Dock (Dry Dock) to system 2188.
+2024-09-10 21:01:09,942 - INFO - Assigned Io Complex (Commercial) to system 346.
+2024-09-10 21:01:09,942 - INFO - Assigned Atlas Terminal (Commercial) to system 1470.
+2024-09-10 21:01:09,942 - INFO - Assigned Prometheus Station (Research) to system 1493.
+2024-09-10 21:01:09,942 - INFO - Assigned Pandora Base (Commercial) to system 2319.
+2024-09-10 21:01:09,942 - INFO - Assigned Helios Dock (Dry Dock) to system 1994.
+2024-09-10 21:01:09,942 - INFO - Assigned Selene Complex (Research) to system 3033.
+2024-09-10 21:01:09,942 - INFO - Assigned Nyx Hub (Dry Dock) to system 1824.
+2024-09-10 21:01:09,942 - INFO - Assigned Chronos Terminal (Dry Dock) to system 2730.
+2024-09-10 21:01:09,942 - INFO - Assigned Erebus Station (Commercial) to system 403.
+2024-09-10 21:01:09,942 - INFO - Assigned Thanatos Outpost (Commercial) to system 197.
+2024-09-10 21:01:09,942 - INFO - Assigned Nemesis Hub (Commercial) to system 932.
+2024-09-10 21:01:09,942 - INFO - Assigned Hyperion Dock (Research) to system 561.
+2024-09-10 21:01:09,942 - INFO - Assigned Themis Complex (Commercial) to system 680.
+2024-09-10 21:01:09,943 - INFO - Assigned Eos Hub (Commercial) to system 1097.
+2024-09-10 21:01:09,943 - INFO - Assigned Iris Terminal (Commercial) to system 1416.
+2024-09-10 21:01:09,943 - INFO - Assigned Pallas Station (Research) to system 2526.
+2024-09-10 21:01:09,943 - INFO - Assigned Hestia Base (Research) to system 800.
+2024-09-10 21:01:09,943 - INFO - Assigned Vesta Dock (Commercial) to system 2243.
+2024-09-10 21:01:09,943 - INFO - Assigned Fortuna Complex (Commercial) to system 1992.
+2024-09-10 21:01:09,943 - INFO - Assigned Elara Terminal (Dry Dock) to system 2592.
+2024-09-10 21:01:09,943 - INFO - Assigned Hygiea Station (Commercial) to system 1066.
+2024-09-10 21:01:09,943 - INFO - Assigned Psyche Outpost (Dry Dock) to system 2644.
+2024-09-10 21:01:09,943 - INFO - Assigned Cybele Hub (Dry Dock) to system 396.
+2024-09-10 21:01:09,943 - INFO - Assigned Hermes Dock (Commercial) to system 2064.
+2024-09-10 21:01:09,943 - INFO - Assigned Mars Base (Dry Dock) to system 1338.
+2024-09-10 21:01:09,943 - INFO - Assigned Jupiter Complex (Research) to system 1731.
+2024-09-10 21:01:09,943 - INFO - Assigned Saturn Hub (Commercial) to system 1746.
+2024-09-10 21:01:09,943 - INFO - Assigned Gaia Terminal (Commercial) to system 1417.
+2024-09-10 21:01:09,943 - INFO - Assigned Oberon Station (Commercial) to system 1867.
+2024-09-10 21:01:09,943 - INFO - Assigned Rhea Outpost (Commercial) to system 809.
+2024-09-10 21:01:09,943 - INFO - Assigned Enceladus Hub (Dry Dock) to system 2754.
+2024-09-10 21:01:10,517 - INFO - Universe with 3072 systems created and updated successfully.
+2024-09-10 21:01:10,595 - INFO - Logging owned systems:
+2024-09-10 21:01:10,596 - INFO - System ID 365 is owned by Noringian Hive
+2024-09-10 21:01:10,596 - INFO - System ID 413 is owned by People of the River
+2024-09-10 21:01:10,596 - INFO - System ID 1596 is owned by United Systems of Man
+2024-09-10 21:01:10,596 - INFO - System ID 1649 is owned by Shogunate 3072
+2024-09-10 21:01:10,596 - INFO - System ID 2704 is owned by Mandate of God
+2024-09-10 21:01:31,160 - INFO - Player's faction People of the River starts in system: 1207 with star type G-type
+2024-09-10 21:01:31,748 - INFO - Game Start: New Game Selected
+2024-09-10 21:01:31,748 - INFO - Universe Size: 3072 systems
+2024-09-10 21:01:31,748 - INFO - Character Name: 222
+2024-09-10 21:01:31,748 - INFO - Faction: People of the River
+2024-09-10 21:01:31,748 - INFO - Ship Type: {'name': 'Oxygen', 'class': 'Light', 'faction_of_origin': 'People of the River', 'description': 'Specialized in resource gathering.', 'required_rank_to_pilot': 'Civilian', 'size': 'Small', 'ship_cost': 550, 'min_cargo': 15, 'max_cargo': 35, 'max_shields': 55, 'max_armor': 25, 'max_hull': 35, 'system_scanner_type': 'Alpha', 'system_scanner_level': 3, 'planet_scanner': 'Yes', 'planet_scanner_level': 2, 'resource_scanner': 'Yes', 'resource_scanner_level': 2, 'weapon_type': 'Light Laser', 'combat_bonus': 1.0, 'mining_attachment': 'Yes', 'mining_attachment_level': 1}
+2024-09-10 21:01:31,748 - INFO - Ship Name: 222
+2024-09-10 21:01:31,748 - INFO - Player starting in system: 1207
+2024-09-10 21:02:22,432 - INFO - Admin shortcut: Moved to system 1731.
+2024-09-10 21:02:38,340 - INFO - Admin shortcut: Moved to system 1338.
+2024-09-10 21:57:38,947 - INFO - ==============================================
+2024-09-10 21:57:40,890 - INFO - ==============================================
+2024-09-10 21:57:40,890 - INFO - Starting the main function.
+2024-09-10 21:57:41,293 - INFO - ==============================================
+2024-09-10 21:57:41,545 - INFO - ==============================================
+2024-09-10 21:57:41,545 - INFO - ==============================================
+2024-09-10 21:57:41,592 - INFO - ==============================================
+2024-09-10 21:57:41,693 - INFO - ==============================================
+2024-09-10 21:57:41,700 - INFO - ==============================================
+2024-09-10 21:57:41,755 - INFO - ==============================================
+2024-09-10 21:57:41,762 - INFO - ==============================================
+2024-09-10 21:57:41,828 - INFO - ==============================================
+2024-09-10 21:57:43,327 - INFO - Assigned Alpha Station (Research) to system 1835.
+2024-09-10 21:57:43,327 - INFO - Assigned Beta Outpost (Research) to system 2980.
+2024-09-10 21:57:43,327 - INFO - Assigned Gamma Hub (Commercial) to system 744.
+2024-09-10 21:57:43,327 - INFO - Assigned Delta Base (Research) to system 2981.
+2024-09-10 21:57:43,327 - INFO - Assigned Epsilon Market (Commercial) to system 2332.
+2024-09-10 21:57:43,328 - INFO - Assigned Zeta Dock (Dry Dock) to system 1140.
+2024-09-10 21:57:43,328 - INFO - Assigned Eta Complex (Research) to system 2190.
+2024-09-10 21:57:43,328 - INFO - Assigned Theta Terminal (Dry Dock) to system 1876.
+2024-09-10 21:57:43,328 - INFO - Assigned Iota Post (Commercial) to system 1354.
+2024-09-10 21:57:43,328 - INFO - Assigned Kappa Point (Dry Dock) to system 135.
+2024-09-10 21:57:43,328 - INFO - Assigned Lambda Port (Commercial) to system 1873.
+2024-09-10 21:57:43,328 - INFO - Assigned Mu Station (Research) to system 378.
+2024-09-10 21:57:43,328 - INFO - Assigned Nu Outpost (Commercial) to system 686.
+2024-09-10 21:57:43,328 - INFO - Assigned Xi Hub (Commercial) to system 1724.
+2024-09-10 21:57:43,328 - INFO - Assigned Omicron Base (Commercial) to system 1802.
+2024-09-10 21:57:43,328 - INFO - Assigned Pi Market (Commercial) to system 1005.
+2024-09-10 21:57:43,328 - INFO - Assigned Rho Dock (Dry Dock) to system 1345.
+2024-09-10 21:57:43,328 - INFO - Assigned Sigma Complex (Dry Dock) to system 1956.
+2024-09-10 21:57:43,328 - INFO - Assigned Tau Terminal (Research) to system 512.
+2024-09-10 21:57:43,328 - INFO - Assigned Upsilon Post (Research) to system 310.
+2024-09-10 21:57:43,328 - INFO - Assigned Phi Point (Commercial) to system 2804.
+2024-09-10 21:57:43,328 - INFO - Assigned Chi Port (Commercial) to system 2997.
+2024-09-10 21:57:43,328 - INFO - Assigned Psi Station (Dry Dock) to system 2685.
+2024-09-10 21:57:43,328 - INFO - Assigned Omega Outpost (Research) to system 389.
+2024-09-10 21:57:43,328 - INFO - Assigned Nova Station (Commercial) to system 2634.
+2024-09-10 21:57:43,328 - INFO - Assigned Orion Terminal (Commercial) to system 2504.
+2024-09-10 21:57:43,328 - INFO - Assigned Vega Hub (Commercial) to system 1101.
+2024-09-10 21:57:43,328 - INFO - Assigned Sirius Dock (Commercial) to system 1394.
+2024-09-10 21:57:43,328 - INFO - Assigned Antares Post (Dry Dock) to system 2287.
+2024-09-10 21:57:43,328 - INFO - Assigned Polaris Base (Commercial) to system 1824.
+2024-09-10 21:57:43,328 - INFO - Assigned Centauri Market (Research) to system 241.
+2024-09-10 21:57:43,328 - INFO - Assigned Rigel Station (Dry Dock) to system 897.
+2024-09-10 21:57:43,328 - INFO - Assigned Arcturus Port (Research) to system 1318.
+2024-09-10 21:57:43,328 - INFO - Assigned Proxima Outpost (Research) to system 1079.
+2024-09-10 21:57:43,328 - INFO - Assigned Altair Complex (Commercial) to system 1429.
+2024-09-10 21:57:43,328 - INFO - Assigned Deneb Hub (Research) to system 1665.
+2024-09-10 21:57:43,329 - INFO - Assigned Betelgeuse Station (Dry Dock) to system 1399.
+2024-09-10 21:57:43,329 - INFO - Assigned Mira Terminal (Commercial) to system 3048.
+2024-09-10 21:57:43,329 - INFO - Assigned Aldebaran Dock (Commercial) to system 1096.
+2024-09-10 21:57:43,329 - INFO - Assigned Alcyone Point (Commercial) to system 1446.
+2024-09-10 21:57:43,329 - INFO - Assigned Capella Base (Commercial) to system 1276.
+2024-09-10 21:57:43,329 - INFO - Assigned Bellatrix Port (Research) to system 1748.
+2024-09-10 21:57:43,329 - INFO - Assigned Canopus Station (Research) to system 1826.
+2024-09-10 21:57:43,329 - INFO - Assigned Castor Terminal (Research) to system 1371.
+2024-09-10 21:57:43,329 - INFO - Assigned Electra Market (Research) to system 3012.
+2024-09-10 21:57:43,329 - INFO - Assigned Gacrux Complex (Research) to system 2596.
+2024-09-10 21:57:43,329 - INFO - Assigned Achernar Hub (Research) to system 1386.
+2024-09-10 21:57:43,329 - INFO - Assigned Fomalhaut Post (Research) to system 2810.
+2024-09-10 21:57:43,329 - INFO - Assigned Alnair Station (Commercial) to system 1187.
+2024-09-10 21:57:43,329 - INFO - Assigned Spica Base (Dry Dock) to system 227.
+2024-09-10 21:57:43,329 - INFO - Assigned Saiph Dock (Commercial) to system 2554.
+2024-09-10 21:57:43,329 - INFO - Assigned Merak Complex (Commercial) to system 2954.
+2024-09-10 21:57:43,329 - INFO - Assigned Menkalinan Hub (Research) to system 943.
+2024-09-10 21:57:43,329 - INFO - Assigned Algol Terminal (Dry Dock) to system 2198.
+2024-09-10 21:57:43,329 - INFO - Assigned Diphda Station (Research) to system 2767.
+2024-09-10 21:57:43,329 - INFO - Assigned Gienah Market (Commercial) to system 1239.
+2024-09-10 21:57:43,329 - INFO - Assigned Caph Dock (Dry Dock) to system 3060.
+2024-09-10 21:57:43,329 - INFO - Assigned Kochab Complex (Research) to system 2317.
+2024-09-10 21:57:43,329 - INFO - Assigned Regulus Base (Commercial) to system 2236.
+2024-09-10 21:57:43,329 - INFO - Assigned Izar Hub (Research) to system 2673.
+2024-09-10 21:57:43,329 - INFO - Assigned Dubhe Terminal (Dry Dock) to system 1755.
+2024-09-10 21:57:43,329 - INFO - Assigned Rasalhague Station (Dry Dock) to system 201.
+2024-09-10 21:57:43,329 - INFO - Assigned Alhena Outpost (Commercial) to system 106.
+2024-09-10 21:57:43,329 - INFO - Assigned Markab Dock (Commercial) to system 559.
+2024-09-10 21:57:43,329 - INFO - Assigned Alpheratz Complex (Research) to system 930.
+2024-09-10 21:57:43,329 - INFO - Assigned Schedar Hub (Dry Dock) to system 2352.
+2024-09-10 21:57:43,329 - INFO - Assigned Castula Terminal (Research) to system 709.
+2024-09-10 21:57:43,329 - INFO - Assigned Alnitak Station (Research) to system 1017.
+2024-09-10 21:57:43,329 - INFO - Assigned Bellona Base (Dry Dock) to system 233.
+2024-09-10 21:57:43,329 - INFO - Assigned Cassiopeia Outpost (Commercial) to system 2878.
+2024-09-10 21:57:43,330 - INFO - Assigned Aurora Hub (Dry Dock) to system 1242.
+2024-09-10 21:57:43,330 - INFO - Assigned Hercules Terminal (Commercial) to system 2081.
+2024-09-10 21:57:43,330 - INFO - Assigned Cepheus Dock (Research) to system 1240.
+2024-09-10 21:57:43,330 - INFO - Assigned Perseus Complex (Dry Dock) to system 1019.
+2024-09-10 21:57:43,330 - INFO - Assigned Hades Hub (Research) to system 246.
+2024-09-10 21:57:43,330 - INFO - Assigned Zephyr Station (Dry Dock) to system 2562.
+2024-09-10 21:57:43,330 - INFO - Assigned Poseidon Base (Research) to system 1457.
+2024-09-10 21:57:43,330 - INFO - Assigned Demeter Dock (Dry Dock) to system 2004.
+2024-09-10 21:57:43,330 - INFO - Assigned Apollo Complex (Dry Dock) to system 2697.
+2024-09-10 21:57:43,330 - INFO - Assigned Athena Hub (Dry Dock) to system 666.
+2024-09-10 21:57:43,330 - INFO - Assigned Vulcan Terminal (Research) to system 1505.
+2024-09-10 21:57:43,330 - INFO - Assigned Juno Station (Dry Dock) to system 1996.
+2024-09-10 21:57:43,330 - INFO - Assigned Minerva Base (Commercial) to system 1036.
+2024-09-10 21:57:43,330 - INFO - Assigned Mercury Dock (Research) to system 1757.
+2024-09-10 21:57:43,330 - INFO - Assigned Ceres Complex (Commercial) to system 1041.
+2024-09-10 21:57:43,330 - INFO - Assigned Neptune Hub (Research) to system 485.
+2024-09-10 21:57:43,330 - INFO - Assigned Uranus Terminal (Research) to system 2542.
+2024-09-10 21:57:43,330 - INFO - Assigned Titania Station (Dry Dock) to system 1231.
+2024-09-10 21:57:43,330 - INFO - Assigned Ganymede Outpost (Dry Dock) to system 2146.
+2024-09-10 21:57:43,330 - INFO - Assigned Callisto Hub (Dry Dock) to system 1385.
+2024-09-10 21:57:43,330 - INFO - Assigned Europa Dock (Dry Dock) to system 2294.
+2024-09-10 21:57:43,330 - INFO - Assigned Io Complex (Research) to system 1847.
+2024-09-10 21:57:43,330 - INFO - Assigned Atlas Terminal (Research) to system 2694.
+2024-09-10 21:57:43,330 - INFO - Assigned Prometheus Station (Research) to system 570.
+2024-09-10 21:57:43,330 - INFO - Assigned Pandora Base (Research) to system 1008.
+2024-09-10 21:57:43,330 - INFO - Assigned Helios Dock (Dry Dock) to system 1789.
+2024-09-10 21:57:43,330 - INFO - Assigned Selene Complex (Research) to system 817.
+2024-09-10 21:57:43,330 - INFO - Assigned Nyx Hub (Commercial) to system 75.
+2024-09-10 21:57:43,330 - INFO - Assigned Chronos Terminal (Commercial) to system 1566.
+2024-09-10 21:57:43,330 - INFO - Assigned Erebus Station (Dry Dock) to system 1075.
+2024-09-10 21:57:43,330 - INFO - Assigned Thanatos Outpost (Commercial) to system 1920.
+2024-09-10 21:57:43,330 - INFO - Assigned Nemesis Hub (Dry Dock) to system 1770.
+2024-09-10 21:57:43,330 - INFO - Assigned Hyperion Dock (Commercial) to system 2895.
+2024-09-10 21:57:43,331 - INFO - Assigned Themis Complex (Dry Dock) to system 2921.
+2024-09-10 21:57:43,331 - INFO - Assigned Eos Hub (Commercial) to system 2109.
+2024-09-10 21:57:43,331 - INFO - Assigned Iris Terminal (Dry Dock) to system 2053.
+2024-09-10 21:57:43,331 - INFO - Assigned Pallas Station (Commercial) to system 29.
+2024-09-10 21:57:43,331 - INFO - Assigned Hestia Base (Research) to system 2121.
+2024-09-10 21:57:43,331 - INFO - Assigned Vesta Dock (Commercial) to system 2962.
+2024-09-10 21:57:43,331 - INFO - Assigned Fortuna Complex (Commercial) to system 3062.
+2024-09-10 21:57:43,331 - INFO - Assigned Elara Terminal (Commercial) to system 127.
+2024-09-10 21:57:43,331 - INFO - Assigned Hygiea Station (Commercial) to system 2632.
+2024-09-10 21:57:43,331 - INFO - Assigned Psyche Outpost (Commercial) to system 1664.
+2024-09-10 21:57:43,331 - INFO - Assigned Cybele Hub (Commercial) to system 251.
+2024-09-10 21:57:43,331 - INFO - Assigned Hermes Dock (Commercial) to system 27.
+2024-09-10 21:57:43,331 - INFO - Assigned Mars Base (Research) to system 1190.
+2024-09-10 21:57:43,331 - INFO - Assigned Jupiter Complex (Research) to system 733.
+2024-09-10 21:57:43,331 - INFO - Assigned Saturn Hub (Commercial) to system 295.
+2024-09-10 21:57:43,331 - INFO - Assigned Gaia Terminal (Dry Dock) to system 1302.
+2024-09-10 21:57:43,331 - INFO - Assigned Oberon Station (Research) to system 183.
+2024-09-10 21:57:43,331 - INFO - Assigned Rhea Outpost (Dry Dock) to system 1541.
+2024-09-10 21:57:43,331 - INFO - Assigned Enceladus Hub (Commercial) to system 2507.
+2024-09-10 21:57:43,909 - INFO - Universe with 3072 systems created and updated successfully.
+2024-09-10 21:57:43,990 - INFO - Logging owned systems:
+2024-09-10 21:57:43,990 - INFO - System ID 850 is owned by Noringian Hive
+2024-09-10 21:57:43,990 - INFO - System ID 1026 is owned by People of the River
+2024-09-10 21:57:43,990 - INFO - System ID 2324 is owned by Shogunate 3072
+2024-09-10 21:57:43,990 - INFO - System ID 2447 is owned by Mandate of God
+2024-09-10 21:57:43,990 - INFO - System ID 3052 is owned by United Systems of Man
+2024-09-10 21:57:57,295 - INFO - Player's faction Mandate of God starts in system: 352 with star type G-type
+2024-09-10 21:57:57,867 - INFO - Game Start: New Game Selected
+2024-09-10 21:57:57,867 - INFO - Universe Size: 3072 systems
+2024-09-10 21:57:57,867 - INFO - Character Name: asdkasd
+2024-09-10 21:57:57,867 - INFO - Faction: Mandate of God
+2024-09-10 21:57:57,867 - INFO - Ship Type: {'name': 'Holy Avenger', 'class': 'Light', 'faction_of_origin': 'Mandate of God', 'description': 'Equipped for divine intervention missions.', 'required_rank_to_pilot': 'Civilian', 'size': 'Small', 'ship_cost': 700, 'min_cargo': 14, 'max_cargo': 34, 'max_shields': 65, 'max_armor': 30, 'max_hull': 40, 'system_scanner_type': 'Gamma', 'system_scanner_level': 4, 'planet_scanner': 'Yes', 'planet_scanner_level': 3, 'resource_scanner': 'Yes', 'resource_scanner_level': 3, 'weapon_type': 'Enhanced Laser', 'combat_bonus': 1.0, 'mining_attachment': 'No', 'mining_attachment_level': 0}
+2024-09-10 21:57:57,867 - INFO - Ship Name: sadfjkhsdf
+2024-09-10 21:57:57,867 - INFO - Player starting in system: 352
+2024-09-10 21:58:02,554 - DEBUG - System 352 visited status: True
+2024-09-10 21:58:07,842 - DEBUG - System 618 visited status: True
+2024-09-10 21:58:15,134 - DEBUG - System 465 visited status: True
+2024-09-10 21:58:27,026 - DEBUG - System 2831 visited status: True
+2024-09-10 21:58:33,886 - DEBUG - System 2877 visited status: True
+2024-09-10 21:58:36,431 - DEBUG - System 3041 visited status: True
+2024-09-10 21:58:38,658 - DEBUG - System 3068 visited status: True
+2024-09-10 21:58:40,766 - DEBUG - System 3071 visited status: True
+2024-09-10 21:58:43,829 - DEBUG - System 3072 visited status: True
+2024-09-10 21:58:55,996 - DEBUG - System 1 visited status: True
+2024-09-10 21:58:58,095 - DEBUG - System 3070 visited status: True
+2024-09-10 21:59:00,227 - DEBUG - System 3067 visited status: True
+2024-09-10 21:59:02,114 - DEBUG - System 3063 visited status: True
+2024-09-10 21:59:04,010 - DEBUG - System 3046 visited status: True
+2024-09-10 21:59:05,918 - DEBUG - System 3039 visited status: True
+2024-09-10 21:59:07,955 - DEBUG - System 2308 visited status: True
+2024-09-10 21:59:09,915 - DEBUG - System 1877 visited status: True
+2024-09-10 21:59:11,858 - DEBUG - System 1241 visited status: True
+2024-09-10 21:59:15,614 - DEBUG - System 1064 visited status: True
+2024-09-10 21:59:27,982 - DEBUG - System 902 visited status: True
+2024-09-10 21:59:30,846 - DEBUG - System 597 visited status: True
+2024-09-10 21:59:41,815 - DEBUG - System 1944 visited status: True
+2024-09-10 21:59:44,434 - DEBUG - System 1561 visited status: True
+2024-09-10 21:59:46,526 - DEBUG - System 628 visited status: True
+2024-09-10 21:59:50,394 - DEBUG - System 1204 visited status: True
+2024-09-10 21:59:52,274 - DEBUG - System 1030 visited status: True
+2024-09-10 21:59:53,907 - DEBUG - System 651 visited status: True
+2024-09-10 22:00:09,582 - DEBUG - System 812 visited status: True
+2024-09-10 22:01:48,423 - DEBUG - System 3017 visited status: True
+2024-09-10 22:01:51,146 - DEBUG - System 2960 visited status: True
+2024-09-10 22:01:54,114 - DEBUG - System 2935 visited status: True
+2024-09-10 22:01:56,883 - DEBUG - System 2862 visited status: True
+2024-09-10 22:02:03,654 - DEBUG - System 2776 visited status: True
+2024-09-10 22:02:05,606 - DEBUG - System 2220 visited status: True
+2024-09-10 22:02:07,326 - DEBUG - System 1988 visited status: True
+2024-09-10 22:02:09,471 - DEBUG - System 1084 visited status: True
+2024-09-10 22:02:20,183 - DEBUG - System 1992 visited status: True
+2024-09-10 22:02:22,266 - DEBUG - System 1367 visited status: True
+2024-09-10 22:02:45,150 - DEBUG - System 908 visited status: True
+2024-09-10 22:06:23,450 - DEBUG - System 1888 visited status: True
+2024-09-10 22:06:29,789 - DEBUG - System 1706 visited status: True
+2024-09-10 22:06:32,410 - DEBUG - System 219 visited status: True
+2024-09-10 22:06:36,664 - DEBUG - System 175 visited status: True
+2024-09-10 22:06:50,006 - INFO - Admin shortcut: Moved to system 1.
+2024-09-10 22:20:21,372 - INFO - ==============================================
+2024-09-10 22:20:25,214 - INFO - ==============================================
+2024-09-10 22:20:25,214 - INFO - Starting the main function.
+2024-09-10 22:20:25,439 - INFO - ==============================================
+2024-09-10 22:20:25,689 - INFO - ==============================================
+2024-09-10 22:20:25,689 - INFO - ==============================================
+2024-09-10 22:20:25,744 - INFO - ==============================================
+2024-09-10 22:20:25,789 - INFO - ==============================================
+2024-09-10 22:20:25,844 - INFO - ==============================================
+2024-09-10 22:20:25,905 - INFO - ==============================================
+2024-09-10 22:20:25,912 - INFO - ==============================================
+2024-09-10 22:20:25,968 - INFO - ==============================================
+2024-09-10 22:24:00,643 - INFO - ==============================================
+2024-09-10 22:24:01,935 - INFO - ==============================================
+2024-09-10 22:24:01,935 - INFO - Starting the main function.
+2024-09-10 22:24:02,162 - INFO - ==============================================
+2024-09-10 22:24:02,363 - INFO - ==============================================
+2024-09-10 22:24:02,472 - INFO - ==============================================
+2024-09-10 22:24:02,477 - INFO - ==============================================
+2024-09-10 22:24:02,527 - INFO - ==============================================
+2024-09-10 22:24:02,586 - INFO - ==============================================
+2024-09-10 22:24:02,672 - INFO - ==============================================
+2024-09-10 22:24:02,676 - INFO - ==============================================
+2024-09-10 22:24:02,750 - INFO - ==============================================
+2024-09-10 22:24:05,369 - INFO - Assigned Alpha Station (Commercial) to system 2492.
+2024-09-10 22:24:05,369 - INFO - Assigned Beta Outpost (Commercial) to system 1892.
+2024-09-10 22:24:05,369 - INFO - Assigned Gamma Hub (Dry Dock) to system 1988.
+2024-09-10 22:24:05,369 - INFO - Assigned Delta Base (Dry Dock) to system 1999.
+2024-09-10 22:24:05,369 - INFO - Assigned Epsilon Market (Dry Dock) to system 2888.
+2024-09-10 22:24:05,369 - INFO - Assigned Zeta Dock (Research) to system 1019.
+2024-09-10 22:24:05,369 - INFO - Assigned Eta Complex (Dry Dock) to system 2142.
+2024-09-10 22:24:05,369 - INFO - Assigned Theta Terminal (Commercial) to system 2205.
+2024-09-10 22:24:05,369 - INFO - Assigned Iota Post (Dry Dock) to system 2198.
+2024-09-10 22:24:05,369 - INFO - Assigned Kappa Point (Commercial) to system 2763.
+2024-09-10 22:24:05,369 - INFO - Assigned Lambda Port (Commercial) to system 1269.
+2024-09-10 22:24:05,369 - INFO - Assigned Mu Station (Dry Dock) to system 1611.
+2024-09-10 22:24:05,369 - INFO - Assigned Nu Outpost (Research) to system 2134.
+2024-09-10 22:24:05,369 - INFO - Assigned Xi Hub (Dry Dock) to system 582.
+2024-09-10 22:24:05,369 - INFO - Assigned Omicron Base (Dry Dock) to system 2427.
+2024-09-10 22:24:05,369 - INFO - Assigned Pi Market (Dry Dock) to system 974.
+2024-09-10 22:24:05,369 - INFO - Assigned Rho Dock (Dry Dock) to system 730.
+2024-09-10 22:24:05,369 - INFO - Assigned Sigma Complex (Dry Dock) to system 40.
+2024-09-10 22:24:05,369 - INFO - Assigned Tau Terminal (Dry Dock) to system 1848.
+2024-09-10 22:24:05,369 - INFO - Assigned Upsilon Post (Commercial) to system 1179.
+2024-09-10 22:24:05,369 - INFO - Assigned Phi Point (Dry Dock) to system 711.
+2024-09-10 22:24:05,369 - INFO - Assigned Chi Port (Dry Dock) to system 913.
+2024-09-10 22:24:05,370 - INFO - Assigned Psi Station (Commercial) to system 1913.
+2024-09-10 22:24:05,370 - INFO - Assigned Omega Outpost (Research) to system 1193.
+2024-09-10 22:24:05,370 - INFO - Assigned Nova Station (Dry Dock) to system 450.
+2024-09-10 22:24:05,370 - INFO - Assigned Orion Terminal (Research) to system 1249.
+2024-09-10 22:24:05,370 - INFO - Assigned Vega Hub (Dry Dock) to system 1486.
+2024-09-10 22:24:05,370 - INFO - Assigned Sirius Dock (Research) to system 1229.
+2024-09-10 22:24:05,370 - INFO - Assigned Antares Post (Commercial) to system 1004.
+2024-09-10 22:24:05,370 - INFO - Assigned Polaris Base (Research) to system 2875.
+2024-09-10 22:24:05,370 - INFO - Assigned Centauri Market (Dry Dock) to system 444.
+2024-09-10 22:24:05,370 - INFO - Assigned Rigel Station (Commercial) to system 841.
+2024-09-10 22:24:05,370 - INFO - Assigned Arcturus Port (Commercial) to system 925.
+2024-09-10 22:24:05,370 - INFO - Assigned Proxima Outpost (Commercial) to system 1748.
+2024-09-10 22:24:05,370 - INFO - Assigned Altair Complex (Research) to system 2548.
+2024-09-10 22:24:05,370 - INFO - Assigned Deneb Hub (Research) to system 322.
+2024-09-10 22:24:05,370 - INFO - Assigned Betelgeuse Station (Dry Dock) to system 1915.
+2024-09-10 22:24:05,370 - INFO - Assigned Mira Terminal (Commercial) to system 2531.
+2024-09-10 22:24:05,370 - INFO - Assigned Aldebaran Dock (Dry Dock) to system 1677.
+2024-09-10 22:24:05,370 - INFO - Assigned Alcyone Point (Dry Dock) to system 1274.
+2024-09-10 22:24:05,370 - INFO - Assigned Capella Base (Dry Dock) to system 489.
+2024-09-10 22:24:05,370 - INFO - Assigned Bellatrix Port (Dry Dock) to system 146.
+2024-09-10 22:24:05,370 - INFO - Assigned Canopus Station (Research) to system 2544.
+2024-09-10 22:24:05,370 - INFO - Assigned Castor Terminal (Commercial) to system 300.
+2024-09-10 22:24:05,370 - INFO - Assigned Electra Market (Research) to system 947.
+2024-09-10 22:24:05,370 - INFO - Assigned Gacrux Complex (Commercial) to system 1289.
+2024-09-10 22:24:05,370 - INFO - Assigned Achernar Hub (Research) to system 2563.
+2024-09-10 22:24:05,370 - INFO - Assigned Fomalhaut Post (Research) to system 1252.
+2024-09-10 22:24:05,370 - INFO - Assigned Alnair Station (Dry Dock) to system 2042.
+2024-09-10 22:24:05,370 - INFO - Assigned Spica Base (Dry Dock) to system 1812.
+2024-09-10 22:24:05,370 - INFO - Assigned Saiph Dock (Research) to system 366.
+2024-09-10 22:24:05,370 - INFO - Assigned Merak Complex (Commercial) to system 156.
+2024-09-10 22:24:05,370 - INFO - Assigned Menkalinan Hub (Dry Dock) to system 1253.
+2024-09-10 22:24:05,371 - INFO - Assigned Algol Terminal (Research) to system 1437.
+2024-09-10 22:24:05,371 - INFO - Assigned Diphda Station (Dry Dock) to system 2410.
+2024-09-10 22:24:05,371 - INFO - Assigned Gienah Market (Dry Dock) to system 908.
+2024-09-10 22:24:05,371 - INFO - Assigned Caph Dock (Commercial) to system 1245.
+2024-09-10 22:24:05,371 - INFO - Assigned Kochab Complex (Dry Dock) to system 433.
+2024-09-10 22:24:05,371 - INFO - Assigned Regulus Base (Research) to system 1922.
+2024-09-10 22:24:05,371 - INFO - Assigned Izar Hub (Research) to system 1842.
+2024-09-10 22:24:05,371 - INFO - Assigned Dubhe Terminal (Commercial) to system 1577.
+2024-09-10 22:24:05,371 - INFO - Assigned Rasalhague Station (Research) to system 9.
+2024-09-10 22:24:05,371 - INFO - Assigned Alhena Outpost (Research) to system 1248.
+2024-09-10 22:24:05,371 - INFO - Assigned Markab Dock (Commercial) to system 539.
+2024-09-10 22:24:05,371 - INFO - Assigned Alpheratz Complex (Dry Dock) to system 2566.
+2024-09-10 22:24:05,371 - INFO - Assigned Schedar Hub (Commercial) to system 1767.
+2024-09-10 22:24:05,371 - INFO - Assigned Castula Terminal (Research) to system 1615.
+2024-09-10 22:24:05,371 - INFO - Assigned Alnitak Station (Dry Dock) to system 1610.
+2024-09-10 22:24:05,371 - INFO - Assigned Bellona Base (Dry Dock) to system 554.
+2024-09-10 22:24:05,371 - INFO - Assigned Cassiopeia Outpost (Commercial) to system 2046.
+2024-09-10 22:24:05,371 - INFO - Assigned Aurora Hub (Dry Dock) to system 381.
+2024-09-10 22:24:05,371 - INFO - Assigned Hercules Terminal (Commercial) to system 1699.
+2024-09-10 22:24:05,371 - INFO - Assigned Cepheus Dock (Dry Dock) to system 1706.
+2024-09-10 22:24:05,371 - INFO - Assigned Perseus Complex (Commercial) to system 672.
+2024-09-10 22:24:05,371 - INFO - Assigned Hades Hub (Dry Dock) to system 2667.
+2024-09-10 22:24:05,371 - INFO - Assigned Zephyr Station (Research) to system 1890.
+2024-09-10 22:24:05,371 - INFO - Assigned Poseidon Base (Dry Dock) to system 2480.
+2024-09-10 22:24:05,371 - INFO - Assigned Demeter Dock (Commercial) to system 10.
+2024-09-10 22:24:05,371 - INFO - Assigned Apollo Complex (Research) to system 3050.
+2024-09-10 22:24:05,371 - INFO - Assigned Athena Hub (Commercial) to system 2951.
+2024-09-10 22:24:05,371 - INFO - Assigned Vulcan Terminal (Commercial) to system 2624.
+2024-09-10 22:24:05,371 - INFO - Assigned Juno Station (Dry Dock) to system 644.
+2024-09-10 22:24:05,371 - INFO - Assigned Minerva Base (Commercial) to system 411.
+2024-09-10 22:24:05,371 - INFO - Assigned Mercury Dock (Dry Dock) to system 3035.
+2024-09-10 22:24:05,371 - INFO - Assigned Ceres Complex (Commercial) to system 687.
+2024-09-10 22:24:05,371 - INFO - Assigned Neptune Hub (Research) to system 308.
+2024-09-10 22:24:05,371 - INFO - Assigned Uranus Terminal (Commercial) to system 1447.
+2024-09-10 22:24:05,372 - INFO - Assigned Titania Station (Commercial) to system 6.
+2024-09-10 22:24:05,372 - INFO - Assigned Ganymede Outpost (Research) to system 2672.
+2024-09-10 22:24:05,372 - INFO - Assigned Callisto Hub (Dry Dock) to system 960.
+2024-09-10 22:24:05,372 - INFO - Assigned Europa Dock (Commercial) to system 720.
+2024-09-10 22:24:05,372 - INFO - Assigned Io Complex (Research) to system 1688.
+2024-09-10 22:24:05,372 - INFO - Assigned Atlas Terminal (Research) to system 1296.
+2024-09-10 22:24:05,372 - INFO - Assigned Prometheus Station (Commercial) to system 2685.
+2024-09-10 22:24:05,372 - INFO - Assigned Pandora Base (Dry Dock) to system 2023.
+2024-09-10 22:24:05,372 - INFO - Assigned Helios Dock (Research) to system 457.
+2024-09-10 22:24:05,372 - INFO - Assigned Selene Complex (Dry Dock) to system 283.
+2024-09-10 22:24:05,372 - INFO - Assigned Nyx Hub (Commercial) to system 2367.
+2024-09-10 22:24:05,372 - INFO - Assigned Chronos Terminal (Dry Dock) to system 1068.
+2024-09-10 22:24:05,372 - INFO - Assigned Erebus Station (Commercial) to system 1570.
+2024-09-10 22:24:05,372 - INFO - Assigned Thanatos Outpost (Commercial) to system 2377.
+2024-09-10 22:24:05,372 - INFO - Assigned Nemesis Hub (Research) to system 2230.
+2024-09-10 22:24:05,372 - INFO - Assigned Hyperion Dock (Research) to system 2358.
+2024-09-10 22:24:05,372 - INFO - Assigned Themis Complex (Dry Dock) to system 1389.
+2024-09-10 22:24:05,372 - INFO - Assigned Eos Hub (Dry Dock) to system 1305.
+2024-09-10 22:24:05,372 - INFO - Assigned Iris Terminal (Dry Dock) to system 624.
+2024-09-10 22:24:05,372 - INFO - Assigned Pallas Station (Commercial) to system 335.
+2024-09-10 22:24:05,372 - INFO - Assigned Hestia Base (Dry Dock) to system 418.
+2024-09-10 22:24:05,372 - INFO - Assigned Vesta Dock (Research) to system 944.
+2024-09-10 22:24:05,372 - INFO - Assigned Fortuna Complex (Commercial) to system 80.
+2024-09-10 22:24:05,372 - INFO - Assigned Elara Terminal (Research) to system 2143.
+2024-09-10 22:24:05,372 - INFO - Assigned Hygiea Station (Research) to system 2897.
+2024-09-10 22:24:05,372 - INFO - Assigned Psyche Outpost (Research) to system 2395.
+2024-09-10 22:24:05,372 - INFO - Assigned Cybele Hub (Commercial) to system 2072.
+2024-09-10 22:24:05,372 - INFO - Assigned Hermes Dock (Dry Dock) to system 3.
+2024-09-10 22:24:05,372 - INFO - Assigned Mars Base (Commercial) to system 290.
+2024-09-10 22:24:05,372 - INFO - Assigned Jupiter Complex (Research) to system 1379.
+2024-09-10 22:24:05,372 - INFO - Assigned Saturn Hub (Dry Dock) to system 194.
+2024-09-10 22:24:05,372 - INFO - Assigned Gaia Terminal (Dry Dock) to system 1647.
+2024-09-10 22:24:05,372 - INFO - Assigned Oberon Station (Commercial) to system 1524.
+2024-09-10 22:24:05,372 - INFO - Assigned Rhea Outpost (Research) to system 2856.
+2024-09-10 22:24:05,373 - INFO - Assigned Enceladus Hub (Commercial) to system 2320.
+2024-09-10 22:24:05,950 - INFO - Universe with 3072 systems created and updated successfully.
+2024-09-10 22:24:06,028 - INFO - Logging owned systems:
+2024-09-10 22:24:06,028 - INFO - System ID 540 is owned by Mandate of God
+2024-09-10 22:24:06,028 - INFO - System ID 809 is owned by United Systems of Man
+2024-09-10 22:24:06,028 - INFO - System ID 906 is owned by Shogunate 3072
+2024-09-10 22:24:06,028 - INFO - System ID 957 is owned by Noringian Hive
+2024-09-10 22:24:06,028 - INFO - System ID 2406 is owned by People of the River
+2024-09-10 22:24:22,275 - INFO - Player's faction Shogunate 3072 starts in system: 559 with star type K-type
+2024-09-10 22:24:22,842 - INFO - Game Start: New Game Selected
+2024-09-10 22:24:22,842 - INFO - Universe Size: 3072 systems
+2024-09-10 22:24:22,842 - INFO - Character Name: qweqwe
+2024-09-10 22:24:22,842 - INFO - Faction: Shogunate 3072
+2024-09-10 22:24:22,842 - INFO - Ship Type: {'name': 'Icarus', 'class': 'Light', 'faction_of_origin': 'Shogunate 3072', 'description': 'A versatile scout ship.', 'required_rank_to_pilot': 'Civilian', 'size': 'Small', 'ship_cost': 500, 'min_cargo': 15, 'max_cargo': 35, 'max_shields': 55, 'max_armor': 25, 'max_hull': 35, 'system_scanner_type': 'Alpha', 'system_scanner_level': 3, 'planet_scanner': 'Yes', 'planet_scanner_level': 2, 'resource_scanner': 'Yes', 'resource_scanner_level': 2, 'weapon_type': 'Light Laser', 'combat_bonus': 1.4, 'mining_attachment': 'No', 'mining_attachment_level': 0}
+2024-09-10 22:24:22,842 - INFO - Ship Name: ewqewq
+2024-09-10 22:24:22,842 - INFO - Player starting in system: 559
+2024-09-10 22:24:35,791 - DEBUG - System 559 visited status: True
+2024-09-10 22:24:39,275 - DEBUG - System 154 visited status: True
+2024-09-10 22:24:50,624 - DEBUG - System 1768 visited status: True
+2024-09-10 22:24:53,934 - DEBUG - System 565 visited status: True
+2024-09-10 22:24:56,834 - DEBUG - System 1760 visited status: True
+2024-09-10 22:24:59,115 - DEBUG - System 2187 visited status: True
+2024-09-10 22:25:01,222 - DEBUG - System 783 visited status: True
+2024-09-10 22:25:03,418 - DEBUG - System 563 visited status: True
+2024-09-10 22:25:06,150 - DEBUG - System 1566 visited status: True
+2024-09-10 22:25:08,154 - DEBUG - System 2429 visited status: True
+2024-09-10 22:25:14,938 - DEBUG - System 1004 visited status: True
+2024-09-10 22:25:18,198 - DEBUG - System 2290 visited status: True
+2024-09-10 22:25:20,578 - DEBUG - System 2422 visited status: True
+2024-09-10 22:25:41,867 - DEBUG - System 263 visited status: True
+2024-09-10 22:25:44,272 - DEBUG - System 623 visited status: True
+2024-09-10 22:25:46,442 - DEBUG - System 590 visited status: True
+2024-09-10 22:25:48,742 - DEBUG - System 604 visited status: True
+2024-09-10 22:25:51,390 - DEBUG - System 2891 visited status: True
+2024-09-10 22:25:53,798 - DEBUG - System 2986 visited status: True
+2024-09-10 22:25:56,226 - DEBUG - System 1946 visited status: True
+2024-09-10 22:25:58,122 - DEBUG - System 1562 visited status: True
+2024-09-10 22:26:00,195 - DEBUG - System 412 visited status: True
+2024-09-10 22:26:02,238 - DEBUG - System 315 visited status: True
+2024-09-10 22:26:03,995 - DEBUG - System 371 visited status: True
+2024-09-10 22:26:06,247 - DEBUG - System 36 visited status: True
+2024-09-10 22:26:08,247 - DEBUG - System 1542 visited status: True
+2024-09-10 22:26:09,867 - DEBUG - System 134 visited status: True
+2024-09-10 22:26:11,498 - DEBUG - System 150 visited status: True
+2024-09-10 22:26:13,490 - DEBUG - System 1500 visited status: True
+2024-09-10 22:26:15,783 - DEBUG - System 682 visited status: True
+2024-09-10 22:26:18,574 - DEBUG - System 567 visited status: True
+2024-09-10 22:26:20,235 - DEBUG - System 2785 visited status: True
+2024-09-10 22:26:22,130 - DEBUG - System 15 visited status: True
+2024-09-10 22:26:23,903 - DEBUG - System 1672 visited status: True
+2024-09-10 22:26:25,883 - DEBUG - System 1046 visited status: True
+2024-09-10 22:26:28,247 - DEBUG - System 1007 visited status: True
+2024-09-10 22:26:30,126 - DEBUG - System 2453 visited status: True
+2024-09-10 22:26:32,054 - DEBUG - System 2095 visited status: True
+2024-09-10 22:26:34,275 - DEBUG - System 650 visited status: True
+2024-09-10 22:26:36,967 - DEBUG - System 2371 visited status: True
+2024-09-10 22:26:39,022 - DEBUG - System 2484 visited status: True
+2024-09-10 22:26:42,839 - DEBUG - System 1602 visited status: True
+2024-09-10 22:26:45,022 - DEBUG - System 2627 visited status: True
+2024-09-10 22:26:47,443 - DEBUG - System 1620 visited status: True
+2024-09-10 22:26:49,371 - DEBUG - System 2362 visited status: True
+2024-09-10 22:26:51,222 - DEBUG - System 2104 visited status: True
+2024-09-10 22:26:53,362 - DEBUG - System 1335 visited status: True
+2024-09-10 22:26:55,714 - DEBUG - System 1838 visited status: True
+2024-09-10 22:26:57,729 - DEBUG - System 2082 visited status: True
+2024-09-10 22:26:59,846 - DEBUG - System 902 visited status: True
+2024-09-10 22:27:03,422 - DEBUG - System 2682 visited status: True
+2024-09-10 22:27:05,414 - DEBUG - System 2352 visited status: True
+2024-09-10 22:27:07,178 - DEBUG - System 1980 visited status: True
+2024-09-10 22:27:09,402 - DEBUG - System 2037 visited status: True
+2024-09-10 22:27:12,194 - DEBUG - System 386 visited status: True
+2024-09-10 22:27:13,631 - DEBUG - System 1531 visited status: True
+2024-09-10 22:27:15,422 - DEBUG - System 90 visited status: True
+2024-09-10 22:27:18,103 - DEBUG - System 1455 visited status: True
+2024-09-10 22:27:20,546 - DEBUG - System 2075 visited status: True
+2024-09-10 22:27:22,896 - DEBUG - System 1860 visited status: True
+2024-09-10 22:27:32,650 - DEBUG - System 2716 visited status: True
+2024-09-10 22:27:34,487 - DEBUG - System 2025 visited status: True
+2024-09-10 22:27:36,034 - DEBUG - System 542 visited status: True
+2024-09-10 22:27:38,254 - DEBUG - System 107 visited status: True
+2024-09-10 22:27:40,283 - DEBUG - System 2406 visited status: True
+2024-09-10 22:27:42,074 - DEBUG - System 780 visited status: True
+2024-09-10 22:27:43,938 - DEBUG - System 589 visited status: True
+2024-09-10 22:27:45,974 - DEBUG - System 447 visited status: True
+2024-09-10 22:27:47,398 - DEBUG - System 863 visited status: True
+2024-09-10 22:27:49,174 - DEBUG - System 76 visited status: True
+2024-09-10 22:27:51,290 - DEBUG - System 420 visited status: True
+2024-09-10 22:27:52,814 - DEBUG - System 1275 visited status: True
+2024-09-10 22:27:54,374 - DEBUG - System 520 visited status: True
+2024-09-10 22:27:56,079 - DEBUG - System 342 visited status: True
+2024-09-10 22:27:57,918 - DEBUG - System 192 visited status: True
+2024-09-10 22:28:00,250 - DEBUG - System 1241 visited status: True
+2024-09-10 22:28:05,286 - DEBUG - System 836 visited status: True
+2024-09-10 22:28:08,379 - DEBUG - System 687 visited status: True
+2024-09-10 22:28:10,482 - DEBUG - System 1489 visited status: True
+2024-09-10 22:28:12,150 - DEBUG - System 989 visited status: True
+2024-09-10 22:28:13,783 - DEBUG - System 569 visited status: True
+2024-09-10 22:28:16,071 - DEBUG - System 296 visited status: True
+2024-09-10 22:28:17,782 - DEBUG - System 810 visited status: True
+2024-09-10 22:28:19,446 - DEBUG - System 724 visited status: True
+2024-09-10 22:28:21,435 - DEBUG - System 761 visited status: True
+2024-09-10 22:28:23,882 - DEBUG - System 1726 visited status: True
+2024-09-10 22:28:25,918 - DEBUG - System 1828 visited status: True
+2024-09-10 22:28:27,975 - DEBUG - System 3033 visited status: True
+2024-09-10 22:28:30,318 - DEBUG - System 2775 visited status: True
+2024-09-10 22:28:32,107 - DEBUG - System 2907 visited status: True
+2024-09-10 22:28:33,766 - DEBUG - System 1544 visited status: True
+2024-09-10 22:28:38,010 - DEBUG - System 1305 visited status: True
+2024-09-10 22:28:40,427 - DEBUG - System 987 visited status: True
+2024-09-10 22:28:42,375 - DEBUG - System 570 visited status: True
+2024-09-10 22:28:44,559 - DEBUG - System 1071 visited status: True
+2024-09-10 22:28:47,194 - DEBUG - System 1625 visited status: True
+2024-09-10 22:28:48,921 - DEBUG - System 2803 visited status: True
+2024-09-10 22:28:52,952 - DEBUG - System 280 visited status: True
+2024-09-10 22:28:54,722 - DEBUG - System 2083 visited status: True
+2024-09-10 22:28:57,020 - DEBUG - System 2024 visited status: True
+2024-09-10 22:28:58,706 - DEBUG - System 1909 visited status: True
+2024-09-10 22:29:00,590 - DEBUG - System 586 visited status: True
+2024-09-10 22:29:03,070 - DEBUG - System 237 visited status: True
+2024-09-10 22:29:05,282 - DEBUG - System 2575 visited status: True
+2024-09-10 22:29:07,190 - DEBUG - System 1734 visited status: True
+2024-09-10 22:29:08,863 - DEBUG - System 2334 visited status: True
+2024-09-10 22:29:10,905 - DEBUG - System 1116 visited status: True
+2024-09-10 22:29:12,530 - DEBUG - System 1766 visited status: True
+2024-09-10 22:29:14,210 - DEBUG - System 866 visited status: True
+2024-09-10 22:29:16,054 - DEBUG - System 2116 visited status: True
+2024-09-10 22:29:18,034 - DEBUG - System 918 visited status: True
+2024-09-10 22:29:20,242 - DEBUG - System 943 visited status: True
+2024-09-10 22:29:22,337 - DEBUG - System 2756 visited status: True
+2024-09-10 22:29:24,358 - DEBUG - System 2243 visited status: True
+2024-09-10 22:29:25,994 - DEBUG - System 264 visited status: True
+2024-09-10 22:29:28,150 - DEBUG - System 42 visited status: True
+2024-09-10 22:29:29,887 - DEBUG - System 1450 visited status: True
+2024-09-10 22:29:33,119 - DEBUG - System 1111 visited status: True
+2024-09-10 22:29:37,999 - DEBUG - System 1253 visited status: True
+2024-09-10 22:29:40,133 - DEBUG - System 1604 visited status: True
+2024-09-10 22:29:41,904 - DEBUG - System 1555 visited status: True
+2024-09-10 22:29:43,681 - DEBUG - System 219 visited status: True
+2024-09-10 22:29:45,282 - DEBUG - System 1899 visited status: True
+2024-09-10 22:29:47,210 - DEBUG - System 1347 visited status: True
+2024-09-10 22:29:48,982 - DEBUG - System 768 visited status: True
+2024-09-10 22:29:50,982 - DEBUG - System 400 visited status: True
+2024-09-10 22:29:53,442 - DEBUG - System 375 visited status: True
+2024-09-10 22:29:55,158 - DEBUG - System 2836 visited status: True
+2024-09-10 22:29:57,394 - DEBUG - System 188 visited status: True
+2024-09-10 22:29:59,150 - DEBUG - System 2930 visited status: True
+2024-09-10 22:30:00,862 - DEBUG - System 3017 visited status: True
+2024-09-10 22:30:02,634 - DEBUG - System 904 visited status: True
+2024-09-10 22:30:05,366 - DEBUG - System 399 visited status: True
+2024-09-10 22:30:07,007 - DEBUG - System 2171 visited status: True
+2024-09-10 22:30:09,722 - DEBUG - System 1655 visited status: True
+2024-09-10 22:30:11,474 - DEBUG - System 2038 visited status: True
+2024-09-10 22:30:13,246 - DEBUG - System 2146 visited status: True
+2024-09-10 22:30:14,926 - DEBUG - System 1130 visited status: True
+2024-09-10 22:30:17,106 - DEBUG - System 501 visited status: True
+2024-09-10 22:30:19,230 - DEBUG - System 337 visited status: True
+2024-09-10 22:30:20,804 - DEBUG - System 979 visited status: True
+2024-09-10 22:30:22,890 - DEBUG - System 162 visited status: True
+2024-09-10 22:30:24,958 - DEBUG - System 2389 visited status: True
+2024-09-10 22:30:27,158 - DEBUG - System 1447 visited status: True
+2024-09-10 22:30:29,071 - DEBUG - System 300 visited status: True
+2024-09-10 22:30:31,539 - DEBUG - System 3042 visited status: True
+2024-09-10 22:30:34,159 - DEBUG - System 1060 visited status: True
+2024-09-10 22:30:36,316 - DEBUG - System 243 visited status: True
+2024-09-10 22:30:38,839 - DEBUG - System 1533 visited status: True
+2024-09-10 22:30:40,934 - DEBUG - System 1223 visited status: True
+2024-09-10 22:30:42,795 - DEBUG - System 683 visited status: True
+2024-09-10 22:30:45,014 - DEBUG - System 473 visited status: True
+2024-09-10 22:30:47,446 - DEBUG - System 98 visited status: True
+2024-09-10 22:30:49,420 - DEBUG - System 1957 visited status: True
+2024-09-10 22:30:52,747 - DEBUG - System 680 visited status: True
+2024-09-10 22:30:57,006 - DEBUG - System 1643 visited status: True
+2024-09-10 22:30:58,950 - DEBUG - System 118 visited status: True
+2024-09-10 22:31:01,717 - DEBUG - System 1994 visited status: True
+2024-09-10 22:31:04,006 - DEBUG - System 2825 visited status: True
+2024-09-10 22:31:06,234 - DEBUG - System 1682 visited status: True
+2024-09-10 22:31:08,234 - DEBUG - System 2674 visited status: True
+2024-09-10 22:31:09,766 - DEBUG - System 1474 visited status: True
+2024-09-10 22:31:11,794 - DEBUG - System 155 visited status: True
+2024-09-10 22:31:14,660 - DEBUG - System 1876 visited status: True
+2024-09-10 22:31:17,099 - DEBUG - System 2782 visited status: True
+2024-09-10 22:31:19,550 - DEBUG - System 366 visited status: True
+2024-09-10 22:31:25,022 - DEBUG - System 2048 visited status: True
+2024-09-10 22:31:27,015 - DEBUG - System 1449 visited status: True
+2024-09-10 22:31:30,419 - DEBUG - System 205 visited status: True
+2024-09-10 22:31:32,110 - DEBUG - System 1298 visited status: True
+2024-09-10 22:31:33,855 - DEBUG - System 1400 visited status: True
+2024-09-10 22:31:35,483 - DEBUG - System 1144 visited status: True
+2024-09-10 22:31:38,010 - DEBUG - System 2119 visited status: True
+2024-09-10 22:31:40,454 - DEBUG - System 1934 visited status: True
+2024-09-10 22:31:42,550 - DEBUG - System 2664 visited status: True
+2024-09-10 22:31:45,542 - DEBUG - System 2631 visited status: True
+2024-09-10 22:31:47,482 - DEBUG - System 2468 visited status: True
+2024-09-10 22:31:53,478 - DEBUG - System 1460 visited status: True
+2024-09-10 22:31:55,830 - DEBUG - System 2341 visited status: True
+2024-09-10 22:31:57,795 - DEBUG - System 1786 visited status: True
+2024-09-10 22:32:00,559 - DEBUG - System 827 visited status: True
+2024-09-10 22:32:03,530 - DEBUG - System 1871 visited status: True
+2024-09-10 22:32:14,414 - DEBUG - System 398 visited status: True
+2024-09-10 22:32:17,922 - DEBUG - System 257 visited status: True
+2024-09-10 22:32:19,807 - DEBUG - System 1339 visited status: True
+2024-09-10 22:32:21,340 - DEBUG - System 2144 visited status: True
+2024-09-10 22:32:23,146 - DEBUG - System 45 visited status: True
+2024-09-10 22:32:24,947 - DEBUG - System 2029 visited status: True
+2024-09-10 22:32:26,606 - DEBUG - System 995 visited status: True
+2024-09-10 22:32:28,198 - DEBUG - System 368 visited status: True
+2024-09-10 22:32:29,961 - DEBUG - System 505 visited status: True
+2024-09-10 22:32:32,262 - DEBUG - System 156 visited status: True
+2024-09-10 22:32:34,334 - DEBUG - System 434 visited status: True
+2024-09-10 22:32:36,767 - DEBUG - System 449 visited status: True
+2024-09-10 22:32:38,589 - DEBUG - System 2696 visited status: True
+2024-09-10 22:32:40,162 - DEBUG - System 1469 visited status: True
+2024-09-10 22:32:42,894 - DEBUG - System 433 visited status: True
+2024-09-10 22:32:45,130 - DEBUG - System 2858 visited status: True
+2024-09-10 22:32:48,459 - DEBUG - System 1849 visited status: True
+2024-09-10 22:32:50,306 - DEBUG - System 2638 visited status: True
+2024-09-10 22:32:52,074 - DEBUG - System 292 visited status: True
+2024-09-10 22:32:53,855 - DEBUG - System 2770 visited status: True
+2024-09-10 22:32:55,799 - DEBUG - System 324 visited status: True
+2024-09-10 22:32:59,058 - DEBUG - System 223 visited status: True
+2024-09-10 22:33:00,949 - DEBUG - System 2590 visited status: True
+2024-09-10 22:33:02,792 - DEBUG - System 1149 visited status: True
+2024-09-10 22:33:04,646 - DEBUG - System 906 visited status: True
+2024-09-10 22:33:07,047 - DEBUG - System 1621 visited status: True
+2024-09-10 22:33:08,838 - DEBUG - System 1537 visited status: True
+2024-09-10 22:33:10,538 - DEBUG - System 898 visited status: True
+2024-09-10 22:33:12,658 - DEBUG - System 1109 visited status: True
+2024-09-10 22:33:14,462 - DEBUG - System 395 visited status: True
+2024-09-10 22:33:16,014 - DEBUG - System 856 visited status: True
+2024-09-10 22:33:18,006 - DEBUG - System 323 visited status: True
+2024-09-10 22:33:20,643 - DEBUG - System 1725 visited status: True
+2024-09-10 22:33:23,806 - DEBUG - System 1089 visited status: True
+2024-09-10 22:33:25,706 - DEBUG - System 2438 visited status: True
+2024-09-10 22:33:28,546 - DEBUG - System 2471 visited status: True
+2024-09-10 22:33:30,607 - DEBUG - System 1315 visited status: True
+2024-09-10 22:33:32,578 - DEBUG - System 2064 visited status: True
+2024-09-10 22:33:34,215 - DEBUG - System 1080 visited status: True
+2024-09-10 22:33:35,726 - DEBUG - System 850 visited status: True
+2024-09-10 22:33:37,791 - DEBUG - System 1011 visited status: True
+2024-09-10 22:33:39,682 - DEBUG - System 994 visited status: True
+2024-09-10 22:33:42,894 - DEBUG - System 1229 visited status: True
+2024-09-10 22:33:45,694 - DEBUG - System 2321 visited status: True
+2024-09-10 22:34:08,413 - DEBUG - System 2375 visited status: True
+2024-09-10 22:34:10,304 - DEBUG - System 1818 visited status: True
+2024-09-10 22:34:13,078 - DEBUG - System 279 visited status: True
+2024-09-10 22:34:15,290 - DEBUG - System 1590 visited status: True
+2024-09-10 22:34:18,035 - DEBUG - System 765 visited status: True
+2024-09-10 22:34:19,712 - DEBUG - System 1878 visited status: True
+2024-09-10 22:34:21,738 - DEBUG - System 33 visited status: True
+2024-09-10 22:34:23,566 - DEBUG - System 2373 visited status: True
+2024-09-10 22:34:26,047 - DEBUG - System 741 visited status: True
+2024-09-10 22:34:27,758 - DEBUG - System 1247 visited status: True
+2024-09-10 22:34:29,866 - DEBUG - System 1399 visited status: True
+2024-09-10 22:34:31,435 - DEBUG - System 1456 visited status: True
+2024-09-10 22:34:33,939 - DEBUG - System 1066 visited status: True
+2024-09-10 22:35:08,055 - DEBUG - System 2848 visited status: True
+2024-09-10 22:35:10,660 - DEBUG - System 1299 visited status: True
+2024-09-10 22:35:12,038 - DEBUG - System 2976 visited status: True
+2024-09-10 22:35:13,840 - DEBUG - System 89 visited status: True
+2024-09-10 22:35:16,311 - DEBUG - System 508 visited status: True
+2024-09-10 22:35:18,174 - DEBUG - System 1395 visited status: True
+2024-09-10 22:35:20,390 - DEBUG - System 1567 visited status: True
+2024-09-10 22:35:22,097 - DEBUG - System 2153 visited status: True
+2024-09-10 22:35:23,610 - DEBUG - System 2499 visited status: True
+2024-09-10 22:35:26,702 - DEBUG - System 3050 visited status: True
+2024-09-10 22:35:28,842 - DEBUG - System 1587 visited status: True
+2024-09-10 22:35:30,378 - DEBUG - System 1039 visited status: True
+2024-09-10 22:35:32,094 - DEBUG - System 1134 visited status: True
+2024-09-10 22:35:34,114 - DEBUG - System 1810 visited status: True
+2024-09-10 22:35:35,995 - DEBUG - System 1520 visited status: True
+2024-09-10 22:35:38,575 - DEBUG - System 239 visited status: True
+2024-09-10 22:35:40,662 - DEBUG - System 2586 visited status: True
+2024-09-10 22:35:42,459 - DEBUG - System 1202 visited status: True
+2024-09-10 22:35:44,299 - DEBUG - System 2820 visited status: True
+2024-09-10 22:35:46,179 - DEBUG - System 328 visited status: True
+2024-09-10 22:35:48,811 - DEBUG - System 181 visited status: True
+2024-09-10 22:35:54,007 - DEBUG - System 1582 visited status: True
+2024-09-10 22:35:55,751 - DEBUG - System 2980 visited status: True
+2024-09-10 22:35:57,926 - DEBUG - System 171 visited status: True
+2024-09-10 22:36:00,183 - DEBUG - System 1485 visited status: True
+2024-09-10 22:36:02,235 - DEBUG - System 952 visited status: True
+2024-09-10 22:36:03,950 - DEBUG - System 1078 visited status: True
+2024-09-10 22:36:05,679 - DEBUG - System 2036 visited status: True
+2024-09-10 22:36:07,390 - DEBUG - System 435 visited status: True
+2024-09-10 22:36:09,378 - DEBUG - System 2602 visited status: True
+2024-09-10 22:36:11,082 - DEBUG - System 2450 visited status: True
+2024-09-10 22:36:12,953 - DEBUG - System 1490 visited status: True
+2024-09-10 22:36:14,734 - DEBUG - System 236 visited status: True
+2024-09-10 22:36:17,964 - DEBUG - System 245 visited status: True
+2024-09-10 22:36:24,607 - DEBUG - System 1538 visited status: True
+2024-09-10 22:36:26,346 - DEBUG - System 2912 visited status: True
+2024-09-10 22:36:28,066 - DEBUG - System 320 visited status: True
+2024-09-10 22:36:30,650 - DEBUG - System 159 visited status: True
+2024-09-10 22:36:32,502 - DEBUG - System 2857 visited status: True
+2024-09-10 22:36:35,673 - DEBUG - System 2057 visited status: True
+2024-09-10 22:36:37,394 - DEBUG - System 2448 visited status: True
+2024-09-10 22:36:39,335 - DEBUG - System 1495 visited status: True
+2024-09-10 22:36:41,206 - DEBUG - System 423 visited status: True
+2024-09-10 22:36:43,031 - DEBUG - System 631 visited status: True
+2024-09-10 22:36:44,783 - DEBUG - System 1466 visited status: True
+2024-09-10 22:36:58,943 - DEBUG - System 1146 visited status: True
+2024-09-10 22:37:00,662 - DEBUG - System 2065 visited status: True
+2024-09-10 22:37:02,602 - DEBUG - System 137 visited status: True
+2024-09-10 22:37:05,143 - DEBUG - System 1068 visited status: True
+2024-09-10 22:37:08,038 - DEBUG - System 816 visited status: True
+2024-09-10 22:37:09,895 - DEBUG - System 1372 visited status: True
+2024-09-10 22:37:12,382 - DEBUG - System 1036 visited status: True
+2024-09-10 22:37:14,101 - DEBUG - System 1983 visited status: True
+2024-09-10 22:37:15,999 - DEBUG - System 2032 visited status: True
+2024-09-10 22:37:18,399 - DEBUG - System 2023 visited status: True
+2024-09-10 22:37:20,247 - DEBUG - System 2300 visited status: True
+2024-09-10 22:37:22,150 - DEBUG - System 26 visited status: True
+2024-09-10 22:37:25,666 - DEBUG - System 821 visited status: True
+2024-09-10 22:37:27,687 - DEBUG - System 1319 visited status: True
+2024-09-10 22:37:29,534 - DEBUG - System 2795 visited status: True
+2024-09-10 22:37:32,142 - DEBUG - System 602 visited status: True
+2024-09-10 22:37:33,918 - DEBUG - System 1862 visited status: True
+2024-09-10 22:37:36,018 - DEBUG - System 967 visited status: True
+2024-09-10 22:37:39,083 - DEBUG - System 1746 visited status: True
+2024-09-10 22:37:40,698 - DEBUG - System 2459 visited status: True
+2024-09-10 22:37:42,899 - DEBUG - System 1340 visited status: True
+2024-09-10 22:37:45,610 - DEBUG - System 3 visited status: True
+2024-09-10 22:37:48,138 - DEBUG - System 2338 visited status: True
+2024-09-10 22:37:50,239 - DEBUG - System 2101 visited status: True
+2024-09-10 22:37:52,258 - DEBUG - System 653 visited status: True
+2024-09-10 22:37:53,822 - DEBUG - System 2096 visited status: True
+2024-09-10 22:37:55,742 - DEBUG - System 220 visited status: True
+2024-09-10 22:37:57,502 - DEBUG - System 1079 visited status: True
+2024-09-10 22:37:59,022 - DEBUG - System 844 visited status: True
+2024-09-10 22:38:00,974 - DEBUG - System 1010 visited status: True
+2024-09-10 22:38:03,290 - DEBUG - System 670 visited status: True
+2024-09-10 22:38:04,970 - DEBUG - System 1659 visited status: True
+2024-09-10 22:38:06,770 - DEBUG - System 92 visited status: True
+2024-09-10 22:38:08,813 - DEBUG - System 774 visited status: True
+2024-09-10 22:38:11,598 - DEBUG - System 2561 visited status: True
+2024-09-10 22:38:13,411 - DEBUG - System 1708 visited status: True
+2024-09-10 22:38:15,282 - DEBUG - System 997 visited status: True
+2024-09-10 22:38:16,960 - DEBUG - System 393 visited status: True
+2024-09-10 22:38:18,538 - DEBUG - System 553 visited status: True
+2024-09-10 22:38:20,664 - DEBUG - System 1124 visited status: True
+2024-09-10 22:38:22,666 - DEBUG - System 2264 visited status: True
+2024-09-10 22:38:25,013 - DEBUG - System 3045 visited status: True
+2024-09-10 22:38:26,934 - DEBUG - System 2889 visited status: True
+2024-09-10 22:38:29,837 - DEBUG - System 1722 visited status: True
+2024-09-10 22:38:31,956 - DEBUG - System 1438 visited status: True
+2024-09-10 22:38:55,583 - DEBUG - System 1888 visited status: True
+2024-09-10 22:38:57,603 - DEBUG - System 2102 visited status: True
+2024-09-10 22:38:59,755 - DEBUG - System 2991 visited status: True
+2024-09-10 22:39:54,810 - DEBUG - System 485 visited status: True
+2024-09-10 22:39:57,367 - DEBUG - System 170 visited status: True
+2024-09-10 22:39:59,546 - DEBUG - System 2984 visited status: True
+2024-09-10 22:40:01,401 - DEBUG - System 2731 visited status: True
+2024-09-10 22:40:03,023 - DEBUG - System 361 visited status: True
+2024-09-10 22:40:04,938 - DEBUG - System 750 visited status: True
+2024-09-10 22:40:06,674 - DEBUG - System 1198 visited status: True
+2024-09-10 22:40:08,706 - DEBUG - System 1885 visited status: True
+2024-09-10 22:40:13,370 - DEBUG - System 2886 visited status: True
+2024-09-10 22:40:16,226 - DEBUG - System 87 visited status: True
+2024-09-10 22:40:18,438 - DEBUG - System 796 visited status: True
+2024-09-10 22:40:22,411 - DEBUG - System 2763 visited status: True
+2024-09-10 22:40:24,459 - DEBUG - System 2871 visited status: True
+2024-09-10 22:40:26,690 - DEBUG - System 1095 visited status: True
+2024-09-10 22:40:28,610 - DEBUG - System 2702 visited status: True
+2024-09-10 22:40:31,198 - DEBUG - System 1870 visited status: True
+2024-09-10 22:40:32,779 - DEBUG - System 1398 visited status: True
+2024-09-10 22:40:34,303 - DEBUG - System 688 visited status: True
+2024-09-10 22:40:36,686 - DEBUG - System 889 visited status: True
+2024-09-10 22:40:38,322 - DEBUG - System 1984 visited status: True
+2024-09-10 22:40:40,812 - DEBUG - System 1030 visited status: True
+2024-09-10 22:40:45,778 - DEBUG - System 1696 visited status: True
+2024-09-10 22:40:48,059 - DEBUG - System 3061 visited status: True
+2024-09-10 22:40:50,158 - DEBUG - System 2516 visited status: True
+2024-09-10 22:40:52,087 - DEBUG - System 1623 visited status: True
+2024-09-10 22:40:54,098 - DEBUG - System 558 visited status: True
+2024-09-10 22:40:56,007 - DEBUG - System 101 visited status: True
+2024-09-10 22:40:59,538 - DEBUG - System 1437 visited status: True
+2024-09-10 22:41:01,650 - DEBUG - System 141 visited status: True
+2024-09-10 22:41:03,782 - DEBUG - System 1530 visited status: True
+2024-09-10 22:41:05,567 - DEBUG - System 1756 visited status: True
+2024-09-10 22:41:07,639 - DEBUG - System 867 visited status: True
+2024-09-10 22:41:09,378 - DEBUG - System 1427 visited status: True
+2024-09-10 22:41:11,414 - DEBUG - System 632 visited status: True
+2024-09-10 22:41:16,126 - DEBUG - System 316 visited status: True
+2024-09-10 22:41:18,414 - DEBUG - System 426 visited status: True
+2024-09-10 22:41:21,254 - DEBUG - System 1944 visited status: True
+2024-09-10 22:41:23,455 - DEBUG - System 3051 visited status: True
+2024-09-10 22:41:25,354 - DEBUG - System 2412 visited status: True
+2024-09-10 22:41:27,055 - DEBUG - System 2210 visited status: True
+2024-09-10 22:41:28,783 - DEBUG - System 2550 visited status: True
+2024-09-10 22:41:31,107 - DEBUG - System 2320 visited status: True
+2024-09-10 22:41:33,961 - DEBUG - System 1108 visited status: True
+2024-09-10 22:41:35,922 - DEBUG - System 2952 visited status: True
+2024-09-10 22:41:37,714 - DEBUG - System 625 visited status: True
+2024-09-10 22:41:39,456 - DEBUG - System 336 visited status: True
+2024-09-10 22:41:41,442 - DEBUG - System 197 visited status: True
+2024-09-10 22:41:43,110 - DEBUG - System 1025 visited status: True
+2024-09-10 22:41:45,234 - DEBUG - System 1306 visited status: True
+2024-09-10 22:41:46,909 - DEBUG - System 2668 visited status: True
+2024-09-10 22:41:49,119 - DEBUG - System 3026 visited status: True
+2024-09-10 22:41:51,272 - DEBUG - System 2035 visited status: True
+2024-09-10 22:41:52,938 - DEBUG - System 879 visited status: True
+2024-09-10 22:41:54,627 - DEBUG - System 540 visited status: True
+2024-09-10 22:41:56,350 - DEBUG - System 12 visited status: True
+2024-09-10 22:41:58,625 - DEBUG - System 349 visited status: True
+2024-09-10 22:42:03,359 - DEBUG - System 2882 visited status: True
+2024-09-10 22:42:08,787 - DEBUG - System 2833 visited status: True
+2024-09-10 22:42:10,410 - DEBUG - System 1551 visited status: True
+2024-09-10 22:42:12,774 - DEBUG - System 3035 visited status: True
+2024-09-10 22:42:15,107 - DEBUG - System 2608 visited status: True
+2024-09-10 22:42:17,354 - DEBUG - System 149 visited status: True
+2024-09-10 22:42:19,618 - DEBUG - System 2206 visited status: True
+2024-09-10 22:42:21,543 - DEBUG - System 374 visited status: True
+2024-09-10 22:42:28,008 - DEBUG - System 831 visited status: True
+2024-09-10 22:42:29,825 - DEBUG - System 357 visited status: True
+2024-09-10 22:42:32,278 - DEBUG - System 2531 visited status: True
+2024-09-10 22:42:34,206 - DEBUG - System 1772 visited status: True
+2024-09-10 22:42:39,094 - DEBUG - System 543 visited status: True
+2024-09-10 22:42:41,118 - DEBUG - System 598 visited status: True
+2024-09-10 22:42:42,790 - DEBUG - System 1886 visited status: True
+2024-09-10 22:42:45,371 - DEBUG - System 679 visited status: True
+2024-09-10 22:42:48,534 - DEBUG - System 2333 visited status: True
+2024-09-10 22:42:51,002 - DEBUG - System 2393 visited status: True
+2024-09-10 22:42:53,210 - DEBUG - System 1737 visited status: True
+2024-09-10 22:42:55,230 - DEBUG - System 2512 visited status: True
+2024-09-10 22:42:56,896 - DEBUG - System 1560 visited status: True
+2024-09-10 22:42:58,902 - DEBUG - System 2030 visited status: True
+2024-09-10 22:43:01,262 - DEBUG - System 2897 visited status: True
+2024-09-10 22:43:03,163 - DEBUG - System 552 visited status: True
+2024-09-10 22:43:05,029 - DEBUG - System 1201 visited status: True
+2024-09-10 22:43:07,027 - DEBUG - System 2837 visited status: True
+2024-09-10 22:43:19,707 - DEBUG - System 1679 visited status: True
+2024-09-10 22:43:21,410 - DEBUG - System 2473 visited status: True
+2024-09-10 22:43:23,062 - DEBUG - System 790 visited status: True
+2024-09-10 22:43:24,834 - DEBUG - System 69 visited status: True
+2024-09-10 22:43:26,838 - DEBUG - System 1424 visited status: True
+2024-09-10 22:43:29,078 - DEBUG - System 945 visited status: True
+2024-09-10 22:43:31,298 - DEBUG - System 274 visited status: True
+2024-09-10 22:43:33,042 - DEBUG - System 2890 visited status: True
+2024-09-10 22:43:35,143 - DEBUG - System 68 visited status: True
+2024-09-10 22:43:37,970 - DEBUG - System 2699 visited status: True
+2024-09-10 22:43:39,306 - DEBUG - System 1589 visited status: True
+2024-09-10 22:43:41,131 - DEBUG - System 7 visited status: True
+2024-09-10 22:43:44,326 - DEBUG - System 877 visited status: True
+2024-09-10 22:43:45,950 - DEBUG - System 1926 visited status: True
+2024-09-10 22:43:47,858 - DEBUG - System 1032 visited status: True
+2024-09-10 22:43:49,602 - DEBUG - System 1155 visited status: True
+2024-09-10 22:43:51,603 - DEBUG - System 2460 visited status: True
+2024-09-10 22:43:53,622 - DEBUG - System 3053 visited status: True
+2024-09-10 22:43:55,326 - DEBUG - System 634 visited status: True
+2024-09-10 22:43:57,082 - DEBUG - System 572 visited status: True
+2024-09-10 22:43:59,340 - DEBUG - System 735 visited status: True
+2024-09-10 22:44:01,169 - DEBUG - System 2640 visited status: True
+2024-09-10 22:44:02,674 - DEBUG - System 1417 visited status: True
+2024-09-10 22:44:04,058 - DEBUG - System 112 visited status: True
+2024-09-10 22:44:06,482 - DEBUG - System 21 visited status: True
+2024-09-10 22:44:08,251 - DEBUG - System 2840 visited status: True
+2024-09-10 22:44:10,234 - DEBUG - System 1528 visited status: True
+2024-09-10 22:44:14,374 - DEBUG - System 2376 visited status: True
+2024-09-10 22:44:19,463 - DEBUG - System 64 visited status: True
+2024-09-10 22:44:21,454 - DEBUG - System 173 visited status: True
+2024-09-10 22:44:23,991 - DEBUG - System 1907 visited status: True
+2024-09-10 22:44:25,734 - DEBUG - System 2618 visited status: True
+2024-09-10 22:44:27,394 - DEBUG - System 2443 visited status: True
+2024-09-10 22:44:29,466 - DEBUG - System 2080 visited status: True
+2024-09-10 22:44:31,691 - DEBUG - System 2133 visited status: True
+2024-09-10 22:44:33,703 - DEBUG - System 1175 visited status: True
+2024-09-10 22:44:35,394 - DEBUG - System 2220 visited status: True
+2024-09-10 22:44:37,362 - DEBUG - System 249 visited status: True
+2024-09-10 22:44:39,665 - DEBUG - System 1911 visited status: True
+2024-09-10 22:44:42,113 - DEBUG - System 1580 visited status: True
+2024-09-10 22:44:45,094 - DEBUG - System 163 visited status: True
+2024-09-10 22:44:47,822 - DEBUG - System 575 visited status: True
+2024-09-10 22:45:34,007 - DEBUG - System 1118 visited status: True
+2024-09-10 22:45:35,786 - DEBUG - System 2900 visited status: True
+2024-09-10 22:45:43,450 - DEBUG - System 2022 visited status: True
+2024-09-10 22:45:45,467 - DEBUG - System 185 visited status: True
+2024-09-10 22:45:47,787 - DEBUG - System 2164 visited status: True
+2024-09-10 22:45:49,742 - DEBUG - System 1790 visited status: True
+2024-09-10 22:45:51,550 - DEBUG - System 2496 visited status: True
+2024-09-10 22:45:53,118 - DEBUG - System 2261 visited status: True
+2024-09-10 22:45:59,774 - DEBUG - System 2237 visited status: True
+2024-09-10 22:46:01,642 - DEBUG - System 1023 visited status: True
+2024-09-10 22:46:03,807 - DEBUG - System 1026 visited status: True
+2024-09-10 22:46:06,974 - DEBUG - System 311 visited status: True
+2024-09-10 22:46:09,183 - DEBUG - System 975 visited status: True
+2024-09-10 22:46:11,018 - DEBUG - System 1799 visited status: True
+2024-09-10 22:46:13,834 - DEBUG - System 462 visited status: True
+2024-09-10 22:46:16,034 - DEBUG - System 1436 visited status: True
+2024-09-10 22:46:18,226 - DEBUG - System 2597 visited status: True
+2024-09-10 22:46:20,226 - DEBUG - System 1809 visited status: True
+2024-09-10 22:46:22,190 - DEBUG - System 578 visited status: True
+2024-09-10 22:46:24,334 - DEBUG - System 51 visited status: True
+2024-09-10 22:46:28,331 - DEBUG - System 926 visited status: True
+2024-09-10 22:46:30,490 - DEBUG - System 1328 visited status: True
+2024-09-10 22:46:33,226 - DEBUG - System 1733 visited status: True
+2024-09-10 22:46:34,719 - DEBUG - System 1648 visited status: True
+2024-09-10 22:46:38,575 - DEBUG - System 882 visited status: True
+2024-09-10 22:46:40,577 - DEBUG - System 2272 visited status: True
+2024-09-10 22:46:42,434 - DEBUG - System 1122 visited status: True
+2024-09-10 22:46:44,735 - DEBUG - System 2706 visited status: True
+2024-09-10 22:46:46,754 - DEBUG - System 1279 visited status: True
+2024-09-10 22:46:48,442 - DEBUG - System 728 visited status: True
+2024-09-10 22:46:51,677 - DEBUG - System 1218 visited status: True
+2024-09-10 22:46:53,763 - DEBUG - System 1283 visited status: True
+2024-09-10 22:46:55,951 - DEBUG - System 2932 visited status: True
+2024-09-10 22:47:18,604 - DEBUG - System 2178 visited status: True
+2024-09-10 22:47:58,907 - DEBUG - System 500 visited status: True
+2024-09-10 22:48:01,046 - DEBUG - System 2626 visited status: True
+2024-09-10 22:48:02,978 - DEBUG - System 2873 visited status: True
+2024-09-10 22:48:05,599 - DEBUG - System 367 visited status: True
+2024-09-10 22:48:07,190 - DEBUG - System 1548 visited status: True
+2024-09-10 22:48:09,639 - DEBUG - System 533 visited status: True
+2024-09-10 22:48:11,187 - DEBUG - System 2748 visited status: True
+2024-09-10 22:48:13,230 - DEBUG - System 2 visited status: True
+2024-09-10 22:48:15,811 - DEBUG - System 637 visited status: True
+2024-09-10 22:48:17,838 - DEBUG - System 657 visited status: True
+2024-09-10 22:48:19,726 - DEBUG - System 407 visited status: True
+2024-09-10 22:48:33,910 - DEBUG - System 318 visited status: True
+2024-09-10 22:48:36,015 - DEBUG - System 2167 visited status: True
+2024-09-10 22:48:37,687 - DEBUG - System 737 visited status: True
+2024-09-10 22:48:39,642 - DEBUG - System 738 visited status: True
+2024-09-10 22:48:41,491 - DEBUG - System 1680 visited status: True
+2024-09-10 22:48:44,022 - DEBUG - System 884 visited status: True
+2024-09-10 22:48:45,834 - DEBUG - System 1854 visited status: True
+2024-09-10 22:48:47,890 - DEBUG - System 1100 visited status: True
+2024-09-10 22:48:49,294 - DEBUG - System 978 visited status: True
+2024-09-10 22:48:51,506 - DEBUG - System 85 visited status: True
+2024-09-10 22:48:53,587 - DEBUG - System 2916 visited status: True
+2024-09-10 22:48:55,994 - DEBUG - System 1110 visited status: True
+2024-09-10 22:48:58,442 - DEBUG - System 2996 visited status: True
+2024-09-10 22:49:00,866 - DEBUG - System 1461 visited status: True
+2024-09-10 22:49:04,422 - DEBUG - System 2480 visited status: True
+2024-09-10 22:49:06,326 - DEBUG - System 2639 visited status: True
+2024-09-10 22:49:08,314 - DEBUG - System 564 visited status: True
+2024-09-10 22:49:10,271 - DEBUG - System 1913 visited status: True
+2024-09-10 22:49:12,368 - DEBUG - System 2200 visited status: True
+2024-09-10 22:49:14,282 - DEBUG - System 1636 visited status: True
+2024-09-10 22:49:16,719 - DEBUG - System 1268 visited status: True
+2024-09-10 22:49:18,802 - DEBUG - System 2059 visited status: True
+2024-09-10 22:49:23,527 - DEBUG - System 2174 visited status: True
+2024-09-10 22:49:25,694 - DEBUG - System 2423 visited status: True
+2024-09-10 22:49:27,970 - DEBUG - System 1391 visited status: True
+2024-09-10 22:49:30,250 - DEBUG - System 965 visited status: True
+2024-09-10 22:49:32,431 - DEBUG - System 1719 visited status: True
+2024-09-10 22:49:34,419 - DEBUG - System 1297 visited status: True
+2024-09-10 22:49:36,422 - DEBUG - System 2442 visited status: True
+2024-09-10 22:49:38,411 - DEBUG - System 1451 visited status: True
+2024-09-10 22:49:40,258 - DEBUG - System 1203 visited status: True
+2024-09-10 22:49:41,739 - DEBUG - System 1556 visited status: True
+2024-09-10 22:49:43,569 - DEBUG - System 605 visited status: True
+2024-09-10 22:49:45,170 - DEBUG - System 103 visited status: True
+2024-09-10 22:49:47,463 - DEBUG - System 130 visited status: True
+2024-09-10 22:49:49,898 - DEBUG - System 1242 visited status: True
+2024-09-10 22:49:51,981 - DEBUG - System 695 visited status: True
+2024-09-10 22:49:54,141 - DEBUG - System 1292 visited status: True
+2024-09-10 22:49:56,023 - DEBUG - System 2172 visited status: True
+2024-09-10 22:49:57,715 - DEBUG - System 2319 visited status: True
+2024-09-10 22:49:59,694 - DEBUG - System 1511 visited status: True
+2024-09-10 22:50:01,378 - DEBUG - System 157 visited status: True
+2024-09-10 22:50:03,002 - DEBUG - System 196 visited status: True
+2024-09-10 22:50:04,662 - DEBUG - System 702 visited status: True
+2024-09-10 22:50:06,946 - DEBUG - System 2040 visited status: True
+2024-09-10 22:50:08,932 - DEBUG - System 49 visited status: True
+2024-09-10 22:50:10,610 - DEBUG - System 2604 visited status: True
+2024-09-10 22:50:12,278 - DEBUG - System 2297 visited status: True
+2024-09-10 22:50:14,234 - DEBUG - System 669 visited status: True
+2024-09-10 22:50:16,587 - DEBUG - System 891 visited status: True
+2024-09-10 22:50:17,896 - DEBUG - System 2267 visited status: True
+2024-09-10 22:50:20,543 - DEBUG - System 11 visited status: True
+2024-09-10 22:50:23,367 - DEBUG - System 1174 visited status: True
+2024-09-10 22:50:25,487 - DEBUG - System 1863 visited status: True
+2024-09-10 22:50:28,370 - DEBUG - System 2778 visited status: True
+2024-09-10 22:50:30,202 - DEBUG - System 413 visited status: True
+2024-09-10 22:50:31,823 - DEBUG - System 697 visited status: True
+2024-09-10 22:50:33,274 - DEBUG - System 78 visited status: True
+2024-09-10 22:50:35,100 - DEBUG - System 95 visited status: True
+2024-09-10 22:50:37,683 - DEBUG - System 41 visited status: True
+2024-09-10 22:50:39,202 - DEBUG - System 2953 visited status: True
+2024-09-10 22:50:43,662 - DEBUG - System 3055 visited status: True
+2024-09-10 22:50:45,830 - DEBUG - System 1785 visited status: True
+2024-09-10 22:50:47,667 - DEBUG - System 1172 visited status: True
+2024-09-10 22:50:49,863 - DEBUG - System 2302 visited status: True
+2024-09-10 22:50:51,518 - DEBUG - System 1363 visited status: True
+2024-09-10 22:50:53,598 - DEBUG - System 862 visited status: True
+2024-09-10 22:50:55,867 - DEBUG - System 2961 visited status: True
+2024-09-10 22:50:57,695 - DEBUG - System 2965 visited status: True
+2024-09-10 22:50:59,622 - DEBUG - System 860 visited status: True
+2024-09-10 22:51:01,414 - DEBUG - System 502 visited status: True
+2024-09-10 22:51:04,003 - DEBUG - System 977 visited status: True
+2024-09-10 22:51:05,478 - DEBUG - System 2648 visited status: True
+2024-09-10 22:51:08,637 - DEBUG - System 465 visited status: True
+2024-09-10 22:51:13,738 - DEBUG - System 1516 visited status: True
+2024-09-10 22:51:16,159 - DEBUG - System 1985 visited status: True
+2024-09-10 22:51:18,478 - DEBUG - System 2493 visited status: True
+2024-09-10 22:51:32,523 - DEBUG - System 2700 visited status: True
+2024-09-10 22:51:34,598 - DEBUG - System 1323 visited status: True
+2024-09-10 22:51:37,794 - DEBUG - System 725 visited status: True
+2024-09-10 22:51:39,962 - DEBUG - System 2772 visited status: True
+2024-09-10 22:51:46,718 - DEBUG - System 341 visited status: True
+2024-09-10 22:51:49,499 - DEBUG - System 488 visited status: True
+2024-09-10 22:51:53,614 - DEBUG - System 853 visited status: True
+2024-09-10 22:51:55,906 - DEBUG - System 2259 visited status: True
+2024-09-10 22:51:57,750 - DEBUG - System 406 visited status: True
+2024-09-10 22:51:59,666 - DEBUG - System 350 visited status: True
+2024-09-10 22:52:02,746 - DEBUG - System 436 visited status: True
+2024-09-10 22:52:04,530 - DEBUG - System 1448 visited status: True
+2024-09-10 22:52:06,863 - DEBUG - System 215 visited status: True
+2024-09-10 22:52:09,342 - DEBUG - System 947 visited status: True
+2024-09-10 22:52:12,950 - DEBUG - System 654 visited status: True
+2024-09-10 22:52:14,950 - DEBUG - System 1368 visited status: True
+2024-09-10 22:52:18,875 - DEBUG - System 1720 visited status: True
+2024-09-10 22:52:20,863 - DEBUG - System 2124 visited status: True
+2024-09-10 22:52:22,806 - DEBUG - System 617 visited status: True
+2024-09-10 22:52:24,411 - DEBUG - System 2910 visited status: True
+2024-09-10 22:52:28,637 - DEBUG - System 152 visited status: True
+2024-09-10 22:52:31,007 - DEBUG - System 2612 visited status: True
+2024-09-10 22:52:33,111 - DEBUG - System 1821 visited status: True
+2024-09-10 22:52:38,423 - DEBUG - System 672 visited status: True
+2024-09-10 22:52:41,262 - DEBUG - System 2322 visited status: True
+2024-09-10 22:52:43,362 - DEBUG - System 3065 visited status: True
+2024-09-10 22:52:45,646 - DEBUG - System 1421 visited status: True
+2024-09-10 22:52:47,637 - DEBUG - System 2547 visited status: True
+2024-09-10 22:52:49,694 - DEBUG - System 372 visited status: True
+2024-09-10 22:52:56,858 - DEBUG - System 2226 visited status: True
+2024-09-10 22:52:58,806 - DEBUG - System 2407 visited status: True
+2024-09-10 22:53:00,835 - DEBUG - System 787 visited status: True
+2024-09-10 22:53:02,742 - DEBUG - System 1440 visited status: True

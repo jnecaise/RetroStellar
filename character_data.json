@@ -1,16 +1,16 @@
 {
-    "Character Name": "123",
-    "Faction": "People of the River",
-    "Starting Credits": 100,
-    "Ship Name": "2",
+    "Character Name": "qweqwe",
+    "Faction": "Shogunate 3072",
+    "Starting Credits": 0,
+    "Ship Name": "ewqewq",
     "Ship Type": {
-        "name": "Oxygen",
+        "name": "Icarus",
         "class": "Light",
-        "faction_of_origin": "People of the River",
-        "description": "Specialized in resource gathering.",
+        "faction_of_origin": "Shogunate 3072",
+        "description": "A versatile scout ship.",
         "required_rank_to_pilot": "Civilian",
         "size": "Small",
-        "ship_cost": 550,
+        "ship_cost": 500,
         "min_cargo": 15,
         "max_cargo": 35,
         "max_shields": 55,
@@ -23,8 +23,8 @@
         "resource_scanner": "Yes",
         "resource_scanner_level": 2,
         "weapon_type": "Light Laser",
-        "combat_bonus": 1.0,
-        "mining_attachment": "Yes",
-        "mining_attachment_level": 1
+        "combat_bonus": 1.4,
+        "mining_attachment": "No",
+        "mining_attachment_level": 0
     }
 }

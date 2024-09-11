@@ -75,6 +75,26 @@ def load_settings():
             "Universe Size": 16
         }
 
+def load_station_names(filename='station_names.json'):
+    """Loads station names from a JSON file."""
+    try:
+        with open(filename, 'r') as file:
+            data = json.load(file)
+            return data.get('station_names', [])
+    except (FileNotFoundError, json.JSONDecodeError) as e:
+        game_logger.error(f"Error loading station names: {e}")
+        return []
+
+def load_station_types(filename='station_types.json'):
+    """Loads station types from a JSON file."""
+    try:
+        with open(filename, 'r') as file:
+            data = json.load(file)
+            return data.get('station_types', {})
+    except (FileNotFoundError, json.JSONDecodeError) as e:
+        game_logger.error(f"Error loading station types: {e}")
+        return {}
+
 def generate_random_resources(resources):
     """Generates a dictionary of resources with random values between 1000 to 3000."""
     return {resource: random.randint(1000, 3000) for resource in resources}
@@ -144,12 +164,9 @@ def log_assigned_systems(assigned_systems):
     if not assigned_systems:
         game_logger.warning("No systems were assigned to any faction.")
         print("No systems were assigned to any faction.")  # Debugging output if needed
-    
-    #for faction, system in assigned_systems.items():
-    #    game_logger.info(f"{faction} assigned to system: {system}")
 
-def generate_connections_with_dynamic_scaling(system_data, max_connections=6, cluster_bias=0.3):
-    """Generates connections with a strict limit of 6 connections per system using scalable techniques based on universe size."""
+def generate_connections_with_min_threshold(system_data, min_connections=2, max_connections=6, cluster_bias=0.3):
+    """Generates connections ensuring each system has at least a minimum number of connections."""
     system_ids = list(system_data.keys())
     num_systems = len(system_ids)
 
@@ -158,6 +175,20 @@ def generate_connections_with_dynamic_scaling(system_data, max_connections=6, cl
     else:
         connections = generate_connections_sequential(system_ids, system_data, max_connections, cluster_bias)
 
+    # Ensure each system meets the minimum connection threshold
+    for system_id in system_ids:
+        while len(connections[system_id]) < min_connections:
+            potential_connections = [
+                s for s in system_ids
+                if s != system_id and len(connections[s]) < max_connections and s not in connections[system_id]
+            ]
+            if not potential_connections:
+                break
+            new_connection = random.choice(potential_connections)
+            connections[system_id].add(new_connection)
+            connections[new_connection].add(system_id)
+
+    # Apply connections back to the systems data
     for system_id, conn in connections.items():
         system_data[system_id]['connections'] = list(conn)
 
@@ -273,15 +304,21 @@ def ensure_full_navigability(system_data, max_connections):
     system_ids = list(system_data.keys())
     visited = set()
 
-    def dfs(system_id):
-        if system_id in visited:
-            return
-        visited.add(system_id)
-        for connection in system_data[system_id]["connections"]:
-            dfs(connection)
+    def dfs_iterative(start_id):
+        """Iterative version of DFS to avoid recursion depth issues."""
+        stack = [start_id]
+        while stack:
+            system_id = stack.pop()
+            if system_id not in visited:
+                visited.add(system_id)
+                for connection in system_data[system_id]["connections"]:
+                    if connection not in visited:
+                        stack.append(connection)
 
-    dfs(system_ids[0])
+    # Start DFS from the first system
+    dfs_iterative(system_ids[0])
 
+    # Handle isolated systems
     isolated_systems = [sys for sys in system_ids if sys not in visited]
     while isolated_systems:
         isolated_system = isolated_systems.pop()
@@ -291,7 +328,7 @@ def ensure_full_navigability(system_data, max_connections):
             system_data[isolated_system]["connections"].append(connect_to)
             system_data[connect_to]["connections"].append(isolated_system)
             visited.add(isolated_system)
-            dfs(isolated_system)
+            dfs_iterative(isolated_system)
 
 def update_system_with_details(system_id, system):
     """Updates a system with star type, planets, and asteroid fields."""
@@ -336,6 +373,24 @@ def assign_additional_faction_systems(systems_data, factions, current_assigned):
 
     return additional_assigned_systems
 
+def assign_space_stations_to_systems(systems_data):
+    """Randomly assigns space stations to systems based on loaded names and types."""
+    station_names = load_station_names()
+    station_types = load_station_types()
+    station_count = len(systems_data) // 25  # Approximately one station per 25 systems
+    
+    for system_id in random.sample(list(systems_data.keys()), min(station_count, len(station_names))):
+        if station_names and station_types:
+            station_name = station_names.pop(0)  # Use names sequentially from the list
+            station_type = random.choice(list(station_types.keys()))  # Randomly choose a station type
+            systems_data[system_id]["space_station"] = {
+                "name": station_name,
+                "type": station_type,
+                "description": station_types[station_type]["description"],
+                "services": station_types[station_type]["services"]
+            }
+            game_logger.info(f"Assigned {station_name} ({station_type}) to system {system_id}.")
+
 def create_systems(universe_size):
     """Creates systems based on the universe size setting."""
     systems_data = {}
@@ -348,11 +403,15 @@ def create_systems(universe_size):
             "asteroid_fields": []
         }
         update_system_with_details(system_id, systems_data[system_id])
-    generate_connections_with_dynamic_scaling(systems_data)
+    
+    generate_connections_with_min_threshold(systems_data)  # Use the enhanced connection generation with min threshold
     
     assigned_systems = assign_faction_systems(systems_data, FACTION_RULES)
     additional_assigned_systems = assign_additional_faction_systems(systems_data, FACTION_RULES, assigned_systems)
     all_assigned_systems = {**assigned_systems, **additional_assigned_systems}
+
+    # Assign space stations to the systems
+    assign_space_stations_to_systems(systems_data)
 
     return systems_data, all_assigned_systems
 
