@@ -5,7 +5,7 @@ import random
 import subprocess
 from json_utils import load_json
 from settings import load_settings
-from game_logger import game_logger
+from game_logger import game_logger, trim_log_file  # Import the logger and trimming function
 from script import save_systems_data
 from header_display import display_header
 from planet_menu import display_planet_menu  
@@ -192,8 +192,26 @@ def get_user_command(valid_systems, systems_data, current_system):
     while True:
         command = input(f"{BOLD}Your command: {RESET}").strip().upper()
 
+        # Check for the secret admin shortcut to instantly jump to any system
+        if command.startswith('@'):
+            try:
+                target_system = command[1:]  # Extract system number
+                if target_system in systems_data:
+                    current_system = target_system
+                    print(f"{GREEN}Admin shortcut activated: You are now in system {current_system}.{RESET}")
+                    game_logger.info(f"Admin shortcut: Moved to system {current_system}.")
+                    
+                    # Display the system menu for the new system to confirm the move
+                    display_system_menu(current_system, systems_data)
+                    
+                else:
+                    print(f"{RED}System {target_system} does not exist.{RESET}")
+            except ValueError:
+                print(f"{RED}Invalid system number. Please enter a valid system after '@'.{RESET}")
+            continue  # Prompt again for input after using the shortcut
+
         # Check for valid system navigation
-        if command in valid_systems:
+        elif command in valid_systems:
             return command
 
         # Check for planet selection (A, B, C, D) using their index

@@ -1,8 +1,189 @@
-2024-09-10 08:26:33,054 - INFO - Player's faction People of the River starts in system: 36 with star type F-type
-2024-09-10 08:26:33,073 - INFO - Game Start: New Game Selected
-2024-09-10 08:26:33,073 - INFO - Universe Size: 100 systems
-2024-09-10 08:26:33,073 - INFO - Character Name: 1
-2024-09-10 08:26:33,073 - INFO - Faction: People of the River
-2024-09-10 08:26:33,073 - INFO - Ship Type: {'name': 'Oxygen', 'class': 'Light', 'faction_of_origin': 'People of the River', 'description': 'Specialized in resource gathering.', 'required_rank_to_pilot': 'Civilian', 'size': 'Small', 'ship_cost': 550, 'min_cargo': 15, 'max_cargo': 35, 'max_shields': 55, 'max_armor': 25, 'max_hull': 35, 'system_scanner_type': 'Alpha', 'system_scanner_level': 3, 'planet_scanner': 'Yes', 'planet_scanner_level': 2, 'resource_scanner': 'Yes', 'resource_scanner_level': 2, 'weapon_type': 'Light Laser', 'combat_bonus': 1.0, 'mining_attachment': 'Yes', 'mining_attachment_level': 1}
-2024-09-10 08:26:33,073 - INFO - Ship Name: 2
-2024-09-10 08:26:33,073 - INFO - Player starting in system: 36
+2024-09-10 18:28:10,296 - INFO - Logger setup successfully - initial test log.
+2024-09-10 18:28:42,079 - INFO - Player's faction Mandate of God starts in system: 25 with star type F-type
+2024-09-10 18:28:42,111 - INFO - Game Start: New Game Selected
+2024-09-10 18:28:42,111 - INFO - Universe Size: 100 systems
+2024-09-10 18:28:42,111 - INFO - Character Name: 333
+2024-09-10 18:28:42,111 - INFO - Faction: Mandate of God
+2024-09-10 18:28:42,111 - INFO - Ship Type: {'name': 'Holy Avenger', 'class': 'Light', 'faction_of_origin': 'Mandate of God', 'description': 'Equipped for divine intervention missions.', 'required_rank_to_pilot': 'Civilian', 'size': 'Small', 'ship_cost': 700, 'min_cargo': 14, 'max_cargo': 34, 'max_shields': 65, 'max_armor': 30, 'max_hull': 40, 'system_scanner_type': 'Gamma', 'system_scanner_level': 4, 'planet_scanner': 'Yes', 'planet_scanner_level': 3, 'resource_scanner': 'Yes', 'resource_scanner_level': 3, 'weapon_type': 'Enhanced Laser', 'combat_bonus': 1.0, 'mining_attachment': 'No', 'mining_attachment_level': 0}
+2024-09-10 18:28:42,111 - INFO - Ship Name: 333
+2024-09-10 18:28:42,111 - INFO - Player starting in system: 25
+2024-09-10 18:31:19,016 - INFO - Logger setup successfully - initial test log.
+2024-09-10 18:31:20,530 - INFO - Logger setup successfully - initial test log.
+2024-09-10 18:31:20,530 - INFO - Starting the main function.
+2024-09-10 18:31:20,559 - INFO - Universe with 100 systems created and updated successfully.
+2024-09-10 18:31:20,562 - INFO - Logging owned systems:
+2024-09-10 18:31:20,562 - INFO - System ID 25 is owned by Mandate of God
+2024-09-10 18:31:20,562 - INFO - System ID 28 is owned by Shogunate 3072
+2024-09-10 18:31:20,562 - INFO - System ID 65 is owned by Noringian Hive
+2024-09-10 18:31:20,562 - INFO - System ID 72 is owned by People of the River
+2024-09-10 18:31:20,562 - INFO - System ID 73 is owned by United Systems of Man
+2024-09-10 18:31:34,623 - INFO - Player's faction People of the River starts in system: 22 with star type G-type
+2024-09-10 18:31:34,643 - INFO - Game Start: New Game Selected
+2024-09-10 18:31:34,643 - INFO - Universe Size: 100 systems
+2024-09-10 18:31:34,643 - INFO - Character Name: aaa
+2024-09-10 18:31:34,643 - INFO - Faction: People of the River
+2024-09-10 18:31:34,643 - INFO - Ship Type: {'name': 'Nitrogen', 'class': 'Light', 'faction_of_origin': 'People of the River', 'description': 'Optimized for environmental adaptability.', 'required_rank_to_pilot': 'Civilian', 'size': 'Small', 'ship_cost': 600, 'min_cargo': 20, 'max_cargo': 40, 'max_shields': 60, 'max_armor': 30, 'max_hull': 40, 'system_scanner_type': 'Gamma', 'system_scanner_level': 4, 'planet_scanner': 'Yes', 'planet_scanner_level': 3, 'resource_scanner': 'Yes', 'resource_scanner_level': 3, 'weapon_type': 'Enhanced Laser', 'combat_bonus': 1.1, 'mining_attachment': 'Yes', 'mining_attachment_level': 2}
+2024-09-10 18:31:34,643 - INFO - Ship Name: weqrtytre
+2024-09-10 18:31:34,643 - INFO - Player starting in system: 22
+2024-09-10 18:40:15,057 - INFO - Logger setup successfully - initial test log.
+2024-09-10 18:40:16,686 - INFO - Logger setup successfully - initial test log.
+2024-09-10 18:40:16,686 - INFO - Starting the main function.
+2024-09-10 18:40:16,715 - INFO - Universe with 100 systems created and updated successfully.
+2024-09-10 18:40:16,717 - INFO - Logging owned systems:
+2024-09-10 18:40:16,717 - INFO - System ID 18 is owned by People of the River
+2024-09-10 18:40:16,717 - INFO - System ID 21 is owned by United Systems of Man
+2024-09-10 18:40:16,717 - INFO - System ID 27 is owned by Mandate of God
+2024-09-10 18:40:16,717 - INFO - System ID 32 is owned by Shogunate 3072
+2024-09-10 18:40:16,717 - INFO - System ID 84 is owned by Noringian Hive
+2024-09-10 18:40:29,244 - INFO - Player's faction Mandate of God starts in system: 61 with star type G-type
+2024-09-10 18:40:29,265 - INFO - Game Start: New Game Selected
+2024-09-10 18:40:29,265 - INFO - Universe Size: 100 systems
+2024-09-10 18:40:29,265 - INFO - Character Name: 12
+2024-09-10 18:40:29,265 - INFO - Faction: Mandate of God
+2024-09-10 18:40:29,266 - INFO - Ship Type: {'name': 'Holy Avenger', 'class': 'Light', 'faction_of_origin': 'Mandate of God', 'description': 'Equipped for divine intervention missions.', 'required_rank_to_pilot': 'Civilian', 'size': 'Small', 'ship_cost': 700, 'min_cargo': 14, 'max_cargo': 34, 'max_shields': 65, 'max_armor': 30, 'max_hull': 40, 'system_scanner_type': 'Gamma', 'system_scanner_level': 4, 'planet_scanner': 'Yes', 'planet_scanner_level': 3, 'resource_scanner': 'Yes', 'resource_scanner_level': 3, 'weapon_type': 'Enhanced Laser', 'combat_bonus': 1.0, 'mining_attachment': 'No', 'mining_attachment_level': 0}
+2024-09-10 18:40:29,266 - INFO - Ship Name: 321
+2024-09-10 18:40:29,266 - INFO - Player starting in system: 61
+2024-09-10 18:40:34,903 - DEBUG - System 61 visited status: True
+2024-09-10 18:40:37,707 - DEBUG - System 6 visited status: True
+2024-09-10 18:40:42,227 - DEBUG - System 73 visited status: True
+2024-09-10 18:40:44,402 - DEBUG - System 86 visited status: True
+2024-09-10 18:40:46,146 - DEBUG - System 79 visited status: True
+2024-09-10 18:40:48,074 - DEBUG - System 50 visited status: True
+2024-09-10 18:40:49,622 - DEBUG - System 47 visited status: True
+2024-09-10 18:40:51,630 - DEBUG - System 4 visited status: True
+2024-09-10 18:40:53,747 - DEBUG - System 90 visited status: True
+2024-09-10 18:40:59,422 - DEBUG - System 21 visited status: True
+2024-09-10 18:41:01,858 - DEBUG - System 3 visited status: True
+2024-09-10 18:41:04,034 - DEBUG - System 94 visited status: True
+2024-09-10 18:41:06,406 - DEBUG - System 14 visited status: True
+2024-09-10 18:41:08,158 - DEBUG - System 96 visited status: True
+2024-09-10 18:41:10,259 - DEBUG - System 53 visited status: True
+2024-09-10 18:41:12,222 - DEBUG - System 74 visited status: True
+2024-09-10 18:41:14,094 - DEBUG - System 30 visited status: True
+2024-09-10 18:41:17,786 - DEBUG - System 18 visited status: True
+2024-09-10 18:41:20,659 - DEBUG - System 41 visited status: True
+2024-09-10 18:41:23,758 - DEBUG - System 22 visited status: True
+2024-09-10 18:41:25,736 - DEBUG - System 13 visited status: True
+2024-09-10 18:41:29,527 - DEBUG - System 1 visited status: True
+2024-09-10 18:41:31,275 - DEBUG - System 78 visited status: True
+2024-09-10 18:41:33,147 - DEBUG - System 55 visited status: True
+2024-09-10 18:41:35,170 - DEBUG - System 31 visited status: True
+2024-09-10 18:41:36,987 - DEBUG - System 71 visited status: True
+2024-09-10 18:41:40,095 - DEBUG - System 77 visited status: True
+2024-09-10 18:41:41,899 - DEBUG - System 59 visited status: True
+2024-09-10 18:41:44,506 - DEBUG - System 63 visited status: True
+2024-09-10 18:41:48,642 - DEBUG - System 38 visited status: True
+2024-09-10 18:41:50,793 - DEBUG - System 8 visited status: True
+2024-09-10 18:41:52,283 - DEBUG - System 11 visited status: True
+2024-09-10 18:41:53,746 - DEBUG - System 15 visited status: True
+2024-09-10 18:41:55,094 - DEBUG - System 60 visited status: True
+2024-09-10 18:41:56,643 - DEBUG - System 26 visited status: True
+2024-09-10 18:41:58,187 - DEBUG - System 24 visited status: True
+2024-09-10 18:41:59,775 - DEBUG - System 75 visited status: True
+2024-09-10 18:42:01,171 - DEBUG - System 80 visited status: True
+2024-09-10 18:42:02,791 - DEBUG - System 33 visited status: True
+2024-09-10 18:42:04,418 - DEBUG - System 82 visited status: True
+2024-09-10 18:42:05,963 - DEBUG - System 58 visited status: True
+2024-09-10 18:42:07,438 - DEBUG - System 70 visited status: True
+2024-09-10 18:42:08,851 - DEBUG - System 35 visited status: True
+2024-09-10 18:42:10,475 - DEBUG - System 89 visited status: True
+2024-09-10 18:42:11,871 - DEBUG - System 81 visited status: True
+2024-09-10 18:42:13,639 - DEBUG - System 7 visited status: True
+2024-09-10 18:42:15,056 - DEBUG - System 49 visited status: True
+2024-09-10 18:42:16,366 - DEBUG - System 32 visited status: True
+2024-09-10 18:42:18,167 - DEBUG - System 66 visited status: True
+2024-09-10 18:42:20,126 - DEBUG - System 57 visited status: True
+2024-09-10 18:42:21,866 - DEBUG - System 36 visited status: True
+2024-09-10 18:42:24,563 - DEBUG - System 9 visited status: True
+2024-09-10 18:42:26,314 - DEBUG - System 23 visited status: True
+2024-09-10 18:42:28,438 - DEBUG - System 64 visited status: True
+2024-09-10 18:42:31,727 - DEBUG - System 42 visited status: True
+2024-09-10 18:42:33,176 - DEBUG - System 62 visited status: True
+2024-09-10 18:42:34,515 - DEBUG - System 83 visited status: True
+2024-09-10 18:42:36,139 - DEBUG - System 29 visited status: True
+2024-09-10 18:42:46,995 - DEBUG - System 45 visited status: True
+2024-09-10 18:42:48,667 - DEBUG - System 97 visited status: True
+2024-09-10 18:42:50,142 - DEBUG - System 40 visited status: True
+2024-09-10 18:42:51,958 - DEBUG - System 88 visited status: True
+2024-09-10 18:42:53,871 - DEBUG - System 37 visited status: True
+2024-09-10 18:42:55,690 - DEBUG - System 48 visited status: True
+2024-09-10 18:42:58,847 - DEBUG - System 52 visited status: True
+2024-09-10 18:43:00,434 - DEBUG - System 65 visited status: True
+2024-09-10 18:43:01,870 - DEBUG - System 43 visited status: True
+2024-09-10 18:43:03,354 - DEBUG - System 28 visited status: True
+2024-09-10 18:43:04,539 - DEBUG - System 51 visited status: True
+2024-09-10 18:43:06,106 - DEBUG - System 2 visited status: True
+2024-09-10 18:43:07,647 - DEBUG - System 98 visited status: True
+2024-09-10 18:43:09,290 - DEBUG - System 92 visited status: True
+2024-09-10 18:43:10,723 - DEBUG - System 72 visited status: True
+2024-09-10 18:43:12,127 - DEBUG - System 34 visited status: True
+2024-09-10 18:43:13,723 - DEBUG - System 46 visited status: True
+2024-09-10 18:43:15,126 - DEBUG - System 93 visited status: True
+2024-09-10 18:43:16,695 - DEBUG - System 39 visited status: True
+2024-09-10 18:43:21,478 - DEBUG - System 56 visited status: True
+2024-09-10 18:43:23,982 - DEBUG - System 44 visited status: True
+2024-09-10 18:43:29,843 - DEBUG - System 67 visited status: True
+2024-09-10 18:43:31,156 - DEBUG - System 99 visited status: True
+2024-09-10 18:43:43,764 - DEBUG - System 5 visited status: True
+2024-09-10 18:43:45,150 - DEBUG - System 19 visited status: True
+2024-09-10 18:43:46,975 - DEBUG - System 68 visited status: True
+2024-09-10 18:43:50,214 - DEBUG - System 54 visited status: True
+2024-09-10 18:44:07,023 - DEBUG - System 91 visited status: True
+2024-09-10 18:44:08,540 - DEBUG - System 20 visited status: True
+2024-09-10 18:53:04,593 - INFO - Logger setup successfully - initial test log.
+2024-09-10 18:53:06,563 - INFO - Logger setup successfully - initial test log.
+2024-09-10 18:53:06,563 - INFO - Starting the main function.
+2024-09-10 18:53:06,590 - INFO - Universe with 100 systems created and updated successfully.
+2024-09-10 18:53:06,593 - INFO - Logging owned systems:
+2024-09-10 18:53:06,593 - INFO - System ID 15 is owned by People of the River
+2024-09-10 18:53:06,593 - INFO - System ID 40 is owned by United Systems of Man
+2024-09-10 18:53:06,593 - INFO - System ID 55 is owned by Noringian Hive
+2024-09-10 18:53:06,593 - INFO - System ID 71 is owned by Mandate of God
+2024-09-10 18:53:06,593 - INFO - System ID 86 is owned by Shogunate 3072
+2024-09-10 18:54:12,551 - INFO - ==============================================
+2024-09-10 18:54:14,005 - INFO - ==============================================
+2024-09-10 18:54:14,005 - INFO - Starting the main function.
+2024-09-10 18:54:14,033 - INFO - Universe with 100 systems created and updated successfully.
+2024-09-10 18:54:14,035 - INFO - Logging owned systems:
+2024-09-10 18:54:14,035 - INFO - System ID 24 is owned by Noringian Hive
+2024-09-10 18:54:14,036 - INFO - System ID 28 is owned by Mandate of God
+2024-09-10 18:54:14,036 - INFO - System ID 63 is owned by United Systems of Man
+2024-09-10 18:54:14,036 - INFO - System ID 86 is owned by People of the River
+2024-09-10 18:54:14,036 - INFO - System ID 88 is owned by Shogunate 3072
+2024-09-10 18:54:36,315 - INFO - Player's faction People of the River starts in system: 96 with star type G-type
+2024-09-10 18:54:36,332 - INFO - Game Start: New Game Selected
+2024-09-10 18:54:36,332 - INFO - Universe Size: 100 systems
+2024-09-10 18:54:36,332 - INFO - Character Name: 23
+2024-09-10 18:54:36,332 - INFO - Faction: People of the River
+2024-09-10 18:54:36,332 - INFO - Ship Type: {'name': 'Oxygen', 'class': 'Light', 'faction_of_origin': 'People of the River', 'description': 'Specialized in resource gathering.', 'required_rank_to_pilot': 'Civilian', 'size': 'Small', 'ship_cost': 550, 'min_cargo': 15, 'max_cargo': 35, 'max_shields': 55, 'max_armor': 25, 'max_hull': 35, 'system_scanner_type': 'Alpha', 'system_scanner_level': 3, 'planet_scanner': 'Yes', 'planet_scanner_level': 2, 'resource_scanner': 'Yes', 'resource_scanner_level': 2, 'weapon_type': 'Light Laser', 'combat_bonus': 1.0, 'mining_attachment': 'Yes', 'mining_attachment_level': 1}
+2024-09-10 18:54:36,332 - INFO - Ship Name: 2
+2024-09-10 18:54:36,332 - INFO - Player starting in system: 96
+2024-09-10 18:54:48,019 - INFO - Admin shortcut: Moved to system 24.
+2024-09-10 18:57:46,478 - INFO - ==============================================
+2024-09-10 18:57:47,921 - INFO - ==============================================
+2024-09-10 18:57:47,921 - INFO - Starting the main function.
+2024-09-10 18:57:47,949 - INFO - Universe with 100 systems created and updated successfully.
+2024-09-10 18:57:47,951 - INFO - Logging owned systems:
+2024-09-10 18:57:47,951 - INFO - System ID 2 is owned by Shogunate 3072
+2024-09-10 18:57:47,951 - INFO - System ID 70 is owned by People of the River
+2024-09-10 18:57:47,951 - INFO - System ID 78 is owned by Noringian Hive
+2024-09-10 18:57:47,951 - INFO - System ID 80 is owned by United Systems of Man
+2024-09-10 18:57:47,951 - INFO - System ID 83 is owned by Mandate of God
+2024-09-10 18:57:52,815 - INFO - Player's faction People of the River starts in system: 3 with star type F-type
+2024-09-10 18:57:52,835 - INFO - Game Start: New Game Selected
+2024-09-10 18:57:52,835 - INFO - Universe Size: 100 systems
+2024-09-10 18:57:52,835 - INFO - Character Name: 123
+2024-09-10 18:57:52,835 - INFO - Faction: People of the River
+2024-09-10 18:57:52,835 - INFO - Ship Type: {'name': 'Oxygen', 'class': 'Light', 'faction_of_origin': 'People of the River', 'description': 'Specialized in resource gathering.', 'required_rank_to_pilot': 'Civilian', 'size': 'Small', 'ship_cost': 550, 'min_cargo': 15, 'max_cargo': 35, 'max_shields': 55, 'max_armor': 25, 'max_hull': 35, 'system_scanner_type': 'Alpha', 'system_scanner_level': 3, 'planet_scanner': 'Yes', 'planet_scanner_level': 2, 'resource_scanner': 'Yes', 'resource_scanner_level': 2, 'weapon_type': 'Light Laser', 'combat_bonus': 1.0, 'mining_attachment': 'Yes', 'mining_attachment_level': 1}
+2024-09-10 18:57:52,835 - INFO - Ship Name: 2
+2024-09-10 18:57:52,835 - INFO - Player starting in system: 3
+2024-09-10 18:58:05,079 - INFO - Admin shortcut: Moved to system 70.
+2024-09-10 18:58:14,727 - INFO - Admin shortcut: Moved to system 78.
+2024-09-10 18:58:20,042 - INFO - Admin shortcut: Moved to system 80.
+2024-09-10 18:58:25,855 - INFO - Admin shortcut: Moved to system 83.
+2024-09-10 18:58:29,755 - INFO - Admin shortcut: Moved to system 2.
+2024-09-10 18:58:29,755 - DEBUG - System 3 visited status: True
+2024-09-10 18:58:37,675 - INFO - Admin shortcut: Moved to system 70.
+2024-09-10 18:58:42,290 - INFO - Admin shortcut: Moved to system 78.
+2024-09-10 18:58:49,875 - INFO - Admin shortcut: Moved to system 80.
+2024-09-10 18:58:56,704 - INFO - Admin shortcut: Moved to system 83.

@@ -1,4 +1,6 @@
 
+NOTE: admin shortcut to travel to any system is '@<systemID>'
+
 # GIT process
 
 https://github.com/papajaguar504/RetroStellar

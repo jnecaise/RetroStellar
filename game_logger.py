@@ -13,7 +13,7 @@ def setup_logger(name="game_logger", log_file='game_log.txt', level=logging.DEBU
         logger.setLevel(level)
 
         # Create handlers
-        file_handler = logging.FileHandler(log_file, mode='w')  # 'w' mode clears the file each run
+        file_handler = logging.FileHandler(log_file, mode='a')  # 'a' mode appends each run
         file_handler.setLevel(level)
 
         # Create formatters and add it to handlers
@@ -25,5 +25,23 @@ def setup_logger(name="game_logger", log_file='game_log.txt', level=logging.DEBU
 
     return logger
 
+def trim_log_file(log_file, max_lines=1000):
+    """Trims the log file to keep only the last 'max_lines' lines."""
+    try:
+        with open(log_file, 'r') as file:
+            lines = file.readlines()
+        
+        if len(lines) > max_lines:
+            # Keep only the last 'max_lines' lines
+            lines = lines[-max_lines:]
+            with open(log_file, 'w') as file:
+                file.writelines(lines)
+                
+    except Exception as e:
+        print(f"Error trimming log file: {e}")
+
 # Initialize the logger when this module is imported
 game_logger = setup_logger()
+
+# Test log entry to verify setup
+game_logger.info("==============================================")
