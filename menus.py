@@ -2,6 +2,7 @@
 
 import sys
 import importlib
+import help_menu
 from ansi_colors import RED, BOLD, CYAN, MAGENTA, GREEN, RESET  # Import necessary colors
 from character_menu import display_character_menu, handle_character_menu_input
 from header_display import display_header
@@ -133,7 +134,7 @@ def handle_user_input(systems_data, current_system, allow_game_menu=False, setti
                 create_new_game_func()  # Start a new game immediately
                 return True
         elif choice == 'H':
-            help.display_help()
+            help_menu.display_help()
         elif allow_game_menu and choice == 'I':  # Display Character Menu
             display_character_menu()  # Show the character menu
             character_menu_choice = handle_character_menu_input()  # Handle character menu input and return

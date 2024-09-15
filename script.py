@@ -423,7 +423,7 @@ def load_systems_data(filename):
 def save_systems_data(filename, systems_data):
     """Saves the updated systems data to a JSON file."""
     with open(filename, 'w') as file:
-        json.dump(systems_data, file, indent=4)
+        json.dump(systems_data, file, indent=4)  
 
 def log_owned_systems_from_json(json_file):
     """Reads the systems.json file, extracts owned systems, and logs them."""

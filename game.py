@@ -1,17 +1,19 @@
+
 # game.py
 
+import re  # nazi
 import json
 import random
 import subprocess
 from json_utils import load_json
 from settings import load_settings
-from game_logger import game_logger, trim_log_file  # Import the logger and trimming function
 from script import save_systems_data
 from header_display import display_header
 from planet_menu import display_planet_menu  
 from system_menu import display_system_menu
 from factions import display_faction_options
 from asteroid_menu import display_asteroid_menu
+from game_logger import game_logger, trim_log_file
 from display_messages import display_welcome_message
 from ship_management import setup_ship, setup_player_ship 
 from ansi_colors import RED, BOLD, CYAN, RESET, GREEN, YELLOW
@@ -20,6 +22,48 @@ from menus import (display_user_menu, handle_user_input, display_game_menu)
 
 # Load settings at the start
 current_settings = load_settings()
+
+# nazi
+def update_visited_systems():
+    """Updates the character_data.json with visited systems based on game_log.txt."""
+    log_file = 'game_log.txt'
+    character_data_file = 'character_data.json'
+
+    # Read log data
+    with open(log_file, 'r') as log:
+        log_lines = log.readlines()
+
+    # Extract visited systems from log data
+    visited_systems = set()
+    for line in log_lines:
+        match = re.search(r'System (\d+) visited status: True', line)
+        if match:
+            system_number = int(match.group(1))
+            visited_systems.add(system_number)
+
+    # Load existing character data
+    try:
+        with open(character_data_file, 'r') as json_file:
+            character_data = json.load(json_file)
+    except FileNotFoundError:
+        print(f"{RED}Character data file not found. Creating a new one.{RESET}")
+        character_data = {}
+
+    # Ensure 'visited_systems' key exists in character data
+    if 'visited_systems' not in character_data:
+        character_data['visited_systems'] = []
+
+    # Update visited systems in character data, avoiding duplicates
+    current_visited = set(character_data['visited_systems'])
+    current_visited.update(visited_systems)
+    character_data['visited_systems'] = list(current_visited)
+
+    # Save updated character data
+    with open(character_data_file, 'w') as json_file:
+        json.dump(character_data, json_file, indent=4)
+
+    print(f"{GREEN}Visited systems have been updated in character_data.json.{RESET}")
+# nazi
 
 def create_new_game():
     """Generates a new universe by running script.py and initializes player data."""
@@ -83,11 +127,19 @@ def create_new_game():
     # Save updated systems data to ensure the player's starting system is marked correctly
     save_systems_data('systems.json', systems_data)
 
+    # Initialize 'current_system' in character_data
+    character_data['current_system'] = starting_system
+    save_character_data(character_data)
+
     # Log the new game start
     log_game_start("New Game", character_data, current_settings.get("Universe Size", 16))
     game_logger.info(f"Player starting in system: {starting_system}")
 
-    print(f"{GREEN}New game setup complete. Starting game...{RESET}")
+    print(f"{GREEN}New game setup complete. Starting game at System {starting_system}...{RESET}")
+
+    # Call update_visited_systems to ensure logs are reflected in character data
+    update_visited_systems()
+
     navigate_systems(systems_data, starting_system, character_data)  # Start from the randomly selected system
 
 def load_existing_game():
@@ -103,13 +155,27 @@ def load_existing_game():
             character_data = setup_ship(character_data)
             save_character_data(character_data)
 
+        # Retrieve the last visited system; default to "1" if not found
+        current_system = character_data.get('current_system', "1")
+
+        # Retrieve visited systems
+        visited_systems = character_data.get('visited_systems', [])
+
+        # Apply visited status to systems_data
+        for system_id in visited_systems:
+            if system_id in systems_data:
+                systems_data[system_id]['visited'] = True
+            else:
+                game_logger.warning(f"Visited system ID {system_id} not found in systems_data.")
+
         # Log the game continuation
         log_game_start("Continue Game", character_data, current_settings.get("Universe Size", 16))
 
-        print(f"{GREEN}Loaded saved game. Continuing...{RESET}")
+        print(f"{GREEN}Loaded saved game. Continuing at System {current_system}...{RESET}")
 
         # Resume the game using the saved data
-        navigate_systems(systems_data, "1", character_data)  # Resume at the correct system
+        navigate_systems(systems_data, current_system, character_data)  # Pass current_system
+
         return True
     except FileNotFoundError:
         print(f"{RED}Save files not found. Unable to continue the game.{RESET}")
@@ -163,12 +229,21 @@ def navigate_systems(systems_data, current_system, character_data):
         ship_data = character_data.get('Ship Type', {})
 
     player_ship = setup_player_ship(ship_data)  # Set up the ship after character creation
-    start_game(systems_data, current_system)  # Start the game loop
+    start_game(systems_data, current_system, character_data)  # Pass character_data
 
-def start_game(systems_data, current_system):
+def start_game(systems_data, current_system, character_data):
     """Starts the game loop and handles system navigation."""
     while True:
         display_system_menu(current_system, systems_data)  # Display the current system menu
+
+        # Mark the current system as visited
+        systems_data[current_system]['visited'] = True
+        if 'visited_systems' not in character_data:
+            character_data['visited_systems'] = []
+        if current_system not in character_data['visited_systems']:
+            character_data['visited_systems'].append(current_system)
+        save_character_data(character_data)
+
         while True:
             command = get_user_command(systems_data[current_system]['connections'], systems_data, current_system).upper()  # Convert to uppercase
             if command == 'M':
@@ -185,6 +260,13 @@ def start_game(systems_data, current_system):
                     break  # Exit to the main game loop
             elif command in systems_data[current_system]['connections']:
                 current_system = command  # Update current system based on navigation
+                # Mark the new system as visited
+                systems_data[current_system]['visited'] = True
+                if 'visited_systems' not in character_data:
+                    character_data['visited_systems'] = []
+                if current_system not in character_data['visited_systems']:
+                    character_data['visited_systems'].append(current_system)
+                save_character_data(character_data)
                 break
 
 def get_user_command(valid_systems, systems_data, current_system):

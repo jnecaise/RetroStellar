@@ -1,0 +1,1342 @@
+Be an expert Python game developer. You are knowledgeable in how to efficiently code and develop a retro-style space exploration game similar to TradeWars 2002 and EVE Online. Create code to develop this game following my direction. We are trying to build out an experience that combines the enjoyment of both of these games. We see EVE Online as a logical evolution of TradeWars 2002 and want to capture that retro feel while developing something new and exciting. The following is information on the project and the directory structure and files we're using for the game. Now remember, I already have the code for all these files. Don't give me new code to add to these files unless I ask for it. 
+
+Project Name: RetroStellar game
+Purpose: To create a retro-style 4x space trading game similar to TradeWars 2002, blending elements of EVE Online as well, all done in a retro style with a UI similar to TradeWars.
+Key Features: space exploration, missions and quests, researching progress to better explore space in the retro style UI
+Technologies: currently just Python files, but I expect to bring in more advanced software development tools as the game advances.
+
+RetroStellar/
+|-_pycache_
+|-TradeWars Images - folder containing reference images from TradeWars 2002.
+
+|-RetroStellar ZIP - Zip file containing backups of earlier versions of the application
+
+|-character_data.json - contains character data to persist over time. The "save" file. Contains character name, faction, starting credits, ship name, ship type and associated ship data and a list of visited systems.
+
+|-factions.json - contains specific data for each of the five individual player factions. The factions are the United Systems of Man, Shogunate 3072, the People of the River, Mandate of God and The Noringian Hive. Each faction contains attributes like starting credits, description, bonuses, penalties and sectors. The sectors are individual faction attribute categories that are then broken down into three individual values. The three main sectors are Conquest, Explore and Trade. There is an additional Sector called Research that has no secondary values. Conquest breaks down into Combat, Fleet Control and System Defense. Explore breaks down into Find Resource, Mission Chance and Anomaly Chance. Trade breaks down into Reputation, Negotiation and Resource Management.
+
+|-ranks.json - contains attributes related to experience point values and what perks those levels bring. The values are name, experience points, perks, abilities, access and narrative integration. 
+
+|-settings.json - contains data for in-game settings. Currently the only data point in the settings file is Universe Size. 
+
+|-ships.json - data file containing the information for the different ships players can use in the game. Each faction has three options for ships and each ship has the same data points. Those are name, class, faction of origin, description, required rank to pilot, size, ship cose, min cargo, max cargo, max shields, max armor, max hull, system scanner type, system scanner level, planet scanner, planet scanner level, resource scanner, resource scanner level, weapon type, combat bonus, mining attachment, mining attachment level.
+
+|-station_names.json - data file containing options for names that will be assigned to space stations. This data is then called by other files when generating space stations. 
+
+|-station_types.json - data file containing the three different types of space stations available in the game. Options are commercial, dry dock and research. The station types also provide three different services. Commercial stations provide market access, Freelance Mission Hub and Trading NPCs. The Dry Dock stations provide Combat Mission Hub, Repairs and Upgrades. The Research stations provide technology upgrades, research projects and research missions. 
+
+|-systems.json - this is a larger generated json data file that contains the generated data for each star system in the game. The game can hold up to a maximum of 10,000 star systems and the data for each system is programmatically generated in script.py when the player begins a new game. If the player continues an already existing game, the data for systems.json remains the same and is not re-generated. Each system contains the following datapoints. Those are description, planets, connections to other systems, asteroid fields, star type, hazard level, resources and the faction that owns the system. The planet data contains the data name, type, resources and if the planet is colonizable. There can be up to a maximum of four planets in a system, dictated by the code in script.py. Systems also contain asteroids which have data points of id, density, resource type, hazard level and resources.  
+
+|-ansi_colors.py - a referential data file that stores the ANSI color information for the game's UI and color styles. 
+
+|-asteroid_menu.py - the logic and code file for displaying the asteroid field menu. This file contains the function "display_asteroid_menu" which "Displays detailed information about the selected asteroid field and allows returning to the System Menu."
+
+|-character_menu.py - the logic and code file for displaying the character menu. This file contains the functions "load_character_data", which "Loads character data from the character_data.json file.", "save_character_data", which "Saves character data to the character_data.json file.", "display_character_menu" which "Displays the character menu with the current character details" and "handle_character_menu_input", which "Handles user input within the character menu." 
+
+|-display_messages.py - a small file that contains the introductory message to the game. The function is called display_welcome_message. 
+
+|-factions.py - a small Python file that contains the function display_faction_options that displays the available factions for the player. The file also contains the saved faction_colors that each faction will have. 
+
+|-game.py - the primary logic and code Python file that directs the entire process flow of the game. Game.py is the executable file that is run at runtime. As such, it is the most heavily updated and edited file and is often changing. Game.py is a core fundamental file in the entire application. It contains the functions update_visited_systems, which "Updates the character_data.json with visited systems based on game_log.txt.", create_new_game, which "Generates a new universe by running script.py and initializes player data.", load_existing_game, which "Loads the existing universe and player data if available.", log_game_start, which "Logs the details of the game start", setup_character, which handles the setup of character data, navigate_systems, which "Navigates the main game loop, starting with user menu and setting up game components.", start_game, which "Starts the game loop and handles system navigation." and get_user_command, which "Prompts user for commands related to system navigation, planet selection, and asteroid field selection."
+
+|-game_logger.py - the primary setup file for logging events in the game. The primary function is setup_logger which sets up the logger and logs events to game_log.txt. The other function is trim_log_file, which trims the log file to keep only the last 1000 lines. 
+
+|-header_display.py - a small file that displays the RETROSTELLAR title in ASCII text. One function, display_header.
+
+|-help_menu.py - primarily a referential file that displays the help messages for the game. One function, display_help.
+
+|-json_utils.py - A logic file that contains the functions to load and save the JSON data. Two functions, load_json and save_json. Self-explanatory. 
+
+|-menus.py - the logic and code for displays the various menus in the game. Functions are display_user_menu, which displays the main user menu options, reload_character_menu which "Reloads the character menu module and displays it.", display_character_menu which displays the character menu with detailed information, handle_character_menu_input, which "Handles user input within the character menu.", display_game_menu, which displays the in-game menu options, and handle_user_input which handles user input from the main menu.
+
+|-planet_menu.py - the logic and code for the planet menu, accessible directly from the system menu. Functions include display_planet_menu which "Displays detailed information about the selected planet and allows returning to the System Menu.", The planet menu shows information about a specific planet that is gathered from the generated systems.json file. 
+
+|-script.py - a critically important Python file that handles the dynamic generation of the entire game contents including systems, connections, planets, asteroid, space stations and everything else including available resources. Script.py is the file that generates the contents of systems.json and contains all the important code for generating literally the entire data the game uses. It lists star_types, planet_types_by_star, asteroid_fields_by_star, resources_by_planet_type, resources_by_asteroid_type and faction_rules. All these dictate the rules by which content in the game is generated. Other functions include load_settings which loads settings from settings.json file, load_station_names which loads space station names from station_names.json, load_station_types which loads space station data from station_types.json, generate_random_resources, which generates a dictionary of resources available to mine in the game, assign_planet_details, which assigns a type and resources to a planet based on the given rules in script.py, generate_asteroid_fields which generates asteroid fields for a system, assign_star_type_and_hazards which assigns a random star type and hazard level to a system, assign_faction_systems, which assigns the starting systems to each faction, log_assigned_systems, which logs the assigned systems for factions, generates_connections_with_min_threshold, which generates connections between systems ensuring each system has at least a minimum number of connections, generate_connections_sequential, which is "Sequential connection generation for smaller universes.", generate_connections_parallel, which is "Parallel connection generation for large universes using multiprocessing.", process_connections, which "Processes a subset of systems to generate connections.", has_similar_resources, which "Checks if two systems have similar resources.", ensure_full_navigability, which "Ensures all systems are reachable by connecting isolated clusters, respecting the connection limit.", dfs_iterative, which is a nested function inside ensure_full_navigability. dfs_interactive is a "Iterative version of DFS to avoid recursion depth issues.", update_system_with_details, which "Updates a system with star type, planets, and asteroid fields.", assign_additional_faction_system which "Assigns starting systems to the remaining factions that do not have a starting system yet.", assign_space_stations_to_systems, which "Randomly assigns space stations to systems based on loaded names and types.", create_systems, which "Creates systems based on the universe size setting.", load_systems_data, save_systems_data and log_owned_systems_from_json, which are self explanatory, and then main(), which is the "Main function to update systems.json with new data."
+
+|-settings.py - the logic and code for the game's settings. This file will be expanded upon, but currently holds the functions, load_settings, save_settings, display_settings_menu, which are self-explanatory. 
+
+|-ship_management.py - the logic and code for managing how ships are displayed and chosen by the player. This file will expand later on, but currently holds the functions setup_ship, which handles ship selection and updates character_data with the selection, and setup_player_ship which sets up the player's ship based on the loaded data.
+
+|-ship_menus.py - the logic and data for displaying ship menus and loading the ship data. This file contains the functions load_json, save_json, load_ships, which loads the available ships from ships.json, display_ship_menu which displays a menu of starter ships for the player to select during a new game instance, choose_ship, which allows the player to select a ship from the list at the start of a new game, and setup_ship, which handles the ship selection process. 
+
+|-space_station.py - currently a very small file that will expand in time. Contains the function display_space_station_menu, which is a placeholder function for right now. More to come with this file. 
+
+|-system_menu.py - the logic and code for displaying the system menu in the game. This file is very important as the system menu is the primary way that game information is displayed to the user. The system menu shows the star, the planets, the asteroid belts, the connections to other systems, if there's a space station in the system and so much more. The system menu is an incredibly important file. It contains functions like display_system_menu which "Displays detailed information about the selected system.", get_planet_names, which "Returns a string of planet names in the system.", get_stargates, which returns a string of stargate connections, print_system_details, which prints the basic details of the system including name, description, ownership, and connections.", format_stargates, which "Formats stargate connections with white color for visited systems.", display_asteroid_fields, which displays the asteroid fields present in the system, and display_space_station, which displays if there are space stations present in the system. 
+
+|-game_log.txt - This is the text file that receives the actual logging event information for the game. game_logger.py sets up the logging, and game_log.txt is the file that actually logs the events. 
+
+|-RetroStellar notes.txt - a referential text file for various game-related information. Not used in code. 
+
+|-GPT guide.txt - the text file that contains the context and training documentation for dealing with the GPT models when describing the codebase and what the project is supposed to do. Used only for conversations with the GPT models.
+
+
+The basic functionality of the game is like this. It's a keyboard-driven game, there are no mouse interactions. User executes game.py, comes to the first menu. N to start new game, C to continue game, T for settings, H for help, Q to quit. Press N for new game, and then the universe will be generated in the background. Then enter character name. Then press 1, 2, 3, 4 or 5 to select a faction. Then press 1, 2 or 3 to select a starting ship from that faction. Then enter a name for that ship. Then you're placed in a random starting system. You've got access to planets and can access the planet menu by pressing A, B, C or D to match the planet you want to land on and view that planet menu. Same with the asteroid belts, you enter the asteroid field ID to view that menu. There will be more functionality added to these menus later. System menu has list of stargate connections. You enter that number and navigate to that system. That's current functionality. Future functionality will include combat, missions, trade and random encounters in systems. All future development.
+
+I am including the full code for the game.py file, script.py file, character_data.json file, system_menu.py file, json_utils.py file and game_logger.py files. I am also including an example of how one system appears in the generated systems.json file. Systems.json data is dynamically generated from script.py when a player begins a new game. How that data is structured and organized in systems.json is important to know. I am also including the code for menus.py, which controls the in-game menus. I am also including the code for help.py. These files are among the most fundamentally important files in the game. All other actions and files eventually have some connection with one or all of these files. 
+
+
+GAME.py
+
+# game.py
+
+import re  # nazi
+import json
+import random
+import subprocess
+from json_utils import load_json
+from settings import load_settings
+from script import save_systems_data
+from header_display import display_header
+from planet_menu import display_planet_menu  
+from system_menu import display_system_menu
+from factions import display_faction_options
+from asteroid_menu import display_asteroid_menu
+from game_logger import game_logger, trim_log_file
+from display_messages import display_welcome_message
+from ship_management import setup_ship, setup_player_ship 
+from ansi_colors import RED, BOLD, CYAN, RESET, GREEN, YELLOW
+from character_menu import save_character_data, load_character_data
+from menus import (display_user_menu, handle_user_input, display_game_menu)
+
+# Load settings at the start
+current_settings = load_settings()
+
+# nazi
+def update_visited_systems():
+    """Updates the character_data.json with visited systems based on game_log.txt."""
+    log_file = 'game_log.txt'
+    character_data_file = 'character_data.json'
+
+    # Read log data
+    with open(log_file, 'r') as log:
+        log_lines = log.readlines()
+
+    # Extract visited systems from log data
+    visited_systems = set()
+    for line in log_lines:
+        match = re.search(r'System (\d+) visited status: True', line)
+        if match:
+            system_number = int(match.group(1))
+            visited_systems.add(system_number)
+
+    # Load existing character data
+    try:
+        with open(character_data_file, 'r') as json_file:
+            character_data = json.load(json_file)
+    except FileNotFoundError:
+        print(f"{RED}Character data file not found. Creating a new one.{RESET}")
+        character_data = {}
+
+    # Ensure 'visited_systems' key exists in character data
+    if 'visited_systems' not in character_data:
+        character_data['visited_systems'] = []
+
+    # Update visited systems in character data, avoiding duplicates
+    current_visited = set(character_data['visited_systems'])
+    current_visited.update(visited_systems)
+    character_data['visited_systems'] = list(current_visited)
+
+    # Save updated character data
+    with open(character_data_file, 'w') as json_file:
+        json.dump(character_data, json_file, indent=4)
+
+    print(f"{GREEN}Visited systems have been updated in character_data.json.{RESET}")
+# nazi
+
+def create_new_game():
+    """Generates a new universe by running script.py and initializes player data."""
+    print()
+    print(f"{GREEN}Generating a new universe...{RESET}")
+
+    # Run script.py to generate the universe
+    try:
+        subprocess.run(['python', 'script.py'], check=True)  # Run script.py
+        print(f"{GREEN}Universe generated successfully!{RESET}")
+        print("--------------------------------")
+        print()
+    except subprocess.CalledProcessError as e:
+        print(f"{RED}Failed to generate the universe: {e}{RESET}")
+        return
+
+    # Initialize character data
+    character_data = setup_character()  # Initialize new character data
+    save_character_data(character_data)  # Save initial character data
+
+    # Load the newly generated universe
+    systems_data = load_json('systems.json')
+
+    # Ensure ship data is set up after character creation
+    if 'Ship Type' not in character_data or not character_data['Ship Type']:
+        character_data = setup_ship(character_data)
+        save_character_data(character_data)
+
+    # Retrieve player's chosen faction and select eligible starting systems
+    player_faction = character_data.get('Faction', 'Unaligned')
+    factions_rules = {
+        "The Noringian Hive": {"star_types": ["O-type", "B-type", "A-type"], "planet_types": None},
+        "Mandate of God": {"star_types": ["A-type", "F-type", "G-type"], "planet_types": ["Terrestrial"]},
+        "Shogunate 3072": {"star_types": ["G-type", "K-type", "M-type"], "planet_types": ["Terrestrial"]},
+        "United Systems of Man": {"star_types": ["A-type", "F-type", "G-type"], "planet_types": ["Terrestrial"]},
+        "People of the River": {"star_types": ["F-type", "G-type", "K-type"], "planet_types": ["Terrestrial"]},
+    }
+
+    # Get faction-specific rules
+    rules = factions_rules.get(player_faction, {})
+
+    # Find eligible systems based on the player's faction
+    eligible_systems = [
+        sys_id for sys_id, sys_info in systems_data.items()
+        if sys_info["star_type"] in rules["star_types"] and 
+        (rules["planet_types"] is None or any(
+            planet["type"] in rules["planet_types"] for planet in sys_info["planets"]
+        ))
+    ]
+
+    # Select a random eligible system for the player to start in
+    if eligible_systems:
+        starting_system = random.choice(eligible_systems)
+        systems_data[starting_system]["owned_by"] = player_faction
+        game_logger.info(f"Player's faction {player_faction} starts in system: {starting_system} with star type {systems_data[starting_system]['star_type']}")
+    else:
+        # Fallback in case no eligible system is found
+        starting_system = random.choice(list(systems_data.keys()))
+        game_logger.warning(f"No eligible systems found for faction {player_faction}. Starting in random system: {starting_system}")
+
+    # Save updated systems data to ensure the player's starting system is marked correctly
+    save_systems_data('systems.json', systems_data)
+
+    # Initialize 'current_system' in character_data
+    character_data['current_system'] = starting_system
+    save_character_data(character_data)
+
+    # Log the new game start
+    log_game_start("New Game", character_data, current_settings.get("Universe Size", 16))
+    game_logger.info(f"Player starting in system: {starting_system}")
+
+    print(f"{GREEN}New game setup complete. Starting game at System {starting_system}...{RESET}")
+
+    # Call update_visited_systems to ensure logs are reflected in character data
+    update_visited_systems()
+
+    navigate_systems(systems_data, starting_system, character_data)  # Start from the randomly selected system
+
+def load_existing_game():
+    """Loads the existing universe and player data if available."""
+    try:
+        # Load the saved universe and character data
+        systems_data = load_json('systems.json')  # Load saved universe data
+        character_data = load_character_data()  # Load saved character data
+
+        # Check if ship data is present; if not, prompt for ship selection
+        if 'Ship Type' not in character_data or not character_data['Ship Type']:
+            print(f"{YELLOW}No ship data found. You need to select a ship first.{RESET}")
+            character_data = setup_ship(character_data)
+            save_character_data(character_data)
+
+        # Retrieve the last visited system; default to "1" if not found
+        current_system = character_data.get('current_system', "1")
+
+        # Retrieve visited systems
+        visited_systems = character_data.get('visited_systems', [])
+
+        # Apply visited status to systems_data
+        for system_id in visited_systems:
+            if system_id in systems_data:
+                systems_data[system_id]['visited'] = True
+            else:
+                game_logger.warning(f"Visited system ID {system_id} not found in systems_data.")
+
+        # Log the game continuation
+        log_game_start("Continue Game", character_data, current_settings.get("Universe Size", 16))
+
+        print(f"{GREEN}Loaded saved game. Continuing at System {current_system}...{RESET}")
+
+        # Resume the game using the saved data
+        navigate_systems(systems_data, current_system, character_data)  # Pass current_system
+
+        return True
+    except FileNotFoundError:
+        print(f"{RED}Save files not found. Unable to continue the game.{RESET}")
+        return False
+    except json.JSONDecodeError:
+        print(f"{RED}Error loading save files. The data may be corrupted.{RESET}")
+        return False
+
+def log_game_start(game_type, character_data, universe_size):
+    """Logs the details of the game start."""
+    game_logger.info(f"Game Start: {game_type} Selected")
+    game_logger.info(f"Universe Size: {universe_size} systems")
+    game_logger.info(f"Character Name: {character_data.get('Character Name', 'Unknown')}")
+    game_logger.info(f"Faction: {character_data.get('Faction', 'None')}")
+    game_logger.info(f"Ship Type: {character_data.get('Ship Type', 'Unknown')}")
+    game_logger.info(f"Ship Name: {character_data.get('Ship Name', 'Unnamed')}")
+
+def setup_character():
+    """Handles the setup of character data."""
+    character_data = {}
+    print(f"{CYAN}Please enter your character information!{RESET}")
+    character_data['Character Name'] = input(f"{BOLD}Enter your Character Name: {RESET}").strip()
+    print()
+    display_faction_options()
+    factions = load_json('factions.json')
+    while True:
+        print()
+        faction_choice = input(f"{BOLD}Choose your faction by number: {RESET}").strip()
+        try:
+            faction_idx = int(faction_choice) - 1
+            faction_names = list(factions.keys())
+            if 0 <= faction_idx < len(faction_names):
+                chosen_faction = faction_names[faction_idx]
+                character_data['Faction'] = chosen_faction
+                character_data['Starting Credits'] = factions[chosen_faction]['Starting Credits']
+                break
+            else:
+                print(f"{RED}Invalid faction choice. Try again.{RESET}")
+        except ValueError:
+            print(f"{RED}Please enter a valid number.{RESET}")
+    save_character_data(character_data)
+    return character_data
+
+def navigate_systems(systems_data, current_system, character_data):
+    """Navigates the main game loop, starting with user menu and setting up game components."""
+    ship_data = character_data.get('Ship Type', {})
+    if not ship_data:
+        print(f"{YELLOW}No ship data found. Initializing ship selection.{RESET}")
+        character_data = setup_ship(character_data)
+        save_character_data(character_data)
+        ship_data = character_data.get('Ship Type', {})
+
+    player_ship = setup_player_ship(ship_data)  # Set up the ship after character creation
+    start_game(systems_data, current_system, character_data)  # Pass character_data
+
+def start_game(systems_data, current_system, character_data):
+    """Starts the game loop and handles system navigation."""
+    while True:
+        display_system_menu(current_system, systems_data)  # Display the current system menu
+
+        # Mark the current system as visited
+        systems_data[current_system]['visited'] = True
+        if 'visited_systems' not in character_data:
+            character_data['visited_systems'] = []
+        if current_system not in character_data['visited_systems']:
+            character_data['visited_systems'].append(current_system)
+        save_character_data(character_data)
+
+        while True:
+            command = get_user_command(systems_data[current_system]['connections'], systems_data, current_system).upper()  # Convert to uppercase
+            if command == 'M':
+                display_game_menu()
+                menu_choice = handle_user_input(
+                    systems_data,
+                    current_system,
+                    allow_game_menu=True,
+                    settings=current_settings,
+                    create_new_game_func=create_new_game,
+                    load_existing_game_func=load_existing_game,
+                )
+                if menu_choice == 'R':  # Return to system menu
+                    break  # Exit to the main game loop
+            elif command in systems_data[current_system]['connections']:
+                current_system = command  # Update current system based on navigation
+                # Mark the new system as visited
+                systems_data[current_system]['visited'] = True
+                if 'visited_systems' not in character_data:
+                    character_data['visited_systems'] = []
+                if current_system not in character_data['visited_systems']:
+                    character_data['visited_systems'].append(current_system)
+                save_character_data(character_data)
+                break
+
+def get_user_command(valid_systems, systems_data, current_system):
+    """Prompts user for commands related to system navigation, planet selection, and asteroid field selection."""
+    while True:
+        command = input(f"{BOLD}Your command: {RESET}").strip().upper()
+
+        # Check for the secret admin shortcut to instantly jump to any system
+        if command.startswith('@'):
+            try:
+                target_system = command[1:]  # Extract system number
+                if target_system in systems_data:
+                    current_system = target_system
+                    print(f"{GREEN}Admin shortcut activated: You are now in system {current_system}.{RESET}")
+                    game_logger.info(f"Admin shortcut: Moved to system {current_system}.")
+                    
+                    # Display the system menu for the new system to confirm the move
+                    display_system_menu(current_system, systems_data)
+                    
+                else:
+                    print(f"{RED}System {target_system} does not exist.{RESET}")
+            except ValueError:
+                print(f"{RED}Invalid system number. Please enter a valid system after '@'.{RESET}")
+            continue  # Prompt again for input after using the shortcut
+
+        # Check for valid system navigation
+        elif command in valid_systems:
+            return command
+
+        # Check for planet selection (A, B, C, D) using their index
+        elif command in ['A', 'B', 'C', 'D']:
+            planet_index = ord(command) - ord('A')  # Convert letter to index (A=0, B=1, ...)
+            if planet_index < len(systems_data[current_system]['planets']):
+                display_planet_menu(systems_data[current_system], planet_index)
+                display_system_menu(current_system, systems_data)  # Return to system menu after viewing planet
+            else:
+                print(f"{RED}Invalid planet selection. Please try again.{RESET}")
+
+        # Check for asteroid field selection by ID (e.g., 1A, 2B)
+        elif command in [field['id'] for field in systems_data[current_system].get('asteroid_fields', [])]:
+            # Find the index of the selected asteroid field
+            asteroid_index = next((i for i, field in enumerate(systems_data[current_system]['asteroid_fields']) if field['id'] == command), None)
+            if asteroid_index is not None:
+                display_asteroid_menu(systems_data[current_system], asteroid_index)
+                display_system_menu(current_system, systems_data)  # Return to system menu after viewing asteroid field
+            else:
+                print(f"{RED}Invalid asteroid field selection. Please try again.{RESET}")
+
+        # Return to game menu
+        elif command == 'M':
+            return 'M'
+
+        # Handle invalid inputs
+        else:
+            print(f"{RED}Invalid input. Please enter a valid system number, planet letter (A-D), asteroid field ID, or 'M' for the menu.{RESET}")
+
+if __name__ == "__main__":
+    print("Initializing RetroStellar.........")
+    display_header()  # Display the welcome header once at the start
+    display_welcome_message()  # Show the introductory text
+    display_user_menu()  # Show the main user menu immediately
+    handle_user_input(
+        systems_data={},
+        current_system="1",
+        create_new_game_func=create_new_game,
+        load_existing_game_func=load_existing_game,
+    )
+
+
+SCRIPT.py
+import json
+import random
+import string
+from multiprocessing import Pool, Manager
+from game_logger import game_logger, trim_log_file
+
+# Define star types and their associated hazard levels
+STAR_TYPES = {
+    "O-type": "Very High",
+    "B-type": "High",
+    "A-type": "Moderate",
+    "F-type": "Mild",
+    "G-type": "Low",
+    "K-type": "Very Low",
+    "M-type": "Minimal"
+}
+
+# Define planet types by star type
+PLANET_TYPES_BY_STAR = {
+    "O-type": ["Barren", "Gas Giant"],
+    "B-type": ["Barren", "Gas Giant", "Lava"],
+    "A-type": ["Gas Giant", "Ice", "Lava"],
+    "F-type": ["Terrestrial", "Oceanic", "Ice"],
+    "G-type": ["Terrestrial", "Oceanic", "Toxic"],
+    "K-type": ["Terrestrial", "Oceanic", "Barren"],
+    "M-type": ["Ice", "Barren"]
+}
+
+# Define asteroid field characteristics by star type
+ASTEROID_FIELDS_BY_STAR = {
+    "O-type": {"density": "Sparse", "types": ["Metallic"]},
+    "B-type": {"density": "Sparse", "types": ["Metallic", "Silicate"]},
+    "A-type": {"density": "Moderate", "types": ["Carbonaceous", "Silicate"]},
+    "F-type": {"density": "Moderate to Dense", "types": ["Carbonaceous", "Silicate", "Metallic"]},
+    "G-type": {"density": "Dense", "types": ["Carbonaceous", "Silicate", "Metallic"]},
+    "K-type": {"density": "Dense", "types": ["Carbonaceous", "Silicate"]},
+    "M-type": {"density": "Moderate to Dense", "types": ["Silicate", "Metallic"]}
+}
+
+# Define resource availability based on planet types
+RESOURCES_BY_PLANET_TYPE = {
+    "Oceanic": ["Ore", "Water", "Food", "Metals", "Fuel"],
+    "Barren": ["Ore", "Metals", "Electronics", "Fuel"],
+    "Terrestrial": ["Ore", "Water", "Food", "Metals", "Electronics", "Fuel"],
+    "Ice": ["Ore", "Water", "Metals"],
+    "Gas Giant": ["Ore", "Metals", "Fuel"],
+    "Lava": ["Ore", "Metals", "Fuel"],
+    "Toxic": ["Ore", "Metals", "Fuel"]
+}
+
+# Define resource availability based on asteroid field types
+RESOURCES_BY_ASTEROID_TYPE = {
+    "Metallic": ["Metals", "Ore"],
+    "Silicate": ["Ore", "Electronics"],
+    "Carbonaceous": ["Ore", "Fuel"]
+}
+
+# Faction placement rules
+FACTION_RULES = {
+    "Noringian Hive": {"star_types": ["O-type", "B-type", "A-type"], "planet_types": None},
+    "Mandate of God": {"star_types": ["A-type", "F-type", "G-type"], "planet_types": ["Terrestrial"]},
+    "Shogunate 3072": {"star_types": ["G-type", "K-type", "M-type"], "planet_types": ["Terrestrial"]},
+    "United Systems of Man": {"star_types": ["A-type", "F-type", "G-type"], "planet_types": ["Terrestrial"]},
+    "People of the River": {"star_types": ["F-type", "G-type", "K-type"], "planet_types": ["Terrestrial"]}
+}
+
+def load_settings():
+    """Loads settings from settings.json file."""
+    try:
+        with open('settings.json', 'r') as file:
+            return json.load(file)
+    except FileNotFoundError:
+        print("Settings file not found. Using default settings.")
+        return {
+            "Universe Size": 16
+        }
+
+def load_station_names(filename='station_names.json'):
+    """Loads station names from a JSON file."""
+    try:
+        with open(filename, 'r') as file:
+            data = json.load(file)
+            return data.get('station_names', [])
+    except (FileNotFoundError, json.JSONDecodeError) as e:
+        game_logger.error(f"Error loading station names: {e}")
+        return []
+
+def load_station_types(filename='station_types.json'):
+    """Loads station types from a JSON file."""
+    try:
+        with open(filename, 'r') as file:
+            data = json.load(file)
+            return data.get('station_types', {})
+    except (FileNotFoundError, json.JSONDecodeError) as e:
+        game_logger.error(f"Error loading station types: {e}")
+        return {}
+
+def generate_random_resources(resources):
+    """Generates a dictionary of resources with random values between 1000 to 3000."""
+    return {resource: random.randint(1000, 3000) for resource in resources}
+
+def assign_planet_details(planet, star_type):
+    """Assigns a type and resources to a planet based on the star type."""
+    possible_planet_types = PLANET_TYPES_BY_STAR[star_type]
+    planet_type = random.choice(possible_planet_types)
+    planet["type"] = planet_type
+    resources = RESOURCES_BY_PLANET_TYPE.get(planet_type, [])
+    planet["resources"] = generate_random_resources(resources)
+    planet["colonizable"] = "Yes" if planet_type in ["Oceanic", "Barren", "Terrestrial", "Ice"] else "No"
+
+def generate_asteroid_fields(system_id, star_type):
+    """Generates asteroid fields for a system based on the star type."""
+    asteroid_field_info = ASTEROID_FIELDS_BY_STAR.get(star_type)
+    if not asteroid_field_info:
+        return []
+    
+    num_asteroid_fields = random.randint(1, 4)  # Random number of fields between 1 and 4
+    asteroid_fields = []
+    for i in range(num_asteroid_fields):
+        field_id = f"{system_id}{string.ascii_uppercase[i]}"
+        resource_type = random.choice(asteroid_field_info["types"])
+        resources = RESOURCES_BY_ASTEROID_TYPE.get(resource_type, [])
+        asteroid_field = {
+            "id": field_id,
+            "density": asteroid_field_info["density"],
+            "resource_type": resource_type,
+            "hazard_level": STAR_TYPES[star_type],
+            "resources": generate_random_resources(resources)
+        }
+        asteroid_fields.append(asteroid_field)
+    return asteroid_fields
+
+def assign_star_type_and_hazards(system):
+    """Assigns a random star type and hazard level to the system."""
+    star_type = random.choice(list(STAR_TYPES.keys()))
+    system["star_type"] = star_type
+    system["hazard_level"] = STAR_TYPES[star_type]
+    return star_type
+
+def assign_faction_systems(systems_data, factions):
+    """Assigns starting systems to each faction based on their rules."""
+    assigned_systems = {}
+    for faction, rules in factions.items():
+        eligible_systems = [
+            sys_id for sys_id, sys_info in systems_data.items()
+            if sys_info["star_type"] in rules["star_types"] and 
+            (rules["planet_types"] is None or any(
+                planet["type"] in rules["planet_types"] for planet in sys_info["planets"]
+            )) and sys_info["owned_by"] == "Unoccupied"
+        ]
+
+        if eligible_systems:
+            selected_system = random.choice(eligible_systems)
+            systems_data[selected_system]["owned_by"] = faction
+            assigned_systems[faction] = selected_system
+        else:
+            game_logger.info(f"No eligible systems found for {faction}")
+            print(f"No eligible systems found for {faction}")  # Debugging output
+
+    return assigned_systems
+
+def log_assigned_systems(assigned_systems):
+    """Logs the assigned systems for factions."""
+    if not assigned_systems:
+        game_logger.warning("No systems were assigned to any faction.")
+        print("No systems were assigned to any faction.")  # Debugging output if needed
+
+def generate_connections_with_min_threshold(system_data, min_connections=2, max_connections=6, cluster_bias=0.3):
+    """Generates connections ensuring each system has at least a minimum number of connections."""
+    system_ids = list(system_data.keys())
+    num_systems = len(system_ids)
+
+    if num_systems > 1000:
+        connections = generate_connections_parallel(system_ids, system_data, max_connections, cluster_bias)
+    else:
+        connections = generate_connections_sequential(system_ids, system_data, max_connections, cluster_bias)
+
+    # Ensure each system meets the minimum connection threshold
+    for system_id in system_ids:
+        while len(connections[system_id]) < min_connections:
+            potential_connections = [
+                s for s in system_ids
+                if s != system_id and len(connections[s]) < max_connections and s not in connections[system_id]
+            ]
+            if not potential_connections:
+                break
+            new_connection = random.choice(potential_connections)
+            connections[system_id].add(new_connection)
+            connections[new_connection].add(system_id)
+
+    # Apply connections back to the systems data
+    for system_id, conn in connections.items():
+        system_data[system_id]['connections'] = list(conn)
+
+    ensure_full_navigability(system_data, max_connections)
+
+def generate_connections_sequential(system_ids, system_data, max_connections, cluster_bias):
+    """Sequential connection generation for smaller universes."""
+    connections = {system_id: set() for system_id in system_ids}
+
+    for system_id in system_ids:
+        if len(connections[system_id]) >= max_connections:
+            continue
+
+        possible_connections = [
+            s for s in system_ids
+            if s != system_id and
+            len(connections[s]) < max_connections and
+            s not in connections[system_id]
+        ]
+
+        if not possible_connections:
+            continue
+
+        if not connections[system_id]:
+            connection = random.choice(possible_connections)
+            connections[system_id].add(connection)
+            connections[connection].add(system_id)
+
+        additional_connections = random.randint(1, 2)
+        weighted_connections = [
+            s for s in possible_connections
+            if has_similar_resources(system_data[system_id], system_data[s])
+        ]
+
+        if random.random() < cluster_bias and weighted_connections:
+            new_connections = random.sample(weighted_connections, min(additional_connections, len(weighted_connections)))
+        else:
+            new_connections = random.sample(possible_connections, min(additional_connections, len(possible_connections)))
+
+        for new_connection in new_connections:
+            if len(connections[system_id]) < max_connections and len(connections[new_connection]) < max_connections:
+                connections[system_id].add(new_connection)
+                connections[new_connection].add(system_id)
+
+    return connections
+
+def generate_connections_parallel(system_ids, system_data, max_connections, cluster_bias):
+    """Parallel connection generation for large universes using multiprocessing."""
+    with Manager() as manager:
+        connections = manager.dict({system_id: set() for system_id in system_ids})
+
+        chunk_size = max(1, len(system_ids) // 10)
+        system_chunks = [system_ids[i:i + chunk_size] for i in range(0, len(system_ids), chunk_size)]
+
+        with Pool() as pool:
+            results = pool.starmap(process_connections, [(chunk, system_ids, system_data, connections, max_connections, cluster_bias) for chunk in system_chunks])
+
+        for result in results:
+            for system_id, conn in result.items():
+                connections[system_id].update(conn)
+
+        return dict(connections)
+
+def process_connections(subset, system_ids, system_data, connections, max_connections, cluster_bias):
+    """Processes a subset of systems to generate connections."""
+    local_connections = {system_id: set(connections[system_id]) for system_id in subset}
+    for system_id in subset:
+        if len(local_connections[system_id]) >= max_connections:
+            continue
+
+        possible_connections = [
+            s for s in system_ids
+            if s != system_id and
+            s in local_connections and
+            len(local_connections[s]) < max_connections and
+            s not in local_connections[system_id]
+        ]
+
+        if not possible_connections:
+            continue
+
+        if not local_connections[system_id]:
+            connection = random.choice(possible_connections)
+            local_connections[system_id].add(connection)
+            local_connections[connection].add(system_id)
+
+        additional_connections = random.randint(1, 2)
+        weighted_connections = [
+            s for s in possible_connections
+            if has_similar_resources(system_data[system_id], system_data[s])
+        ]
+
+        if random.random() < cluster_bias and weighted_connections:
+            new_connections = random.sample(weighted_connections, min(additional_connections, len(weighted_connections)))
+        else:
+            new_connections = random.sample(possible_connections, min(additional_connections, len(possible_connections)))
+
+        for new_connection in new_connections:
+            if len(local_connections[system_id]) < max_connections and len(local_connections[new_connection]) < max_connections:
+                local_connections[system_id].add(new_connection)
+                local_connections[new_connection].add(system_id)
+
+    return local_connections
+
+def has_similar_resources(system_a, system_b):
+    """Checks if two systems have similar resources."""
+    resources_a = set(system_a.get("resources", []))
+    resources_b = set(system_b.get("resources", []))
+    return len(resources_a & resources_b) > 0
+
+def ensure_full_navigability(system_data, max_connections):
+    """Ensures all systems are reachable by connecting isolated clusters, respecting the connection limit."""
+    system_ids = list(system_data.keys())
+    visited = set()
+
+    def dfs_iterative(start_id):
+        """Iterative version of DFS to avoid recursion depth issues."""
+        stack = [start_id]
+        while stack:
+            system_id = stack.pop()
+            if system_id not in visited:
+                visited.add(system_id)
+                for connection in system_data[system_id]["connections"]:
+                    if connection not in visited:
+                        stack.append(connection)
+
+    # Start DFS from the first system
+    dfs_iterative(system_ids[0])
+
+    # Handle isolated systems
+    isolated_systems = [sys for sys in system_ids if sys not in visited]
+    while isolated_systems:
+        isolated_system = isolated_systems.pop()
+        potential_connectors = [s for s in visited if len(system_data[s]["connections"]) < max_connections]
+        if potential_connectors:
+            connect_to = random.choice(potential_connectors)
+            system_data[isolated_system]["connections"].append(connect_to)
+            system_data[connect_to]["connections"].append(isolated_system)
+            visited.add(isolated_system)
+            dfs_iterative(isolated_system)
+
+def update_system_with_details(system_id, system):
+    """Updates a system with star type, planets, and asteroid fields."""
+    star_type = assign_star_type_and_hazards(system)
+    system['resources'] = []  # Initialize resources as an empty list
+    
+    for planet in system["planets"]:
+        assign_planet_details(planet, star_type)
+        system['resources'].extend(list(planet["resources"].keys()))
+
+    system["asteroid_fields"] = generate_asteroid_fields(system_id, star_type)
+    for asteroid in system["asteroid_fields"]:
+        system['resources'].extend(list(asteroid["resources"].keys()))
+
+    system["resources"] = list(set(system["resources"]))  # Ensure resources are unique
+    system["owned_by"] = "Unoccupied"
+
+def assign_additional_faction_systems(systems_data, factions, current_assigned):
+    """Assigns starting systems to the remaining factions that do not have a starting system yet."""
+    all_factions = set(factions.keys())
+    already_assigned_factions = set(current_assigned.keys())
+    factions_to_assign = list(all_factions - already_assigned_factions)
+    additional_assigned_systems = {}
+
+    for faction in factions_to_assign:
+        rules = factions[faction]
+        eligible_systems = [
+            sys_id for sys_id, sys_info in systems_data.items()
+            if sys_info["star_type"] in rules["star_types"] and 
+            (rules["planet_types"] is None or any(
+                planet["type"] in rules["planet_types"] for planet in sys_info["planets"]
+            )) and sys_info["owned_by"] == "Unoccupied"
+        ]
+
+        if eligible_systems:
+            selected_system = random.choice(eligible_systems)
+            systems_data[selected_system]["owned_by"] = faction
+            additional_assigned_systems[faction] = selected_system
+        else:
+            game_logger.warning(f"No eligible systems found for {faction}")
+            print(f"No eligible systems found for {faction}")  # Debugging output
+
+    return additional_assigned_systems
+
+def assign_space_stations_to_systems(systems_data):
+    """Randomly assigns space stations to systems based on loaded names and types."""
+    station_names = load_station_names()
+    station_types = load_station_types()
+    station_count = len(systems_data) // 25  # Approximately one station per 25 systems
+    
+    for system_id in random.sample(list(systems_data.keys()), min(station_count, len(station_names))):
+        if station_names and station_types:
+            station_name = station_names.pop(0)  # Use names sequentially from the list
+            station_type = random.choice(list(station_types.keys()))  # Randomly choose a station type
+            systems_data[system_id]["space_station"] = {
+                "name": station_name,
+                "type": station_type,
+                "description": station_types[station_type]["description"],
+                "services": station_types[station_type]["services"]
+            }
+            game_logger.info(f"Assigned {station_name} ({station_type}) to system {system_id}.")
+
+def create_systems(universe_size):
+    """Creates systems based on the universe size setting."""
+    systems_data = {}
+    for i in range(1, universe_size + 1):
+        system_id = str(i)
+        systems_data[system_id] = {
+            "description": f"System {system_id} with unique features.",
+            "planets": [{"name": f"Planet {letter}"} for letter in string.ascii_uppercase[:random.randint(2, 4)]],
+            "connections": [],
+            "asteroid_fields": []
+        }
+        update_system_with_details(system_id, systems_data[system_id])
+    
+    generate_connections_with_min_threshold(systems_data)  # Use the enhanced connection generation with min threshold
+    
+    assigned_systems = assign_faction_systems(systems_data, FACTION_RULES)
+    additional_assigned_systems = assign_additional_faction_systems(systems_data, FACTION_RULES, assigned_systems)
+    all_assigned_systems = {**assigned_systems, **additional_assigned_systems}
+
+    # Assign space stations to the systems
+    assign_space_stations_to_systems(systems_data)
+
+    return systems_data, all_assigned_systems
+
+def load_systems_data(filename):
+    """Loads the systems data from a JSON file."""
+    with open(filename, 'r') as file:
+        return json.load(file)
+
+def save_systems_data(filename, systems_data):
+    """Saves the updated systems data to a JSON file."""
+    with open(filename, 'w') as file:
+        json.dump(systems_data, file, indent=4)  
+
+def log_owned_systems_from_json(json_file):
+    """Reads the systems.json file, extracts owned systems, and logs them."""
+    try:
+        with open(json_file, 'r') as file:
+            systems_data = json.load(file)
+        
+        owned_systems = {system_id: details for system_id, details in systems_data.items() if details.get('owned_by') and details['owned_by'] != 'Unoccupied'}
+        
+        if owned_systems:
+            game_logger.info("Logging owned systems:")
+            for system_id, details in owned_systems.items():
+                game_logger.info(f"System ID {system_id} is owned by {details['owned_by']}")
+        else:
+            game_logger.info("No systems are owned by any faction.")
+    
+    except Exception as e:
+        game_logger.error(f"Error reading or processing {json_file}: {e}")
+
+def main():
+    """Main function to update systems.json with new data."""
+    game_logger.info("Starting the main function.")
+    
+    settings = load_settings()
+    universe_size = settings.get("Universe Size", 16)  # Default to 16 if not found
+    systems_data, assigned_systems = create_systems(universe_size)
+    
+    save_systems_data('systems.json', systems_data)
+    game_logger.info(f"Universe with {universe_size} systems created and updated successfully.")
+    
+    log_assigned_systems(assigned_systems)  # Log assigned systems
+
+    log_owned_systems_from_json('systems.json')  # Log owned systems from JSON file
+    
+    for handler in game_logger.handlers:
+        handler.flush()
+
+    # Trim the log file to keep it manageable
+    trim_log_file('game_log.txt')
+
+if __name__ == "__main__":
+    main()
+
+
+
+
+
+CHARACTER_DATA.json
+{
+    "Character Name": "TEST",
+    "Faction": "People of the River",
+    "Starting Credits": 100,
+    "Ship Name": "TEST SHIP",
+    "Ship Type": {
+        "name": "Oxygen",
+        "class": "Light",
+        "faction_of_origin": "People of the River",
+        "description": "Specialized in resource gathering.",
+        "required_rank_to_pilot": "Civilian",
+        "size": "Small",
+        "ship_cost": 550,
+        "min_cargo": 15,
+        "max_cargo": 35,
+        "max_shields": 55,
+        "max_armor": 25,
+        "max_hull": 35,
+        "system_scanner_type": "Alpha",
+        "system_scanner_level": 3,
+        "planet_scanner": "Yes",
+        "planet_scanner_level": 2,
+        "resource_scanner": "Yes",
+        "resource_scanner_level": 2,
+        "weapon_type": "Light Laser",
+        "combat_bonus": 1.0,
+        "mining_attachment": "Yes",
+        "mining_attachment_level": 1
+    },
+    "current_system": "607",
+    "visited_systems": [
+        "607",
+        "741",
+        "2720",
+        "75",
+        "1008",
+        "7",
+        "2383",
+        "2648",
+        "1493",
+        "254",
+        "843",
+        "414"
+    ]
+}
+
+
+
+SYSTEM_MENU.py
+# system_menu.py
+
+from game_logger import game_logger  # Import the modularized logger
+from factions import faction_colors  # Import faction colors from factions.py
+
+# ANSI color codes
+RED = "\033[31m"
+BOLD = "\033[1m"
+CYAN = "\033[36m"
+RESET = "\033[0m"
+WHITE = "\033[37m"
+GREEN = "\033[32m"
+BLACK = "\033[30m"
+YELLOW = "\033[33m"
+MAGENTA = "\033[35m"
+BRIGHT_BLACK = "\033[90m"   # Gray
+BG_BRIGHT_BLUE = "\033[104m"
+
+# Set to track systems that have already been logged as visited
+logged_visited_systems = set()
+
+def display_system_menu(current_system, systems_data):
+    """Displays detailed information about the selected system."""
+    # Mark the current system as visited
+    systems_data[current_system]['visited'] = True  # Ensure the system is marked as visited
+
+    system_info = systems_data[current_system]
+    
+    planets = get_planet_names(system_info)
+    star_type = system_info.get('star_type', 'Unknown')
+    hazard_level = system_info.get('hazard_level', 'Unknown')
+    ownership = system_info.get('owned_by', 'Unoccupied')
+    current_name = system_info.get('current_name', current_system)
+
+    # Get the color for the faction from faction_colors, defaulting to RESET if not found
+    faction_color = faction_colors.get(ownership, RESET)
+    colored_ownership = f"{faction_color}{ownership}{RESET}"
+
+    # Format and display stargates with adjusted colors based on visited status
+    formatted_stargates = format_stargates(system_info, systems_data)
+
+    print_system_details(current_name, system_info, colored_ownership, star_type, planets, hazard_level, formatted_stargates)
+    display_asteroid_fields(system_info)
+    display_space_station(system_info)  # Display the space station if present
+
+def get_planet_names(system_info):
+    """Returns a string of planet names in the system."""
+    return ', '.join(planet['name'] for planet in system_info['planets'])
+
+def get_stargates(system_info):
+    """Returns a string of stargates connections."""
+    return ', '.join(system_info['connections'])
+
+def print_system_details(current_name, system_info, ownership, star_type, planets, hazard_level, formatted_stargates):
+    """Prints the basic details of the system including name, description, ownership, and connections."""
+    print(f"\n{CYAN}System: {current_name}{RESET}")
+    print(f"{system_info['description']}")
+    print(f"{GREEN}Owned by: {ownership}{RESET}")
+    print(f"{CYAN}Star Type: {star_type}{RESET}")
+    print(f"{MAGENTA}Planets: {planets}{RESET}")
+    print(f"{RED}Hazard Level: {hazard_level}{RESET}")
+    print(f"{YELLOW}Stargates: {formatted_stargates}{RESET}")
+
+def format_stargates(system_info, systems_data):
+    """Formats stargate connections with white color for visited systems."""
+    connections = system_info.get('connections', [])
+
+    # Format each stargate connection based on the visited status
+    formatted_stargates = []
+    for conn in connections:
+        connected_system = systems_data.get(conn, {})
+        is_visited = connected_system.get('visited', False)  # Check if the connected system is visited
+
+        # Log visited status to game_log.txt only if the system is visited and not yet logged
+        if is_visited and conn not in logged_visited_systems:
+            game_logger.debug(f"System {conn} visited status: {is_visited}")
+            logged_visited_systems.add(conn)  # Add the system to the set to prevent duplicate logging
+
+        # Set color to white if visited, otherwise keep default (YELLOW)
+        conn_color = BRIGHT_BLACK if is_visited else WHITE
+        formatted_stargates.append(f"{conn_color}{conn}{RESET}")
+
+    return ', '.join(formatted_stargates)
+
+def display_asteroid_fields(system_info):
+    """Displays the asteroid fields present in the system."""
+    if 'asteroid_fields' in system_info:
+        asteroid_fields = ', '.join(field['id'] for field in system_info['asteroid_fields'])
+        print(f"{CYAN}Asteroid Fields: {asteroid_fields}{RESET}")
+
+def display_space_station(system_info):
+    """Displays the space station present in the system if it exists."""
+    if 'space_station' in system_info:
+        station = system_info['space_station']
+        # Apply bright blue background and bold styling with white foreground
+        print(f"\n{BLINK}{BG_BLACK}{BOLD}{BRIGHT_YELLOW}*** STATION: {station['name'].upper()}, {station['type'].upper()}{RESET} *** \n")
+
+
+
+
+GAME_LOGGER.py
+# game_logger.py
+
+import logging
+
+def setup_logger(name="game_logger", log_file='game_log.txt', level=logging.DEBUG):
+    """Sets up the logger with the specified name, log file, and level."""
+    # Create a custom logger
+    logger = logging.getLogger(name)
+    
+    # Check if the logger already has handlers (to avoid adding multiple handlers)
+    if not logger.handlers:
+        # Set the level of the logger
+        logger.setLevel(level)
+
+        # Create handlers
+        file_handler = logging.FileHandler(log_file, mode='a')  # 'a' mode appends each run
+        file_handler.setLevel(level)
+
+        # Create formatters and add it to handlers
+        formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+        file_handler.setFormatter(formatter)
+
+        # Add handlers to the logger
+        logger.addHandler(file_handler)
+
+    return logger
+
+def trim_log_file(log_file, max_lines=1000):
+    """Trims the log file to keep only the last 'max_lines' lines."""
+    try:
+        with open(log_file, 'r') as file:
+            lines = file.readlines()
+        
+        if len(lines) > max_lines:
+            # Keep only the last 'max_lines' lines
+            lines = lines[-max_lines:]
+            with open(log_file, 'w') as file:
+                file.writelines(lines)
+                
+    except Exception as e:
+        print(f"Error trimming log file: {e}")
+
+# Initialize the logger when this module is imported
+game_logger = setup_logger()
+
+# Test log entry to verify setup
+game_logger.info("==============================================")
+
+
+
+JSON_UTILS.py
+
+# json_utils.py
+import json
+
+def load_json(filename):
+    """Loads JSON data from a file."""
+    with open(filename, 'r') as file:
+        return json.load(file)
+
+def save_json(filename, data):
+    """Saves JSON data to a file."""
+    with open(filename, 'w') as file:
+        json.dump(data, file, indent=4)
+
+
+
+
+systems.json
+
+"1": {
+        "description": "System 1 with unique features.",
+        "planets": [
+            {
+                "name": "Planet A",
+                "type": "Barren",
+                "resources": {
+                    "Ore": 2942,
+                    "Metals": 2270,
+                    "Electronics": 1393,
+                    "Fuel": 2599
+                },
+                "colonizable": "Yes"
+            },
+            {
+                "name": "Planet B",
+                "type": "Ice",
+                "resources": {
+                    "Ore": 2660,
+                    "Water": 2365,
+                    "Metals": 2436
+                },
+                "colonizable": "Yes"
+            },
+            {
+                "name": "Planet C",
+                "type": "Barren",
+                "resources": {
+                    "Ore": 2331,
+                    "Metals": 2985,
+                    "Electronics": 2845,
+                    "Fuel": 2048
+                },
+                "colonizable": "Yes"
+            }
+        ],
+        "connections": [
+            "2622",
+            "1761"
+        ],
+        "asteroid_fields": [
+            {
+                "id": "1A",
+                "density": "Moderate to Dense",
+                "resource_type": "Silicate",
+                "hazard_level": "Minimal",
+                "resources": {
+                    "Ore": 1405,
+                    "Electronics": 1572
+                }
+            }
+        ],
+        "star_type": "M-type",
+        "hazard_level": "Minimal",
+        "resources": [
+            "Water",
+            "Metals",
+            "Ore",
+            "Electronics",
+            "Fuel"
+        ],
+        "owned_by": "Unoccupied"
+    },
+
+
+
+MENUS.py
+
+# menus.py
+
+import sys
+import importlib
+from ansi_colors import RED, BOLD, CYAN, MAGENTA, GREEN, RESET  # Import necessary colors
+from character_menu import display_character_menu, handle_character_menu_input
+from header_display import display_header
+from settings import display_settings_menu, save_settings  # Import settings-related functions
+from system_menu import display_system_menu  # Import to display the system menu correctly
+from json_utils import load_json
+
+def display_user_menu():
+    """Displays the main user menu options."""
+    menu = """\033[33m
+Press:
+  N to Start a New Game
+  C to Continue Game
+  T for Settings
+  H for Help
+  Q to Quit
+\033[0m"""
+    print(menu)
+
+def reload_character_menu():
+    """Reloads the character menu module and displays it."""
+    importlib.reload(character_menu) # type: ignore
+    display_character_menu()
+    handle_character_menu_input()
+
+def display_character_menu():
+    """Displays the character menu with detailed information including all ship details."""
+    character_data = load_json('character_data.json')
+
+    # Extract ship data from character data
+    ship_data = character_data.get('Ship Type', {})
+    if not ship_data:
+        print(f"{RED}No ship data available. Please select a ship first.{RESET}")
+        return
+
+    # Define faction-specific colors
+    faction_colors = {
+        "Mandate of God": "\033[33m",  # Yellow
+        "Shogunate 3072": "\033[31m",  # Red
+        "People of the River": "\033[34m",  # Blue
+        "The Noringian Hive": "\033[32m",  # Green
+        "United Systems of Man": "\033[35m",  # Magenta
+    }
+
+    faction = character_data.get('Faction', 'Unknown')
+    faction_color = faction_colors.get(faction, RESET)
+
+    # Display character information
+    print(f"\n{CYAN}{BOLD}Character Menu{RESET}")
+    print(f"{MAGENTA}Character Name: {GREEN}{character_data.get('Character Name', 'N/A')}{RESET}")
+    print(f"{MAGENTA}Faction: {faction_color}{faction}{RESET}")
+    print(f"{MAGENTA}Ship Name: {faction_color}{character_data.get('Ship Name', 'N/A')}{RESET}")
+    print(f"{MAGENTA}Starting Credits: {GREEN}{character_data.get('Starting Credits', 'N/A')}{RESET}")
+
+    # Display ship details
+    print(f"\n{MAGENTA}Ship Details:{RESET}")
+    print(f"   {ship_data.get('description', 'No description available.')}")
+    print(f"   Class: {ship_data.get('class', 'Unknown')}")
+    print(f"   Faction of Origin: {ship_data.get('faction_of_origin', 'Unknown')}")
+    print(f"   Required Rank to Pilot: {ship_data.get('required_rank_to_pilot', 'Unknown')}")
+    print(f"   Size: {ship_data.get('size', 'Unknown')}")
+    print(f"   Cost: {ship_data.get('ship_cost', 'Unknown')}")
+    print(f"   Cargo: {ship_data.get('min_cargo', 'Unknown')} - {ship_data.get('max_cargo', 'Unknown')}")
+    print(f"   Shields: {ship_data.get('max_shields', 'Unknown')}")
+    print(f"   Armor: {ship_data.get('max_armor', 'Unknown')}")
+    print(f"   Hull: {ship_data.get('max_hull', 'Unknown')}")
+    print(f"   System Scanner: {ship_data.get('system_scanner_type', 'Unknown')} Level {ship_data.get('system_scanner_level', 'Unknown')}")
+    print(f"   Planet Scanner: {ship_data.get('planet_scanner', 'Unknown')} Level {ship_data.get('planet_scanner_level', 'Unknown')}")
+    print(f"   Resource Scanner: {ship_data.get('resource_scanner', 'Unknown')} Level {ship_data.get('resource_scanner_level', 'Unknown')}")
+    print(f"   Weapon Type: {ship_data.get('weapon_type', 'Unknown')}")
+    print(f"   Combat Bonus: {ship_data.get('combat_bonus', 'Unknown')}")
+    print(f"   Mining Attachment: {ship_data.get('mining_attachment', 'Unknown')} Level {ship_data.get('mining_attachment_level', 'Unknown')}")
+    print("\nPress R to return to the game or Q to quit.")
+
+def handle_character_menu_input():
+    """Handles user input within the character menu."""
+    while True:
+        choice = input(f"{BOLD}Your choice: {RESET}").strip().upper()  # Convert to uppercase
+        if choice == 'R':
+            return 'R'  # Return to signal that the player wants to return to the game
+        elif choice == 'Q':
+            print("Quitting the game. Goodbye!")
+            sys.exit()
+        else:
+            print(f"{MAGENTA}Invalid option. Please choose 'R' to return to the game or 'Q' to quit.{RESET}")
+
+def display_game_menu():
+    """Displays the in-game menu options."""
+    menu = """
+\033[33m
+Game Menu:
+  R to Return to Game
+  Q to Quit
+  I to Display Character Menu
+  H for Help
+  T for Settings Menu
+\033[0m
+    """
+    print(menu)
+
+def handle_user_input(systems_data, current_system, allow_game_menu=False, settings=None, create_new_game_func=None, load_existing_game_func=None):
+    """Handles user input from the main menu or in-game menu."""
+    while True:
+        # Set valid choices based on context
+        choices = "NCTQH" if not allow_game_menu else "RMQHIT"
+        choice = input(f"{BOLD}Your choice: {RESET}").strip().upper()  # Convert to uppercase
+
+        if choice == 'Q':
+            print("Quitting the game. Goodbye!")
+            sys.exit()
+        elif choice == 'R' and allow_game_menu:  # Return to game from in-game menu
+            display_system_menu(current_system, systems_data)  # Explicitly display the system menu
+            return  # Correctly exit and resume the main game loop
+        elif choice == 'N' and not allow_game_menu:  # New Game
+            if create_new_game_func:
+                create_new_game_func()  # Use the passed function reference
+            return True  # Signal to start the game
+        elif choice == 'C' and not allow_game_menu:  # Continue Game
+            if load_existing_game_func and load_existing_game_func():  # Use the passed function reference
+                return True
+            else:
+                print(f"{RED}No saved game found. Please start a new game first.{RESET}")
+        elif choice == 'T':  # Display Settings Menu
+            if settings is None:
+                settings = {}  # Default to an empty dictionary if not provided
+            start_new = display_settings_menu(settings)
+            save_settings(settings)  # Save settings after changes
+            if start_new == 'NEW_GAME' and create_new_game_func:
+                create_new_game_func()  # Start a new game immediately
+                return True
+        elif choice == 'H':
+            help_menu.display_help()
+        elif allow_game_menu and choice == 'I':  # Display Character Menu
+            display_character_menu()  # Show the character menu
+            character_menu_choice = handle_character_menu_input()  # Handle character menu input and return
+            if character_menu_choice == 'R':
+                display_system_menu(current_system, systems_data)  # Re-display the system menu
+                return  # Correctly return to the game loop
+        else:
+            print(f"{RED}Invalid option. Please choose {choices}.{RESET}")
+
+
+HELP_MENU.py
+# help_menu.py
+def display_help():
+    print("\033[1mKeymap for the Game:\033[0m")
+    print("\033[33mA,B,C,D - Planet menu for available system planets\033[0m")
+    print("\033[33m1A,2B,3C - Asteroid Field menu for available system asteroids\033[0m")
+    print("\033[33mH - Display this Help Screen\033[0m")
+    print("\033[33mI - Display Character Menu\033[0m")
+    print("\033[33mQ - Quit the Game\033[0m")
+    print("\033[33mN - Start a New Game\033[0m")
+    print("\033[33mR - Back to the System/Asteroid Menu\033[0m")
+    # Add more commands as your game develops
+
+
+
+
+Do you understand everything I've shown you? Are you able to process all of it?
