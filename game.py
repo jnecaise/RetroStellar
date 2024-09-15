@@ -1,7 +1,7 @@
-
 # game.py
 
-import re  # nazi
+import re
+import sys
 import json
 import random
 import subprocess
@@ -9,21 +9,21 @@ from json_utils import load_json
 from settings import load_settings
 from script import save_systems_data
 from header_display import display_header
-from planet_menu import display_planet_menu  
+from planet_menu import display_planet_menu
 from system_menu import display_system_menu
 from factions import display_faction_options
 from asteroid_menu import display_asteroid_menu
 from game_logger import game_logger, trim_log_file
 from display_messages import display_welcome_message
-from ship_management import setup_ship, setup_player_ship 
+from ship_management import setup_ship, setup_player_ship
 from ansi_colors import RED, BOLD, CYAN, RESET, GREEN, YELLOW
 from character_menu import save_character_data, load_character_data
-from menus import (display_user_menu, handle_user_input, display_game_menu)
+from menus import display_user_menu, handle_user_input, display_game_menu
+from space_station import display_space_station_menu  # Import the space station menu
 
 # Load settings at the start
 current_settings = load_settings()
 
-# nazi
 def update_visited_systems():
     """Updates the character_data.json with visited systems based on game_log.txt."""
     log_file = 'game_log.txt'
@@ -63,7 +63,6 @@ def update_visited_systems():
         json.dump(character_data, json_file, indent=4)
 
     print(f"{GREEN}Visited systems have been updated in character_data.json.{RESET}")
-# nazi
 
 def create_new_game():
     """Generates a new universe by running script.py and initializes player data."""
@@ -108,7 +107,7 @@ def create_new_game():
     # Find eligible systems based on the player's faction
     eligible_systems = [
         sys_id for sys_id, sys_info in systems_data.items()
-        if sys_info["star_type"] in rules["star_types"] and 
+        if sys_info["star_type"] in rules["star_types"] and
         (rules["planet_types"] is None or any(
             planet["type"] in rules["planet_types"] for planet in sys_info["planets"]
         ))
@@ -245,32 +244,46 @@ def start_game(systems_data, current_system, character_data):
         save_character_data(character_data)
 
         while True:
-            command = get_user_command(systems_data[current_system]['connections'], systems_data, current_system).upper()  # Convert to uppercase
+            command = get_user_command(
+                systems_data[current_system]['connections'],
+                systems_data,
+                current_system,
+                character_data  # Pass character_data here
+            ).upper()  # Convert to uppercase
+
             if command == 'M':
                 display_game_menu()
                 menu_choice = handle_user_input(
-                    systems_data,
-                    current_system,
                     allow_game_menu=True,
                     settings=current_settings,
                     create_new_game_func=create_new_game,
                     load_existing_game_func=load_existing_game,
+                    systems_data=systems_data,
+                    current_system=current_system
                 )
                 if menu_choice == 'R':  # Return to system menu
                     break  # Exit to the main game loop
             elif command in systems_data[current_system]['connections']:
                 current_system = command  # Update current system based on navigation
+
                 # Mark the new system as visited
                 systems_data[current_system]['visited'] = True
                 if 'visited_systems' not in character_data:
                     character_data['visited_systems'] = []
                 if current_system not in character_data['visited_systems']:
                     character_data['visited_systems'].append(current_system)
-                save_character_data(character_data)
-                break
 
-def get_user_command(valid_systems, systems_data, current_system):
-    """Prompts user for commands related to system navigation, planet selection, and asteroid field selection."""
+                # Update the current system in character_data
+                character_data['current_system'] = current_system
+                save_character_data(character_data)  # Save updated character data
+
+                break
+            else:
+                # Handle other commands if necessary
+                pass
+
+def get_user_command(valid_systems, systems_data, current_system, character_data):
+    """Prompts user for commands related to system navigation, planet selection, asteroid fields, and space stations."""
     while True:
         command = input(f"{BOLD}Your command: {RESET}").strip().upper()
 
@@ -282,10 +295,14 @@ def get_user_command(valid_systems, systems_data, current_system):
                     current_system = target_system
                     print(f"{GREEN}Admin shortcut activated: You are now in system {current_system}.{RESET}")
                     game_logger.info(f"Admin shortcut: Moved to system {current_system}.")
-                    
+
+                    # Update the current system in character_data
+                    character_data['current_system'] = current_system
+                    save_character_data(character_data)  # Save updated character data
+
                     # Display the system menu for the new system to confirm the move
                     display_system_menu(current_system, systems_data)
-                    
+
                 else:
                     print(f"{RED}System {target_system} does not exist.{RESET}")
             except ValueError:
@@ -315,22 +332,43 @@ def get_user_command(valid_systems, systems_data, current_system):
             else:
                 print(f"{RED}Invalid asteroid field selection. Please try again.{RESET}")
 
+        # Check for space station access
+        elif command == 'S':
+            system_info = systems_data[current_system]
+            if 'space_station' in system_info:
+                station_info = system_info['space_station']
+                display_space_station_menu(station_info)
+                display_system_menu(current_system, systems_data)  # Return to system menu after station interaction
+            else:
+                print(f"{RED}There is no space station in this system.{RESET}")
+
         # Return to game menu
         elif command == 'M':
             return 'M'
 
         # Handle invalid inputs
         else:
-            print(f"{RED}Invalid input. Please enter a valid system number, planet letter (A-D), asteroid field ID, or 'M' for the menu.{RESET}")
+            print(f"{RED}Invalid input. Please enter a valid system number, planet letter (A-D), asteroid field ID, 'S' for space station, or 'M' for the menu.{RESET}")
 
 if __name__ == "__main__":
     print("Initializing RetroStellar.........")
     display_header()  # Display the welcome header once at the start
     display_welcome_message()  # Show the introductory text
-    display_user_menu()  # Show the main user menu immediately
-    handle_user_input(
-        systems_data={},
-        current_system="1",
-        create_new_game_func=create_new_game,
-        load_existing_game_func=load_existing_game,
-    )
+
+    while True:
+        display_user_menu()  # Show the main user menu
+        action = handle_user_input(
+            create_new_game_func=create_new_game,
+            load_existing_game_func=load_existing_game
+        )
+
+        # After handling user input, check if the game should continue
+        if action == 'START_GAME':
+            # The game functions (create_new_game or load_existing_game) will handle starting the game
+            break
+        elif action == 'QUIT':
+            print("Quitting the game. Goodbye!")
+            sys.exit()
+        else:
+            # Continue looping to display the main menu again
+            continue

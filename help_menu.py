@@ -1,11 +1,21 @@
 # help_menu.py
 def display_help():
     print("\033[1mKeymap for the Game:\033[0m")
+    print()
     print("\033[33mA,B,C,D - Planet menu for available system planets\033[0m")
+    print()
     print("\033[33m1A,2B,3C - Asteroid Field menu for available system asteroids\033[0m")
+    print()
     print("\033[33mH - Display this Help Screen\033[0m")
+    print()
     print("\033[33mI - Display Character Menu\033[0m")
+    print()
     print("\033[33mQ - Quit the Game\033[0m")
+    print()
     print("\033[33mN - Start a New Game\033[0m")
+    print()
     print("\033[33mR - Back to the System/Asteroid Menu\033[0m")
+    print()
+    print("\033[33mS - Space Station Menu if a station is present in a system\033[0m")
+    print()
     # Add more commands as your game develops

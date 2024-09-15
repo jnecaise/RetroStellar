@@ -2,23 +2,8 @@
 
 from game_logger import game_logger  # Import the modularized logger
 from factions import faction_colors  # Import faction colors from factions.py
-
-# ANSI color codes
-RED = "\033[31m"
-BOLD = "\033[1m"
-CYAN = "\033[36m"
-RESET = "\033[0m"
-WHITE = "\033[37m"
-GREEN = "\033[32m"
-BLACK = "\033[30m"
-YELLOW = "\033[33m"
-MAGENTA = "\033[35m"
-BG_BLACK = "\033[40m"
-BG_YELLOW = "\033[43m"
-BLINK = "\033[5m"        # Note: Not widely supported
-BRIGHT_YELLOW = "\033[93m"
-BRIGHT_BLACK = "\033[90m"   # Gray
-BG_BRIGHT_BLUE = "\033[104m"
+from ansi_colors import (RED, BOLD, CYAN, RESET, WHITE, GREEN, BLACK, YELLOW, MAGENTA,
+                         BG_BLACK, BG_YELLOW, BLINK, BRIGHT_YELLOW, BRIGHT_BLACK, BG_BRIGHT_BLUE)
 
 # Set to track systems that have already been logged as visited
 logged_visited_systems = set()
@@ -80,7 +65,7 @@ def format_stargates(system_info, systems_data):
             game_logger.debug(f"System {conn} visited status: {is_visited}")
             logged_visited_systems.add(conn)  # Add the system to the set to prevent duplicate logging
 
-        # Set color to white if visited, otherwise keep default (YELLOW)
+        # Set color to gray if visited, otherwise keep default (WHITE)
         conn_color = BRIGHT_BLACK if is_visited else WHITE
         formatted_stargates.append(f"{conn_color}{conn}{RESET}")
 
@@ -96,5 +81,7 @@ def display_space_station(system_info):
     """Displays the space station present in the system if it exists."""
     if 'space_station' in system_info:
         station = system_info['space_station']
-        # Apply bright blue background and bold styling with white foreground
-        print(f"\n{BLINK}{BG_BLACK}{BOLD}{BRIGHT_YELLOW}*** STATION: {station['name'].upper()}, {station['type'].upper()}{RESET} *** \n")
+        # Display station information
+        print(f"\n{BLINK}{BOLD}{BRIGHT_YELLOW}*** STATION AVAILABLE: {station['name'].upper()} ({station['type'].upper()}) ***{RESET}")
+        print(f"{station['description']}\n")
+        print(f"'{GREEN}M{RESET}' for menu")

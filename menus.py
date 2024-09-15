@@ -97,13 +97,15 @@ Game Menu:
   R to Return to Game
   Q to Quit
   I to Display Character Menu
-  H for Help
+  H for Keymap and Help
   T for Settings Menu
 \033[0m
     """
     print(menu)
 
-def handle_user_input(systems_data, current_system, allow_game_menu=False, settings=None, create_new_game_func=None, load_existing_game_func=None):
+# menus.py
+
+def handle_user_input(allow_game_menu=False, settings=None, create_new_game_func=None, load_existing_game_func=None, systems_data=None, current_system=None):
     """Handles user input from the main menu or in-game menu."""
     while True:
         # Set valid choices based on context
@@ -115,14 +117,14 @@ def handle_user_input(systems_data, current_system, allow_game_menu=False, setti
             sys.exit()
         elif choice == 'R' and allow_game_menu:  # Return to game from in-game menu
             display_system_menu(current_system, systems_data)  # Explicitly display the system menu
-            return  # Correctly exit and resume the main game loop
+            return 'R'  # Return to signal that the player wants to return to the game
         elif choice == 'N' and not allow_game_menu:  # New Game
             if create_new_game_func:
                 create_new_game_func()  # Use the passed function reference
-            return True  # Signal to start the game
+                return 'START_GAME'  # Signal to start the game
         elif choice == 'C' and not allow_game_menu:  # Continue Game
             if load_existing_game_func and load_existing_game_func():  # Use the passed function reference
-                return True
+                return 'START_GAME'
             else:
                 print(f"{RED}No saved game found. Please start a new game first.{RESET}")
         elif choice == 'T':  # Display Settings Menu
@@ -132,7 +134,7 @@ def handle_user_input(systems_data, current_system, allow_game_menu=False, setti
             save_settings(settings)  # Save settings after changes
             if start_new == 'NEW_GAME' and create_new_game_func:
                 create_new_game_func()  # Start a new game immediately
-                return True
+                return 'START_GAME'
         elif choice == 'H':
             help_menu.display_help()
         elif allow_game_menu and choice == 'I':  # Display Character Menu
@@ -140,6 +142,6 @@ def handle_user_input(systems_data, current_system, allow_game_menu=False, setti
             character_menu_choice = handle_character_menu_input()  # Handle character menu input and return
             if character_menu_choice == 'R':
                 display_system_menu(current_system, systems_data)  # Re-display the system menu
-                return  # Correctly return to the game loop
+                return 'R'  # Return to the game loop
         else:
             print(f"{RED}Invalid option. Please choose {choices}.{RESET}")

@@ -376,12 +376,18 @@ def assign_additional_faction_systems(systems_data, factions, current_assigned):
 def assign_space_stations_to_systems(systems_data):
     """Randomly assigns space stations to systems based on loaded names and types."""
     station_names = load_station_names()
+    random.shuffle(station_names)  # Shuffle the list to randomize order
     station_types = load_station_types()
-    station_count = len(systems_data) // 25  # Approximately one station per 25 systems
+    station_count = len(systems_data) // 10  # Determines the number of stations to assign
     
-    for system_id in random.sample(list(systems_data.keys()), min(station_count, len(station_names))):
-        if station_names and station_types:
-            station_name = station_names.pop(0)  # Use names sequentially from the list
+    # Ensure we don't attempt to assign more stations than we have names for
+    station_count = min(station_count, len(station_names))
+    
+    # Randomly select systems to assign stations to
+    selected_systems = random.sample(list(systems_data.keys()), station_count)
+    
+    for system_id, station_name in zip(selected_systems, station_names[:station_count]):
+        if station_types:
             station_type = random.choice(list(station_types.keys()))  # Randomly choose a station type
             systems_data[system_id]["space_station"] = {
                 "name": station_name,
