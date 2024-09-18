@@ -1,430 +1,3 @@
-2024-09-15 08:48:57,999 - INFO - Assigned Tau Terminal (Dry Dock) to system 2186.
-2024-09-15 08:48:57,999 - INFO - Assigned Upsilon Post (Research) to system 1700.
-2024-09-15 08:48:57,999 - INFO - Assigned Phi Point (Dry Dock) to system 1158.
-2024-09-15 08:48:57,999 - INFO - Assigned Chi Port (Research) to system 898.
-2024-09-15 08:48:57,999 - INFO - Assigned Psi Station (Dry Dock) to system 1980.
-2024-09-15 08:48:57,999 - INFO - Assigned Omega Outpost (Dry Dock) to system 1680.
-2024-09-15 08:48:57,999 - INFO - Assigned Nova Station (Commercial) to system 1381.
-2024-09-15 08:48:57,999 - INFO - Assigned Orion Terminal (Dry Dock) to system 1343.
-2024-09-15 08:48:57,999 - INFO - Assigned Vega Hub (Dry Dock) to system 1019.
-2024-09-15 08:48:57,999 - INFO - Assigned Sirius Dock (Commercial) to system 996.
-2024-09-15 08:48:57,999 - INFO - Assigned Antares Post (Dry Dock) to system 374.
-2024-09-15 08:48:57,999 - INFO - Assigned Polaris Base (Dry Dock) to system 584.
-2024-09-15 08:48:57,999 - INFO - Assigned Centauri Market (Commercial) to system 553.
-2024-09-15 08:48:57,999 - INFO - Assigned Rigel Station (Research) to system 2285.
-2024-09-15 08:48:57,999 - INFO - Assigned Arcturus Port (Research) to system 1494.
-2024-09-15 08:48:57,999 - INFO - Assigned Proxima Outpost (Commercial) to system 2549.
-2024-09-15 08:48:57,999 - INFO - Assigned Altair Complex (Dry Dock) to system 1528.
-2024-09-15 08:48:57,999 - INFO - Assigned Deneb Hub (Commercial) to system 535.
-2024-09-15 08:48:57,999 - INFO - Assigned Betelgeuse Station (Commercial) to system 922.
-2024-09-15 08:48:57,999 - INFO - Assigned Mira Terminal (Commercial) to system 2236.
-2024-09-15 08:48:57,999 - INFO - Assigned Aldebaran Dock (Commercial) to system 876.
-2024-09-15 08:48:57,999 - INFO - Assigned Alcyone Point (Commercial) to system 559.
-2024-09-15 08:48:57,999 - INFO - Assigned Capella Base (Commercial) to system 1788.
-2024-09-15 08:48:57,999 - INFO - Assigned Bellatrix Port (Commercial) to system 1694.
-2024-09-15 08:48:57,999 - INFO - Assigned Canopus Station (Dry Dock) to system 3046.
-2024-09-15 08:48:57,999 - INFO - Assigned Castor Terminal (Commercial) to system 1365.
-2024-09-15 08:48:57,999 - INFO - Assigned Electra Market (Dry Dock) to system 39.
-2024-09-15 08:48:57,999 - INFO - Assigned Gacrux Complex (Dry Dock) to system 1425.
-2024-09-15 08:48:57,999 - INFO - Assigned Achernar Hub (Commercial) to system 2192.
-2024-09-15 08:48:57,999 - INFO - Assigned Fomalhaut Post (Research) to system 155.
-2024-09-15 08:48:58,000 - INFO - Assigned Alnair Station (Commercial) to system 1739.
-2024-09-15 08:48:58,000 - INFO - Assigned Spica Base (Research) to system 1036.
-2024-09-15 08:48:58,000 - INFO - Assigned Saiph Dock (Research) to system 1522.
-2024-09-15 08:48:58,000 - INFO - Assigned Merak Complex (Dry Dock) to system 377.
-2024-09-15 08:48:58,000 - INFO - Assigned Menkalinan Hub (Research) to system 59.
-2024-09-15 08:48:58,000 - INFO - Assigned Algol Terminal (Commercial) to system 1058.
-2024-09-15 08:48:58,000 - INFO - Assigned Diphda Station (Research) to system 334.
-2024-09-15 08:48:58,000 - INFO - Assigned Gienah Market (Dry Dock) to system 1079.
-2024-09-15 08:48:58,000 - INFO - Assigned Caph Dock (Dry Dock) to system 2003.
-2024-09-15 08:48:58,000 - INFO - Assigned Kochab Complex (Commercial) to system 1147.
-2024-09-15 08:48:58,000 - INFO - Assigned Regulus Base (Research) to system 152.
-2024-09-15 08:48:58,000 - INFO - Assigned Izar Hub (Research) to system 359.
-2024-09-15 08:48:58,000 - INFO - Assigned Dubhe Terminal (Research) to system 1812.
-2024-09-15 08:48:58,000 - INFO - Assigned Rasalhague Station (Research) to system 1095.
-2024-09-15 08:48:58,000 - INFO - Assigned Alhena Outpost (Commercial) to system 2506.
-2024-09-15 08:48:58,000 - INFO - Assigned Markab Dock (Commercial) to system 2042.
-2024-09-15 08:48:58,000 - INFO - Assigned Alpheratz Complex (Research) to system 470.
-2024-09-15 08:48:58,000 - INFO - Assigned Schedar Hub (Dry Dock) to system 2675.
-2024-09-15 08:48:58,000 - INFO - Assigned Castula Terminal (Commercial) to system 402.
-2024-09-15 08:48:58,000 - INFO - Assigned Alnitak Station (Commercial) to system 2472.
-2024-09-15 08:48:58,000 - INFO - Assigned Bellona Base (Research) to system 577.
-2024-09-15 08:48:58,000 - INFO - Assigned Cassiopeia Outpost (Commercial) to system 1844.
-2024-09-15 08:48:58,000 - INFO - Assigned Aurora Hub (Commercial) to system 2205.
-2024-09-15 08:48:58,000 - INFO - Assigned Hercules Terminal (Commercial) to system 854.
-2024-09-15 08:48:58,000 - INFO - Assigned Cepheus Dock (Commercial) to system 2661.
-2024-09-15 08:48:58,000 - INFO - Assigned Perseus Complex (Research) to system 1735.
-2024-09-15 08:48:58,000 - INFO - Assigned Hades Hub (Commercial) to system 12.
-2024-09-15 08:48:58,000 - INFO - Assigned Zephyr Station (Commercial) to system 1668.
-2024-09-15 08:48:58,000 - INFO - Assigned Poseidon Base (Commercial) to system 2128.
-2024-09-15 08:48:58,000 - INFO - Assigned Demeter Dock (Dry Dock) to system 2654.
-2024-09-15 08:48:58,000 - INFO - Assigned Apollo Complex (Research) to system 1041.
-2024-09-15 08:48:58,000 - INFO - Assigned Athena Hub (Dry Dock) to system 1143.
-2024-09-15 08:48:58,000 - INFO - Assigned Vulcan Terminal (Dry Dock) to system 460.
-2024-09-15 08:48:58,001 - INFO - Assigned Juno Station (Commercial) to system 2815.
-2024-09-15 08:48:58,001 - INFO - Assigned Minerva Base (Dry Dock) to system 1073.
-2024-09-15 08:48:58,001 - INFO - Assigned Mercury Dock (Research) to system 2125.
-2024-09-15 08:48:58,001 - INFO - Assigned Ceres Complex (Commercial) to system 2874.
-2024-09-15 08:48:58,001 - INFO - Assigned Neptune Hub (Dry Dock) to system 132.
-2024-09-15 08:48:58,001 - INFO - Assigned Uranus Terminal (Commercial) to system 229.
-2024-09-15 08:48:58,001 - INFO - Assigned Titania Station (Dry Dock) to system 903.
-2024-09-15 08:48:58,001 - INFO - Assigned Ganymede Outpost (Dry Dock) to system 2213.
-2024-09-15 08:48:58,001 - INFO - Assigned Callisto Hub (Commercial) to system 353.
-2024-09-15 08:48:58,001 - INFO - Assigned Europa Dock (Commercial) to system 109.
-2024-09-15 08:48:58,001 - INFO - Assigned Io Complex (Dry Dock) to system 1066.
-2024-09-15 08:48:58,001 - INFO - Assigned Atlas Terminal (Dry Dock) to system 3008.
-2024-09-15 08:48:58,001 - INFO - Assigned Prometheus Station (Commercial) to system 2274.
-2024-09-15 08:48:58,001 - INFO - Assigned Pandora Base (Commercial) to system 1550.
-2024-09-15 08:48:58,001 - INFO - Assigned Helios Dock (Commercial) to system 1242.
-2024-09-15 08:48:58,001 - INFO - Assigned Selene Complex (Commercial) to system 87.
-2024-09-15 08:48:58,001 - INFO - Assigned Nyx Hub (Research) to system 1978.
-2024-09-15 08:48:58,001 - INFO - Assigned Chronos Terminal (Dry Dock) to system 2899.
-2024-09-15 08:48:58,001 - INFO - Assigned Erebus Station (Dry Dock) to system 914.
-2024-09-15 08:48:58,001 - INFO - Assigned Thanatos Outpost (Commercial) to system 249.
-2024-09-15 08:48:58,001 - INFO - Assigned Nemesis Hub (Dry Dock) to system 2309.
-2024-09-15 08:48:58,001 - INFO - Assigned Hyperion Dock (Commercial) to system 1539.
-2024-09-15 08:48:58,001 - INFO - Assigned Themis Complex (Dry Dock) to system 979.
-2024-09-15 08:48:58,001 - INFO - Assigned Eos Hub (Research) to system 2534.
-2024-09-15 08:48:58,001 - INFO - Assigned Iris Terminal (Research) to system 265.
-2024-09-15 08:48:58,001 - INFO - Assigned Pallas Station (Dry Dock) to system 2155.
-2024-09-15 08:48:58,001 - INFO - Assigned Hestia Base (Dry Dock) to system 2622.
-2024-09-15 08:48:58,001 - INFO - Assigned Vesta Dock (Research) to system 2724.
-2024-09-15 08:48:58,001 - INFO - Assigned Fortuna Complex (Commercial) to system 723.
-2024-09-15 08:48:58,001 - INFO - Assigned Elara Terminal (Commercial) to system 795.
-2024-09-15 08:48:58,001 - INFO - Assigned Hygiea Station (Commercial) to system 2908.
-2024-09-15 08:48:58,001 - INFO - Assigned Psyche Outpost (Research) to system 1357.
-2024-09-15 08:48:58,002 - INFO - Assigned Cybele Hub (Commercial) to system 37.
-2024-09-15 08:48:58,002 - INFO - Assigned Hermes Dock (Research) to system 2496.
-2024-09-15 08:48:58,002 - INFO - Assigned Mars Base (Research) to system 2765.
-2024-09-15 08:48:58,002 - INFO - Assigned Jupiter Complex (Research) to system 2966.
-2024-09-15 08:48:58,002 - INFO - Assigned Saturn Hub (Research) to system 1086.
-2024-09-15 08:48:58,002 - INFO - Assigned Gaia Terminal (Dry Dock) to system 373.
-2024-09-15 08:48:58,002 - INFO - Assigned Oberon Station (Dry Dock) to system 452.
-2024-09-15 08:48:58,002 - INFO - Assigned Rhea Outpost (Research) to system 1576.
-2024-09-15 08:48:58,002 - INFO - Assigned Enceladus Hub (Commercial) to system 233.
-2024-09-15 08:48:58,002 - INFO - Assigned Dione Dock (Dry Dock) to system 47.
-2024-09-15 08:48:58,002 - INFO - Assigned Tethys Complex (Research) to system 1575.
-2024-09-15 08:48:58,002 - INFO - Assigned Aegir Hub (Commercial) to system 2302.
-2024-09-15 08:48:58,002 - INFO - Assigned Astra Terminal (Research) to system 2530.
-2024-09-15 08:48:58,002 - INFO - Assigned Notus Station (Commercial) to system 1628.
-2024-09-15 08:48:58,002 - INFO - Assigned Ares Base (Commercial) to system 1811.
-2024-09-15 08:48:58,002 - INFO - Assigned Boreas Dock (Commercial) to system 2177.
-2024-09-15 08:48:58,002 - INFO - Assigned Zephyrus Complex (Commercial) to system 2132.
-2024-09-15 08:48:58,002 - INFO - Assigned Intergalactic House of Pancakes (Commercial) to system 49.
-2024-09-15 08:48:58,002 - INFO - Assigned Congress of Planetary Affairs (Commercial) to system 3063.
-2024-09-15 08:48:58,002 - INFO - Assigned Eins Haus (Research) to system 1291.
-2024-09-15 08:48:58,002 - INFO - Assigned Zwei Stadt (Dry Dock) to system 1464.
-2024-09-15 08:48:58,002 - INFO - Assigned Drei Wohnung (Dry Dock) to system 1607.
-2024-09-15 08:48:58,002 - INFO - Assigned Vier Bungalow (Commercial) to system 403.
-2024-09-15 08:48:58,002 - INFO - Assigned Fünf Hütte (Research) to system 412.
-2024-09-15 08:48:58,002 - INFO - Assigned Sieben Schloss (Research) to system 1982.
-2024-09-15 08:48:58,002 - INFO - Assigned Acht Burg (Commercial) to system 849.
-2024-09-15 08:48:58,002 - INFO - Assigned Neun Palast (Dry Dock) to system 1148.
-2024-09-15 08:48:58,002 - INFO - Assigned Zehn Reihenhaus (Commercial) to system 1329.
-2024-09-15 08:48:58,002 - INFO - Assigned Elf Zelt (Commercial) to system 1235.
-2024-09-15 08:48:58,002 - INFO - Assigned Zwanzig Rathaus (Dry Dock) to system 771.
-2024-09-15 08:48:58,002 - INFO - Assigned Kummerspeck Complex (Commercial) to system 1190.
-2024-09-15 08:48:58,002 - INFO - Assigned Backpfeifengesicht Hub (Research) to system 2786.
-2024-09-15 08:48:58,002 - INFO - Assigned Ohrwurm Terminal (Commercial) to system 1661.
-2024-09-15 08:48:58,003 - INFO - Assigned Schadenfreude Station (Commercial) to system 2402.
-2024-09-15 08:48:58,003 - INFO - Assigned Dreikäsehoch Outpost (Research) to system 1671.
-2024-09-15 08:48:58,003 - INFO - Assigned Fingerspitzengefühl Complex (Commercial) to system 2662.
-2024-09-15 08:48:58,003 - INFO - Assigned Kuddelmuddel Station (Dry Dock) to system 698.
-2024-09-15 08:48:58,003 - INFO - Assigned Eurus Hub (Dry Dock) to system 1792.
-2024-09-15 08:48:58,003 - INFO - Assigned Sanctuary Station (Dry Dock) to system 1076.
-2024-09-15 08:48:58,003 - INFO - Assigned Chapel of the Stars (Commercial) to system 2321.
-2024-09-15 08:48:58,003 - INFO - Assigned Temple of Solitude (Research) to system 2251.
-2024-09-15 08:48:58,003 - INFO - Assigned Cathedral Gate (Dry Dock) to system 1888.
-2024-09-15 08:48:58,003 - INFO - Assigned Elysium Chapel (Commercial) to system 1064.
-2024-09-15 08:48:58,003 - INFO - Assigned Divinity Dock (Research) to system 1283.
-2024-09-15 08:48:58,003 - INFO - Assigned Celestial Shrine (Research) to system 2625.
-2024-09-15 08:48:58,003 - INFO - Assigned Nova Monastery (Research) to system 606.
-2024-09-15 08:48:58,003 - INFO - Assigned Eternal Light Hub (Commercial) to system 198.
-2024-09-15 08:48:58,003 - INFO - Assigned Providence Port (Commercial) to system 186.
-2024-09-15 08:48:58,003 - INFO - Assigned Grace Outpost (Research) to system 997.
-2024-09-15 08:48:58,003 - INFO - Assigned Harmony Terminal (Dry Dock) to system 2214.
-2024-09-15 08:48:58,003 - INFO - Assigned Tranquility Base (Commercial) to system 40.
-2024-09-15 08:48:58,003 - INFO - Assigned Zenith Abbey (Commercial) to system 2307.
-2024-09-15 08:48:58,003 - INFO - Assigned Seraphim Station (Commercial) to system 1943.
-2024-09-15 08:48:58,003 - INFO - Assigned Angel's Crossing (Dry Dock) to system 297.
-2024-09-15 08:48:58,003 - INFO - Assigned Blessed Harbor (Dry Dock) to system 1672.
-2024-09-15 08:48:58,003 - INFO - Assigned Pax Station (Dry Dock) to system 1543.
-2024-09-15 08:48:58,003 - INFO - Assigned Pilgrim's Rest (Research) to system 1594.
-2024-09-15 08:48:58,003 - INFO - Assigned Arcadia Chapel (Research) to system 2620.
-2024-09-15 08:48:58,003 - INFO - Assigned Lumina Cathedral (Commercial) to system 1211.
-2024-09-15 08:48:58,003 - INFO - Assigned Spiritus Sanctus (Commercial) to system 2819.
-2024-09-15 08:48:58,003 - INFO - Assigned Sacred Heart Port (Dry Dock) to system 2790.
-2024-09-15 08:48:58,003 - INFO - Assigned Divine Haven (Dry Dock) to system 2478.
-2024-09-15 08:48:58,003 - INFO - Assigned Peacekeeper's Post (Research) to system 1092.
-2024-09-15 08:48:58,003 - INFO - Assigned Revelation Hub (Commercial) to system 1755.
-2024-09-15 08:48:58,004 - INFO - Assigned Genesis Terminal (Commercial) to system 2704.
-2024-09-15 08:48:58,004 - INFO - Assigned Faith's End Station (Commercial) to system 277.
-2024-09-15 08:48:58,004 - INFO - Assigned Chorus Gate (Research) to system 2569.
-2024-09-15 08:48:58,004 - INFO - Assigned Gloria Complex (Research) to system 178.
-2024-09-15 08:48:58,004 - INFO - Assigned Fort Resolute (Commercial) to system 1349.
-2024-09-15 08:48:58,004 - INFO - Assigned Bastion Station (Commercial) to system 2928.
-2024-09-15 08:48:58,004 - INFO - Assigned Citadel Outpost (Research) to system 1758.
-2024-09-15 08:48:58,004 - INFO - Assigned Vanguard Base (Commercial) to system 336.
-2024-09-15 08:48:58,004 - INFO - Assigned Defender's Post (Dry Dock) to system 3070.
-2024-09-15 08:48:58,004 - INFO - Assigned Sentinel Hub (Commercial) to system 1541.
-2024-09-15 08:48:58,004 - INFO - Assigned Guardian Terminal (Commercial) to system 1580.
-2024-09-15 08:48:58,004 - INFO - Assigned Rampart Dock (Commercial) to system 1797.
-2024-09-15 08:48:58,004 - INFO - Assigned Stronghold Station (Commercial) to system 1589.
-2024-09-15 08:48:58,004 - INFO - Assigned Garrison Complex (Research) to system 2019.
-2024-09-15 08:48:58,004 - INFO - Assigned Outwatch Point (Dry Dock) to system 194.
-2024-09-15 08:48:58,004 - INFO - Assigned Redoubt Port (Research) to system 1307.
-2024-09-15 08:48:58,004 - INFO - Assigned Bulwark Base (Dry Dock) to system 190.
-2024-09-15 08:48:58,004 - INFO - Assigned Command Center Alpha (Dry Dock) to system 444.
-2024-09-15 08:48:58,004 - INFO - Assigned Armada Station (Research) to system 665.
-2024-09-15 08:48:58,004 - INFO - Assigned Battlefront Outpost (Dry Dock) to system 1766.
-2024-09-15 08:48:58,004 - INFO - Assigned Fortress Hub (Commercial) to system 2732.
-2024-09-15 08:48:58,004 - INFO - Assigned Warrior's Rest (Commercial) to system 1730.
-2024-09-15 08:48:58,004 - INFO - Assigned Sovereign Terminal (Commercial) to system 175.
-2024-09-15 08:48:58,004 - INFO - Assigned Alliance Dock (Dry Dock) to system 533.
-2024-09-15 08:48:58,004 - INFO - Assigned Legion Station (Dry Dock) to system 2026.
-2024-09-15 08:48:58,004 - INFO - Assigned Strategos Base (Research) to system 2572.
-2024-09-15 08:48:58,004 - INFO - Assigned Phalanx Complex (Research) to system 1523.
-2024-09-15 08:48:58,004 - INFO - Assigned Cohort Port (Research) to system 1149.
-2024-09-15 08:48:58,004 - INFO - Assigned Battalion Hub (Dry Dock) to system 1785.
-2024-09-15 08:48:58,004 - INFO - Assigned Brigade Outpost (Commercial) to system 1866.
-2024-09-15 08:48:58,004 - INFO - Assigned Division Dock (Dry Dock) to system 209.
-2024-09-15 08:48:58,004 - INFO - Assigned Task Force Terminal (Dry Dock) to system 1245.
-2024-09-15 08:48:58,005 - INFO - Assigned Crusader's Point (Commercial) to system 2406.
-2024-09-15 08:48:58,005 - INFO - Assigned Imperator Station (Dry Dock) to system 35.
-2024-09-15 08:48:58,005 - INFO - Assigned Serenity Station (Commercial) to system 101.
-2024-09-15 08:48:58,005 - INFO - Assigned Whispering Winds Hub (Research) to system 1377.
-2024-09-15 08:48:58,005 - INFO - Assigned Silent Echo Dock (Dry Dock) to system 1818.
-2024-09-15 08:48:58,005 - INFO - Assigned Solitude Outpost (Dry Dock) to system 2294.
-2024-09-15 08:48:58,005 - INFO - Assigned Meditation Point (Research) to system 2803.
-2024-09-15 08:48:58,005 - INFO - Assigned Stillwater Base (Research) to system 2172.
-2024-09-15 08:48:58,005 - INFO - Assigned Peaceful Horizon (Dry Dock) to system 494.
-2024-09-15 08:48:58,005 - INFO - Assigned Contemplation Station (Dry Dock) to system 2779.
-2024-09-15 08:48:58,005 - INFO - Assigned Reflection Port (Dry Dock) to system 2930.
-2024-09-15 08:48:58,005 - INFO - Assigned Twilight Haven (Dry Dock) to system 3050.
-2024-09-15 08:48:58,005 - INFO - Assigned Moonshadow Terminal (Dry Dock) to system 406.
-2024-09-15 08:48:58,005 - INFO - Assigned Starlight Sanctuary (Commercial) to system 1556.
-2024-09-15 08:48:58,005 - INFO - Assigned Dreamer's Rest (Dry Dock) to system 2092.
-2024-09-15 08:48:58,005 - INFO - Assigned Echoes Complex (Dry Dock) to system 2751.
-2024-09-15 08:48:58,005 - INFO - Assigned Harmony Point (Dry Dock) to system 1028.
-2024-09-15 08:48:58,005 - INFO - Assigned Nimbus Station (Dry Dock) to system 2322.
-2024-09-15 08:48:58,005 - INFO - Assigned Aurora Borealis Hub (Dry Dock) to system 1387.
-2024-09-15 08:48:58,005 - INFO - Assigned Nebula Drift (Commercial) to system 2976.
-2024-09-15 08:48:58,005 - INFO - Assigned Celestial Meadow (Commercial) to system 2604.
-2024-09-15 08:48:58,005 - INFO - Assigned Galactic Garden (Dry Dock) to system 1351.
-2024-09-15 08:48:58,005 - INFO - Assigned Ethereal Dock (Research) to system 1717.
-2024-09-15 08:48:58,005 - INFO - Assigned Calm Waters Base (Research) to system 2669.
-2024-09-15 08:48:58,005 - INFO - Assigned Zen Station (Research) to system 1962.
-2024-09-15 08:48:58,005 - INFO - Assigned Nimbus Outpost (Commercial) to system 1217.
-2024-09-15 08:48:58,005 - INFO - Assigned Lotus Port (Research) to system 2973.
-2024-09-15 08:48:58,005 - INFO - Assigned Quietude Terminal (Research) to system 2211.
-2024-09-15 08:48:58,005 - INFO - Assigned Satori Hub (Dry Dock) to system 762.
-2024-09-15 08:48:58,005 - INFO - Assigned Mind's Eye Station (Research) to system 527.
-2024-09-15 08:48:58,005 - INFO - Assigned Inner Peace Complex (Commercial) to system 2360.
-2024-09-15 08:48:58,005 - INFO - Assigned Silentium Base (Dry Dock) to system 990.
-2024-09-15 08:48:58,005 - INFO - Assigned Imperial Crown Station (Research) to system 386.
-2024-09-15 08:48:58,005 - INFO - Assigned Majesty's Rest (Research) to system 2641.
-2024-09-15 08:48:58,006 - INFO - Assigned Emperor's Gate (Commercial) to system 2880.
-2024-09-15 08:48:58,006 - INFO - Assigned Royal Scepter Dock (Research) to system 2430.
-2024-09-15 08:48:58,006 - INFO - Assigned Dynasty Outpost (Commercial) to system 1855.
-2024-09-15 08:48:58,006 - INFO - Assigned Monarch's Hub (Commercial) to system 745.
-2024-09-15 08:48:58,006 - INFO - Assigned Regal Terminal (Dry Dock) to system 1337.
-2024-09-15 08:48:58,006 - INFO - Assigned Sovereign Station (Commercial) to system 722.
-2024-09-15 08:48:58,006 - INFO - Assigned Dominion Base (Commercial) to system 446.
-2024-09-15 08:48:58,006 - INFO - Assigned Empire's End (Commercial) to system 1103.
-2024-09-15 08:48:58,006 - INFO - Assigned Legacy Port (Dry Dock) to system 568.
-2024-09-15 08:48:58,006 - INFO - Assigned Glory Complex (Research) to system 2913.
-2024-09-15 08:48:58,006 - INFO - Assigned Imperator's Point (Research) to system 2780.
-2024-09-15 08:48:58,006 - INFO - Assigned Caesar's Landing (Commercial) to system 3061.
-2024-09-15 08:48:58,006 - INFO - Assigned Kaiser's Keep (Research) to system 1871.
-2024-09-15 08:48:58,006 - INFO - Assigned Tsar's Fortress (Dry Dock) to system 268.
-2024-09-15 08:48:58,006 - INFO - Assigned Imperium Station (Dry Dock) to system 1947.
-2024-09-15 08:48:58,006 - INFO - Assigned Grand Duchy Dock (Dry Dock) to system 604.
-2024-09-15 08:48:58,006 - INFO - Assigned Crown Jewel Hub (Commercial) to system 3062.
-2024-09-15 08:48:58,006 - INFO - Assigned Pax Romana Base (Research) to system 310.
-2024-09-15 08:48:58,006 - INFO - Assigned Regnum Terminal (Dry Dock) to system 250.
-2024-09-15 08:48:58,006 - INFO - Assigned King's Cross Station (Commercial) to system 3017.
-2024-09-15 08:48:58,006 - INFO - Assigned Imperial Palace Outpost (Dry Dock) to system 156.
-2024-09-15 08:48:58,006 - INFO - Assigned Arc de Triomphe Dock (Dry Dock) to system 2764.
-2024-09-15 08:48:58,006 - INFO - Assigned Habsburg Haven (Commercial) to system 826.
-2024-09-15 08:48:58,006 - INFO - Assigned Byzantium Hub (Dry Dock) to system 2049.
-2024-09-15 08:48:58,006 - INFO - Assigned Alexandria Station (Research) to system 2148.
-2024-09-15 08:48:58,006 - INFO - Assigned Ottoman Port (Research) to system 1409.
-2024-09-15 08:48:58,006 - INFO - Assigned Mogul Empire Base (Dry Dock) to system 34.
-2024-09-15 08:48:58,006 - INFO - Assigned Pharaoh's Rest (Research) to system 2972.
-2024-09-15 08:48:58,006 - INFO - Assigned Sakura Station (Dry Dock) to system 1125.
-2024-09-15 08:48:58,006 - INFO - Assigned Kamikaze Base (Research) to system 1244.
-2024-09-15 08:48:58,006 - INFO - Assigned Samurai Outpost (Dry Dock) to system 957.
-2024-09-15 08:48:58,006 - INFO - Assigned Bushido Dock (Dry Dock) to system 1399.
-2024-09-15 08:48:58,006 - INFO - Assigned Shogun's Gate (Commercial) to system 571.
-2024-09-15 08:48:58,007 - INFO - Assigned Edo Terminal (Dry Dock) to system 2519.
-2024-09-15 08:48:58,007 - INFO - Assigned Kyoto Hub (Commercial) to system 2242.
-2024-09-15 08:48:58,007 - INFO - Assigned Fuji Point (Research) to system 154.
-2024-09-15 08:48:58,007 - INFO - Assigned Hikari Station (Dry Dock) to system 2328.
-2024-09-15 08:48:58,007 - INFO - Assigned Yamato Port (Dry Dock) to system 366.
-2024-09-15 08:48:58,007 - INFO - Assigned Ninja Complex (Research) to system 1203.
-2024-09-15 08:48:58,007 - INFO - Assigned Zen Garden (Commercial) to system 1699.
-2024-09-15 08:48:58,007 - INFO - Assigned Mikado Base (Commercial) to system 1012.
-2024-09-15 08:48:58,007 - INFO - Assigned Harakiri Hub (Commercial) to system 1119.
-2024-09-15 08:48:58,007 - INFO - Assigned Ronin Outpost (Research) to system 513.
-2024-09-15 08:48:58,007 - INFO - Assigned Kaizen Station (Commercial) to system 2170.
-2024-09-15 08:48:58,007 - INFO - Assigned Shinsen Port (Dry Dock) to system 1237.
-2024-09-15 08:48:58,007 - INFO - Assigned Raijin Dock (Commercial) to system 1967.
-2024-09-15 08:48:58,007 - INFO - Assigned Susanoo Terminal (Commercial) to system 195.
-2024-09-15 08:48:58,007 - INFO - Assigned Amaterasu Station (Dry Dock) to system 2457.
-2024-09-15 08:48:58,007 - INFO - Assigned Tsukuyomi Hub (Dry Dock) to system 837.
-2024-09-15 08:48:58,007 - INFO - Assigned Izumo Base (Dry Dock) to system 2350.
-2024-09-15 08:48:58,007 - INFO - Assigned Nagoya Outpost (Dry Dock) to system 1505.
-2024-09-15 08:48:58,007 - INFO - Assigned Osaka Dock (Research) to system 2891.
-2024-09-15 08:48:58,007 - INFO - Assigned Hiroshima Hub (Dry Dock) to system 2437.
-2024-09-15 08:48:58,007 - INFO - Assigned Sendai Station (Research) to system 2193.
-2024-09-15 08:48:58,007 - INFO - Assigned Kanagawa Terminal (Dry Dock) to system 2738.
-2024-09-15 08:48:58,007 - INFO - Assigned Nagasaki Port (Research) to system 1936.
-2024-09-15 08:48:58,007 - INFO - Assigned Izanagi Complex (Commercial) to system 2397.
-2024-09-15 08:48:58,007 - INFO - Assigned Izanami Base (Commercial) to system 2516.
-2024-09-15 08:48:58,007 - INFO - Assigned Himmelspforte Station (Commercial) to system 2038.
-2024-09-15 08:48:58,007 - INFO - Assigned Adlerhorst Base (Commercial) to system 814.
-2024-09-15 08:48:58,007 - INFO - Assigned Walhalla Hub (Research) to system 1437.
-2024-09-15 08:48:58,007 - INFO - Assigned Festung Dock (Research) to system 103.
-2024-09-15 08:48:58,007 - INFO - Assigned Kaiserhof Terminal (Commercial) to system 1805.
-2024-09-15 08:48:58,007 - INFO - Assigned Siegfried Station (Commercial) to system 1984.
-2024-09-15 08:48:58,578 - INFO - Universe with 3072 systems created and updated successfully.
-2024-09-15 08:48:58,657 - INFO - Logging owned systems:
-2024-09-15 08:48:58,657 - INFO - System ID 948 is owned by Shogunate 3072
-2024-09-15 08:48:58,657 - INFO - System ID 1003 is owned by United Systems of Man
-2024-09-15 08:48:58,657 - INFO - System ID 1579 is owned by People of the River
-2024-09-15 08:48:58,657 - INFO - System ID 1891 is owned by Noringian Hive
-2024-09-15 08:48:58,657 - INFO - System ID 2881 is owned by Mandate of God
-2024-09-15 08:49:12,600 - INFO - Player's faction United Systems of Man starts in system: 1332 with star type G-type
-2024-09-15 08:49:13,169 - INFO - Game Start: New Game Selected
-2024-09-15 08:49:13,169 - INFO - Universe Size: 3072 systems
-2024-09-15 08:49:13,169 - INFO - Character Name: qweqwe
-2024-09-15 08:49:13,169 - INFO - Faction: United Systems of Man
-2024-09-15 08:49:13,170 - INFO - Ship Type: {'name': 'Light Mission Runner', 'class': 'Light', 'faction_of_origin': 'United Systems of Man', 'description': 'Balanced for exploration and basic defense.', 'required_rank_to_pilot': 'Civilian', 'size': 'Small', 'ship_cost': 550, 'min_cargo': 10, 'max_cargo': 30, 'max_shields': 50, 'max_armor': 20, 'max_hull': 30, 'system_scanner_type': 'Beta', 'system_scanner_level': 2, 'planet_scanner': 'Yes', 'planet_scanner_level': 1, 'resource_scanner': 'Yes', 'resource_scanner_level': 1, 'weapon_type': 'Light Laser', 'combat_bonus': 1.0, 'mining_attachment': 'No', 'mining_attachment_level': 0}
-2024-09-15 08:49:13,170 - INFO - Ship Name: 1
-2024-09-15 08:49:13,170 - INFO - Player starting in system: 1332
-2024-09-15 08:49:17,515 - DEBUG - System 1332 visited status: True
-2024-09-15 08:49:19,556 - DEBUG - System 1710 visited status: True
-2024-09-15 08:50:03,274 - INFO - ==============================================
-2024-09-15 08:50:05,326 - INFO - Game Start: Continue Game Selected
-2024-09-15 08:50:05,326 - INFO - Universe Size: 3072 systems
-2024-09-15 08:50:05,326 - INFO - Character Name: qweqwe
-2024-09-15 08:50:05,327 - INFO - Faction: United Systems of Man
-2024-09-15 08:50:05,327 - INFO - Ship Type: {'name': 'Light Mission Runner', 'class': 'Light', 'faction_of_origin': 'United Systems of Man', 'description': 'Balanced for exploration and basic defense.', 'required_rank_to_pilot': 'Civilian', 'size': 'Small', 'ship_cost': 550, 'min_cargo': 10, 'max_cargo': 30, 'max_shields': 50, 'max_armor': 20, 'max_hull': 30, 'system_scanner_type': 'Beta', 'system_scanner_level': 2, 'planet_scanner': 'Yes', 'planet_scanner_level': 1, 'resource_scanner': 'Yes', 'resource_scanner_level': 1, 'weapon_type': 'Light Laser', 'combat_bonus': 1.0, 'mining_attachment': 'No', 'mining_attachment_level': 0}
-2024-09-15 08:50:05,327 - INFO - Ship Name: 1
-2024-09-15 08:50:05,327 - DEBUG - System 1710 visited status: True
-2024-09-15 08:59:40,158 - INFO - ==============================================
-2024-09-15 08:59:41,756 - INFO - ==============================================
-2024-09-15 08:59:41,756 - INFO - Starting the main function.
-2024-09-15 08:59:41,990 - INFO - ==============================================
-2024-09-15 08:59:42,190 - INFO - ==============================================
-2024-09-15 08:59:42,246 - INFO - ==============================================
-2024-09-15 08:59:42,300 - INFO - ==============================================
-2024-09-15 08:59:42,397 - INFO - ==============================================
-2024-09-15 08:59:42,403 - INFO - ==============================================
-2024-09-15 08:59:42,461 - INFO - ==============================================
-2024-09-15 08:59:42,469 - INFO - ==============================================
-2024-09-15 08:59:42,526 - INFO - ==============================================
-2024-09-15 08:59:45,360 - INFO - Assigned Oxygen Port (Commercial) to system 1428.
-2024-09-15 08:59:45,360 - INFO - Assigned Zenith Base (Research) to system 1249.
-2024-09-15 08:59:45,360 - INFO - Assigned Toulouse Exchange (Research) to system 2972.
-2024-09-15 08:59:45,360 - INFO - Assigned Freistaat Hub (Dry Dock) to system 943.
-2024-09-15 08:59:45,360 - INFO - Assigned Meitnerium Port (Commercial) to system 503.
-2024-09-15 08:59:45,360 - INFO - Assigned Alexandria Station (Research) to system 386.
-2024-09-15 08:59:45,360 - INFO - Assigned Edinburgh Citadel (Commercial) to system 2064.
-2024-09-15 08:59:45,360 - INFO - Assigned Lutetium Hub (Commercial) to system 1753.
-2024-09-15 08:59:45,361 - INFO - Assigned Betelgeuse Station (Research) to system 2917.
-2024-09-15 08:59:45,361 - INFO - Assigned Calcium Dock (Dry Dock) to system 203.
-2024-09-15 08:59:45,361 - INFO - Assigned Sovereign Terminal (Commercial) to system 1212.
-2024-09-15 08:59:45,361 - INFO - Assigned Bergen Harbor (Commercial) to system 2890.
-2024-09-15 08:59:45,361 - INFO - Assigned Moscovium Port (Research) to system 2067.
-2024-09-15 08:59:45,361 - INFO - Assigned Congress of Planetary Affairs (Research) to system 765.
-2024-09-15 08:59:45,361 - INFO - Assigned Munich Nexus (Research) to system 900.
-2024-09-15 08:59:45,361 - INFO - Assigned Hafnium Station (Commercial) to system 307.
-2024-09-15 08:59:45,361 - INFO - Assigned Mecca Oasis (Research) to system 344.
-2024-09-15 08:59:45,361 - INFO - Assigned Phalanx Complex (Commercial) to system 365.
-2024-09-15 08:59:45,361 - INFO - Assigned Izmir Nexus (Commercial) to system 449.
-2024-09-15 08:59:45,361 - INFO - Assigned Aphelion Dock (Dry Dock) to system 334.
-2024-09-15 08:59:45,361 - INFO - Assigned London Harbor (Dry Dock) to system 1283.
-2024-09-15 08:59:45,361 - INFO - Assigned Diphda Station (Dry Dock) to system 1747.
-2024-09-15 08:59:45,361 - INFO - Assigned Basel Citadel (Dry Dock) to system 1648.
-2024-09-15 08:59:45,361 - INFO - Assigned Hanover Beacon (Commercial) to system 2078.
-2024-09-15 08:59:45,361 - INFO - Assigned Germanium Dock (Dry Dock) to system 1756.
-2024-09-15 08:59:45,361 - INFO - Assigned Lumina Cathedral (Dry Dock) to system 1910.
-2024-09-15 08:59:45,361 - INFO - Assigned Divinity Dock (Research) to system 1448.
-2024-09-15 08:59:45,361 - INFO - Assigned Twilight Haven (Research) to system 1126.
-2024-09-15 08:59:45,361 - INFO - Assigned Neptunium Dock (Dry Dock) to system 1616.
-2024-09-15 08:59:45,361 - INFO - Assigned Sacred Heart Port (Research) to system 423.
-2024-09-15 08:59:45,361 - INFO - Assigned Kamikaze Base (Research) to system 468.
-2024-09-15 08:59:45,361 - INFO - Assigned King's Cross Station (Commercial) to system 875.
-2024-09-15 08:59:45,361 - INFO - Assigned Dominus Port (Dry Dock) to system 1611.
-2024-09-15 08:59:45,361 - INFO - Assigned Basalt Port (Dry Dock) to system 262.
-2024-09-15 08:59:45,361 - INFO - Assigned Alpheratz Complex (Dry Dock) to system 1013.
-2024-09-15 08:59:45,361 - INFO - Assigned Berlin Museum (Commercial) to system 196.
-2024-09-15 08:59:45,361 - INFO - Assigned Bushido Dock (Dry Dock) to system 214.
-2024-09-15 08:59:45,361 - INFO - Assigned Lahore Citadel (Dry Dock) to system 2583.
-2024-09-15 08:59:45,361 - INFO - Assigned Nimbus Outpost (Research) to system 2275.
-2024-09-15 08:59:45,361 - INFO - Assigned New York Citadel (Research) to system 2614.
-2024-09-15 08:59:45,362 - INFO - Assigned Machu Picchu Haven (Commercial) to system 138.
-2024-09-15 08:59:45,362 - INFO - Assigned Nuuk Spire (Commercial) to system 2891.
-2024-09-15 08:59:45,362 - INFO - Assigned Shinsen Port (Commercial) to system 811.
-2024-09-15 08:59:45,362 - INFO - Assigned Eos Hub (Commercial) to system 2462.
-2024-09-15 08:59:45,362 - INFO - Assigned Sao Paulo Domain (Commercial) to system 2968.
-2024-09-15 08:59:45,362 - INFO - Assigned Iridium Hub (Commercial) to system 1037.
-2024-09-15 08:59:45,362 - INFO - Assigned Delta Base (Commercial) to system 2030.
-2024-09-15 08:59:45,362 - INFO - Assigned Eindhoven Harbor (Dry Dock) to system 2688.
-2024-09-15 08:59:45,362 - INFO - Assigned Leeds Command (Dry Dock) to system 13.
-2024-09-15 08:59:45,362 - INFO - Assigned Kuddelmuddel Station (Dry Dock) to system 1276.
-2024-09-15 08:59:45,362 - INFO - Assigned Ninja Complex (Research) to system 2141.
-2024-09-15 08:59:45,362 - INFO - Assigned Echoes Complex (Dry Dock) to system 1336.
-2024-09-15 08:59:45,362 - INFO - Assigned Himmelspforte Station (Research) to system 762.
-2024-09-15 08:59:45,362 - INFO - Assigned Quasar Base (Dry Dock) to system 166.
-2024-09-15 08:59:45,362 - INFO - Assigned Perth Dock (Dry Dock) to system 2975.
-2024-09-15 08:59:45,362 - INFO - Assigned Borealis Port (Commercial) to system 531.
-2024-09-15 08:59:45,362 - INFO - Assigned Mecca Nexus (Commercial) to system 2884.
-2024-09-15 08:59:45,362 - INFO - Assigned Eins Haus (Dry Dock) to system 684.
-2024-09-15 08:59:45,362 - INFO - Assigned Imperial Crown Station (Dry Dock) to system 1398.
-2024-09-15 08:59:45,362 - INFO - Assigned Harbor of Serenity (Research) to system 1851.
-2024-09-15 08:59:45,362 - INFO - Assigned Cambridge Library (Commercial) to system 529.
-2024-09-15 08:59:45,362 - INFO - Assigned Eurus Hub (Commercial) to system 1601.
-2024-09-15 08:59:45,362 - INFO - Assigned Palmer Outpost (Dry Dock) to system 2627.
-2024-09-15 08:59:45,362 - INFO - Assigned Sol Invictus Terminal (Research) to system 2783.
-2024-09-15 08:59:45,362 - INFO - Assigned Damascus Command (Research) to system 2980.
-2024-09-15 08:59:45,362 - INFO - Assigned Tromsø Command (Dry Dock) to system 982.
-2024-09-15 08:59:45,362 - INFO - Assigned Ivory Terminal (Research) to system 750.
-2024-09-15 08:59:45,362 - INFO - Assigned Copper Station (Research) to system 1418.
-2024-09-15 08:59:45,362 - INFO - Assigned Novosibirsk Harbor (Research) to system 2803.
-2024-09-15 08:59:45,362 - INFO - Assigned Vega Hub (Research) to system 1093.
-2024-09-15 08:59:45,362 - INFO - Assigned Daejeon Citadel (Commercial) to system 329.
-2024-09-15 08:59:45,362 - INFO - Assigned San Jose Sphere (Commercial) to system 2978.
-2024-09-15 08:59:45,362 - INFO - Assigned Trossachs Hub (Dry Dock) to system 675.
-2024-09-15 08:59:45,363 - INFO - Assigned Lawrencium Port (Commercial) to system 882.
-2024-09-15 08:59:45,363 - INFO - Assigned Defender's Post (Dry Dock) to system 2704.
-2024-09-15 08:59:45,363 - INFO - Assigned Khartoum Citadel (Commercial) to system 2354.
-2024-09-15 08:59:45,363 - INFO - Assigned Uppsala Command (Commercial) to system 159.
-2024-09-15 08:59:45,363 - INFO - Assigned Nadi Beacon (Dry Dock) to system 2999.
-2024-09-15 08:59:45,363 - INFO - Assigned Helios Dock (Dry Dock) to system 1010.
-2024-09-15 08:59:45,363 - INFO - Assigned Baku Harbor (Research) to system 933.
-2024-09-15 08:59:45,363 - INFO - Assigned Budapest Array (Dry Dock) to system 888.
-2024-09-15 08:59:45,363 - INFO - Assigned Nova Station (Commercial) to system 2006.
-2024-09-15 08:59:45,363 - INFO - Assigned Command Center Alpha (Dry Dock) to system 484.
-2024-09-15 08:59:45,363 - INFO - Assigned Notus Station (Dry Dock) to system 1835.
-2024-09-15 08:59:45,363 - INFO - Assigned Infinity Base (Dry Dock) to system 385.
-2024-09-15 08:59:45,363 - INFO - Assigned Mars Base (Commercial) to system 1902.
-2024-09-15 08:59:45,363 - INFO - Assigned Santiago Fortress (Research) to system 741.
-2024-09-15 08:59:45,363 - INFO - Assigned Chongqing Gateway (Research) to system 129.
-2024-09-15 08:59:45,363 - INFO - Assigned La Paz Platform (Research) to system 970.
-2024-09-15 08:59:45,363 - INFO - Assigned Celestial Port (Dry Dock) to system 1741.
-2024-09-15 08:59:45,363 - INFO - Assigned Shenzhen Spire (Research) to system 1880.
-2024-09-15 08:59:45,363 - INFO - Assigned Vientiane Gateway (Research) to system 270.
-2024-09-15 08:59:45,363 - INFO - Assigned Hyperion Dock (Research) to system 2497.
-2024-09-15 08:59:45,363 - INFO - Assigned Pulsar Dock (Dry Dock) to system 2359.
-2024-09-15 08:59:45,363 - INFO - Assigned Zeitgeist Hub (Dry Dock) to system 1560.
-2024-09-15 08:59:45,363 - INFO - Assigned Neuschwanstein Hub (Commercial) to system 1001.
-2024-09-15 08:59:45,363 - INFO - Assigned Oban Base (Dry Dock) to system 3062.
-2024-09-15 08:59:45,363 - INFO - Assigned Longyearbyen Outpost (Research) to system 1090.
-2024-09-15 08:59:45,363 - INFO - Assigned Stillwater Base (Dry Dock) to system 371.
-2024-09-15 08:59:45,363 - INFO - Assigned Vulcan Terminal (Commercial) to system 1671.
-2024-09-15 08:59:45,363 - INFO - Assigned Oganesson Terminal (Commercial) to system 2050.
 2024-09-15 08:59:45,363 - INFO - Assigned Sovereign Station (Dry Dock) to system 112.
 2024-09-15 08:59:45,363 - INFO - Assigned Nome Outpost (Commercial) to system 1194.
 2024-09-15 08:59:45,363 - INFO - Assigned Kaizen Station (Dry Dock) to system 242.
@@ -1091,3 +664,345 @@
 2024-09-15 09:21:52,201 - INFO - Ship Type: {'name': 'Light Mission Runner', 'class': 'Light', 'faction_of_origin': 'United Systems of Man', 'description': 'Balanced for exploration and basic defense.', 'required_rank_to_pilot': 'Civilian', 'size': 'Small', 'ship_cost': 550, 'min_cargo': 10, 'max_cargo': 30, 'max_shields': 50, 'max_armor': 20, 'max_hull': 30, 'system_scanner_type': 'Beta', 'system_scanner_level': 2, 'planet_scanner': 'Yes', 'planet_scanner_level': 1, 'resource_scanner': 'Yes', 'resource_scanner_level': 1, 'weapon_type': 'Light Laser', 'combat_bonus': 1.0, 'mining_attachment': 'No', 'mining_attachment_level': 0}
 2024-09-15 09:21:52,201 - INFO - Ship Name: 1
 2024-09-15 09:21:52,201 - DEBUG - System 883 visited status: True
+2024-09-15 19:49:17,622 - INFO - ==============================================
+2024-09-15 19:49:19,172 - INFO - Game Start: Continue Game Selected
+2024-09-15 19:49:19,172 - INFO - Universe Size: 3072 systems
+2024-09-15 19:49:19,172 - INFO - Character Name: qweqwe
+2024-09-15 19:49:19,172 - INFO - Faction: United Systems of Man
+2024-09-15 19:49:19,172 - INFO - Ship Type: {'name': 'Light Mission Runner', 'class': 'Light', 'faction_of_origin': 'United Systems of Man', 'description': 'Balanced for exploration and basic defense.', 'required_rank_to_pilot': 'Civilian', 'size': 'Small', 'ship_cost': 550, 'min_cargo': 10, 'max_cargo': 30, 'max_shields': 50, 'max_armor': 20, 'max_hull': 30, 'system_scanner_type': 'Beta', 'system_scanner_level': 2, 'planet_scanner': 'Yes', 'planet_scanner_level': 1, 'resource_scanner': 'Yes', 'resource_scanner_level': 1, 'weapon_type': 'Light Laser', 'combat_bonus': 1.0, 'mining_attachment': 'No', 'mining_attachment_level': 0}
+2024-09-15 19:49:19,172 - INFO - Ship Name: 1
+2024-09-15 19:49:19,173 - DEBUG - System 883 visited status: True
+2024-09-17 21:07:55,230 - INFO - ==============================================
+2024-09-17 21:07:57,093 - INFO - ==============================================
+2024-09-17 21:07:57,093 - INFO - Starting the main function.
+2024-09-17 21:07:57,469 - INFO - ==============================================
+2024-09-17 21:07:57,765 - INFO - ==============================================
+2024-09-17 21:07:57,772 - INFO - ==============================================
+2024-09-17 21:07:57,833 - INFO - ==============================================
+2024-09-17 21:07:57,949 - INFO - ==============================================
+2024-09-17 21:07:57,949 - INFO - ==============================================
+2024-09-17 21:07:58,012 - INFO - ==============================================
+2024-09-17 21:07:58,027 - INFO - ==============================================
+2024-09-17 21:07:58,076 - INFO - ==============================================
+2024-09-17 21:08:00,949 - INFO - Assigned Einsteinium Dock (Dry Dock) to system 1870.
+2024-09-17 21:08:00,949 - INFO - Assigned Mecca Oasis (Research) to system 1917.
+2024-09-17 21:08:00,949 - INFO - Assigned Altair Complex (Dry Dock) to system 2296.
+2024-09-17 21:08:00,949 - INFO - Assigned Peacekeeper's Post (Dry Dock) to system 143.
+2024-09-17 21:08:00,949 - INFO - Assigned Trondheim Citadel (Commercial) to system 2399.
+2024-09-17 21:08:00,949 - INFO - Assigned Pinnacle of Hope (Commercial) to system 999.
+2024-09-17 21:08:00,949 - INFO - Assigned Schedar Hub (Dry Dock) to system 2085.
+2024-09-17 21:08:00,949 - INFO - Assigned Faith's End Station (Dry Dock) to system 1030.
+2024-09-17 21:08:00,949 - INFO - Assigned Palermo Citadel (Dry Dock) to system 897.
+2024-09-17 21:08:00,949 - INFO - Assigned Divinity Dock (Commercial) to system 2987.
+2024-09-17 21:08:00,949 - INFO - Assigned Alpha Station (Commercial) to system 1210.
+2024-09-17 21:08:00,949 - INFO - Assigned Lambda Port (Dry Dock) to system 2941.
+2024-09-17 21:08:00,949 - INFO - Assigned Thulium Dock (Dry Dock) to system 250.
+2024-09-17 21:08:00,950 - INFO - Assigned Dublin Sanctuary (Dry Dock) to system 2354.
+2024-09-17 21:08:00,950 - INFO - Assigned Era Terminal (Research) to system 2814.
+2024-09-17 21:08:00,950 - INFO - Assigned Guardian Terminal (Research) to system 2058.
+2024-09-17 21:08:00,950 - INFO - Assigned Nice Observatory (Commercial) to system 1661.
+2024-09-17 21:08:00,950 - INFO - Assigned Belfast Harbor (Dry Dock) to system 348.
+2024-09-17 21:08:00,950 - INFO - Assigned Kaiserhof Terminal (Dry Dock) to system 736.
+2024-09-17 21:08:00,950 - INFO - Assigned Infinity Base (Commercial) to system 149.
+2024-09-17 21:08:00,950 - INFO - Assigned Dakar Nexus (Dry Dock) to system 2666.
+2024-09-17 21:08:00,950 - INFO - Assigned Wellington Fortress (Dry Dock) to system 13.
+2024-09-17 21:08:00,950 - INFO - Assigned Davis Harbor (Commercial) to system 1152.
+2024-09-17 21:08:00,950 - INFO - Assigned Athens Academy (Dry Dock) to system 686.
+2024-09-17 21:08:00,950 - INFO - Assigned Penumbra Station (Research) to system 262.
+2024-09-17 21:08:00,950 - INFO - Assigned Lusaka Citadel (Commercial) to system 220.
+2024-09-17 21:08:00,950 - INFO - Assigned Bali Sanctuary (Dry Dock) to system 660.
+2024-09-17 21:08:00,950 - INFO - Assigned Panama City Oasis (Research) to system 2783.
+2024-09-17 21:08:00,950 - INFO - Assigned Guangzhou Nexus (Research) to system 489.
+2024-09-17 21:08:00,950 - INFO - Assigned Francium Dock (Commercial) to system 1396.
+2024-09-17 21:08:00,950 - INFO - Assigned Redoubt Port (Research) to system 2556.
+2024-09-17 21:08:00,950 - INFO - Assigned Cepheus Dock (Research) to system 788.
+2024-09-17 21:08:00,950 - INFO - Assigned Byzantium Hub (Research) to system 656.
+2024-09-17 21:08:00,950 - INFO - Assigned Wormhole Port (Research) to system 687.
+2024-09-17 21:08:00,950 - INFO - Assigned Titania Station (Dry Dock) to system 1763.
+2024-09-17 21:08:00,950 - INFO - Assigned Düsseldorf Pinnacle (Commercial) to system 881.
+2024-09-17 21:08:00,950 - INFO - Assigned Tin Base (Dry Dock) to system 2333.
+2024-09-17 21:08:00,950 - INFO - Assigned Sphere Base (Commercial) to system 61.
+2024-09-17 21:08:00,950 - INFO - Assigned Stillwater Base (Research) to system 585.
+2024-09-17 21:08:00,950 - INFO - Assigned Nadi Beacon (Dry Dock) to system 27.
+2024-09-17 21:08:00,950 - INFO - Assigned Iona Terminal (Research) to system 3007.
+2024-09-17 21:08:00,950 - INFO - Assigned Istanbul Harbor (Research) to system 2586.
+2024-09-17 21:08:00,950 - INFO - Assigned Varanasi Retreat (Commercial) to system 2292.
+2024-09-17 21:08:00,950 - INFO - Assigned Coral Port (Commercial) to system 246.
+2024-09-17 21:08:00,950 - INFO - Assigned Kansas City Vault (Dry Dock) to system 1004.
+2024-09-17 21:08:00,950 - INFO - Assigned Marrakech Citadel (Commercial) to system 1958.
+2024-09-17 21:08:00,950 - INFO - Assigned Cerium Terminal (Research) to system 2231.
+2024-09-17 21:08:00,950 - INFO - Assigned Seoul Nexus (Dry Dock) to system 731.
+2024-09-17 21:08:00,951 - INFO - Assigned Nadir Dock (Commercial) to system 1486.
+2024-09-17 21:08:00,951 - INFO - Assigned Seoul Command (Dry Dock) to system 2004.
+2024-09-17 21:08:00,951 - INFO - Assigned Fable Terminal (Commercial) to system 3068.
+2024-09-17 21:08:00,951 - INFO - Assigned Bushido Dock (Dry Dock) to system 178.
+2024-09-17 21:08:00,951 - INFO - Assigned Imperator Station (Dry Dock) to system 31.
+2024-09-17 21:08:00,951 - INFO - Assigned Ares Base (Commercial) to system 202.
+2024-09-17 21:08:00,951 - INFO - Assigned Dallas Platform (Dry Dock) to system 91.
+2024-09-17 21:08:00,951 - INFO - Assigned Vita Brevis Hub (Research) to system 231.
+2024-09-17 21:08:00,951 - INFO - Assigned Blessed Harbor (Commercial) to system 2470.
+2024-09-17 21:08:00,951 - INFO - Assigned Addis Ababa Gateway (Dry Dock) to system 6.
+2024-09-17 21:08:00,951 - INFO - Assigned Sendai Station (Dry Dock) to system 1749.
+2024-09-17 21:08:00,951 - INFO - Assigned Molybdenum Station (Commercial) to system 1562.
+2024-09-17 21:08:00,951 - INFO - Assigned Berlin Gateway (Research) to system 650.
+2024-09-17 21:08:00,951 - INFO - Assigned Dushanbe Harbor (Commercial) to system 2374.
+2024-09-17 21:08:00,951 - INFO - Assigned Event Horizon Station (Commercial) to system 2646.
+2024-09-17 21:08:00,951 - INFO - Assigned Nagasaki Gateway (Research) to system 160.
+2024-09-17 21:08:00,951 - INFO - Assigned Madrid Beacon (Dry Dock) to system 492.
+2024-09-17 21:08:00,951 - INFO - Assigned Mexico City Hub (Dry Dock) to system 223.
+2024-09-17 21:08:00,951 - INFO - Assigned Amundsen-Scott Command (Research) to system 1218.
+2024-09-17 21:08:00,951 - INFO - Assigned Caledonia Hub (Research) to system 1052.
+2024-09-17 21:08:00,951 - INFO - Assigned Hyderabad Harbor (Commercial) to system 802.
+2024-09-17 21:08:00,951 - INFO - Assigned Grand Duchy Dock (Research) to system 2989.
+2024-09-17 21:08:00,951 - INFO - Assigned Regnum Terminal (Research) to system 1584.
+2024-09-17 21:08:00,951 - INFO - Assigned San Diego Harbor (Dry Dock) to system 135.
+2024-09-17 21:08:00,951 - INFO - Assigned Kyoto Harbor (Commercial) to system 1761.
+2024-09-17 21:08:00,951 - INFO - Assigned Genesis Terminal (Dry Dock) to system 635.
+2024-09-17 21:08:00,951 - INFO - Assigned Belgrano II Base (Research) to system 2442.
+2024-09-17 21:08:00,951 - INFO - Assigned Stella Maris Terminal (Commercial) to system 146.
+2024-09-17 21:08:00,951 - INFO - Assigned Citadel Outpost (Research) to system 325.
+2024-09-17 21:08:00,951 - INFO - Assigned Genesis Port (Dry Dock) to system 484.
+2024-09-17 21:08:00,951 - INFO - Assigned Phnom Penh Citadel (Research) to system 941.
+2024-09-17 21:08:00,951 - INFO - Assigned Mogul Empire Base (Commercial) to system 2473.
+2024-09-17 21:08:00,951 - INFO - Assigned Stronghold Station (Commercial) to system 126.
+2024-09-17 21:08:00,951 - INFO - Assigned Krypton Station (Research) to system 612.
+2024-09-17 21:08:00,951 - INFO - Assigned Kaiser's Keep (Research) to system 303.
+2024-09-17 21:08:00,951 - INFO - Assigned Mumbai Spire (Research) to system 641.
+2024-09-17 21:08:00,951 - INFO - Assigned Nimbus Station (Dry Dock) to system 2975.
+2024-09-17 21:08:00,951 - INFO - Assigned Task Force Terminal (Dry Dock) to system 1796.
+2024-09-17 21:08:00,951 - INFO - Assigned Bristol Spire (Dry Dock) to system 1977.
+2024-09-17 21:08:00,952 - INFO - Assigned Salzburg Citadel (Research) to system 2716.
+2024-09-17 21:08:00,952 - INFO - Assigned Sulfur Station (Dry Dock) to system 2193.
+2024-09-17 21:08:00,952 - INFO - Assigned Lahore Citadel (Commercial) to system 2278.
+2024-09-17 21:08:00,952 - INFO - Assigned Florence Forge (Commercial) to system 181.
+2024-09-17 21:08:00,952 - INFO - Assigned Daegu Spire (Commercial) to system 24.
+2024-09-17 21:08:00,952 - INFO - Assigned Americium Hub (Commercial) to system 2053.
+2024-09-17 21:08:00,952 - INFO - Assigned Magnum Opus Complex (Commercial) to system 375.
+2024-09-17 21:08:00,952 - INFO - Assigned Temple of Solitude (Research) to system 903.
+2024-09-17 21:08:00,952 - INFO - Assigned Tirana Citadel (Research) to system 3067.
+2024-09-17 21:08:00,952 - INFO - Assigned Harmony Point (Research) to system 1528.
+2024-09-17 21:08:00,952 - INFO - Assigned Vostok Base (Commercial) to system 167.
+2024-09-17 21:08:00,952 - INFO - Assigned Tripoli Fortress (Research) to system 258.
+2024-09-17 21:08:00,952 - INFO - Assigned Quantum Terminal (Dry Dock) to system 2903.
+2024-09-17 21:08:00,952 - INFO - Assigned Stardust Station (Dry Dock) to system 1566.
+2024-09-17 21:08:00,952 - INFO - Assigned Notus Station (Research) to system 430.
+2024-09-17 21:08:00,952 - INFO - Assigned Silver Hub (Commercial) to system 2202.
+2024-09-17 21:08:00,952 - INFO - Assigned Edinburgh Command (Dry Dock) to system 1080.
+2024-09-17 21:08:00,952 - INFO - Assigned Jupiter Complex (Research) to system 2171.
+2024-09-17 21:08:00,952 - INFO - Assigned Cusco Summit (Commercial) to system 105.
+2024-09-17 21:08:00,952 - INFO - Assigned Shanghai Harbor (Dry Dock) to system 237.
+2024-09-17 21:08:00,952 - INFO - Assigned Seraphim Station (Commercial) to system 1855.
+2024-09-17 21:08:00,952 - INFO - Assigned Nova Monastery (Dry Dock) to system 814.
+2024-09-17 21:08:00,952 - INFO - Assigned Manama Command (Research) to system 1155.
+2024-09-17 21:08:00,952 - INFO - Assigned Nuremberg Vault (Research) to system 1374.
+2024-09-17 21:08:00,952 - INFO - Assigned Petropavlovsk Base (Research) to system 2678.
+2024-09-17 21:08:00,952 - INFO - Assigned Gloria Complex (Dry Dock) to system 1058.
+2024-09-17 21:08:00,952 - INFO - Assigned Odense Harbor (Dry Dock) to system 313.
+2024-09-17 21:08:00,952 - INFO - Assigned Fortuna Base (Commercial) to system 1274.
+2024-09-17 21:08:00,952 - INFO - Assigned Burg Eltz Complex (Research) to system 1833.
+2024-09-17 21:08:00,952 - INFO - Assigned Tokyo Nexus (Commercial) to system 2709.
+2024-09-17 21:08:00,952 - INFO - Assigned Hikari Station (Dry Dock) to system 2383.
+2024-09-17 21:08:00,952 - INFO - Assigned Sol Invictus Terminal (Research) to system 2769.
+2024-09-17 21:08:00,952 - INFO - Assigned Dar es Salaam Spire (Dry Dock) to system 632.
+2024-09-17 21:08:00,952 - INFO - Assigned Chorus Gate (Research) to system 1766.
+2024-09-17 21:08:00,952 - INFO - Assigned Sentinel Hub (Research) to system 431.
+2024-09-17 21:08:00,952 - INFO - Assigned Washington Spire (Research) to system 218.
+2024-09-17 21:08:00,952 - INFO - Assigned Lux Aeterna Station (Dry Dock) to system 301.
+2024-09-17 21:08:00,953 - INFO - Assigned Christchurch Haven (Research) to system 623.
+2024-09-17 21:08:00,953 - INFO - Assigned Grunewald Station (Research) to system 1790.
+2024-09-17 21:08:00,953 - INFO - Assigned Astana Nexus (Dry Dock) to system 2412.
+2024-09-17 21:08:00,953 - INFO - Assigned Chlorine Port (Commercial) to system 2863.
+2024-09-17 21:08:00,953 - INFO - Assigned Confluence Nexus (Research) to system 595.
+2024-09-17 21:08:00,953 - INFO - Assigned Arcturus Port (Commercial) to system 142.
+2024-09-17 21:08:00,953 - INFO - Assigned Helsinki Beacon (Research) to system 1635.
+2024-09-17 21:08:00,953 - INFO - Assigned Nebula Terminal (Commercial) to system 1965.
+2024-09-17 21:08:00,953 - INFO - Assigned Ruby Station (Commercial) to system 852.
+2024-09-17 21:08:00,953 - INFO - Assigned Imperial Crown Station (Commercial) to system 2968.
+2024-09-17 21:08:00,953 - INFO - Assigned Nexus Hub (Research) to system 594.
+2024-09-17 21:08:00,953 - INFO - Assigned Oracle Base (Commercial) to system 99.
+2024-09-17 21:08:00,953 - INFO - Assigned Sakura Station (Research) to system 351.
+2024-09-17 21:08:00,953 - INFO - Assigned Zinc Port (Research) to system 602.
+2024-09-17 21:08:00,953 - INFO - Assigned London Harbor (Research) to system 2477.
+2024-09-17 21:08:00,953 - INFO - Assigned Tel Aviv Harbor (Commercial) to system 2194.
+2024-09-17 21:08:00,953 - INFO - Assigned Mercury Base (Research) to system 1806.
+2024-09-17 21:08:00,953 - INFO - Assigned Intergalactic House of Pancakes (Research) to system 567.
+2024-09-17 21:08:00,953 - INFO - Assigned Chronos Terminal (Research) to system 832.
+2024-09-17 21:08:00,953 - INFO - Assigned Caesar's Landing (Research) to system 1834.
+2024-09-17 21:08:00,953 - INFO - Assigned Tegucigalpa Harbor (Commercial) to system 1858.
+2024-09-17 21:08:00,953 - INFO - Assigned Zephyr Station (Research) to system 1973.
+2024-09-17 21:08:00,953 - INFO - Assigned Dimension Gate (Research) to system 2226.
+2024-09-17 21:08:00,953 - INFO - Assigned Royal Scepter Dock (Dry Dock) to system 672.
+2024-09-17 21:08:00,953 - INFO - Assigned Basel Citadel (Commercial) to system 1598.
+2024-09-17 21:08:00,953 - INFO - Assigned Heidelberg Archive (Research) to system 753.
+2024-09-17 21:08:00,953 - INFO - Assigned Sieben Schloss (Research) to system 922.
+2024-09-17 21:08:00,953 - INFO - Assigned Aarhus Command (Dry Dock) to system 542.
+2024-09-17 21:08:00,953 - INFO - Assigned Brno Spire (Research) to system 380.
+2024-09-17 21:08:00,953 - INFO - Assigned Rothera Station (Dry Dock) to system 2326.
+2024-09-17 21:08:00,953 - INFO - Assigned Kolkata Command (Dry Dock) to system 1800.
+2024-09-17 21:08:00,953 - INFO - Assigned Juneau Command (Research) to system 978.
+2024-09-17 21:08:00,953 - INFO - Assigned Harbor of Serenity (Commercial) to system 359.
+2024-09-17 21:08:00,953 - INFO - Assigned Lumina Cathedral (Dry Dock) to system 182.
+2024-09-17 21:08:00,953 - INFO - Assigned Bordeaux Harbor (Dry Dock) to system 969.
+2024-09-17 21:08:00,953 - INFO - Assigned Ulaanbaatar Spire (Dry Dock) to system 362.
+2024-09-17 21:08:00,953 - INFO - Assigned Zen Garden (Dry Dock) to system 98.
+2024-09-17 21:08:00,953 - INFO - Assigned Yarrow Terminal (Research) to system 1481.
+2024-09-17 21:08:00,954 - INFO - Assigned Sanctuary Station (Commercial) to system 1301.
+2024-09-17 21:08:00,954 - INFO - Assigned Glory Complex (Commercial) to system 1864.
+2024-09-17 21:08:00,954 - INFO - Assigned Queenstown Outpost (Dry Dock) to system 946.
+2024-09-17 21:08:00,954 - INFO - Assigned Adlerhorst Base (Research) to system 722.
+2024-09-17 21:08:00,954 - INFO - Assigned Antwerp Spire (Research) to system 1196.
+2024-09-17 21:08:00,954 - INFO - Assigned Mendelevium Hub (Dry Dock) to system 26.
+2024-09-17 21:08:00,954 - INFO - Assigned Lomond Station (Dry Dock) to system 2450.
+2024-09-17 21:08:00,954 - INFO - Assigned Malmö Spire (Research) to system 2701.
+2024-09-17 21:08:00,954 - INFO - Assigned Revelation Hub (Dry Dock) to system 414.
+2024-09-17 21:08:00,954 - INFO - Assigned Omega Outpost (Dry Dock) to system 1695.
+2024-09-17 21:08:00,954 - INFO - Assigned Lorelei Port (Research) to system 1054.
+2024-09-17 21:08:00,954 - INFO - Assigned Borealis Port (Commercial) to system 2607.
+2024-09-17 21:08:00,954 - INFO - Assigned Equinox Terminal (Research) to system 1497.
+2024-09-17 21:08:00,954 - INFO - Assigned Leipzig Command (Dry Dock) to system 1668.
+2024-09-17 21:08:00,954 - INFO - Assigned Lisbon Portal (Commercial) to system 1375.
+2024-09-17 21:08:00,954 - INFO - Assigned Lotus Port (Commercial) to system 2502.
+2024-09-17 21:08:00,954 - INFO - Assigned Bohrium Hub (Commercial) to system 1969.
+2024-09-17 21:08:00,954 - INFO - Assigned Santo Domingo Forge (Dry Dock) to system 444.
+2024-09-17 21:08:00,954 - INFO - Assigned Nairobi Outpost (Research) to system 3009.
+2024-09-17 21:08:00,954 - INFO - Assigned Port Moresby Harbor (Commercial) to system 1314.
+2024-09-17 21:08:00,954 - INFO - Assigned San Francisco Nexus (Dry Dock) to system 2972.
+2024-09-17 21:08:00,954 - INFO - Assigned Vega Hub (Dry Dock) to system 634.
+2024-09-17 21:08:00,954 - INFO - Assigned Stirling Station (Dry Dock) to system 1832.
+2024-09-17 21:08:00,954 - INFO - Assigned Meteor Outpost (Commercial) to system 37.
+2024-09-17 21:08:00,954 - INFO - Assigned Samara Command (Commercial) to system 1736.
+2024-09-17 21:08:00,954 - INFO - Assigned Mogadishu Nexus (Commercial) to system 309.
+2024-09-17 21:08:00,954 - INFO - Assigned Perth Spire (Dry Dock) to system 2713.
+2024-09-17 21:08:00,954 - INFO - Assigned Durban Forge (Research) to system 2023.
+2024-09-17 21:08:00,954 - INFO - Assigned Zurich Ascent (Dry Dock) to system 1762.
+2024-09-17 21:08:00,954 - INFO - Assigned Ultima Thule Base (Commercial) to system 2662.
+2024-09-17 21:08:00,954 - INFO - Assigned Dynasty Outpost (Commercial) to system 2612.
+2024-09-17 21:08:00,954 - INFO - Assigned Saiph Dock (Dry Dock) to system 2392.
+2024-09-17 21:08:00,954 - INFO - Assigned Calcium Dock (Research) to system 979.
+2024-09-17 21:08:00,954 - INFO - Assigned Glasgow Conflux (Dry Dock) to system 1077.
+2024-09-17 21:08:00,954 - INFO - Assigned Manila Citadel (Commercial) to system 1168.
+2024-09-17 21:08:00,954 - INFO - Assigned Sonnenschein Terminal (Commercial) to system 1675.
+2024-09-17 21:08:00,954 - INFO - Assigned Alba Station (Commercial) to system 234.
+2024-09-17 21:08:00,954 - INFO - Assigned Valencia Harbor (Dry Dock) to system 966.
+2024-09-17 21:08:00,955 - INFO - Assigned Drei Wohnung (Research) to system 2446.
+2024-09-17 21:08:00,955 - INFO - Assigned Silicon Terminal (Research) to system 692.
+2024-09-17 21:08:00,955 - INFO - Assigned Odyssey Hub (Research) to system 2436.
+2024-09-17 21:08:00,955 - INFO - Assigned Helium Dock (Dry Dock) to system 1696.
+2024-09-17 21:08:00,955 - INFO - Assigned Solaris Base (Dry Dock) to system 1439.
+2024-09-17 21:08:00,955 - INFO - Assigned Tungsten Base (Commercial) to system 421.
+2024-09-17 21:08:00,955 - INFO - Assigned Cosmos Hub (Dry Dock) to system 565.
+2024-09-17 21:08:00,955 - INFO - Assigned Philadelphia Sanctuary (Commercial) to system 1794.
+2024-09-17 21:08:00,955 - INFO - Assigned Livermorium Base (Research) to system 1821.
+2024-09-17 21:08:00,955 - INFO - Assigned Ottawa Command (Research) to system 928.
+2024-09-17 21:08:00,955 - INFO - Assigned Casey Command (Commercial) to system 796.
+2024-09-17 21:08:00,955 - INFO - Assigned Outwatch Point (Dry Dock) to system 2487.
+2024-09-17 21:08:00,955 - INFO - Assigned Ethereal Dock (Dry Dock) to system 1662.
+2024-09-17 21:08:00,955 - INFO - Assigned Harmony Terminal (Commercial) to system 662.
+2024-09-17 21:08:00,955 - INFO - Assigned Lagos Citadel (Research) to system 657.
+2024-09-17 21:08:00,955 - INFO - Assigned Tsar's Fortress (Research) to system 1472.
+2024-09-17 21:08:00,955 - INFO - Assigned Svalbard Station (Research) to system 330.
+2024-09-17 21:08:00,955 - INFO - Assigned New Orleans Command (Commercial) to system 759.
+2024-09-17 21:08:00,955 - INFO - Assigned Warsaw Garrison (Commercial) to system 2632.
+2024-09-17 21:08:00,955 - INFO - Assigned Kaohsiung Spire (Commercial) to system 744.
+2024-09-17 21:08:00,955 - INFO - Assigned Avalon Sanctuary (Research) to system 379.
+2024-09-17 21:08:00,955 - INFO - Assigned Boston Beacon (Dry Dock) to system 1291.
+2024-09-17 21:08:00,955 - INFO - Assigned Sternenschiff Base (Commercial) to system 2406.
+2024-09-17 21:08:00,955 - INFO - Assigned Ad Lucem Outpost (Research) to system 2806.
+2024-09-17 21:08:00,955 - INFO - Assigned Elara Terminal (Commercial) to system 1786.
+2024-09-17 21:08:00,955 - INFO - Assigned Exodus Base (Research) to system 1805.
+2024-09-17 21:08:00,955 - INFO - Assigned Pax Imperia (Dry Dock) to system 1037.
+2024-09-17 21:08:00,955 - INFO - Assigned Rheingold Station (Research) to system 1565.
+2024-09-17 21:08:00,955 - INFO - Assigned Chennai Nexus (Research) to system 2807.
+2024-09-17 21:08:00,955 - INFO - Assigned Satori Hub (Research) to system 1816.
+2024-09-17 21:08:00,955 - INFO - Assigned Armada Station (Research) to system 2955.
+2024-09-17 21:08:00,955 - INFO - Assigned Aurora Hub (Research) to system 503.
+2024-09-17 21:08:00,955 - INFO - Assigned Black Hole Terminal (Dry Dock) to system 1166.
+2024-09-17 21:08:00,955 - INFO - Assigned Themis Complex (Research) to system 584.
+2024-09-17 21:08:00,955 - INFO - Assigned Bergen Harbor (Dry Dock) to system 2618.
+2024-09-17 21:08:00,955 - INFO - Assigned Irkutsk Command (Dry Dock) to system 1072.
+2024-09-17 21:08:00,955 - INFO - Assigned Tsukuyomi Hub (Commercial) to system 2061.
+2024-09-17 21:08:00,955 - INFO - Assigned Muscat Nexus (Research) to system 2829.
+2024-09-17 21:08:00,955 - INFO - Assigned Tallinn Nexus (Research) to system 1051.
+2024-09-17 21:08:00,956 - INFO - Assigned Blitz Station (Research) to system 244.
+2024-09-17 21:08:00,956 - INFO - Assigned Alexandria Harbor (Research) to system 249.
+2024-09-17 21:08:00,956 - INFO - Assigned Centauri Market (Dry Dock) to system 2055.
+2024-09-17 21:08:00,956 - INFO - Assigned Tianjin Command (Dry Dock) to system 1392.
+2024-09-17 21:08:00,956 - INFO - Assigned Crusader's Point (Commercial) to system 2427.
+2024-09-17 21:08:00,956 - INFO - Assigned Castula Terminal (Commercial) to system 2594.
+2024-09-17 21:08:00,956 - INFO - Assigned Jade Base (Commercial) to system 15.
+2024-09-17 21:08:00,956 - INFO - Assigned Kamikaze Base (Dry Dock) to system 2844.
+2024-09-17 21:08:00,956 - INFO - Assigned Neptunium Dock (Research) to system 665.
+2024-09-17 21:08:00,956 - INFO - Assigned Emperor's Gate (Dry Dock) to system 92.
+2024-09-17 21:08:00,956 - INFO - Assigned Freistaat Hub (Dry Dock) to system 1992.
+2024-09-17 21:08:00,956 - INFO - Assigned Zwanzig Rathaus (Commercial) to system 883.
+2024-09-17 21:08:00,956 - INFO - Assigned Theta Terminal (Dry Dock) to system 1847.
+2024-09-17 21:08:00,956 - INFO - Assigned Khartoum Citadel (Research) to system 235.
+2024-09-17 21:08:00,956 - INFO - Assigned Enigma Dock (Commercial) to system 2942.
+2024-09-17 21:08:00,956 - INFO - Assigned Quartz Dock (Dry Dock) to system 75.
+2024-09-17 21:08:00,956 - INFO - Assigned Silent Echo Dock (Commercial) to system 775.
+2024-09-17 21:08:00,956 - INFO - Assigned Pulsar Dock (Commercial) to system 355.
+2024-09-17 21:08:00,956 - INFO - Assigned Gloria Mundi (Research) to system 1502.
+2024-09-17 21:08:00,956 - INFO - Assigned Pilgrim's Rest (Commercial) to system 221.
+2024-09-17 21:08:00,956 - INFO - Assigned Shinsen Port (Dry Dock) to system 983.
+2024-09-17 21:08:00,956 - INFO - Assigned Adelaide Harbor (Research) to system 132.
+2024-09-17 21:08:00,956 - INFO - Assigned Plutonium Terminal (Dry Dock) to system 2818.
+2024-09-17 21:08:00,956 - INFO - Assigned Schadenfreude Station (Research) to system 1219.
+2024-09-17 21:08:00,956 - INFO - Assigned Prometheus Station (Commercial) to system 1280.
+2024-09-17 21:08:00,956 - INFO - Assigned Granite Station (Commercial) to system 1748.
+2024-09-17 21:08:00,956 - INFO - Assigned Hestia Base (Commercial) to system 2315.
+2024-09-17 21:08:00,956 - INFO - Assigned Delhi Citadel (Commercial) to system 187.
+2024-09-17 21:08:00,956 - INFO - Assigned Tangier Spire (Dry Dock) to system 1443.
+2024-09-17 21:08:00,956 - INFO - Assigned Command Center Alpha (Dry Dock) to system 2342.
+2024-09-17 21:08:00,956 - INFO - Assigned Vulcan Terminal (Commercial) to system 778.
+2024-09-17 21:08:00,956 - INFO - Assigned Zirconium Terminal (Commercial) to system 856.
+2024-09-17 21:08:00,956 - INFO - Assigned Tehran Spire (Dry Dock) to system 1697.
+2024-09-17 21:08:00,956 - INFO - Assigned Quasar Base (Research) to system 726.
+2024-09-17 21:08:00,956 - INFO - Assigned Alexandria Station (Research) to system 2886.
+2024-09-17 21:08:00,956 - INFO - Assigned Hygiea Station (Commercial) to system 1148.
+2024-09-17 21:08:00,956 - INFO - Assigned Reflection Port (Research) to system 1609.
+2024-09-17 21:08:00,956 - INFO - Assigned Kummerspeck Complex (Research) to system 1364.
+2024-09-17 21:08:00,956 - INFO - Assigned Amman Nexus (Research) to system 1553.
+2024-09-17 21:08:00,957 - INFO - Assigned Hassium Station (Dry Dock) to system 2836.
+2024-09-17 21:08:00,957 - INFO - Assigned Copenhagen Spire (Research) to system 774.
+2024-09-17 21:08:00,957 - INFO - Assigned Matrix Hub (Research) to system 1365.
+2024-09-17 21:08:00,957 - INFO - Assigned Eclipse Dock (Dry Dock) to system 106.
+2024-09-17 21:08:00,957 - INFO - Assigned Naples Command (Research) to system 2224.
+2024-09-17 21:08:00,957 - INFO - Assigned Forge of Destiny (Dry Dock) to system 2856.
+2024-09-17 21:08:00,957 - INFO - Assigned Germanium Dock (Research) to system 842.
+2024-09-17 21:08:00,957 - INFO - Assigned Suva Command (Dry Dock) to system 2302.
+2024-09-17 21:08:00,957 - INFO - Assigned Nitrogen Station (Research) to system 1305.
+2024-09-17 21:08:00,957 - INFO - Assigned Tethys Complex (Research) to system 911.
+2024-09-17 21:08:00,957 - INFO - Assigned Chronicle Port (Research) to system 2719.
+2024-09-17 21:08:00,957 - INFO - Assigned Indium Port (Commercial) to system 1162.
+2024-09-17 21:08:00,957 - INFO - Assigned Battalion Hub (Commercial) to system 1008.
+2024-09-17 21:08:00,957 - INFO - Assigned Minsk Spire (Research) to system 204.
+2024-09-17 21:08:00,957 - INFO - Assigned Mind's Eye Station (Commercial) to system 2067.
+2024-09-17 21:08:00,957 - INFO - Assigned Peaceful Horizon (Commercial) to system 1126.
+2024-09-17 21:08:00,957 - INFO - Assigned Upsilon Post (Dry Dock) to system 1398.
+2024-09-17 21:08:00,957 - INFO - Assigned Ivory Terminal (Research) to system 3038.
+2024-09-17 21:08:00,957 - INFO - Assigned Fortuna Complex (Dry Dock) to system 2653.
+2024-09-17 21:08:00,957 - INFO - Assigned Yekaterinburg Citadel (Research) to system 112.
+2024-09-17 21:08:00,957 - INFO - Assigned Kuddelmuddel Station (Commercial) to system 1436.
+2024-09-17 21:08:00,957 - INFO - Assigned Zhongshan Command (Research) to system 1198.
+2024-09-17 21:08:00,957 - INFO - Assigned Fingerspitzengefühl Complex (Dry Dock) to system 1480.
+2024-09-17 21:08:00,957 - INFO - Assigned Eurus Hub (Dry Dock) to system 853.
+2024-09-17 21:08:00,957 - INFO - Assigned Wuhan Citadel (Commercial) to system 2402.
+2024-09-17 21:08:00,957 - INFO - Assigned Sochi Harbor (Dry Dock) to system 1327.
+2024-09-17 21:08:00,957 - INFO - Assigned Moscovium Port (Dry Dock) to system 2697.
+2024-09-17 21:08:00,957 - INFO - Assigned Juno Station (Research) to system 1293.
+2024-09-17 21:08:00,957 - INFO - Assigned Minerva Base (Research) to system 516.
+2024-09-17 21:08:01,541 - INFO - Universe with 3072 systems created and updated successfully.
+2024-09-17 21:08:01,621 - INFO - Logging owned systems:
+2024-09-17 21:08:01,621 - INFO - System ID 74 is owned by United Systems of Man
+2024-09-17 21:08:01,621 - INFO - System ID 640 is owned by Mandate of God
+2024-09-17 21:08:01,621 - INFO - System ID 658 is owned by People of the River
+2024-09-17 21:08:01,621 - INFO - System ID 882 is owned by Shogunate 3072
+2024-09-17 21:08:01,621 - INFO - System ID 2009 is owned by Noringian Hive
+2024-09-18 07:19:28,877 - INFO - Player's faction United Systems of Man starts in system: 2762 with star type F-type
+2024-09-18 07:19:29,433 - INFO - Game Start: New Game Selected
+2024-09-18 07:19:29,433 - INFO - Universe Size: 3072 systems
+2024-09-18 07:19:29,433 - INFO - Character Name: we
+2024-09-18 07:19:29,433 - INFO - Faction: United Systems of Man
+2024-09-18 07:19:29,433 - INFO - Ship Type: {'name': 'Light Mission Runner', 'class': 'Light', 'faction_of_origin': 'United Systems of Man', 'description': 'Balanced for exploration and basic defense.', 'required_rank_to_pilot': 'Civilian', 'size': 'Small', 'ship_cost': 550, 'min_cargo': 10, 'max_cargo': 30, 'max_shields': 50, 'max_armor': 20, 'max_hull': 30, 'system_scanner_type': 'Beta', 'system_scanner_level': 2, 'planet_scanner': 'Yes', 'planet_scanner_level': 1, 'resource_scanner': 'Yes', 'resource_scanner_level': 1, 'weapon_type': 'Light Laser', 'combat_bonus': 1.0, 'mining_attachment': 'No', 'mining_attachment_level': 0}
+2024-09-18 07:19:29,433 - INFO - Ship Name: 1
+2024-09-18 07:19:29,433 - INFO - Player starting in system: 2762

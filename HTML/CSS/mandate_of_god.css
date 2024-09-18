@@ -1,0 +1,43 @@
+body {
+    background-color: #000;
+    color: #FFD700;  /* Gold text for Mandate of God */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #FFD700;
+}
+
+h1 {
+    color: #FFD700;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFD700;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #FFD700;
+}

@@ -1,0 +1,201 @@
+{
+    "events": {
+        "Loot Events": [
+            {
+                "description": "You encounter a derelict ship drifting in space, its cargo hold still intact.",
+                "action": "Board the ship and retrieve any valuable resources.",
+                "outcome": "Gain random loot items and possibly rare tech components."
+            },
+            {
+                "description": "An ancient relic is found floating among the debris, seemingly unguarded.",
+                "action": "Secure the relic and analyze its origins.",
+                "outcome": "Gain a valuable artifact that can be sold for credits or used in research."
+            },
+            {
+                "description": "You discover a hidden stash of supplies left behind by smugglers.",
+                "action": "Collect the supplies before anyone else notices.",
+                "outcome": "Gain a small amount of credits and essential supplies."
+            },
+            {
+                "description": "A damaged cargo pod drifts nearby, still broadcasting a distress signal.",
+                "action": "Retrieve the pod and inspect its contents.",
+                "outcome": "Gain random resources and a potential clue to its origin."
+            },
+            {
+                "description": "You find an abandoned station with intact storage units.",
+                "action": "Explore the station and claim any usable items.",
+                "outcome": "Gain resources and possibly a rare piece of equipment."
+            }
+        ],
+        "Lore Events": [
+            {
+                "description": "You find a beacon transmitting a message from an ancient war.",
+                "action": "Listen to the message and decode its contents.",
+                "outcome": "Learn more about the historical conflicts of the system."
+            },
+            {
+                "description": "A derelict station contains old data logs from a long-lost civilization.",
+                "action": "Download the logs and analyze the data.",
+                "outcome": "Gain insight into the history and culture of the lost civilization."
+            },
+            {
+                "description": "You discover a monument dedicated to an old galactic alliance.",
+                "action": "Examine the monument and record its details.",
+                "outcome": "Unlock new lore entries and gain a small amount of faction reputation."
+            },
+            {
+                "description": "A mysterious object drifts by, inscribed with ancient symbols.",
+                "action": "Investigate the object and decipher the symbols.",
+                "outcome": "Reveal hidden lore about the system's past."
+            },
+            {
+                "description": "You encounter a drifting probe that was launched centuries ago.",
+                "action": "Recover the probe and access its data banks.",
+                "outcome": "Uncover details of a forgotten exploration mission."
+            }
+        ],
+        "Combat Events": [
+            {
+                "description": "A group of space raiders ambushes you as you enter the system.",
+                "action": "Defend yourself and eliminate the raiders.",
+                "outcome": "Gain combat experience and loot from the raiders."
+            },
+            {
+                "description": "You are targeted by a rogue AI drone that has gone berserk.",
+                "action": "Destroy the drone before it can call for reinforcements.",
+                "outcome": "Gain salvage from the wreckage and increase faction standing."
+            },
+            {
+                "description": "A rival faction's patrol challenges your presence in the system.",
+                "action": "Engage in combat or attempt to negotiate passage.",
+                "outcome": "Victory grants faction points; negotiation may cost credits or favors."
+            },
+            {
+                "description": "A pirate fleet is blockading the system\u2019s primary trade route.",
+                "action": "Break the blockade and clear the route for other ships.",
+                "outcome": "Earn credits from grateful traders and a boost in faction reputation."
+            },
+            {
+                "description": "A dangerous alien predator attacks your ship as you scan the system.",
+                "action": "Fight off the predator or evade it to continue your mission.",
+                "outcome": "Surviving grants rare biological samples or increased exploration data."
+            }
+        ],
+        "Faction Events": {
+            "United Systems of Man": [
+                {
+                    "description": "A high-ranking officer requests your assistance in a delicate matter.",
+                    "action": "Aid the officer in securing a diplomatic agreement.",
+                    "outcome": "Gain faction points and a valuable contact within the faction."
+                },
+                {
+                    "description": "You encounter a stranded USM convoy in need of repairs.",
+                    "action": "Assist the convoy by providing spare parts or towing them to safety.",
+                    "outcome": "Earn faction points and a modest credit reward."
+                }
+            ],
+            "Mandate of God": [
+                {
+                    "description": "The Mandate requests assistance with securing a new colony site.",
+                    "action": "Scout the location and eliminate any threats.",
+                    "outcome": "Gain faction points and a resource reward."
+                },
+                {
+                    "description": "A Mandate fleet needs help escorting a religious artifact.",
+                    "action": "Protect the fleet from potential attackers.",
+                    "outcome": "Gain faction points and a special blessing item."
+                }
+            ],
+            "People of the River": [
+                {
+                    "description": "A River faction merchant offers a lucrative trade deal.",
+                    "action": "Negotiate terms and facilitate the trade.",
+                    "outcome": "Earn faction points and a share of the profits."
+                },
+                {
+                    "description": "The River faction needs help distributing supplies to a remote outpost.",
+                    "action": "Deliver the supplies and ensure the outpost's security.",
+                    "outcome": "Gain faction points and a unique item as a thank-you."
+                }
+            ],
+            "Shogunate 3072": [
+                {
+                    "description": "A Shogunate warrior challenges you to a duel for honor.",
+                    "action": "Accept the duel and prove your strength.",
+                    "outcome": "Winning increases faction respect and gains a rare weapon."
+                },
+                {
+                    "description": "The Shogunate requests your aid in securing a strategic location.",
+                    "action": "Assist in the military operation and secure the site.",
+                    "outcome": "Gain faction points and access to exclusive Shogunate technology."
+                }
+            ],
+            "The Noringian Hive": [
+                {
+                    "description": "The Hive requests assistance with a research project on a volatile gas giant.",
+                    "action": "Collect samples and data from the dangerous atmosphere.",
+                    "outcome": "Gain faction points and valuable research credits."
+                },
+                {
+                    "description": "A Hive queen seeks resources to fortify her domain.",
+                    "action": "Gather and deliver the requested resources.",
+                    "outcome": "Earn faction points and a rare biological sample."
+                }
+            ]
+        },
+        "Resource Events": [
+            {
+                "description": "You discover a rich vein of minerals on an uncharted asteroid.",
+                "action": "Mine the minerals before any competitors arrive.",
+                "outcome": "Collect valuable resources and gain mining experience."
+            },
+            {
+                "description": "A sudden solar flare has charged nearby asteroids with rare elements.",
+                "action": "Harvest the charged elements while avoiding radiation damage.",
+                "outcome": "Gain rare resources and credits."
+            },
+            {
+                "description": "A drifting cargo pod is filled with valuable gases from a distant system.",
+                "action": "Secure the pod and extract the gases.",
+                "outcome": "Gain resources and a small faction bonus."
+            },
+            {
+                "description": "A derelict mining station still has operational equipment.",
+                "action": "Reactivate the equipment and collect the resources.",
+                "outcome": "Harvest minerals and potentially find a rare tech component."
+            },
+            {
+                "description": "You locate a hidden cache of refined ores, left behind by a hasty retreat.",
+                "action": "Collect the ores and decide whether to sell or keep them.",
+                "outcome": "Gain resources and a choice of immediate credits or faction points."
+            }
+        ],
+        "Exploration Events": [
+            {
+                "description": "You find an anomaly emitting unusual energy readings.",
+                "action": "Investigate the anomaly to uncover its secrets.",
+                "outcome": "Discover a rare artifact or gain significant exploration experience."
+            },
+            {
+                "description": "A newly formed comet passes through the system, rich in rare minerals.",
+                "action": "Survey the comet and collect samples.",
+                "outcome": "Gain valuable resources and exploration points."
+            },
+            {
+                "description": "An ancient probe orbits the system, transmitting data from a long-lost mission.",
+                "action": "Recover the probe and analyze its data.",
+                "outcome": "Unlock a hidden star map or gain a unique item."
+            },
+            {
+                "description": "You encounter a hidden cave system on a barren moon.",
+                "action": "Explore the caves and see what secrets they hold.",
+                "outcome": "Find a rare mineral deposit or an abandoned hideout."
+            },
+            {
+                "description": "A cluster of derelict ships surrounds a mysterious spatial rift.",
+                "action": "Explore the rift and salvage what you can.",
+                "outcome": "Gain rare resources and a deeper understanding of the anomaly."
+            }
+        ]
+    }
+}

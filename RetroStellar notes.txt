@@ -37,6 +37,13 @@ python game.py
 Space Station Menu
 	Develop a space station menu that includes ship docks, markets, mission hubs, and other services.
 
+--------------------
+SYSTEM DESCRIPTIONS system_descriptions.json
+MISSION LIST mission_list.json
+SYSTEM EVENTS system_events.json
+FACTION ARCS faction arc docx files
+
+
 Economy System
 	Implement an economy system where players can buy and sell ship equipment, ships, resources from planets and asteroids, and other items.
 

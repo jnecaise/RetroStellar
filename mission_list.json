@@ -1,0 +1,196 @@
+{
+    "missions": {
+        "Mining": [
+            {
+                "description": "Extract rare minerals from an asteroid belt in a hostile system.",
+                "goal": "Mine 50 units of rare minerals.",
+                "faction": "United Systems of Man",
+                "reward": "1000 credits"
+            },
+            {
+                "description": "Secure a mining operation on a contested moon.",
+                "goal": "Protect the miners until the operation is complete.",
+                "faction": "Mandate of God",
+                "reward": "200 faction points"
+            },
+            {
+                "description": "Retrieve precious metals from a hazardous asteroid field.",
+                "goal": "Mine 30 units of precious metals without taking damage.",
+                "faction": "People of the River",
+                "reward": "500 credits"
+            },
+            {
+                "description": "Harvest gas from a volatile gas giant.",
+                "goal": "Collect 100 units of gas without triggering a flare.",
+                "faction": "Shogunate 3072",
+                "reward": "800 credits"
+            },
+            {
+                "description": "Recover ancient mining equipment from a derelict station.",
+                "goal": "Locate and retrieve 3 pieces of mining equipment.",
+                "faction": "The Noringian Hive",
+                "reward": "150 experience points"
+            }
+        ],
+        "Diplomacy": [
+            {
+                "description": "Negotiate a ceasefire between two warring factions.",
+                "goal": "Successfully broker a ceasefire agreement.",
+                "faction": "Mandate of God",
+                "reward": "300 faction points"
+            },
+            {
+                "description": "Deliver a message of peace to a hostile faction.",
+                "goal": "Navigate to the hostile system and deliver the message safely.",
+                "faction": "United Systems of Man",
+                "reward": "1000 credits"
+            },
+            {
+                "description": "Mediate a trade dispute in a busy starport.",
+                "goal": "Resolve the dispute to the satisfaction of both parties.",
+                "faction": "People of the River",
+                "reward": "200 experience points"
+            },
+            {
+                "description": "Escort an ambassador to a neutral space station.",
+                "goal": "Ensure the ambassador arrives safely.",
+                "faction": "Shogunate 3072",
+                "reward": "500 credits"
+            },
+            {
+                "description": "Secure a trade agreement with an independent colony.",
+                "goal": "Negotiate favorable terms with the colony leaders.",
+                "faction": "The Noringian Hive",
+                "reward": "250 faction points"
+            }
+        ],
+        "Exploration": [
+            {
+                "description": "Chart a new route through an uncharted nebula.",
+                "goal": "Successfully map the nebula without getting lost.",
+                "faction": "United Systems of Man",
+                "reward": "1500 credits"
+            },
+            {
+                "description": "Investigate a mysterious signal from deep space.",
+                "goal": "Locate the source of the signal and report back.",
+                "faction": "People of the River",
+                "reward": "300 experience points"
+            },
+            {
+                "description": "Explore a recently discovered rogue planet.",
+                "goal": "Survey the planet and collect data on its environment.",
+                "faction": "Mandate of God",
+                "reward": "1000 credits"
+            },
+            {
+                "description": "Scan an unexplored asteroid field for valuable resources.",
+                "goal": "Complete a full scan and identify key resource nodes.",
+                "faction": "Shogunate 3072",
+                "reward": "200 faction points"
+            },
+            {
+                "description": "Map the orbit of a newly formed binary star system.",
+                "goal": "Gather data on the star's orbits and potential for planets.",
+                "faction": "The Noringian Hive",
+                "reward": "200 experience points"
+            }
+        ],
+        "Research": [
+            {
+                "description": "Collect biological samples from an alien jungle planet.",
+                "goal": "Retrieve 10 samples and return them to the research station.",
+                "faction": "People of the River",
+                "reward": "300 faction points"
+            },
+            {
+                "description": "Assist in the calibration of a deep space telescope.",
+                "goal": "Complete the calibration without damaging the equipment.",
+                "faction": "United Systems of Man",
+                "reward": "1000 credits"
+            },
+            {
+                "description": "Analyze the data from a recent supernova event.",
+                "goal": "Process and upload the data to the research network.",
+                "faction": "Mandate of God",
+                "reward": "250 experience points"
+            },
+            {
+                "description": "Retrieve lost research data from a damaged satellite.",
+                "goal": "Recover the data and return it to the issuing faction.",
+                "faction": "Shogunate 3072",
+                "reward": "150 faction points"
+            },
+            {
+                "description": "Conduct experiments on a low-gravity space station.",
+                "goal": "Complete the experiments without contaminating the samples.",
+                "faction": "The Noringian Hive",
+                "reward": "400 credits"
+            }
+        ],
+        "Combat Operations": [
+            {
+                "description": "Eliminate a pirate fleet threatening a key trade route.",
+                "goal": "Destroy all pirate vessels in the area.",
+                "faction": "United Systems of Man",
+                "reward": "2000 credits"
+            },
+            {
+                "description": "Defend a mining colony from an incoming raid.",
+                "goal": "Repel all attackers and protect the colony.",
+                "faction": "Mandate of God",
+                "reward": "300 faction points"
+            },
+            {
+                "description": "Intercept and capture a fugitive vessel on the run.",
+                "goal": "Disable the fugitive ship without destroying it.",
+                "faction": "Shogunate 3072",
+                "reward": "400 credits"
+            },
+            {
+                "description": "Engage a hostile alien species in a contested system.",
+                "goal": "Secure the system by neutralizing the alien threat.",
+                "faction": "The Noringian Hive",
+                "reward": "250 experience points"
+            },
+            {
+                "description": "Escort a convoy through a war-torn region of space.",
+                "goal": "Ensure the convoy reaches its destination intact.",
+                "faction": "People of the River",
+                "reward": "500 credits"
+            }
+        ],
+        "Archeology": [
+            {
+                "description": "Investigate ancient ruins on a desert planet.",
+                "goal": "Uncover the secrets hidden within the ruins.",
+                "faction": "Mandate of God",
+                "reward": "300 faction points"
+            },
+            {
+                "description": "Recover artifacts from a crashed alien ship.",
+                "goal": "Retrieve 5 artifacts and return them to the issuing faction.",
+                "faction": "United Systems of Man",
+                "reward": "200 experience points"
+            },
+            {
+                "description": "Translate inscriptions found on an ancient monolith.",
+                "goal": "Successfully decode the message and report your findings.",
+                "faction": "People of the River",
+                "reward": "400 credits"
+            },
+            {
+                "description": "Locate and study a lost temple on a jungle moon.",
+                "goal": "Survey the temple and catalog its contents.",
+                "faction": "Shogunate 3072",
+                "reward": "150 faction points"
+            },
+            {
+                "description": "Secure a dig site on a contested world filled with ancient relics.",
+                "goal": "Protect the archaeologists and their findings from raiders.",
+                "faction": "The Noringian Hive",
+                "reward": "500 credits"
+            }
+        ]
+    }
+}

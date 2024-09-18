@@ -1,0 +1,114 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #00f;  /* Blue accent color */
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;  /* Evenly distribute the menu items */
+    padding: 0;
+    margin: 20px 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff;  /* Hover effect to change color */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #00f;
+}
+
+.gameplay-overview {
+    padding: 40px 20px;
+    background-color: #111;  /* Dark background to contrast with the main page */
+    color: #fff;
+    text-align: center;
+}
+
+.gameplay-overview h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #00f;  /* Blue accent to match the rest of the site */
+}
+
+.gameplay-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.feature {
+    background-color: #222;  /* Slightly lighter than the main background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;  /* Make features responsive */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.feature h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #00f;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+@media (max-width: 768px) {
+    .feature {
+        width: 100%;  /* Stack features vertically on smaller screens */
+    }
+}
+
+.feature-image {
+    width: 100%;          /* Maintain responsiveness for mobile */
+    max-width: 600px;      /* Max width for the image container */
+    height: 400px;         /* Fixed height for consistency */
+    object-fit: contain;   /* Ensures the entire image fits within the container */
+    margin-bottom: 5px;    /* Reduced padding between image and text */
+    border-radius: 5px;    /* Round corners for aesthetics */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);  /* Add shadow for visual depth */
+    background-color: #000; /* Optional: Add a black background to fill any empty space */
+}
+
+
+
+
+
