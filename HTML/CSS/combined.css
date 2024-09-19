@@ -1,0 +1,543 @@
+/* ========== Global Styles (From main.css) ========== */
+
+body { 
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid #00f;  /* Blue accent color */
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    border-top: 1px solid #00f;  /* Blue line above the faction menu logos */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;  /* Allow logos to wrap on smaller screens */
+    justify-content: space-around;
+    padding: 0;
+    margin: 1.25rem 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.125rem;
+    padding: 0.625rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00f;  /* Change color on hover */
+}
+
+.menu-logo {
+    width: 14rem;
+    height: 14rem;
+    margin-right: 0.5rem;
+    border-radius: 0.625rem;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.intro p {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+.gameplay-overview {
+    padding: 40px 20px;
+    background-color: #111;  /* Dark background for contrast */
+    color: #fff;
+    text-align: center;
+}
+
+.gameplay-overview h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #00f;  /* Blue accent color */
+}
+
+.gameplay-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.feature {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.feature h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #00f;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+.feature-image {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    object-fit: contain;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #000;
+}
+
+.call-to-action h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #00f;
+}
+
+.call-to-action p {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0057e7;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #00f;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .feature {
+        width: 100%;
+    }
+}
+
+/* ========== Mandate of God Styles ========== */
+
+.mandate-page {
+    background-color: #000;
+    color: #FFD700;  /* Gold text for Mandate of God */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.mandate-page header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #FFD700;
+}
+
+.mandate-page header img {
+    max-width: 100%;
+    height: auto;
+}
+
+.mandate-page nav {
+    border-top: 1px solid #FFD700;
+}
+
+.mandate-page nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 1.25rem 0;
+}
+
+.mandate-page nav ul li {
+    margin: 0;
+}
+
+.mandate-page nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.125rem;
+    padding: 0.625rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.mandate-page nav ul li a:hover {
+    color: #FFD700;
+}
+
+.mandate-page .menu-logo {
+    width: 14rem;
+    height: 14rem;
+    margin-right: 0.5rem;
+    border-radius: 0.625rem;
+}
+
+.mandate-page main {
+    padding: 20px;
+    text-align: center;
+}
+
+.mandate-page .faction-intro p {
+    font-size: 1rem;
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+
+.mandate-page footer {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #FFD700;
+    color: #FFD700;
+}
+
+/* ========== United Systems of Man Styles ========== */
+
+.united-systems-page {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.united-systems-page header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #d950e6; 
+}
+
+.united-systems-page header img {
+    max-width: 100%;
+    height: auto;
+}
+
+.united-systems-page nav {
+    border-top: 1px solid #d950e6;
+}
+
+.united-systems-page nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 1.25rem 0;
+}
+
+.united-systems-page nav ul li {
+    margin: 0;
+}
+
+.united-systems-page nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.125rem;
+    padding: 0.625rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.united-systems-page nav ul li a:hover {
+    color: #ccc;
+}
+
+.united-systems-page .menu-logo {
+    width: 14rem;
+    height: 14rem;
+    margin-right: 0.5rem;
+    border-radius: 0.625rem;
+}
+
+.united-systems-page main {
+    padding: 20px;
+    text-align: center;
+}
+
+.united-systems-page .faction-intro p {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.united-systems-page footer {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #d950e6;
+    color: #fff;
+}
+
+/* ========== Shogunate 3072 Styles ========== */
+
+.shogunate-page {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.shogunate-page header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #800000; /* Maroon */
+}
+
+.shogunate-page header img {
+    max-width: 140%;
+    height: auto;
+}
+
+.shogunate-page nav {
+    border-top: 1px solid #800000; /* Maroon */
+}
+
+.shogunate-page nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 1.25rem 0;
+}
+
+.shogunate-page nav ul li {
+    margin: 0;
+}
+
+.shogunate-page nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.125rem;
+    padding: 0.625rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.shogunate-page nav ul li a:hover {
+    color: #ccc;
+}
+
+.shogunate-page .menu-logo {
+    width: 14rem;
+    height: 14rem;
+    margin-right: 0.5rem;
+    border-radius: 0.625rem;
+}
+
+.shogunate-page main {
+    padding: 20px;
+    text-align: center;
+}
+
+.shogunate-page .faction-intro p {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.shogunate-page footer {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #800000; /* Maroon */
+    color: #fff;
+}
+
+/* ========== People of the River Styles ========== */
+
+.river-people-page {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.river-people-page header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #006400; /* Dark Green */
+}
+
+.river-people-page header img {
+    max-width: 100%;
+    height: auto;
+}
+
+.river-people-page nav {
+    border-top: 1px solid #006400; /* Dark Green */
+}
+
+.river-people-page nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 1.25rem 0;
+}
+
+.river-people-page nav ul li {
+    margin: 0;
+}
+
+.river-people-page nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.125rem;
+    padding: 0.625rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.river-people-page nav ul li a:hover {
+    color: #ccc;
+}
+
+.river-people-page .menu-logo {
+    width: 14rem;
+    height: 14rem;
+    margin-right: 0.5rem;
+    border-radius: 0.625rem;
+}
+
+.river-people-page main {
+    padding: 20px;
+    text-align: center;
+}
+
+.river-people-page .faction-intro p {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.river-people-page footer {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #006400;
+    color: #fff;
+}
+
+/* ========== Noringian Hive Styles ========== */
+
+.noringian-hive-page {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.noringian-hive-page header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #31cadf; /* Indigo */
+}
+
+.noringian-hive-page header img {
+    max-width: 100%;
+    height: auto;
+}
+
+.noringian-hive-page nav {
+    border-top: 1px solid #31cadf; /* Indigo */
+}
+
+.noringian-hive-page nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 1.25rem 0;
+}
+
+.noringian-hive-page nav ul li {
+    margin: 0;
+}
+
+.noringian-hive-page nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.125rem;
+    padding: 0.625rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.noringian-hive-page nav ul li a:hover {
+    color: #ccc;
+}
+
+.noringian-hive-page .menu-logo {
+    width: 14rem;
+    height: 14rem;
+    margin-right: 0.5rem;
+    border-radius: 0.625rem;
+}
+
+.noringian-hive-page main {
+    padding: 20px;
+    text-align: center;
+}
+
+.noringian-hive-page .faction-intro p {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.noringian-hive-page footer {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #31cadf; /* Indigo */
+    color: #fff;
+}

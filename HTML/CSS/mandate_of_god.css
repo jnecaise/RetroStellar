@@ -1,7 +1,7 @@
 body {
-    background-color: #000;
-    color: #FFD700;  /* Gold text for Mandate of God */
-    font-family: Arial, sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #000;  /* Black background */
+    color: #FFD700;  /* White text */
     margin: 0;
     padding: 0;
 }
@@ -9,16 +9,19 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    border-bottom: 1px solid #FFD700;
+    border-bottom: 1px solid #FFD700;  /* Golden border */
 }
 
 h1 {
-    color: #FFD700;
+    color: #FFD700;  /* Gold for the Mandate of God title */
+    font-size: 36px;
+    margin: 0;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -28,7 +31,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #FFD700;
+    color: #FFD700;  /* Gold for navigation links */
 }
 
 main {
@@ -36,8 +39,20 @@ main {
     text-align: center;
 }
 
+h2 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFD700;  /* Gold for section headers */
+}
+
+p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFF;  /* White for paragraph text */
+}
+
 footer {
     text-align: center;
     padding: 10px;
-    border-top: 1px solid #FFD700;
+    border-top: 1px solid #FFD700;  /* Gold footer border */
 }
