@@ -6,6 +6,12 @@ body {
     padding: 0;
 }
 
+footer {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #00f;
+}
+
 header {
     text-align: center;
     padding: 20px;
@@ -20,7 +26,7 @@ header img {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;  /* Evenly distribute the menu items */
+    justify-content: space-around;  /* Spread out menu items across the top */
     padding: 0;
     margin: 20px 0;
 }
@@ -31,14 +37,16 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #fff;  /* Blue text to match theme */
     font-size: 18px;
     padding: 10px;
+    display: flex;
+    align-items: center;  /* Align logo and text vertically */
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #fff;  /* Hover effect to change color */
+    color: #00f;  /* Change color on hover */
 }
 
 main {
@@ -46,10 +54,11 @@ main {
     text-align: center;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    border-top: 1px solid #00f;
+.menu-logo {
+    width: 24px;       /* Default size for now, can be tweaked later */
+    height: 24px;
+    margin-right: 8px;  /* Space between logo and text */
+    border-radius: 5px; /* Optional: round the corners */
 }
 
 .gameplay-overview {
