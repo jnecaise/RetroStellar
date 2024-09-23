@@ -53,6 +53,9 @@ Create Equipment System
 Basic Combat Processes
 	Implement combat mechanics, incorporating equipment effects, ship stats, and basic AI for enemy ships.
 
+Fleet Menu
+	Fleets will be an important part of combat and victory conditions. Players will build up their fleets over time, according to game stats.
+
 Experience and Rank Progression System
 	Implement an experience system for earning XP through various actions like missions, combat, and resource gathering. Integrate with the existing rank structure.
 

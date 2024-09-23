@@ -157,6 +157,13 @@ footer {
     }
 }
 
+#faction-overview {
+    text-align: left;  /* Left-align the text in the section */
+    padding: 0 20px;  /* Add padding to the sides */
+    margin-bottom: 30px;
+    width: 100%;  /* Ensure it takes up the full width */
+}
+
 /* ========== Mandate of God Styles ========== */
 
 .mandate-page {
@@ -221,17 +228,62 @@ footer {
     text-align: center;
 }
 
-.mandate-page .faction-intro p {
-    font-size: 1rem;
-    color: #FFD700;
-    margin-bottom: 10px;
+/* Left-align and improve readability for text in main content */
+main p {
+    text-align: left;
+    margin: 1em 0;
+    line-height: 1.6;
+    padding: 0 20px; /* Optional: keep some padding for better readability on the sides */
+    max-width: none; /* Remove the max-width to allow the text to span full width */
 }
 
+/* Make the section take up the full width */
+.mandate-page section {
+    margin-bottom: 30px;
+    width: 100%; /* Ensure sections take up the full width */
+    max-width: none; /* Remove the max-width restriction */
+    padding: 0 20px;
+}
+
+.mandate-page h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #FFD700;
+}
+
+/* Footer */
 .mandate-page footer {
     text-align: center;
     padding: 10px;
     border-top: 1px solid #FFD700;
     color: #FFD700;
+}
+
+.summary-header {
+    font-size: 2.5rem;
+    text-align: left;  /* Left-align the header */
+    color: #FFD700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    /* Gradient text effect */
+    background: linear-gradient(90deg, #FFD700, #FF8C00);
+
+    /* Vendor prefixes for background-clip */
+    -webkit-background-clip: text;  /* Chrome, Safari */
+    background-clip: text;  /* Standard property */
+
+    color: transparent; /* Required for background clip */
+
+    /* Border and shadow */
+    padding-bottom: 10px;
+    display: block;  /* Ensure the header takes full width */
+    width: 100%;  /* Force the header to take up the full width */
+    text-shadow: 2px 2px 8px rgba(255, 215, 0, 0.8), 0 0 15px #FF8C00;
+
+    /* Animation for glow effect */
+    animation: glow 1.5s infinite alternate;
 }
 
 /* ========== United Systems of Man Styles ========== */
