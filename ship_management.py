@@ -25,9 +25,14 @@ def setup_ship(character_data):
     # Display available ships for the faction with the faction color applied only to ship names
     print(f"{CYAN}Choose your first ship from the available options below:{RESET}")
     for idx, ship in enumerate(faction_ships, start=1):
+        # Extracting ship details
+        variant = ship.get('variant', 'Unknown Variant')
+        max_cargo = ship.get('max_cargo', 0)
+        shield = ship.get('max_shields', 0)
+
         print(f"{idx}. {faction_color}{ship['name']}{RESET}")
         print(f"   {ship['description']}")
-        print(f"   Size: {ship['size']}, Cargo: {ship['min_cargo']} - {ship['max_cargo']}, Shields: {ship['max_shields']}\n")
+        print(f"   Variant: {variant}, Cargo: {max_cargo}, Shields: {shield}\n")
 
     # Prompt for ship selection
     while True:
@@ -56,10 +61,10 @@ def setup_player_ship(ship_data):
     print(f"Setting up player ship: {ship_data.get('name', 'Unknown Ship')}")
     player_ship = {
         'name': ship_data.get('name'),
-        'class': ship_data.get('class'),
-        'max_shields': ship_data.get('max_shields'),
-        'max_armor': ship_data.get('max_armor'),
-        'max_hull': ship_data.get('max_hull'),
+        'variant': ship_data.get('variant'),
+        'shield': ship_data.get('shield'),
+        'armor': ship_data.get('armor'),
+        'hull': ship_data.get('hull'),
         # Add more attributes as needed
     }
     return player_ship

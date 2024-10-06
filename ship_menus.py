@@ -47,15 +47,14 @@ def display_ship_menu(ships, faction_color):
     for idx, ship in enumerate(ships, start=1):
         ship_name = ship.get('name', 'Unnamed Ship')
         description = ship.get('description', 'No description available')
-        size = ship.get('size', 'Unknown size')
-        min_cargo = ship.get('min_cargo', 'N/A')
+        variant = ship.get('variant', 'Unknown variant')
         max_cargo = ship.get('max_cargo', 'N/A')
-        max_shields = ship.get('max_shields', 'N/A')
+        shield = ship.get('shield', 'N/A')
 
         # Print ship name in faction color
         print(f"{BOLD}{idx}. {faction_color}{ship_name}{RESET}")
         print(f"   {description}")
-        print(f"   Size: {size}, Cargo: {min_cargo} - {max_cargo}, Shields: {max_shields}\n")
+        print(f"   Variant: {variant}, Cargo: {max_cargo}, Shields: {shield}\n")
 
 def choose_ship(ships, faction_color):
     """Allows the player to select a ship from the list and name it, displaying ship names in faction color."""

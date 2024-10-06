@@ -1,47 +1,15 @@
-2024-09-17 21:07:57,469 - INFO - ==============================================
-2024-09-17 21:07:57,765 - INFO - ==============================================
-2024-10-04 19:57:59,549 - INFO - Game Start: Continue Game Selected
-2024-10-04 19:57:59,550 - INFO - Universe Size: 3072 systems
-2024-10-04 19:57:59,550 - INFO - Character Name: sss
-2024-10-04 19:57:59,550 - INFO - Faction: People of the River
-2024-10-04 19:57:59,550 - INFO - Ship Type: {'name': 'Oxygen', 'class': 'Light', 'faction_of_origin': 'People of the River', 'description': 'Specialized in resource gathering.', 'required_rank_to_pilot': 'Civilian', 'size': 'Small', 'ship_cost': 550, 'min_cargo': 15, 'max_cargo': 35, 'max_shields': 55, 'max_armor': 25, 'max_hull': 35, 'system_scanner_type': 'Alpha', 'system_scanner_level': 3, 'planet_scanner': 'Yes', 'planet_scanner_level': 2, 'resource_scanner': 'Yes', 'resource_scanner_level': 2, 'weapon_type': 'Light Laser', 'combat_bonus': 1.0, 'mining_attachment': 'Yes', 'mining_attachment_level': 1}
-2024-10-04 19:57:59,550 - INFO - Ship Name: 2
-2024-10-04 19:57:59,551 - DEBUG - System 2965 visited status: True
-2024-10-04 20:25:33,005 - INFO - ==============================================
-2024-10-04 20:25:38,847 - INFO - Game Start: Continue Game Selected
-2024-10-04 20:25:38,847 - INFO - Universe Size: 3072 systems
-2024-10-04 20:25:38,847 - INFO - Character Name: sss
-2024-10-04 20:25:38,847 - INFO - Faction: People of the River
-2024-10-04 20:25:38,847 - INFO - Ship Type: {'name': 'Oxygen', 'class': 'Light', 'faction_of_origin': 'People of the River', 'description': 'Specialized in resource gathering.', 'required_rank_to_pilot': 'Civilian', 'size': 'Small', 'ship_cost': 550, 'min_cargo': 15, 'max_cargo': 35, 'max_shields': 55, 'max_armor': 25, 'max_hull': 35, 'system_scanner_type': 'Alpha', 'system_scanner_level': 3, 'planet_scanner': 'Yes', 'planet_scanner_level': 2, 'resource_scanner': 'Yes', 'resource_scanner_level': 2, 'weapon_type': 'Light Laser', 'combat_bonus': 1.0, 'mining_attachment': 'Yes', 'mining_attachment_level': 1}
-2024-10-04 20:25:38,847 - INFO - Ship Name: 2
-2024-10-04 20:25:38,848 - DEBUG - System 2965 visited status: True
-2024-10-04 22:30:53,768 - INFO - ==============================================
-2024-10-04 22:30:55,232 - INFO - Game Start: Continue Game Selected
-2024-10-04 22:30:55,232 - INFO - Universe Size: 3072 systems
-2024-10-04 22:30:55,232 - INFO - Character Name: sss
-2024-10-04 22:30:55,232 - INFO - Faction: People of the River
-2024-10-04 22:30:55,232 - INFO - Ship Type: {'name': 'Oxygen', 'class': 'Light', 'faction_of_origin': 'People of the River', 'description': 'Specialized in resource gathering.', 'required_rank_to_pilot': 'Civilian', 'size': 'Small', 'ship_cost': 550, 'min_cargo': 15, 'max_cargo': 35, 'max_shields': 55, 'max_armor': 25, 'max_hull': 35, 'system_scanner_type': 'Alpha', 'system_scanner_level': 3, 'planet_scanner': 'Yes', 'planet_scanner_level': 2, 'resource_scanner': 'Yes', 'resource_scanner_level': 2, 'weapon_type': 'Light Laser', 'combat_bonus': 1.0, 'mining_attachment': 'Yes', 'mining_attachment_level': 1}
-2024-10-04 22:30:55,232 - INFO - Ship Name: 2
-2024-10-04 22:30:55,233 - DEBUG - System 2965 visited status: True
-2024-10-04 22:31:00,444 - INFO - Looking for file at: C:/RetroStellar/shop_inventory.json
-2024-10-04 22:31:00,444 - INFO - Inventory successfully loaded: [{'name': 'Buy Test 1', 'price': 10}, {'name': 'Buy Test 2', 'price': 20}, {'name': 'Buy Test 3', 'price': 30}, {'name': 'Buy Test Weapon 4', 'price': 40}]
-2024-10-04 22:32:45,707 - INFO - Looking for file at: C:/RetroStellar/shop_inventory.json
-2024-10-04 22:32:45,708 - INFO - Inventory successfully loaded: [{'name': 'Buy Test 1', 'price': 10}, {'name': 'Buy Test 2', 'price': 20}, {'name': 'Buy Test 3', 'price': 30}, {'name': 'Buy Test 4', 'price': 40}, {'name': 'Buy Test 5', 'price': 50}]
-2024-10-04 22:39:47,501 - INFO - ==============================================
-2024-10-04 22:39:49,143 - INFO - Game Start: Continue Game Selected
-2024-10-04 22:39:49,143 - INFO - Universe Size: 3072 systems
-2024-10-04 22:39:49,143 - INFO - Character Name: sss
-2024-10-04 22:39:49,143 - INFO - Faction: People of the River
-2024-10-04 22:39:49,143 - INFO - Ship Type: {'name': 'Oxygen', 'class': 'Light', 'faction_of_origin': 'People of the River', 'description': 'Specialized in resource gathering.', 'required_rank_to_pilot': 'Civilian', 'size': 'Small', 'ship_cost': 550, 'min_cargo': 15, 'max_cargo': 35, 'max_shields': 55, 'max_armor': 25, 'max_hull': 35, 'system_scanner_type': 'Alpha', 'system_scanner_level': 3, 'planet_scanner': 'Yes', 'planet_scanner_level': 2, 'resource_scanner': 'Yes', 'resource_scanner_level': 2, 'weapon_type': 'Light Laser', 'combat_bonus': 1.0, 'mining_attachment': 'Yes', 'mining_attachment_level': 1}
-2024-10-04 22:39:49,143 - INFO - Ship Name: 2
-2024-10-04 22:39:49,143 - DEBUG - System 2965 visited status: True
-2024-10-04 22:45:59,925 - INFO - ==============================================
-2024-10-04 22:46:01,464 - INFO - Game Start: Continue Game Selected
-2024-10-04 22:46:01,464 - INFO - Universe Size: 3072 systems
-2024-10-04 22:46:01,464 - INFO - Character Name: sss
-2024-10-04 22:46:01,464 - INFO - Faction: People of the River
-2024-10-04 22:46:01,464 - INFO - Ship Type: {'name': 'Oxygen', 'class': 'Light', 'faction_of_origin': 'People of the River', 'description': 'Specialized in resource gathering.', 'required_rank_to_pilot': 'Civilian', 'size': 'Small', 'ship_cost': 550, 'min_cargo': 15, 'max_cargo': 35, 'max_shields': 55, 'max_armor': 25, 'max_hull': 35, 'system_scanner_type': 'Alpha', 'system_scanner_level': 3, 'planet_scanner': 'Yes', 'planet_scanner_level': 2, 'resource_scanner': 'Yes', 'resource_scanner_level': 2, 'weapon_type': 'Light Laser', 'combat_bonus': 1.0, 'mining_attachment': 'Yes', 'mining_attachment_level': 1}
-2024-10-04 22:46:01,464 - INFO - Ship Name: 2
-2024-10-04 22:46:01,465 - DEBUG - System 2965 visited status: True
-2024-10-04 22:46:10,292 - INFO - Looking for file at: C:/RetroStellar/shop_inventory.json
-2024-10-04 22:46:10,292 - INFO - Inventory successfully loaded: [{'name': 'Buy Test 1', 'price': 10}, {'name': 'Buy Test 2', 'price': 20}, {'name': 'Buy Test 3', 'price': 30}, {'name': 'Buy Test 4', 'price': 40}, {'name': 'Buy Test 5', 'price': 50}]
+2024-10-05 22:03:26,384 - INFO - Universe with 3072 systems created and updated successfully.
+2024-10-05 22:03:26,465 - INFO - Logging owned systems:
+2024-10-05 22:03:26,465 - INFO - System ID 307 is owned by Noringian Hive
+2024-10-05 22:03:26,465 - INFO - System ID 740 is owned by Mandate of God
+2024-10-05 22:03:26,465 - INFO - System ID 1111 is owned by United Systems of Man
+2024-10-05 22:03:26,465 - INFO - System ID 1941 is owned by People of the River
+2024-10-05 22:03:26,465 - INFO - System ID 2669 is owned by Shogunate 3072
+2024-10-05 22:03:54,701 - INFO - Player's faction Shogunate 3072 starts in system: 2257 with star type K-type
+2024-10-05 22:03:55,289 - INFO - Game Start: New Game Selected
+2024-10-05 22:03:55,289 - INFO - Universe Size: 3072 systems
+2024-10-05 22:03:55,289 - INFO - Character Name: www
+2024-10-05 22:03:55,289 - INFO - Faction: Shogunate 3072
+2024-10-05 22:03:55,289 - INFO - Ship Type: {'name': 'Ronin', 'variant': 'Combat', 'faction_of_origin': 'Shogunate 3072', 'description': 'Patrol & Escort ships for quick engagements.', 'required_rank_to_pilot': 'Civilian', 'weapon': 3, 'shield': 7, 'armor': 2, 'hull': 2, 'evasion': 0.4, 'force_magnifier': 'test', 'max_cargo': 10, 'faction_attribute': 'test', 'faction_attribute_description': 'test', 'cost': 1}
+2024-10-05 22:03:55,289 - INFO - Ship Name: wwq
+2024-10-05 22:03:55,289 - INFO - Player starting in system: 2257
