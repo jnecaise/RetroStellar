@@ -72,7 +72,7 @@ def load_settings():
     except FileNotFoundError:
         print("Settings file not found. Using default settings.")
         return {
-            "Universe Size": 16
+            "Universe Size": 64
         }
 
 def load_station_names(filename='station_names.json'):
@@ -454,7 +454,7 @@ def main():
     game_logger.info("Starting the main function.")
     
     settings = load_settings()
-    universe_size = settings.get("Universe Size", 16)  # Default to 16 if not found
+    universe_size = settings.get("Universe Size", 64)  # Default to 64 if not found
     systems_data, assigned_systems = create_systems(universe_size)
     
     save_systems_data('systems.json', systems_data)

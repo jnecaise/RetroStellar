@@ -131,7 +131,7 @@ def create_new_game():
     save_character_data(character_data)
 
     # Log the new game start
-    log_game_start("New Game", character_data, current_settings.get("Universe Size", 16))
+    log_game_start("New Game", character_data, current_settings.get("Universe Size", 64))
     game_logger.info(f"Player starting in system: {starting_system}")
 
     print(f"{GREEN}New game setup complete. Starting game at System {starting_system}...{RESET}")
@@ -168,7 +168,7 @@ def load_existing_game():
                 game_logger.warning(f"Visited system ID {system_id} not found in systems_data.")
 
         # Log the game continuation
-        log_game_start("Continue Game", character_data, current_settings.get("Universe Size", 16))
+        log_game_start("Continue Game", character_data, current_settings.get("Universe Size", 64))
 
         print(f"{GREEN}Loaded saved game. Continuing at System {current_system}...{RESET}")
 

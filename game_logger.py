@@ -45,3 +45,18 @@ game_logger = setup_logger()
 
 # Test log entry to verify setup
 game_logger.info("==============================================")
+game_logger.info("Logger initialized. Ready to capture game data.")
+
+# Example function to log character menu display
+def log_character_menu(character_data):
+    """Logs the details of the character menu for debugging purposes."""
+    game_logger.info("Displaying character menu for character: %s", character_data["Character Name"])
+    game_logger.info("Faction: %s", character_data["Faction"])
+    game_logger.info("Ship Name: %s", character_data["Ship Name"])
+    game_logger.info("Ship details: %s", character_data["Ship Type"])
+    game_logger.info("Starting Credits: %s", character_data["Starting Credits"])
+
+# Example function to log if old fields like "System Scanner" are displayed
+def log_deprecated_fields_check():
+    """Logs if deprecated fields like 'System Scanner' are still being used."""
+    game_logger.info("Checking if deprecated fields (e.g., System Scanner, Planet Scanner) are being displayed.")

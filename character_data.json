@@ -1,27 +1,27 @@
 {
-    "Character Name": "www",
-    "Faction": "Shogunate 3072",
-    "Starting Credits": 0,
-    "Ship Name": "wwq",
+    "Character Name": "aa",
+    "Faction": "Mandate of God",
+    "Starting Credits": 2000,
+    "Ship Name": "wer",
     "Ship Type": {
-        "name": "Ronin",
+        "name": "Verchiel",
         "variant": "Combat",
-        "faction_of_origin": "Shogunate 3072",
+        "faction_of_origin": "Mandate of God",
         "description": "Patrol & Escort ships for quick engagements.",
         "required_rank_to_pilot": "Civilian",
-        "weapon": 3,
-        "shield": 7,
-        "armor": 2,
-        "hull": 2,
-        "evasion": 0.4,
+        "weapon": 2,
+        "shield": 10,
+        "armor": 4,
+        "hull": 1,
+        "evasion": 0.3,
         "force_magnifier": "test",
         "max_cargo": 10,
         "faction_attribute": "test",
         "faction_attribute_description": "test",
         "cost": 1
     },
-    "current_system": "2257",
+    "current_system": "20",
     "visited_systems": [
-        "2257"
+        "20"
     ]
 }
