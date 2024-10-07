@@ -81,6 +81,10 @@ def create_new_game():
 
     # Initialize character data
     character_data = setup_character()  # Initialize new character data
+
+   # Set Current Credits to match Starting Credits
+    character_data['Current Credits'] = character_data.get('Starting Credits', 0)
+
     save_character_data(character_data)  # Save initial character data
 
     # Load the newly generated universe
@@ -90,6 +94,9 @@ def create_new_game():
     if 'Ship Type' not in character_data or not character_data['Ship Type']:
         character_data = setup_ship(character_data)
         save_character_data(character_data)
+
+    # Initialize an empty inventory (empty cargo hold)
+    character_data['inventory'] = []  # Set inventory as an empty list
 
     # Retrieve player's chosen faction and select eligible starting systems
     player_faction = character_data.get('Faction', 'Unaligned')

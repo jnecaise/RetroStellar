@@ -4,6 +4,8 @@ import textwrap
 
 from ansi_colors import CYAN, RESET, GREEN, YELLOW, BOLD, RED
 from game_logger import game_logger
+from character_menu import load_character_data, save_character_data  # Import character data functions
+from transaction import subtract_credits  # type: ignore # Import transaction handling
 
 def display_space_station_menu(station_info):
     """Displays the space station menu with available services and graphical borders."""
@@ -107,18 +109,18 @@ def load_inventory():
 def display_buy_menu():
     """Displays the Buy menu with items loaded from the JSON file."""
     inventory = load_inventory()
-    
+
     if not inventory:
         print(f"{RED}No items available for purchase.{RESET}")
         return
 
     print(f"\n{CYAN}{BOLD}Items for sale:{RESET}")
-    
+
     for idx, item in enumerate(inventory, 1):
         print(f"  {idx}. {item['name']} - {item['price']} Credits")
-    
+
     print("\nPress R to return to the market menu.")
-    
+
     while True:
         choice = input(f"{BOLD}Your choice: {RESET}").strip().upper()
 
@@ -126,7 +128,27 @@ def display_buy_menu():
             return  # Return to the market menu
         elif choice.isdigit() and 1 <= int(choice) <= len(inventory):
             selected_item = inventory[int(choice) - 1]
-            print(f"{GREEN}You selected {selected_item['name']} for {selected_item['price']} credits.{RESET} (Buying functionality not implemented yet)")
+            print(f"{GREEN}You selected {selected_item['name']} for {selected_item['price']} credits.{RESET}")
+            
+            # Load character data and ship data
+            character_data = load_character_data()
+            current_credits = character_data.get('Current Credits', 0)
+            max_cargo = character_data['Ship Type'].get('max_cargo', 0)
+            current_inventory = character_data.get('inventory', [])
+
+            # Check if player has enough credits
+            if current_credits >= selected_item['price']:
+                # Check if the player has enough cargo space
+                if len(current_inventory) < max_cargo:
+                    subtract_credits(selected_item['price'])
+                    current_inventory.append(selected_item['name'])
+                    character_data['inventory'] = current_inventory
+                    save_character_data(character_data)
+                    print(f"{GREEN}You bought {selected_item['name']} for {selected_item['price']} credits.{RESET}")
+                else:
+                    print(f"{RED}You've run out of cargo space!{RESET}")
+            else:
+                print(f"{RED}Not enough credits to purchase {selected_item['name']}.{RESET}")
         else:
             print(f"{RED}Invalid choice. Please select a valid item number or R.{RESET}")
 

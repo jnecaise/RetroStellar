@@ -28,7 +28,7 @@ def setup_ship(character_data):
         # Extracting ship details
         variant = ship.get('variant', 'Unknown Variant')
         max_cargo = ship.get('max_cargo', 0)
-        shield = ship.get('max_shields', 0)
+        shield = ship.get('shield', 0)
 
         print(f"{idx}. {faction_color}{ship['name']}{RESET}")
         print(f"   {ship['description']}")

@@ -1,22 +1,27 @@
 [
     {
         "name": "Buy Test 1",
+        "cargo_space_amount": 1,
         "price": 10
     },
     {
         "name": "Buy Test 2",
+        "cargo_space_amount": 1,
         "price": 20
     },
     {
         "name": "Buy Test 3",
+        "cargo_space_amount": 1,
         "price": 30
     },
     {
         "name": "Buy Test 4",
+        "cargo_space_amount": 1,
         "price": 40
     },
     {
         "name": "Buy Test 5",
+        "cargo_space_amount": 1,
         "price": 50
     }
 ]
